@@ -1,0 +1,26 @@
+<table cellspacing='0' width='96%' cellpadding='0' border='0' bordercolor='#ffffff'>
+<tr><td height="10px"></td></tr>
+<tr height='28'><td bgcolor="#005388" align="center" style="padding-left:3px"><font color="#FFFFFF"><b>Subscriber Details</b></font></td></tr>
+
+<tr>
+	<td>
+		<table align="center" width='70%'cellspacing='1' cellpadding='3' border='0'  bordercolor='#f7f7f7'>
+			<tr><td class="arial11b000000"><B>Name</B></td><td>{$oSubscriber->first_name|html_entity_decode|stripslashes}&nbsp;{$oSubscriber->last_name|html_entity_decode|stripslashes}</td></tr>
+			<tr><td class="arial11b000000"><B>Email</B></td><td>{$oSubscriber->email|html_entity_decode|stripslashes}</td></tr>
+			<tr><td class="arial11b000000"><B>Address</B></td><td>{$oSubscriber->mail_street_address|html_entity_decode|stripslashes}</td></tr>
+			<tr><td class="arial11b000000"><B>City</B></td><td>{$oSubscriber->mail_city|html_entity_decode|stripslashes}</td></tr>
+			<tr><td class="arial11b000000"><B>State</B></td><td>{$oSubscriber->mail_state|default:""|html_entity_decode|stripslashes}</td></tr>
+			<tr><td class="arial11b000000"><B>Zip Code</B></td><td>{$oSubscriber->mail_zip_code|default:""|html_entity_decode|stripslashes}</td></tr>
+			<tr><td class="arial11b000000"><B>Country</B></td><td>{$oSubscriber->mail_country|html_entity_decode|stripslashes}</td></tr>
+			<tr><td class="arial11b000000"><B>Registered Date</B></td><td>{$oSubscriber->reg_date|html_entity_decode|stripslashes}</td></tr>
+			<tr><td colspan="2" align="center" class="arial11b000000"><B>Billing Details</B></td></tr>
+			<tr><td class="arial11b000000"><B>Address</B></td><td>{$oSubscriber->bill_street_address|html_entity_decode|stripslashes}</td></tr>
+			<tr><td class="arial11b000000"><B>City</B></td><td>{$oSubscriber->bill_city|html_entity_decode|stripslashes}</td></tr>
+			<tr><td class="arial11b000000"><B>State</B></td><td>{$oSubscriber->bill_state|html_entity_decode|stripslashes}</td></tr>
+			<tr><td class="arial11b000000"><B>Zip Code</B></td><td>{$oSubscriber->bill_zip_code|html_entity_decode|stripslashes}</td></tr>
+			<tr><td class="arial11b000000"><B>Country</B></td><td>{$oSubscriber->bill_country|html_entity_decode|stripslashes}</td></tr>
+			<tr><td colspan='2' align='center'><a class="arial11b000000" href="index.php?stage=subscriber&mode=ListSubscriber" style='cursor:hand'>&lt;&lt;Back</A></tr>
+		</table>
+	</td>
+</tr>
+</table>

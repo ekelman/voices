@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<legtrack_feed version_id="2011-03-20-01">
+	<bill_profile>
+		<bill_key>
+			<state>US</state>
+			<session_id>2011000</session_id>
+			<legtype>HR</legtype>
+			<bill_number>440</bill_number>
+		</bill_key>
+		<related_bills>
+			<related_bill>
+				<related_bill_key>
+					<related_state>US</related_state>
+					<related_session_id>2011000</related_session_id>
+					<related_legtype>S</related_legtype>
+					<related_bill_number>206</related_bill_number>
+				</related_bill_key>
+				<type_description>Related</type_description>
+			</related_bill>
+		</related_bills>
+		<authors>
+			<author>
+				<name>Boehner</name>
+				<party>R</party>
+				<house>H</house>
+			</author>
+		</authors>
+		<bill_title>DC Opportunity Scholarship Program</bill_title>
+		<intro_date>2011-01-26</intro_date>
+		<current_disposition>Pending</current_disposition>
+		<bill_location>HOUSE</bill_location>
+		<bill_summary>Reauthorizes the DC opportunity scholarship program, and for other purposes.</bill_summary>
+		<status_actions>
+			<status_action>
+				<action_text>INTRODUCED.</action_text>
+				<action_date>2011-01-26</action_date>
+			</status_action>
+			<status_action>
+				<action_text>To HOUSE Committee on OVERSIGHT AND GOVERNMENT REFORM.</action_text>
+				<action_date>2011-01-26</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In HOUSE Committee on OVERSIGHT AND GOVERNMENT REFORM:  Consideration and mark-up session held.</action_text>
+				<action_date>2011-03-10</action_date>
+			</status_action>
+			<status_action>
+				<action_text>From HOUSE Committee on OVERSIGHT AND GOVERNMENT REFORM:  Reported as amended.</action_text>
+				<action_date>2011-03-17</action_date>
+			</status_action>
+			<status_action>
+				<action_text>Reported in HOUSE. Printed version.</action_text>
+				<action_date>2011-03-17</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In HOUSE. Placed on HOUSE Union Calendar.</action_text>
+				<action_date>2011-03-17</action_date>
+			</status_action>
+		</status_actions>
+		<public_text_link><![CDATA[http://custom.statenet.com/public/resources.cgi?id=ID:bill:US2011000H471&ciq=voices&client_md=b834001e878eedb64f7658c70e00bd13&mode=current_text]]></public_text_link>
+	</bill_profile>
+	<bill_profile>
+		<bill_key>
+			<state>US</state>
+			<session_id>2011000</session_id>
+			<legtype>HR</legtype>
+			<bill_number>450</bill_number>
+		</bill_key>
+		<related_bills>
+			<related_bill>
+				<related_bill_key>
+					<related_state>US</related_state>
+					<related_session_id>2011000</related_session_id>
+					<related_legtype>S</related_legtype>
+					<related_bill_number>206</related_bill_number>
+				</related_bill_key>
+				<type_description>Related</type_description>
+			</related_bill>
+		</related_bills>
+		<authors>
+			<author>
+				<name>Boehner</name>
+				<party>R</party>
+				<house>H</house>
+			</author>
+		</authors>
+		<bill_title>DC Opportunity Scholarship Program</bill_title>
+		<intro_date>2011-01-26</intro_date>
+		<current_disposition>Pending</current_disposition>
+		<bill_location>HOUSE</bill_location>
+		<bill_summary>Reauthorizes the DC opportunity scholarship program, and for other purposes.</bill_summary>
+		<status_actions>
+			<status_action>
+				<action_text>INTRODUCED.</action_text>
+				<action_date>2011-01-26</action_date>
+			</status_action>
+			<status_action>
+				<action_text>To HOUSE Committee on OVERSIGHT AND GOVERNMENT REFORM.</action_text>
+				<action_date>2011-01-26</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In HOUSE Committee on OVERSIGHT AND GOVERNMENT REFORM:  Consideration and mark-up session held.</action_text>
+				<action_date>2011-03-10</action_date>
+			</status_action>
+			<status_action>
+				<action_text>From HOUSE Committee on OVERSIGHT AND GOVERNMENT REFORM:  Reported as amended.</action_text>
+				<action_date>2011-03-17</action_date>
+			</status_action>
+			<status_action>
+				<action_text>Reported in HOUSE. Printed version.</action_text>
+				<action_date>2011-03-17</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In HOUSE. Placed on HOUSE Union Calendar.</action_text>
+				<action_date>2011-03-17</action_date>
+			</status_action>
+		</status_actions>
+		<public_text_link><![CDATA[http://custom.statenet.com/public/resources.cgi?id=ID:bill:US2011000H471&ciq=voices&client_md=b834001e878eedb64f7658c70e00bd13&mode=current_text]]></public_text_link>
+	</bill_profile>
+	<bill_profile>
+		<bill_key>
+			<state>US</state>
+			<session_id>2011000</session_id>
+			<legtype>HR</legtype>
+			<bill_number>460</bill_number>
+		</bill_key>
+		<related_bills>
+			<related_bill>
+				<related_bill_key>
+					<related_state>US</related_state>
+					<related_session_id>2011000</related_session_id>
+					<related_legtype>S</related_legtype>
+					<related_bill_number>206</related_bill_number>
+				</related_bill_key>
+				<type_description>Related</type_description>
+			</related_bill>
+		</related_bills>
+		<authors>
+			<author>
+				<name>Boehner</name>
+				<party>R</party>
+				<house>H</house>
+			</author>
+		</authors>
+		<bill_title>DC Opportunity Scholarship Program</bill_title>
+		<intro_date>2011-01-26</intro_date>
+		<current_disposition>Pending</current_disposition>
+		<bill_location>HOUSE</bill_location>
+		<bill_summary>Reauthorizes the DC opportunity scholarship program, and for other purposes.</bill_summary>
+		<status_actions>
+			<status_action>
+				<action_text>INTRODUCED.</action_text>
+				<action_date>2011-01-26</action_date>
+			</status_action>
+			<status_action>
+				<action_text>To HOUSE Committee on OVERSIGHT AND GOVERNMENT REFORM.</action_text>
+				<action_date>2011-01-26</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In HOUSE Committee on OVERSIGHT AND GOVERNMENT REFORM:  Consideration and mark-up session held.</action_text>
+				<action_date>2011-03-10</action_date>
+			</status_action>
+			<status_action>
+				<action_text>From HOUSE Committee on OVERSIGHT AND GOVERNMENT REFORM:  Reported as amended.</action_text>
+				<action_date>2011-03-17</action_date>
+			</status_action>
+			<status_action>
+				<action_text>Reported in HOUSE. Printed version.</action_text>
+				<action_date>2011-03-17</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In HOUSE. Placed on HOUSE Union Calendar.</action_text>
+				<action_date>2011-03-17</action_date>
+			</status_action>
+		</status_actions>
+		<public_text_link><![CDATA[http://custom.statenet.com/public/resources.cgi?id=ID:bill:US2011000H471&ciq=voices&client_md=b834001e878eedb64f7658c70e00bd13&mode=current_text]]></public_text_link>
+	</bill_profile>
+	<bill_profile>
+		<bill_key>
+			<state>US</state>
+			<session_id>2011000</session_id>
+			<legtype>HR</legtype>
+			<bill_number>470</bill_number>
+		</bill_key>
+		<related_bills>
+			<related_bill>
+				<related_bill_key>
+					<related_state>US</related_state>
+					<related_session_id>2011000</related_session_id>
+					<related_legtype>S</related_legtype>
+					<related_bill_number>206</related_bill_number>
+				</related_bill_key>
+				<type_description>Related</type_description>
+			</related_bill>
+		</related_bills>
+		<authors>
+			<author>
+				<name>Boehner</name>
+				<party>R</party>
+				<house>H</house>
+			</author>
+		</authors>
+		<bill_title>DC Opportunity Scholarship Program</bill_title>
+		<intro_date>2011-01-26</intro_date>
+		<current_disposition>Pending</current_disposition>
+		<bill_location>HOUSE</bill_location>
+		<bill_summary>Reauthorizes the DC opportunity scholarship program, and for other purposes.</bill_summary>
+		<status_actions>
+			<status_action>
+				<action_text>INTRODUCED.</action_text>
+				<action_date>2011-01-26</action_date>
+			</status_action>
+			<status_action>
+				<action_text>To HOUSE Committee on OVERSIGHT AND GOVERNMENT REFORM.</action_text>
+				<action_date>2011-01-26</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In HOUSE Committee on OVERSIGHT AND GOVERNMENT REFORM:  Consideration and mark-up session held.</action_text>
+				<action_date>2011-03-10</action_date>
+			</status_action>
+			<status_action>
+				<action_text>From HOUSE Committee on OVERSIGHT AND GOVERNMENT REFORM:  Reported as amended.</action_text>
+				<action_date>2011-03-17</action_date>
+			</status_action>
+			<status_action>
+				<action_text>Reported in HOUSE. Printed version.</action_text>
+				<action_date>2011-03-17</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In HOUSE. Placed on HOUSE Union Calendar.</action_text>
+				<action_date>2011-03-17</action_date>
+			</status_action>
+		</status_actions>
+		<public_text_link><![CDATA[http://custom.statenet.com/public/resources.cgi?id=ID:bill:US2011000H471&ciq=voices&client_md=b834001e878eedb64f7658c70e00bd13&mode=current_text]]></public_text_link>
+	</bill_profile>
+	<bill_profile>
+		<bill_key>
+			<state>US</state>
+			<session_id>2011000</session_id>
+			<legtype>HR</legtype>
+			<bill_number>480</bill_number>
+		</bill_key>
+		<related_bills>
+			<related_bill>
+				<related_bill_key>
+					<related_state>US</related_state>
+					<related_session_id>2011000</related_session_id>
+					<related_legtype>S</related_legtype>
+					<related_bill_number>206</related_bill_number>
+				</related_bill_key>
+				<type_description>Related</type_description>
+			</related_bill>
+		</related_bills>
+		<authors>
+			<author>
+				<name>Boehner</name>
+				<party>R</party>
+				<house>H</house>
+			</author>
+		</authors>
+		<bill_title>DC Opportunity Scholarship Program</bill_title>
+		<intro_date>2011-01-26</intro_date>
+		<current_disposition>Pending</current_disposition>
+		<bill_location>HOUSE</bill_location>
+		<bill_summary>Reauthorizes the DC opportunity scholarship program, and for other purposes.</bill_summary>
+		<status_actions>
+			<status_action>
+				<action_text>INTRODUCED.</action_text>
+				<action_date>2011-01-26</action_date>
+			</status_action>
+			<status_action>
+				<action_text>To HOUSE Committee on OVERSIGHT AND GOVERNMENT REFORM.</action_text>
+				<action_date>2011-01-26</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In HOUSE Committee on OVERSIGHT AND GOVERNMENT REFORM:  Consideration and mark-up session held.</action_text>
+				<action_date>2011-03-10</action_date>
+			</status_action>
+			<status_action>
+				<action_text>From HOUSE Committee on OVERSIGHT AND GOVERNMENT REFORM:  Reported as amended.</action_text>
+				<action_date>2011-03-17</action_date>
+			</status_action>
+			<status_action>
+				<action_text>Reported in HOUSE. Printed version.</action_text>
+				<action_date>2011-03-17</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In HOUSE. Placed on HOUSE Union Calendar.</action_text>
+				<action_date>2011-03-17</action_date>
+			</status_action>
+		</status_actions>
+		<public_text_link><![CDATA[http://custom.statenet.com/public/resources.cgi?id=ID:bill:US2011000H471&ciq=voices&client_md=b834001e878eedb64f7658c70e00bd13&mode=current_text]]></public_text_link>
+	</bill_profile>	
+	<bill_profile>
+		<bill_key>
+			<state>US</state>
+			<session_id>2011000</session_id>
+			<legtype>HR</legtype>
+			<bill_number>485</bill_number>
+		</bill_key>
+		<related_bills>
+			<related_bill>
+				<related_bill_key>
+					<related_state>US</related_state>
+					<related_session_id>2011000</related_session_id>
+					<related_legtype>S</related_legtype>
+					<related_bill_number>206</related_bill_number>
+				</related_bill_key>
+				<type_description>Related</type_description>
+			</related_bill>
+		</related_bills>
+		<authors>
+			<author>
+				<name>Boehner</name>
+				<party>R</party>
+				<house>H</house>
+			</author>
+		</authors>
+		<bill_title>DC Opportunity Scholarship Program</bill_title>
+		<intro_date>2011-01-26</intro_date>
+		<current_disposition>Pending</current_disposition>
+		<bill_location>HOUSE</bill_location>
+		<bill_summary>Reauthorizes the DC opportunity scholarship program, and for other purposes.</bill_summary>
+		<status_actions>
+			<status_action>
+				<action_text>INTRODUCED.</action_text>
+				<action_date>2011-01-26</action_date>
+			</status_action>
+			<status_action>
+				<action_text>To HOUSE Committee on OVERSIGHT AND GOVERNMENT REFORM.</action_text>
+				<action_date>2011-01-26</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In HOUSE Committee on OVERSIGHT AND GOVERNMENT REFORM:  Consideration and mark-up session held.</action_text>
+				<action_date>2011-03-10</action_date>
+			</status_action>
+			<status_action>
+				<action_text>From HOUSE Committee on OVERSIGHT AND GOVERNMENT REFORM:  Reported as amended.</action_text>
+				<action_date>2011-03-17</action_date>
+			</status_action>
+			<status_action>
+				<action_text>Reported in HOUSE. Printed version.</action_text>
+				<action_date>2011-03-17</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In HOUSE. Placed on HOUSE Union Calendar.</action_text>
+				<action_date>2011-03-17</action_date>
+			</status_action>
+		</status_actions>
+		<public_text_link><![CDATA[http://custom.statenet.com/public/resources.cgi?id=ID:bill:US2011000H471&ciq=voices&client_md=b834001e878eedb64f7658c70e00bd13&mode=current_text]]></public_text_link>
+	</bill_profile>	
+	<bill_profile>
+		<bill_key>
+			<state>US</state>
+			<session_id>2011000</session_id>
+			<legtype>HR</legtype>
+			<bill_number>1210</bill_number>
+		</bill_key>
+		<authors>
+			<author>
+				<name>Young D</name>
+				<party>R</party>
+				<house>H</house>
+			</author>
+		</authors>
+		<bill_title>Maritime Liens on Fishing Permits</bill_title>
+		<intro_date>2011-03-17</intro_date>
+		<current_disposition>Pending</current_disposition>
+		<bill_location><![CDATA[House Transportation & Infrastructure Committee]]></bill_location>
+		<bill_summary>Provides limitations on maritime liens on fishing permits, and for other purposes.</bill_summary>
+		<status_actions>
+			<status_action>
+				<action_text>INTRODUCED.</action_text>
+				<action_date>2011-03-17</action_date>
+			</status_action>
+			<status_action>
+				<action_text>To HOUSE Committee on TRANSPORTATION AND INFRASTRUCTURE.</action_text>
+				<action_date>2011-03-17</action_date>
+			</status_action>
+		</status_actions>
+		<public_text_link><![CDATA[http://custom.statenet.com/public/resources.cgi?id=ID:bill:US2011000H1210&ciq=voices&client_md=e86e0661da0738005e0ba156bdf66897&mode=current_text]]></public_text_link>
+	</bill_profile>
+	<bill_profile>
+		<bill_key>
+			<state>US</state>
+			<session_id>2011000</session_id>
+			<legtype>HR</legtype>
+			<bill_number>1209</bill_number>
+		</bill_key>
+		<authors>
+			<author>
+				<name>Waters</name>
+				<party>D</party>
+				<house>H</house>
+			</author>
+		</authors>
+		<bill_title>Housing Choice Voucher Program</bill_title>
+		<intro_date>2011-03-17</intro_date>
+		<current_disposition>Pending</current_disposition>
+		<bill_location>House Financial Services Committee</bill_location>
+		<bill_summary>Reforms the housing choice voucher program under section 8 of the United States Housing Act of 1937.</bill_summary>
+		<status_actions>
+			<status_action>
+				<action_text>INTRODUCED.</action_text>
+				<action_date>2011-03-17</action_date>
+			</status_action>
+			<status_action>
+				<action_text>To HOUSE Committee on FINANCIAL SERVICES.</action_text>
+				<action_date>2011-03-17</action_date>
+			</status_action>
+		</status_actions>
+		<public_text_link><![CDATA[http://custom.statenet.com/public/resources.cgi?id=ID:bill:US2011000H1209&ciq=voices&client_md=574c618021559c9ecda37a0a675a82f0&mode=current_text]]></public_text_link>
+	</bill_profile>
+</legtrack_feed>

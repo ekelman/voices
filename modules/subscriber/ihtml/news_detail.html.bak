@@ -1,0 +1,182 @@
+<table width="100%" cellspacing="0" cellpadding="0" border="0">
+	<tbody>
+		<tr>
+			<td class="arial_16_c40306">
+				<table width="100%" cellspacing="0" cellpadding="0" border="0">
+					<tbody>
+						<tr>
+							<td valign="top" align="left" class="arial_16_c40306">
+								<table width="100%" cellspacing="0" cellpadding="0" border="0">
+									<tbody>
+										<tr>
+											<td valign="top" align="left">
+												<table width="100%" cellspacing="0" cellpadding="0" border="0">
+													<tr>
+														<td width="34%" valign="middle"
+															style="padding-left: 14px;"
+															class="topsublink_bg arial_15_000_bold">News Details</td>
+														<td width="66%" valign="middle" style="padding: 6px 14px;" class="topsublink_bg">
+															<table cellspacing="0" cellpadding="0" border="0" align="right">
+																<tbody>
+																	<tr>
+																		<td width="106" align="right" valign="top">
+																			<a class="button" href="index.php?stage=subscriber&affID={$vAffiliate->member_id}&mode=AffiliateNews">
+																				<span>News</span>
+																			</a>
+																		</td>
+																	</tr>
+																</tbody>
+															</table>
+														</td>
+													</tr>
+
+													<tr>
+														<td valign="top" align="left" style="padding: 16px 5px 11px 15px;" class="votealert_bg_new" colspan="2">
+															<table width="100%">															
+																{section loop=$affiliateVoteAlerts name=i}
+																<tr>
+																	<td align="left" valign="top">
+																		<table width="100%" border="0" cellspacing="0" cellpadding="0">
+																			{if $msg neq ""}
+																			<tr>
+																				<td valign="bottom" align="center" class="error-message" colspan="2">
+																					{$vMsg}
+																				</td>
+																			</tr>																			
+																			{/if}
+																			
+																			<tr>
+																				<td width="47" align="center" valign="top">
+																					<img src="images/icon_doc.gif" width="27" height="36" alt="" style="margin-top: 20px" />
+																				</td>
+																				<td width="847" align="left" valign="top" class="bg_f7f6ee">
+																					<table width="100%" border="0" cellspacing="0" cellpadding="0">
+																						<tr>
+																							<td height="22" align="left" valign="top">
+																							<span class="arialB13000000" style="text-decoration:none;">
+																								{$affiliateVoteAlerts[i].article_title|html_entity_decode} 
+																							</span>
+																							&nbsp;&nbsp;
+																								{if $affiliateVoteAlerts[i].support_file neq ''}
+																								[
+																									<a href="{$_CONF.SiteUrl}/UserFiles/affiliates_doc/{$affiliateVoteAlerts[i].support_file}"
+																									target="_blank" class="arial12Ba60000">
+																										Supported File 
+																									</a>
+																								]	 
+																								{/if} 
+																							</td>
+																						</tr>
+																						<tr>
+																							<td align="left" valign="top">
+																								{$affiliateVoteAlerts[i].affiliate_comment|html_entity_decode}</td>
+																						</tr>
+																						<tr>
+																							<td height="26" align="right" valign="bottom">
+																								<span class="arial12Ba60000" style="float: left">Dated:
+																									<span class="arial11Na60000"> { $affiliateVoteAlerts[i].created}</span>
+																								</span> 
+																							</td>
+																						</tr>
+																						
+																						
+																						<tr>
+																							<td align="left" valign="bottom">																																												
+																								<span class="arialB13000000" style="text-decoration:none;float: left;margin-top:20px;margin-bottom:10px;">
+																								Subscriber Comments
+																								</span>																								
+																							</td>
+																						</tr>	
+																						
+																						{if count($subscribersComment) neq 0}
+																						{section loop=$subscribersComment name=i}
+																						<tr>
+																							<td align="left" valign="top">
+																								<table width="100%" border="0" cellspacing="2" cellpadding="2">
+																									<tr>
+																										<td align="left" valign="bottom">																																												
+																										{$subscribersComment[i].subscriber_comment|html_entity_decode}																												
+																										</td>
+																									</tr>	
+																									<tr>
+																										<td align="left" valign="bottom">																																																																						
+																										<span class="arial12Ba60000">By:</span>	{$subscribersComment[i].first_name} {$subscribersComment[i].last_name}	<br/>
+																										
+																										<span class="arial11Na60000" style="float: left">Dated: </span>
+																											{$subscribersComment[i].comment_date}
+																										
+																										</td>
+																									</tr>
+																									<tr>
+																										<td>
+																											&nbsp;
+																										</td>
+																									</tr>																									
+																								</table>
+																							</td>
+																						</tr>	
+																						{/section}
+																						{else}																						
+																						<tr>
+																							<td align="left" valign="top">
+																								<span class="arial12Ba60000" style="float: left">
+																									No Comments added yet.
+																								</span>	
+																							</td>
+																						</tr>	
+																						{/if}
+																						
+																						{if $AffiliateContentNewsComment}
+																						<tr>
+																							<td align="right" valign="bottom">																																												
+																								
+																								<br/>
+																								
+																								<form method="post">
+																									<table width="100%" cellspacing="0"	cellpadding="0">																															
+																										<tr>
+																											<td>
+																												<h3 class="formtitles">Add your comment:</h3>
+																											</td>
+																										</tr>
+																										<tr>
+																											<td>
+																												<textarea name="subscriber_comment" class="borderBlack" style="width:90%;height:90px;"></textarea>
+																											</td>
+																										</tr>
+																										<tr>
+																											<td class="tdReqPadd20" align="center">							
+																												<input name="submitNewBill" class="btnBillSubmit" type="submit" style="cursor:pointer;" value=""/>																												
+																											</td>
+																										</tr>
+																									</table>
+																								</form>			
+																							
+																							</td>
+																						</tr>
+																						{/if}
+																						
+																			
+																					</table>
+																				</td>
+																			</tr>
+																		</table></td>
+																</tr>
+																{/section}
+															</table>
+														</td>
+													</tr>
+												</table>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</td>
+		</tr>
+	</tbody>
+</table>
+

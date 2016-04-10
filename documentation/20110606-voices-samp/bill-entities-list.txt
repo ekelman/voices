@@ -1,0 +1,204 @@
+
+===============  ===========                                                  ==================
+Symbolic Entity  Description                                                  Unicode Equivalent
+===============  ===========                                                  ==================
+       &Aacute;  Latin capital letter "A" with acute (accent)                 193
+        &Acirc;  Latin capital letter A with circumflex                       194
+       &Agrave;  Latin capital letter A with grave = Latin capital letter A grave 192
+        &Alpha;  Greek capital letter alpha                                   913
+        &Aring;  Latin capital letter A with ring above = Latin capital letter A ring 197
+       &Atilde;  Latin capital letter A with tilde                            195
+         &Auml;  Latin capital letter A with diaeresis                        196
+         &Beta;  Greek capital letter beta                                    914
+          &Chi;  Greek capital letter chi                                     935
+        &Delta;  Capital Greek delta character                                916
+       &Eacute;  Latin capital letter "E" with acute (accent)                 201
+        &Ecirc;  Latin capital letter E with circumflex                       202
+       &Egrave;  Latin capital letter "E" with grave                          200
+      &Epsilon;  Capital Greek epsilon character                              917
+          &Eta;  Greek capital letter eta                                     919
+         &Euml;  Latin capital letter E with diaeresis                        203
+        &Gamma;  Greek capital letter gamma                                   915
+       &Iacute;  Latin capital letter "I" with acute (accent)                 205
+        &Icirc;  Latin capital letter I with circumflex                       206
+       &Igrave;  Latin capital letter I with grave                            204
+         &Iota;  Greek capital letter iota                                    921
+         &Iuml;  Latin capital letter I with diaeresis                        207
+        &Kappa;  Greek capital letter kappa                                   922
+       &Lambda;  Capital Greek lambda character                               923
+           &Mu;  Greek capital letter mu                                      924
+       &Ntilde;  Latin capital letter "N" with a tilde above it               209
+           &Nu;  Greek capital letter nu                                      925
+       &Oacute;  Latin capital letter "O" with acute (accent)                 211
+        &Ocirc;  Latin capital letter O with circumflex                       212
+       &Ograve;  Latin capital letter O with grave                            210
+        &Omega;  Greek Omega character                                        937
+      &Omicron;  Greek capital letter omicron                                 927
+       &Oslash;  Latin capital letter O with stroke = Latin capital letter O slash 216
+       &Otilde;  Latin capital letter O with tilde                            213
+         &Ouml;  Latin capital letter O with diaeresis                        214
+          &Phi;  Greek capital letter phi                                     934
+           &Pi;  Greek capital letter pi                                      928
+          &Psi;  Greek capital letter psi                                     936
+          &Rho;  Greek capital letter rho                                     929
+        &Sigma;  Capital Greek sigma character                                931
+          &Tau;  Greek capital letter tau                                     932
+        &Theta;  Capital Greek theta character                                920
+       &Uacute;  Latin capital letter "U" with acute (accent)                 218
+        &Ucirc;  Latin capital letter U with circumflex                       219
+       &Ugrave;  Latin capital letter U with grave                            217
+      &Upsilon;  Greek capital letter upsilon                                 933
+         &Uuml;  Latin capital letter "U" with diacritic mark (double dots)   220
+           &Xi;  Greek capital letter xi                                      926
+       &Yacute;  Latin capital letter Y with acute                            221
+         &Yuml;  Latin capital letter Y with diaeresis                        376
+         &Zeta;  Greek capital letter zeta                                    918
+       &aacute;  Latin small letter a with acute                              225
+        &acirc;  Latin small letter a with circumflex                         226
+       &agrave;  Latin small letter a with grave = Latin small letter a grave 224
+        &alpha;  Small Greek alpha character                                  945
+          &amp;  Ampersand                                                    38
+          &and;  logical and = wedge                                          8743
+          &ang;  angle                                                        8736
+        &aring;  Latin small letter a with ring above = Latin small letter a ring 229
+        &asymp;  almost equal to = asymptotic to                              8776
+       &atilde;  Latin small letter a with tilde                              227
+         &auml;  Latin small 'a' with diaresis (umlat)                        228
+         &beta;  Small Greek beta character                                   946
+  &blacksquare;  black square                                                 9632
+       &brvbar;  Broken vertical bar                                          166
+         &bull;  Bullet                                                       8226
+          &cap;  intersection = cap                                           8745
+         &cent;  Cent(s) symbol                                               162
+    &checkmark;  check mark                                                   10003
+          &chi;  Greek small letter chi                                       967
+         &cong;  approximately equal to                                       8773
+         &copy;  Copyright symbol                                             169
+          &cup;  union = cup                                                  8746
+       &dagger;  Dagger symbol                                                8224
+          &deg;  Degrees symbol or "o"                                        176
+        &delta;  Greek small letter delta                                     948
+        &diams;  black diamond                                                9830
+       &divide;  Division symbol                                              247
+       &eacute;  Latin small letter "e" with acute (accent)                   233
+        &ecirc;  Latin small letter e with circumflex                         234
+       &egrave;  Latin small letter "e" with grave                            232
+        &empty;  empty set = null set = diameter                              8709
+      &epsilon;  Small Greek epsilon character                                949
+        &equiv;  identical to                                                 8801
+          &eta;  Small Greek eta character                                    951
+         &euml;  Latin small letter e with diaeresis                          235
+        &exist;  there exists                                                 8707
+       &forall;  for all                                                      8704
+       &frac12;  Fraction: 1/2                                                189
+       &frac13;  Fraction: 1/3                                                8531
+       &frac14;  Fraction: 1/4                                                188
+       &frac15;  Fraction: 1/5                                                8533
+       &frac16;  Fraction: 1/6                                                8537
+       &frac18;  Fraction: 1/8                                                8539
+       &frac23;  Fraction: 2/3                                                8532
+       &frac25;  Fraction: 2/5                                                8534
+       &frac34;  Fraction: 3/4                                                190
+       &frac35;  Fraction: 3/5                                                8535
+       &frac38;  Fraction: 3/8                                                8540
+       &frac45;  Fraction: 4/5                                                8536
+       &frac56;  Fraction: 5/6                                                8538
+       &frac58;  Fraction: 5/8                                                8541
+       &frac78;  Fraction: 7/8                                                8542
+        &frasl;  Fraction Slash (/)                                           8260
+       &gacute;  Latin small letter "g" with acute                            501
+        &gamma;  Small Greek gamma character                                  947
+           &ge;  Greater than or equal to                                     8805
+           &gt;  Greater than symbol                                          62
+       &hearts;  Heart symbol (as in the card playing suit, for instance "jack of hearts") 9829
+       &iacute;  Latin small letter "i" with acute (accent)                   237
+        &icirc;  Latin small letter i with circumflex                         238
+       &igrave;  Latin small letter i with grave                              236
+        &infin;  infinity                                                     8734
+          &int;  integral                                                     8747
+         &iota;  Greek small letter iota                                      953
+         &isin;  element of                                                   8712
+         &iuml;  Latin small letter i with diaeresis                          239
+        &kappa;  Greek small letter kappa                                     954
+          &lac;  Linear Attenuation Coefficient                               956
+       &lambda;  Small Greek lambda character                                 955
+         &lang;  left-pointing angle bracket = bra                            9001
+        &laquo;  Left angle quote                                             171
+        &lceil;  left ceiling = APL upstile                                   8968
+        &ldquo;  Left Double Quotation Mark                                   8220
+           &le;  Less than or equal to                                        8804
+       &lfloor;  left floor = APL downstile                                   8970
+         &lira;  Lira (currency) sign                                         8356
+        &lsquo;  Left Single Quotation Mark                                   8216
+           &lt;  Less than symbol                                             60
+        &mdash;  Em-dash - A long dash                                        8212
+        &micro;  Micro sign                                                   181
+        &minus;  minus sign                                                   8722
+           &mu;  Greek small letter MU                                        956
+        &nabla;  nabla = backward difference                                  8711
+        &ndash;  En-dash - A short dash                                       8211
+           &ne;  Not equal to                                                 8800
+           &ni;  contains as member                                           8715
+        &notin;  not an element of                                            8713
+         &nsub;  not a subset of                                              8836
+       &ntilde;  Latin small letter "n" with a tilde above it                 241
+           &nu;  Greek small letter nu                                        957
+       &oacute;  Small letter "o" with acute (accent)                         243
+        &ocirc;  Latin small letter o with circumflex                         244
+       &ograve;  Latin small letter o with grave                              242
+        &omega;  Greek small letter omega                                     969
+      &omicron;  Greek small letter omicron                                   959
+        &oplus;  circled plus = direct sum                                    8853
+           &or;  logical or = vee                                             8744
+       &oslash;  Latin small letter o with stroke = Latin small letter o slash 248
+       &otilde;  Latin small letter o with tilde                              245
+       &otimes;  circled times = vector product                               8855
+         &ouml;  Latin small letter o with diaeresis                          246
+         &para;  Paragraph symbol (pilcrow)                                   182
+         &part;  partial differential                                         8706
+         &perp;  up tack = orthogonal to = perpendicular                      8869
+          &phi;  Small Greek phi character                                    966
+           &pi;  Greek small letter pi                                        960
+       &plusmn;  Plus or minus, "+/-"                                         177
+         &prod;  n-ary product = product sign                                 8719
+         &prop;  proportional to                                              8733
+          &psi;  Greek small letter psi                                       968
+         &quot;  Quotation mark                                               34
+        &radic;  square root = radical sign                                   8730
+         &rang;  right-pointing angle bracket = ket                           9002
+        &raquo;  Right angle quote                                            187
+        &rceil;  right ceiling                                                8969
+        &rdquo;  Right Double Quotation Mark                                  8221
+          &reg;  Registered symbol                                            174
+       &rfloor;  right floor                                                  8971
+          &rho;  greek small letter rho                                       961
+        &rsquo;  Right Single Quotation Mark                                  8217
+         &sdot;  dot operator                                                 8901
+         &sect;  Section                                                      167
+  &servicemark;  Service mark symbol                                          8480
+        &sigma;  Small Greek sigma character                                  963
+       &sigmaf;  Greek small letter final sigma                               962
+          &sim;  tilde operator = varies with = similar to                    8764
+          &sub;  subset of                                                    8834
+         &sube;  subset of or equal to                                        8838
+          &sum;  Summation symbol                                             8721
+          &sup;  superset of                                                  8835
+         &supe;  superset of or equal to                                      8839
+          &tau;  Small Greek tau character                                    964
+       &there4;  therefore                                                    8756
+        &theta;  Small Greek theta character                                  952
+     &thetasym;  Greek small letter theta symbol                              977
+        &times;  Multiplication symbol                                        215
+        &trade;  Trademark symbol                                             8482
+       &uacute;  Small letter "u" with acute (accent)                         250
+        &ucirc;  Latin small letter u with circumflex                         251
+       &ugrave;  Latin small letter u with grave                              249
+      &upsilon;  Greek small letter upsilon                                   965
+         &uuml;  Latin small letter "u" with diacritic mark (double dots)     252
+         &wbox;  White box                                                    9633
+           &xi;  Greek small letter xi                                        958
+        &xwbox;  White box containing an "X"                                  9746
+       &yacute;  Latin small letter y with acute                              253
+         &yuml;  Latin small letter y with diaeresis                          255
+         &zeta;  Greek small letter zeta                                      950
+

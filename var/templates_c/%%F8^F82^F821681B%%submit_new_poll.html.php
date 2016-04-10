@@ -1,0 +1,69 @@
+<?php /* Smarty version 2.6.10, created on 2012-11-09 16:30:32
+         compiled from electedrepresentative/ihtml/submit_new_poll.html */ ?>
+<?php echo '
+<script language="javascript" src="scripts/gen_validatorv4.js"></script>
+'; ?>
+
+<tr>
+	<td valign="top" align="left" style="padding-top: 10px;"><table width="100%" cellspacing="0" cellpadding="0" border="0">
+	  <tbody><tr>
+		<td valign="top" align="left" style="padding: 24px 15px 51px 12px;" class="bg_f7f6f2"><table width="100%" cellspacing="0" cellpadding="0" border="0">
+		  <tbody><tr>
+			<td class="arial_16_c40306"><table width="100%" cellspacing="0" cellpadding="0" border="0">
+			  <tbody><tr>
+				<td valign="top" align="left" class="arial_16_c40306"><table width="100%" cellspacing="0" cellpadding="0" border="0">
+				  <tbody><tr>
+					<td valign="top" align="left">
+					<table width="100%" cellspacing="0" cellpadding="0" border="0">
+					  <tbody>
+					  <tr>
+						<td valign="bottom" align="left" height="37" style="padding-bottom: 5px;" class="Trebuchet_27_c60000" colspan="2">Submit New Poll</td>
+					  </tr>
+					  <tr>
+						<td valign="top" bgcolor="#b1b0ac" align="left" class="arial_20_c40306" colspan="2"><img width="1" height="1" alt="" src="images/trans.gif"></td>
+					  </tr>
+					  <tr>
+						<td valign="top" bgcolor="#b1b0ac" align="left" class="arial_20_c40306" colspan="2"><img width="1" height="1" alt="" src="images/trans.gif"></td>
+					  </tr>
+					  <tr>
+						<td valign="top" align="left" style="padding-top: 19px;" colspan="2">
+						<table width="100%" border="0" cellspacing="0" cellpadding="0">
+						<tr>
+						<td>
+						<form name="ercomments" id="ercomments"	method="post">
+						<table width="100%" cellspacing="0" cellpadding="0">
+						<tr>
+							<td colspan="3"><h3 class="formtitles">Comment:</h3></td>
+						</tr>
+						<tr>
+							<td colspan="3"><textarea name="comment" class="borderBlack" maxlength="300" style="width: 99.5%; height: 90px;"></textarea>
+						</td>
+						</tr>
+						<tr>
+							<td class="tdReqPadd20" colspan="3" align="center">
+							<input type="hidden" name="stage" value='electedrepresentative' />
+							<input type="hidden" name="mode" value='addNewPolls' />
+							<input name="submitNewBill" class="btnBillSubmit" type="submit" value="" style="cursor:pointer;"/></td>
+						</tr>
+						</table></form>
+						</td>
+						</tr>
+						</td>
+					  </tr>
+					</tbody></table></td>
+				  </tr>
+				</tbody></table></td>
+				</tr>
+			  </tbody></table></td>
+			</tr>
+		  </tbody></table></td>
+	  </tr>
+	</tbody></table></td>
+  </tr>
+<?php echo '
+<script language=\'javascript\' type=\'text/javascript\'>
+	var frmvalidator	=	new Validator("ercomments");
+	frmvalidator.addValidation("comment","req","Please enter comments.");
+	frmvalidator.addValidation("comment","maxlen=300","Comment should not be more then 300 characters.");
+</script>
+'; ?>

@@ -1,0 +1,271 @@
+{literal}
+
+<script type="text/javascript" src="../scripts/jquery-1.3.2.min.js">
+</script>
+<script type="text/javascript" src="../scripts/jquery.livequery.min.js">
+</script>
+
+
+<script type="text/javascript">
+	function changeUser(val)
+	{			
+		if(val!='')
+			window.location.href = "./index.php?stage=accession&mode=edit_permissions&userID="+val;
+	}
+	
+	var htmlValue ='';
+	
+	$(document).ready(function() {
+	
+		$('.combo').click(function() {
+		
+			id = this.id;			
+			/* alert(this.id + " "+$(this).attr("id")); */
+			
+			/* don't do anything */
+			if($('#' + id + ' select').size())
+				return;
+							
+			value = id.split("-");
+			
+			content_id 	= value[1];
+			category_id = value[2];
+			user_id     = $("#user").val();
+			
+			if ( user_id == '') {
+				alert("Select a user");
+				return false;
+			}
+			
+			// htmlValue = $("#" + id + " span").html().trim();			
+			htmlValue = $("#" + id + " span").html();
+			//alert(htmlValue)
+			htmlValue = $.trim(htmlValue);
+			
+			//alert(htmlValue);
+			if(htmlValue == 'Y')
+			{
+				html = 	"<select id='select-"+ value[1] +'-'+ value[2] +"' class='permission'   style='width:50px;font-family: Arial,Helvetica,sans-serif;font-size: 11px;'>" +
+								"<option value=''>--Select--</option>" +
+								"<option value='Y' selected='selected'>Y</option>" + 
+								"<option value='N'>N</option>"	 +							
+								"<option value='N/A'>N/A</option>" + 	
+								"</select>";
+			}
+			else if(htmlValue == 'N')
+			{
+				html = 	"<select id='select-"+ value[1] +'-'+ value[2] +"'  class='permission'   style='width:50px;font-family: Arial,Helvetica,sans-serif;font-size: 11px;'>" +
+								"<option value=''>--Select--</option>" +
+								"<option value='Y'>Y</option>" + 
+								"<option value='N'  selected='selected'>N</option>"	 +							
+								"<option value='N/A'>N/A</option>" + 	
+								"</select>";
+			}
+			else
+			{
+				html = 	"<select id='select-"+ value[1] +'-'+ value[2] +"'  class='permission'  style='width:50px;font-family: Arial,Helvetica,sans-serif;font-size: 11px;'>" +
+								"<option value=''>--Select--</option>" +
+								"<option value='Y'>Y</option>" + 
+								"<option value='N'>N</option>"	 +							
+								"<option value='N/A' selected='selected'>N/A</option>" +  
+								"</select>";
+			}
+
+			$("#" + id + " span").html(html);
+			
+		});
+		
+		$('.permission').livequery('change', function() {
+			// Live handler called.
+			id = this.id;
+			value = id.split("-");
+		
+			content_id 	= value[1];
+			category_id = value[2];
+			user_id     = $("#user").val(); 
+			valueSend   = $(this).val();
+			
+			if($(this).val() == '')
+			{
+				alert("Please select a value.");
+				return false;
+			}	
+			
+			// ajax call
+			$.ajax({					
+						//this is the php file that processes the data and send mail
+						url: "index.php?stage=accession&mode=save_permissions",							 
+						type: "GET",				 
+						data: 'usertype='+ user_id + '&contenttype=' + content_id + "&capabilitytype=" + category_id + '&permission=' + valueSend,    							 
+						cache: false,							 
+						success: function(html) {								
+									
+								if(html == 1) {
+										// show data after ajaxcall
+										if(valueSend == 'N/A' )
+											$("#div-" + content_id + '-' + category_id + " span").html('');
+										else
+											$("#div-" + content_id + '-' + category_id + " span").html( valueSend );										
+								}
+								else {
+									// alert('Error occurred. Please try again.');
+									window.location.reload();
+								}								
+							}									
+						});		
+			return false;		/// change function call itself againg this line is just to stop that 									
+		});
+	});
+	
+	
+</script>
+{/literal}
+
+<table border=0  align="center" cellspacing="0" cellpadding="0" width="100%">
+	<tr class="odd">
+		<td align="center" >
+			USER TYPE 
+		</td>
+		<td align="left">
+			<select id="user" name="op_mode"  onchange="changeUser(this.value);">
+				<option value="">--Select--</option>
+					{foreach from=$UserType key=key item=item }
+						<option value="{$key}" {if $key eq  $UserID} selected='selected' {/if}>
+							{$item}
+						</option>
+					{/foreach}		
+			</select>					
+		</td>
+	</tr>
+</table>
+
+<br/>
+<br/>
+{literal}
+<style type="text/css">
+.permission td{
+	border:solid 1px;
+	align:left;
+	margin:5px;
+	padding:5px;
+	min-width:80px;
+	height:35px;
+	
+}
+
+.scrollDiv {
+	overflow:scroll;
+	width:auto;
+	padding-top:20px;
+}
+
+/*	.scrollDiv tr:hover{
+	background:#f00;	} */
+	
+.heading{
+	background:#aaa;		
+} 	
+
+
+.even {
+	background:#eee;	
+}
+.odd {
+	background:#ddd;	
+}
+.NA {
+	background:#edd;	
+}
+
+</style>
+{/literal}
+
+<table border=0  align="left" cellspacing="0" cellpadding="0" style="border:none"  class="permission" >
+	<tr > 
+		<td style="width:180px;border:none">
+			<table border=0  align="left" cellspacing="0" cellpadding="0" style="width:auto" >
+					<tr class="heading">
+						<td>
+							RESOURCES
+						</td>						
+					</tr>				
+				
+				{section loop=$ContentData name=i}	
+					{* left most column *}				
+				<tr>
+					<td class="{if $smarty.section.i.iteration%2 eq 0}heading{else}odd{/if}" >
+						<span style="width:100px;">	
+							<b>			
+							{$ContentData[$smarty.section.i.index].section_name}</b> 
+							&nbsp;{$ContentData[$smarty.section.i.index].category_name}
+						</span>	
+					</td>					
+				</tr>
+				{/section}				
+			</table>
+		
+		</td>		
+		
+		<td style="border:none">
+			{* displaying data row by row *}
+			<div>
+				<table border=0  align="center" cellspacing="0" cellpadding="0" style="width:auto" >
+					<tr class="heading">												
+						{foreach key=key item=item from=$CapabilityType}
+							<td>								
+								{$item}
+							</td>
+						{/foreach}
+					</tr>				
+
+					{section loop=$ContentData name=i}	
+					<tr>
+						{foreach key=key item=item from=$CapabilityType}						
+							{assign var="contentID" value=$ContentData[$smarty.section.i.index].id}																								
+							
+							
+							<!--
+							{if (isset($PermissionData[$contentID][$key]))}		
+							<td class="{if $smarty.section.i.iteration%2 eq 0}odd{else}even{/if} combo"
+								id="div-{$contentID}-{$key}">
+								{*	{$smarty.section.i.index} -- {$key}	*}															
+								{* 	{$contentID} -- {$key}	*}															
+									<span id="span-{$contentID}-{$key}" title="{$item}">									
+										{$PermissionData[$contentID][$key]}
+									</span>											
+							</td>
+							{else}
+							<td class="NA combo">
+								<span>
+								</span>
+							</td>
+							{/if}
+								-->
+							
+							
+							
+							<td class="{if $smarty.section.i.iteration%2 eq 0}odd{else}even{/if} combo"
+								id="div-{$contentID}-{$key}">
+								
+								{*	{$smarty.section.i.index} -- {$key}	*}															
+								{* 	{$contentID} -- {$key}	*}															
+								
+								<span id="span-{$contentID}-{$key}" title="{$item}">									
+									{if (isset($PermissionData[$contentID][$key]))}		
+										{$PermissionData[$contentID][$key]}
+									{/if}		
+								</span>											
+							</td>
+						
+						{/foreach}
+					</tr>
+					{/section}
+				</table>
+			</div>
+					
+		</td>		
+	</tr>
+</table>
+
+
+

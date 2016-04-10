@@ -1,0 +1,247 @@
+{literal}
+	<script language="javascript" src="scripts/gen_validatorv4.js"></script>
+	<script type='text/javascript' src='scripts/jquery-1.3.2.min.js'></script>
+	<link rel="stylesheet" href="css/tipsy.css" type="text/css" />
+	<script type="text/javascript" src="scripts/jquery.tipsy.js"></script>	
+	<script type='text/javascript'>
+	  $(function() {
+		$('#south').tipsy({gravity: 's'});
+		$('#south_2').tipsy({gravity: 's1'});
+	   });
+	</script>	
+{/literal}
+<tr>
+                <td align="left" valign="top"  style="padding-top:10px;">
+				<form name='subscriberJoin' method='post' enctype="multipart/form-data">
+				<table width="100%" border="0" cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td align="left" valign="top" class="bg_f7f6f2"  style="padding:24px 15px 51px 12px;">
+					<table width="100%" border="0" cellspacing="0" cellpadding="0">
+                      <tr>
+                        <td class="arial_16_c40306"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                          <tr>
+                            <td align="left" valign="top" class="arial_16_c40306"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                              <tr>
+                                <td align="left" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                  <tr>
+                                    <td height="37" align="left" valign="top" class="Trebuchet_27_c60000">Member Resigtration</td>
+                                  </tr>
+                                  <tr>
+                                    <td align="left" valign="top" bgcolor="#b1b0ac" class="arial_20_c40306"><img src="images/trans.gif" width="1" height="1" alt="" /></td>
+                                  </tr>
+                                  <tr>
+                                    <td align="left" valign="top" style="padding:27px 5px 15px 0px;"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                      <tr>
+                                        <td width="400" align="left" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                          <tr>
+                                            <td width="397" height="50" align="left" valign="middle" class="arial_12_3b393a"><span class="arial_12_000"><strong>First Name:</strong></span><strong><br />
+                                              <input type="text" name="first_name" id="first_name" style="width:373px;" /><br /><br /></td>
+                                          </tr>
+                                          <tr>
+                                            <td width="397" height="50" align="left" valign="middle" class="arial_12_3b393a"><span class="arial_11_000"><strong>UserName:</strong></span><strong><br />
+                                              <input type="text" name="user_name" id="user_name" style="width:373px;" />
+                                              <br />
+                                              <br />
+                                            </strong></td>
+                                          </tr>
+                                          <tr>
+                                            <td width="397" height="50" align="left" valign="middle" class="arial_12_3b393a"><span class="arial_11_000"><strong>Password:</strong></span><strong><br />
+                                              <input type="password" name="password" id="password" style="width:373px;" />
+                                              <br />
+                                              <br />
+                                            </strong></td>
+                                          </tr>
+                                          <tr>
+                                            <td width="397" height="55" align="left" valign="middle" class="arial_12_3b393a"><span class="arial_11_000"><strong>Prime Afflliates:</strong></span><strong><br />
+                                                <select name="primary_afflliates" id="primary_afflliates" style="width:373px;"  onchange="alert(this.value)">
+												<option value=''>---Select Prime Afflliate--</option>
+												{html_options options=$oAffiliates selected=$oSubscriber->primary_afflliates}
+                                                </select></strong>
+                                                <img src="images/img_icon.gif" style="cursor:pointer;" id='south' title='A prime affiliate is an organization of which you might be a member or an organization whose opinions you wish to follow.  This organization may have asked you to join VOICES.  The organization that you select will receive a referral fee.  For more information on referral fees, please read our disclosure statement regarding referral fees.'/><br />
+                                              <br />
+                                            </strong></td>
+                                          </tr>
+                                          <tr>
+                                            <td height="50" align="left" valign="middle" class="arial_12_3b393a"><strong>
+                                              <input type="text" name="primary_afflliate_code" id="primary_afflliate_code" style="width:373px;" />
+                                              <br />
+                                              <span class="arial_11_676767">Select from the dropdown or type the affiliate code provided by your<br />
+                                                organization in the box below <br />
+                                                <br />
+                                                <br />
+                                              </span></strong></td>
+                                          </tr>
+                                          <tr>
+                                            <td width="397" height="110" align="left" valign="middle" class="arial_12_3b393a"><span class="arial_11_000"><strong>Street Address:</strong></span><strong><br />
+                                              <textarea name="address" id="address" cols="45" rows="5" style="width:373px;"></textarea>
+                                              <br />
+                                            </strong></td>
+                                          </tr>
+                                          <tr>
+                                            <td width="397" height="50" align="left" valign="middle" class="arial_12_3b393a"><span class="arial_11_000"><strong>City:</strong></span><strong><br />
+                                              <input type="text" name="city" id="city" style="width:373px;" />
+                                              <br />
+                                            </strong></td>
+                                          </tr>
+                                          <tr>
+                                            <td height="50" align="left" valign="middle" class="arial_12_3b393a"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                              <tr>
+                                                <td width="24" align="left" valign="middle"><input type="checkbox" name="billing_address" id="billing_address" /></td>
+                                                <td width="373" align="left" valign="middle" class="arial_11_000"> If Billing address is different?</td>
+                                              </tr>
+                                            </table></td>
+                                          </tr>
+                                          <tr>
+                                            <td width="397" height="110" align="left" valign="middle" class="arial_12_3b393a"><span class="arial_11_000"><strong>Street Address:</strong></span><strong><br />
+                                              <textarea name="Address" id="Address" cols="45" rows="5" style="width:373px;"></textarea>
+                                              <br />
+                                            </strong></td>
+                                          </tr>
+                                          <tr>
+                                            <td width="397" height="50" align="left" valign="middle" class="arial_12_3b393a"><span class="arial_11_000"><strong>City:</strong></span><strong><br />
+                                              <input type="text" name="City" id="City" style="width:373px;" />
+                                              <br />
+                                            </strong></td>
+                                          </tr>
+                                        </table></td>
+                                        <td width="86" align="left" valign="top">&nbsp;</td>
+                                        <td align="left" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                          <tr>
+                                            <td width="397" height="50" align="left" valign="middle" class="arial_12_3b393a"><span class="arial_12_000"><strong>Last  Name:</strong></span><strong><br />
+                                              <input type="text" name="last_name" id="last_name" style="width:373px;" />
+                                              <br />
+                                              <br /></td>
+                                          </tr>
+                                          <tr>
+                                            <td width="397" height="50" align="left" valign="middle" class="arial_12_3b393a"><span class="arial_11_000"><strong>Email:</strong></span><strong><br />
+                                              <input type="text" name="email" id="email" style="width:373px;" />
+                                              <br />
+                                              <br />
+                                              
+                                              </strong></td>
+                                          </tr>
+                                         <tr>
+                                            <td width="397" height="50" align="left" valign="middle" class="arial_12_3b393a"><span class="arial_11_000"><strong>Confirm Password:</strong></span><strong><br />
+                                              <input type="password" name="re_password" id="re_password" style="width:373px;" />
+                                              <br />
+                                              <br />
+                                              
+                                              </strong></td>
+                                          </tr>
+                                           <tr>
+                                            <td height="50" align="left" valign="middle" class="arial_12_3b393a"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                              <tr>
+                                                <td width="379" height="130" align="left" valign="top" class="arial_12_3b393a"><span class="arial_11_000"><strong>Additional Affiliates:</strong></span><br />
+                                                  <div class='textbox'>		  
+													{html_checkboxes class="test" name="category_id" id="category" options=$oAffiliates selected=$oSubscriber->primary_afflliates separator="<br />"}				
+													</div>
+                                                  <br /></td>
+                                                <td width="22" align="left" valign="top" style="padding-top:14px;"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                                  <tr>
+                                                    <td><img id='south_2' style="cursor:pointer;" title='An affiliate is an organization of which you might be a member or an organization whose opinions you are interested in following. By selecting them as an affiliate, you will be able to view content they produce and weigh in on their ideas and opinions.' src="images/img_icon.gif" /></td>
+                                                  </tr>
+                                                </table></td>
+                                              </tr>
+                                            </table></td>
+                                          </tr>
+                                          <tr>
+                                            <td width="397" height="50" align="left" valign="middle" class="arial_12_3b393a"><span class="arial_11_000"><strong>State:</strong></span><strong><br />
+                                              <input type="text" name="City3" id="City4"/ style="width:373px;" />
+                                              <br />
+                                              </strong></td>
+                                          </tr>
+                                          <tr>
+                                            <td height="50" align="left" valign="middle" class="arial_12_3b393a"><span class="arial_11_000"><strong>Zip Code:</strong></span><strong><br />
+                                              <input type="text" name="City4" id="City3"/ style="width:373px;" />
+                                              <br />
+                                            </strong></td>
+                                          </tr>
+                                          <tr>
+                                            <td height="57" align="left" valign="middle" class="arial_12_3b393a"><span class="arial_11_000"><strong>Country:</strong></span><strong><br />
+                                              <input type="text" name="City4" id="City5"/ style="width:373px;" />
+                                              <br />
+                                            </strong></td>
+                                          </tr>
+                                          <tr>
+                                            <td height="55" align="left" valign="middle" class="arial_12_3b393a">&nbsp;</td>
+                                          </tr>
+                                          <tr>
+                                            <td height="50" align="left" valign="middle" class="arial_12_3b393a"><span class="arial_11_000"><strong>State:</strong></span><strong><br />
+                                              <input type="text" name="City4" id="City8"/ style="width:373px;" />
+                                              <br />
+                                            </strong></td>
+                                          </tr>
+                                          <tr>
+                                            <td height="50" align="left" valign="middle" class="arial_12_3b393a"><span class="arial_11_000"><strong>Zip Code:</strong></span><strong><br />
+                                              <input type="text" name="City4" id="City7"/ style="width:373px;" />
+                                              <br />
+                                            </strong></td>
+                                          </tr>
+                                          <tr>
+                                            <td height="50" align="left" valign="middle" class="arial_12_3b393a"><span class="arial_11_000"><strong>Country:</strong></span><strong><br />
+                                              <input type="text" name="City4" id="City6"/ style="width:373px;" />
+                                              <br />
+                                            </strong></td>
+                                          </tr>
+                                          </table></td>
+                                      </tr>
+                                    </table></td>
+                                  </tr>
+                                </table></td>
+                              </tr>
+                              <tr>
+                                <td align="left" valign="top" bgcolor="#b1b0ac"><img src="images/trans.gif" width="1" height="1" alt="" /></td>
+                              </tr>
+                              <tr>
+                                <td align="left" valign="top" style="padding:34px 365px 5px 365px;"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                  <tr>
+                                    <td align="left" valign="middle">
+									<input type="hidden" name="stage" value="subscriber" />
+									<input type="hidden" name="mode" value="SaveSubscriberJoin" />
+									<input type="image" src="images/img_submit_.gif" alt="" width="78" height="27" border="0" name="submit" /></td>
+                                    <td align="right" valign="middle"><img src="images/img_cancel.gif" alt="" width="78" height="27" border="0" onclick="window.location='index.php'" style="cursor:pointer;" /></td>
+                                  </tr>
+                                </table></td>
+                              </tr>
+                            </table></td>
+                            </tr>
+                          </table></td>
+                        </tr>
+                      </table></td>
+                  </tr>
+                </table>
+				</form>
+				</td>
+              </tr>				  
+{literal}
+<!--  script language='javascript' type='text/javascript'>
+
+	var frmvalidator	=	new Validator("subscriberJoin");
+	frmvalidator.addValidation("first_name","req","Please enter your First Name.");
+	frmvalidator.addValidation("first_name","alphabetic_space","Only alphabets are allowed in First Name.");
+	frmvalidator.addValidation("last_name","req","Please enter your Last Name.");
+	frmvalidator.addValidation("last_name","alphabetic_space","Only alphabets are allowed in Last Name.");
+	frmvalidator.addValidation("company_name","req","Please enter Company Name");
+	
+	frmvalidator.setAddnlValidationFunction(DoCustomValidation);
+    function DoCustomValidation()
+	{
+		alert("asdas");
+		var form = document.forms["subscriberJoin"];
+	}
+	
+	function trim(str)
+	{ 
+		while(str.charAt(0) == (" ") )
+		{ 
+			str = str.substring(1);
+		}		
+		
+		while(str.charAt(str.length-1) == " " )
+		{ 
+			str = str.substring(0,str.length-1);
+		}
+		return str;
+	}
+</script>-->
+{/literal}	

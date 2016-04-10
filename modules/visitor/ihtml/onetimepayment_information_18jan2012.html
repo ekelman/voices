@@ -1,0 +1,257 @@
+{literal}
+	<script language="javascript" src="scripts/gen_validatorv4.js"></script>
+	<script type='text/javascript' src='scripts/jquery-1.3.2.min.js'></script>
+	<script type='text/javascript'>
+		function popup(url) 
+		{
+			params  = 'scrollbars=yes, width='+screen.width;
+			params += ', height='+screen.height;
+			params += ', top=0, left=0';
+			params += ', fullscreen=yes';
+		
+			newwin = window.open(url,'preview', params);
+			if (window.focus) {
+				newwin.focus()
+			}
+			return false;
+		}
+		
+
+			/*
+			$('#promo_code').change(function(){
+		
+				$.ajax({					
+				//this is the php file that processes the data and send mail
+				url: "index.php?stage=visitor&mode=CheckPromoCode",							 
+				type: "GET",				 
+				data: 'promo_code=' + $.trim($(this).val()),    							 
+				cache: false,							 
+				success: function(html) {  
+						$.trim(html);
+						var html 		= html.split("SpLiT");
+						var isValid 	= $.trim(html[0]);
+						var fee 		= $.trim(html[1]);
+						
+						//alert('--'+isValid+'--')
+						
+						if(isValid == "valid") {
+							$("#codeinfo").html("<span style='color:green'>Promo code exist.</span>");
+							$('#is_valid_promo_code').attr('value','valid');
+							$('#onetimefee').attr('value',fee);
+							$('#onetimefeespan').html(fee);
+							
+						} else {
+							$("#codeinfo").html("<span style='color:red'>Promo code does not exist.</span>");
+							$('#is_valid_promo_code').attr('value','invalid');
+							$('#onetimefee').attr('value',fee);
+							$('#onetimefeespan').html('');
+						}								
+					}	     
+				});						
+			});
+		*/	
+			
+		$(document).ready(function(){
+		
+			$('#agree').click(function(){
+				$('#agree').is(':checked') ? $('#is_agree').attr('value','1') : $('#is_agree').attr('value','0');
+			});
+			
+			$('#agree').change(function(){
+				$('#agree').is(':checked') ? $('#is_agree').attr('value','1') : $('#is_agree').attr('value','0');
+			});
+			
+			$('#i_agree_chk').click(function(){
+				$('#i_agree_chk').is(':checked') ? $('#i_agree').attr('value','1') : $('#i_agree').attr('value','0');
+			});
+			
+			$('#i_agree_chk').change(function(){
+				$('#i_agree_chk').is(':checked') ? $('#i_agree').attr('value','1') : $('#i_agree').attr('value','0');
+			});
+		});
+	</script>	
+{/literal}
+<tr>
+<td align="left" valign="top"  style="padding-top:10px;">
+<form name='oneTimePaymentInformation' method='post'>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+	<td align="left" valign="top" class="bg_f7f6f2"  style="padding:24px 15px 51px 12px;">
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	  <tr>
+		<td class="arial_16_c40306"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+		  <tr>
+			<td align="left" valign="top" class="arial_16_c40306">
+			<table width="100%" border="0" cellspacing="0" cellpadding="0">
+			  <tr>
+				<td align="left" valign="top">
+					<table width="100%" border="0" cellspacing="0" cellpadding="0">
+				  <tr>
+					<td height="37" align="left" valign="top" class="Trebuchet_27_c60000">Register your Information</td>
+				  </tr>
+				  <tr>
+					<td align="left" valign="top" bgcolor="#b1b0ac" class="arial_20_c40306"><img src="images/trans.gif" width="1" height="1" alt="" /></td>
+				  </tr>
+				  <tr>
+					<td align="left" valign="top" style="padding:27px 5px 15px 0px;">
+					<table width="100%" border="0" cellspacing="0" cellpadding="0">
+						<tr>
+							<td colspan="3">
+						  	<table width="100%">
+							<tr>						
+								<td><span class="error-message">*</span>&nbsp;<span class="arial_11_000"><strong>First Name:</strong></span><br />
+								  <input type="text" name="first_name" id="first_name" style="width:373px;" />
+								  <br /><br /></td>
+								<td></td>
+								<td><span class="error-message">*</span>&nbsp;<span class="arial_11_000"><strong>Last Name:</strong></span><br />
+								  <input type="text" name="last_name" id="last_name" style="width:373px;" />
+								  <br /><br /></td>
+							</tr>
+							<tr>						
+								<td valign="top"><span class="arial_11_000"><span class="error-message">*</span>&nbsp;<strong>Email:</strong></span><br />
+								  <input type="text" name="email" id="email" style="width:373px;" />
+								  <br /><br /></td>
+								<td></td>
+								<td valign="top"><span class="error-message">*</span>&nbsp;<span class="arial_11_000"><strong>Promo Code:</strong></span><br />
+									<input type="text" name="promo_code" id="promo_code" style="width:373px;" />
+									<input type="hidden" name="is_valid_promo_code" id="is_valid_promo_code" value="" />
+									<br />
+									<span class="arial_11_676767">
+										<span id="codeinfo">
+										Type the promo code you have received in the petition email<br />in the box above.<br />
+										</span>
+									<br /><br />
+								</span></td>
+							</tr>
+							<tr>						
+							<td><span class="error-message">*</span>&nbsp;<span class="arial_11_000"><strong>Street Address:</strong></span><br />
+								  <input type="text" name="address" id="address" style="width:373px;" />
+								  <br /><br /></td>
+							<td></td>
+							<td><span class="error-message">*</span>&nbsp;<span class="arial_11_000"><strong>City:</strong></span><br />
+								  <input type="text" name="city" id="city" style="width:373px;" />
+								  <br /><br /></td></tr>
+							<tr>
+							<td width="397" align="left" valign="middle" class="arial_12_3b393a"><span class="error-message">*</span>&nbsp;<span class="arial_11_000"><strong>State:</strong></span><br />
+								  <input type="text" name="state" id="state" style="width:373px;" />
+								  <br /><br /></td>
+							<td></td>
+							<td width="397" align="left" valign="middle" class="arial_12_3b393a"><span class="error-message">*</span>&nbsp;<span class="arial_11_000"><strong>Zip Code:</strong></span><br />
+								  <input type="text" name="zip_code" id="zip_code" style="width:373px;" />
+								  <br /><br /></td></tr>
+							<tr>
+							<td></td>
+							<td></td>
+							<td width="397" align="left" valign="middle" class="arial_12_3b393a"></td>
+							</tr>
+							</table>
+							</td>
+						</tr>
+						<tr>
+							<td colspan="3" height="50">
+						 	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+						  	<tr>
+								<td width="3%" align="left" valign="middle">
+								<input type="checkbox" name="agree" id="agree" />
+								<input type="hidden" name="is_agree" id="is_agree" value="0" />
+								<input type="hidden" name="onetimefee" id="onetimefee" value="" />
+								</td>
+								<td width="97%" align="left" valign="middle" class="arial_11_000"><span class="error-message">*</span>&nbsp;I agree to pay $<span id="onetimefeespan"></span> as one time fee to sign the petition.</td>
+								</tr>
+								<tr>
+								<td width="3%" align="left" valign="middle">
+								<input type="checkbox" name="i_agree_chk" id="i_agree_chk" />
+								<input type="hidden" name="i_agree" id="i_agree" value="0" />
+								</td>
+								<td width="97%" align="left" valign="middle" class="arial_11_000"><span class="error-message">*</span>&nbsp;I agree to the <span onclick="popup('index.php?stage=pages&mode=EndUserAgreement')" class="enduseragree" style="background-color:none;cursor: pointer;">end user agreement</span>.</td>
+								</tr>
+							</table>
+							</td>
+						</tr>						
+					</table></td>
+				  </tr>
+				</table></td>
+			  </tr>
+			  <tr>
+				<td align="left" valign="top" bgcolor="#b1b0ac"><img src="images/trans.gif" width="1" height="1" alt="" /></td>
+			  </tr>
+			  <tr>
+				<td align="left" valign="top" style="padding:34px 365px 5px 365px;"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+				  <tr>
+					<td align="left" valign="middle">
+					<input type="hidden" name="stage" value="visitor" />
+					<input type="hidden" name="mode" value="SaveOneTimeSubscriber" />
+					<input type="hidden" name="article_id" value="{$articleID}" />
+					<input type="image" src="images/img_submit_.gif" alt="" width="78" height="27" border="0" name="submit" /></td>
+					<td align="right" valign="middle"><img src="images/img_cancel.gif" alt="" width="78" height="27" border="0" onclick="window.location='index.php'" style="cursor:pointer;" /></td>
+				  </tr>
+				</table></td>
+			  </tr>
+			</table></td>
+			</tr>
+		  </table></td>
+		</tr>
+	  </table></td>
+  </tr>
+</table>
+</form>
+</td>
+</tr>				  
+{literal}
+<script language='javascript' type='text/javascript'>
+	
+	var frmvalidator	=	new Validator("oneTimePaymentInformation");
+	frmvalidator.addValidation("first_name","req","Please enter your First Name.");
+	frmvalidator.addValidation("first_name","alphabetic_space","Only alphabets are allowed in First Name.");
+	frmvalidator.addValidation("last_name","req","Please enter your Last Name.");
+	frmvalidator.addValidation("last_name","alphabetic_space","Only alphabets are allowed in Last Name.");
+	frmvalidator.addValidation("email","req","Please enter Email.");
+	frmvalidator.addValidation("email","email","Please enter a valid Email.");
+	frmvalidator.addValidation("promo_code","req","Please enter Promo Code.");
+	frmvalidator.addValidation("address","req","Please enter Address.");
+	frmvalidator.addValidation("city","req","Please enter City.");
+	frmvalidator.addValidation("state","req","Please enter State.");
+	frmvalidator.addValidation("zip_code","req","Please enter Zip Code.");
+	frmvalidator.setAddnlValidationFunction(DoCustomValidation);
+	
+    function DoCustomValidation()
+	{
+		var form = document.forms["oneTimePaymentInformation"];
+		
+		if(isNaN(form.is_valid_promo_code.value != "valid")) {
+			
+			alert("Please enter valid Promo Code.");
+			form.promo_code.focus();
+			return false;
+		}
+		
+		if(!form.agree.checked) {
+			
+			alert("You need to agree to pay a one time fee to sign the petition.");
+			form.agree.focus();
+			return false;
+		}
+		if(!form.i_agree_chk.checked) {
+			
+			alert("You need to the end user agreement.");
+			form.i_agree_chk.focus();
+			return false;
+		}		
+		return true;
+	}
+	
+	function trim(str)
+	{ 
+		while(str.charAt(0) == (" ") )
+		{ 
+			str = str.substring(1);
+		}		
+		
+		while(str.charAt(str.length-1) == " ")
+		{ 
+			str = str.substring(0,str.length-1);
+		}
+		return str;
+	}
+</script>
+{/literal}	

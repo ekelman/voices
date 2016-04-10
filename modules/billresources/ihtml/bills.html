@@ -1,0 +1,109 @@
+<td valign="top" align="left" style="padding: 24px 15px 51px 12px;" class="bg_f7f6f2">
+<table width="100%" cellspacing="0" cellpadding="0" border="0">
+<tbody>
+<tr>
+	<td class="arial_16_c40306">
+	<table width="100%" cellspacing="0" cellpadding="0" border="0">
+	<tbody>
+	<tr>
+		<td class="arial_16_c40306">
+		<table width="100%" cellspacing="0"	cellpadding="0" border="0">
+		<tbody>
+		<tr>
+			<td valign="top" align="left" class="arial_16_c40306">
+			<table width="100%" cellspacing="0" cellpadding="0" border="0">
+			<tbody>
+	        <tr>
+	        	<td valign="top" align="left" height="37" class="Trebuchet_27_c60000" >Bill Resources
+				</td>
+				<td valign="bottom" align="right" height="37">
+					<a class="arial12Ba60000" target="_blank" href="http://www.lexisnexis.com/terms/general.aspx">State Net's Terms and conditions</a>
+				</td>
+			</tr>
+			<tr>
+	            <td valign="top" bgcolor="#b1b0ac" align="left" class="arial_20_c40306" colspan="2"><img width="1" height="1" alt="" src="images/trans.gif"></td>
+            </tr>
+			<tr>
+				<td valign="bottom" align="left" height="37" style="padding-bottom: 5px;" class="arial_14_c30100" colspan="2">&nbsp;</td>
+			</tr>
+			<tr>
+				<td valign="top" align="left" style="padding: 16px 5px 11px 15px;" class="votealert_bg_new" colspan="2">
+				<table width="100%" cellspacing="0" cellpadding="0" border="0">																
+				{if $ViewPage}
+				{* if $BillResourcesBillSummaryView *}
+				{section loop=$Bills name=i}
+				<tr>
+					<td align="left" valign="top">
+					<table width="100%" border="0" cellspacing="0" cellpadding="0">
+					<tr>
+						<td width="47" align="center" valign="top">
+							<img src="images/icon_doc.gif" width="27" height="36" alt="" style="margin-top: 20px" /></td>
+						<td width="847" align="left" valign="top" class="bg_f7f6ee">
+						<table width="100%" border="0" cellspacing="0" cellpadding="0">
+						<tr>
+							<td height="22" align="left" valign="top">
+							{if $BillResourcesBillDetailView}
+								<a href="index.php?stage=billresources&mode=billCompleteDetails&billNo={$Bills[i].bill_number}" class="arialB13000000">
+									{$Bills[i].bill_title}
+								</a>&nbsp;-&nbsp;
+								<a href="index.php?stage=billresources&mode=billCompleteDetails&billNo={$Bills[i].bill_number}" class="arialB13000000">
+									{$Bills[i].legtype}{$Bills[i].bill_number}
+								</a>
+							{else}
+								<span class="arialB13000000">
+								{$Bills[i].bill_title}
+									&nbsp;-&nbsp;
+								{$Bills[i].legtype}{$Bills[i].bill_number}
+								</span>
+							{/if}		
+							</td>
+						</tr>
+						<tr>
+							<td align="left" valign="top">
+								{$Bills[i].bill_summary}...
+							</td>
+						</tr>
+						<tr>
+							<td height="26" align="right" valign="bottom">
+							<span class="arial12Ba60000" style="float: left">Dated:<span class="arial11Na60000"> {$Bills[i].intro_date}</span></span> 
+								{if $BillResourcesBillDetailView}
+								<a href="index.php?stage=billresources&mode=billCompleteDetails&billNo={$Bills[i].bill_number}" class="arial12Ba60000"> 
+									[read more] 
+								</a>
+								{/if}
+							</td>
+						</tr>
+						</table>
+						</td>
+					</tr>
+					</table>
+					</td>
+				</tr>
+				{sectionelse}
+				<tr>
+		           	<td valign="top" align="center" colspan="2">No Bill Resources.</td>
+				</tr>
+				{/section}
+				{else}
+				<tr>
+					<td valign="top" align="center"  class="bg_f7f6ee">You are not authorized to view bill summary.</td>
+				</tr>			
+				{/if}		
+					
+				</table>
+				</td>
+			</tr>
+			</table>
+			</td>
+		</tr>
+		</tbody>
+		</table>
+		</td>
+	</tr>
+	</tbody>
+	</table>
+	</td>
+</tr>
+</tbody>
+</table>
+</td>

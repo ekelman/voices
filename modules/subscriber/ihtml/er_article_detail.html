@@ -1,0 +1,150 @@
+{literal}
+<script language="javascript" src="scripts/gen_validatorv4.js"></script>
+{/literal}
+<table width="100%" cellspacing="0" cellpadding="0" border="0">
+	<tbody>
+		<tr>
+			<td class="arial_16_c40306"><table width="100%" cellspacing="0"
+					cellpadding="0" border="0">
+					<tbody>
+						<tr>
+							<td valign="top" align="left" class="arial_16_c40306"><table
+									width="100%" cellspacing="0" cellpadding="0" border="0">
+									<tbody>
+										<tr>
+											<td valign="top" align="left">
+												<table width="100%" cellspacing="0" cellpadding="0" border="0">
+													<tr>
+														<td width="34%" valign="middle"
+															style="padding-left: 14px;"
+															class="topsublink_bg arial_15_000_bold">Article Details</td>
+														<td width="66%" valign="middle" style="padding: 6px 14px;"
+															class="topsublink_bg"><table cellspacing="0"
+																cellpadding="0" border="0" align="right">
+																<tbody>
+																<tr>
+																	<td width="auto" align="right" valign="top"><a
+																		class="button"
+																		href="index.php?stage=subscriber&mode=ERArticles&er_id={$er_id}"><span>	{$oElectoralDistrict->First_Name} {$oElectoralDistrict->Middle_Name} {$oElectoralDistrict->Last_Name}'s Articles</span>
+																	</a>
+																	</td>
+																</tr>
+																</tbody>
+															</table>
+														</td>
+													</tr>
+
+													<tr>
+														<td valign="top" align="left"
+															style="padding: 16px 5px 11px 15px;"
+															class="votealert_bg_new" colspan="2">
+															<table width="100%">
+																<tr>
+																	<td align="left" valign="top">
+																		<table width="100%" border="0" cellspacing="0"
+																			cellpadding="0">
+																			<tr>
+																				<td width="47" align="center" valign="top"><img
+																					src="images/icon_doc.gif" width="27" height="36"
+																					alt="" style="margin-top: 20px" /></td>
+																				<td width="847" align="left" valign="top"
+																					class="bg_f7f6ee">
+																					<table width="100%" border="0" cellspacing="0"
+																						cellpadding="0">
+																						<tr>
+																							<td align="left" valign="top">
+																								{$oArticle->comment|html_entity_decode}</td>
+																						</tr>
+																						<tr>
+																							<td height="26" align="right" valign="bottom">
+																								<span class="arial12Ba60000" style="float: left">Dated:
+																									<span class="arial11Na60000">{$oArticle->comment_date|date_format:"%Y-%m-%d"}</span>
+																								</span> 
+																							</td>
+																						</tr>
+																					</table>
+																					<table width="100%" border="0" cellspacing="0" cellpadding="0" style="padding-top: 20px;">
+																					<tr>
+																						<td align="left" valign="top" width="15%"><img src="images/trans.gif" width="100" height="1" /></td>
+																						<td align="left" valign="top" width="85%">
+																							<form name='subscriberComment' method='post'>
+																							<table width="100%" cellspacing="0" cellpadding="0" border="0">
+																							<tbody>
+																							<tr>
+																								<td valign="top" height="20" align="left"><span class="arial12Ba60000" style="float: left">Comments:</span></td>
+																							</tr>
+																							<tr>
+																								<td valign="top" height="8" align="left"></td>
+																							</tr>
+																							{section loop=$oSubscribersComment name=index}																							
+																							<tr>
+																								<td valign="top" align="left" class="bg_f7f6f2_2">
+																								<div>{$oSubscribersComment[index]->subscriber_comment|html_entity_decode}<br /><br /></div>
+																								<div align="right" float="left">
+																								<span style="color: #000000;font-family: Arial,Helvetica,sans-serif;font-size: 11px;font-weight: bold;">By:</span>&nbsp; {$oSubscribersComment[index]->subscriber_name}</div></td>
+																							</tr>
+																							<tr>
+																								<td valign="top" height="8" align="left">&nbsp;</td>
+																							</tr>
+																							{sectionelse}
+																							<tr>
+																								<td valign="top" align="center" class="bg_f7f6f2_2"><div>No Comments added yet.</div></td>
+																							</tr>
+																							{/section}
+																							<tr>
+																								<td valign="top" height="8" align="left"><img src="images/trans.gif" width="100" height="20" /></td>
+																							</tr>
+																							
+																						{if $ERContentArticleComment}	
+																							<tr>
+																								<td valign="top" height="20" align="left"><span class="arial12Ba60000" style="float: left">Post your Comments:</span></td>
+																							</tr>
+																							<tr>
+																								<td valign="top" height="8" align="left"></td>
+																							</tr>
+																							
+																							<tr>
+																								<td valign="top" align="left" class="bg_f7f6f2_2">
+																								<div><textarea style="width: 100%; height: 50px;" class="borderBlack" name="subscriber_comment" id="subscriber_comment"></textarea></div>
+																								<div align="right" float="left" style="margin-top:10px;">
+																								<input type="hidden" name="id" value="{$oArticle->article_id}" />
+																								<input type="hidden" name="er_id" value="{$er_id}" />
+																								<input type="hidden" name="stage" value="subscriber" />
+																								<input type="hidden" name="mode" value="SaveSubscriberERComment" />
+																								<input type="submit" value="" style="cursor: pointer;" class="btnBillSubmit" name="submitNewBill">
+																								</div></td>
+																							</tr>
+																						{/if}	
+																							
+																							</tbody>
+																							</table>
+																							</form>
+																						</td>
+																					</tr>
+																					</table>
+																					</td>
+																			</tr>
+																		</table></td>
+																</tr>
+															</table>
+														</td>
+													</tr>
+												</table></td>
+										</tr>
+									</tbody>
+								</table>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</td>
+		</tr>
+	</tbody>
+</table>
+{literal}
+<script language='javascript' type='text/javascript'>
+	var frmvalidator	=	new Validator("subscriberComment");
+	frmvalidator.addValidation("subscriber_comment","req","Please enter comment.");
+	frmvalidator.addValidation("subscriber_comment", "maxlen=200","Comment should not be more than 200 characters.");
+</script>
+{/literal}

@@ -1,0 +1,288 @@
+<script language="javascript">	
+	bConfirm = new Array();
+{section loop=$Grid->SVerticalOperation.Text name=vopr}
+	bConfirm["{$Grid->SVerticalOperation.Operation[vopr]}"] = {$Grid->SVerticalOperation.Confirm[vopr]};
+{/section}
+{literal}
+	function validateGridForm(frm)
+	{	
+		flag =false;
+		
+		if(document.FGrid.mode.value=='ManageEventFlyer')
+		{
+			alert("Please select an operation to proceed");			
+			return false;
+		}
+		if(document.FGrid.mode.value=='ManageBlogs')
+		{
+			alert("Please select an operation to proceed");
+			
+			return false;
+		}
+
+		if(document.FGrid.mode.value=='ManageEvent')
+		{
+			alert("Please select an operation to proceed");
+			
+			return false;
+		}
+
+		if("{$smarty.request.mode}" == frm.mode.value)		
+		{
+			
+			alert("Please select an operation to proceed");
+			
+			return false;
+		}
+		
+		for(i=0;i<frm.elements.length;i++)
+		{
+			if(frm.elements[i].type=="checkbox" && frm.elements[i].name=="identity[]" && true == frm.elements[i].checked){
+				flag = true;
+				break;
+			}
+		}
+		if(false == flag)
+		{
+			alert("Please check at least one record to proceed");
+			return false;
+		}
+
+		if(bConfirm[frm.mode.value] == true)
+		{
+			return ConfirmOperation(frm);
+		}
+		return true;
+	}
+
+	function validateVerticalOperation()
+	{
+		document.FGrid.mode.value=document.FGrid.op_mode.value;
+		if(validateGridForm(document.FGrid))
+		{
+			document.FGrid.submit();
+		}
+		else
+			return false;
+	}
+
+	function Sort(sortby, sortdirection){
+		document.FGrid.sort.value = sortby;
+		document.FGrid.direction.value = sortdirection;
+		document.FGrid.submit();
+	}
+
+	function toggleSelect(){
+		for(i=0;i<document.FGrid.elements.length;i++){
+			if(document.FGrid.elements[i].type=="checkbox" && document.FGrid.elements[i].name=="identity[]"){
+				document.FGrid.elements[i].checked=document.FGrid._select_all.checked;
+			}
+		}
+	}
+	function ConfirmOperation(frm){
+		//document.guideform.guidelinks.options[document.guideform.guidelinks.selectedIndex].value
+		if(true == frm._select_all.checked){
+			return confirm("You are about to "+frm.op_mode.options[frm.op_mode.selectedIndex].text + " all selected records");
+		}
+		flag =false;
+		for(i=0;i<frm.elements.length;i++)
+		{
+			if(frm.elements[i].type=="checkbox" && frm.elements[i].name=="identity[]" && true == frm.elements[i].checked)
+			{
+				flag = true;
+				break;
+			}
+		}
+
+		if(true == flag){
+			return confirm("You are about to " + frm.op_mode.options[frm.op_mode.selectedIndex].text + " selected records");
+		}
+
+		return false;
+	}	
+{/literal}
+</script>
+<table width="100%">
+	<tr><th colspan="2" align='center'>{$Grid->sTitle}</th></tr>
+	<tr><td colspan="2">{$Grid->sDescription}</td></tr>
+	<tr><td colspan="2">{$CustomForm}</td></tr>
+	{if $Grid->error neq ""}
+		<tr><td colspan="2" class='arial11nFEC136' align='center'>{$Grid->error}</td></tr>
+	{/if}
+	<!-- Top Operation -->
+	<tr>
+		<!-- Custom Operation -->
+		<td id="mainmenu">
+			<table cellpadding="0" border="0">
+			<tr>
+			{section loop=$Grid->OCustomOperation name=i}
+				<td align="center"><a class='arial11nufefefe_link' href="{$Grid->OCustomOperation[i]->vProperty.Link}?{getfixquery input=$Grid->OCustomOperation[i]->vProperty.FixedQueryString}">
+				{if $Grid->OCustomOperation[i]->iType & 64}
+					<img class="tool" src="{$Grid->OCustomOperation[i]->vProperty.Image}" border="0" title="{$Grid->OCustomOperation[i]->vProperty.Text}">
+				{/if}
+				{if $Grid->OCustomOperation[i]->iType & 8}
+					{$Grid->OCustomOperation[i]->vProperty.Text}
+				{/if}
+				</a></td>
+			{/section}
+			</tr>
+			</table>
+		</td>
+		<!-- /Custom Operation -->
+		<!-- Pager -->
+		<td align="right">{pager rowcount=$Grid->vPage.TotalPages|default:1 txt_first=$L_MORE limit=1 forwardvars="stage,mode,sort,direction,barid" class_num='arial11buffffff_link' class_text='arial11buffffff_link' class_numon='arial11nFEC136'}</td>
+		<!-- /Pager -->
+	</tr>
+	<!-- /Top Operation -->
+	<form name="FGrid" method="post" action="index.php?">
+	<tr>
+		<!-- Grid Code -->
+		{if $Grid->sStage eq "mail"}
+			<td valign=top width=100>
+				{include file="mail/ihtml/left_links.html"}
+			</td>
+			<td valign=top>
+		{else}
+			<td colspan="2">
+		{/if}
+			<table bgcolor="#D6CCBA" cellpadding="0" cellspacing="0" bordercolor=red width="100%">
+				<tbody style="background-color:#000000">
+				<!-- Header -->
+				<tr bgcolor='#3A0000'>
+                   <th width="16" height='28'><!-- <img src="images/img_btm_curv.gif" width="16" height="29"> --></th>
+				{if $Grid->bShowCheckBoxes eq true} {* If checkbox needs to be shown, place it here *}
+					<th width="20" class="gridheader" align="center"><input type="checkbox" name="_select_all" onClick="toggleSelect()"></th>
+				{/if}
+				{if $Grid->bShowSNo eq true}
+					<th width="20" class="gridheader" align="right">#</th>
+				{/if}
+				{section loop=$Grid->oHeadRow name=i}
+					<th class="gridheader" align="left" height='28'>
+					{if $Grid->oHeadRow[i]->vProperty.Sort eq true}
+						<a href="javascript:Sort('{$Grid->oDataRow[i]->vProperty.Col}',{math equation='(x+1)%2' x=$smarty.request.direction|default:0})" class='arial11buffffff_link'>
+					{/if}
+					{if $Grid->oHeadRow[i]->iType & 4}
+						{$Grid->oHeadRow[i]->vProperty.Text}
+					{/if}
+					{if $Grid->oHeadRow[i]->vProperty.Sort eq true}
+						</a>
+						{if $smarty.request.sort eq $Grid->oDataRow[i]->vProperty.Col}
+							<img src="/images/icons/{$smarty.request.direction}.png">
+						{/if}
+					{/if}
+										
+					</th>
+				{/section}
+				<th width="17">&nbsp;<!-- <img src="images/img_btm_curv_right.gif" width="16" height="29"> --></th>
+				</tr>
+				<tr>
+					<td height="1" colspan="13"><img src="images/trans.gif" width="1" height="1"></td></tr>
+				<!-- /Header -->
+				<!-- Data-->
+				{assign var="row_id" value=$Grid->sIdentifier}
+				{section loop=$Grid->oData name=j}
+					<tr bgcolor="{cycle values="#5F5247,#706053"}" class='arial11nffffff'>
+					<th width="16" height='28'>&nbsp;</th>
+					{if $Grid->bShowCheckBoxes eq true} {* If checkbox needs to be shown, place it here *}
+						<td align="center" ><input type="checkbox" name="identity[]" value="{$Grid->oData[j]->$row_id}"></td>
+					{/if}
+					{if $Grid->bShowSNo eq true}
+						<td align="right">{$smarty.section.j.iteration}</td>
+					{/if}
+					{section loop=$Grid->oDataRow name=k}
+						{assign var="col" value=$Grid->oDataRow[k]->vProperty.Col}
+						{if $Grid->oDataRow[k]->iType & 1}
+							<td><span class='arial11nffffff'>{$Grid->oData[j]->$col|truncate:30:"...":true}</span></td>
+						{/if}
+						{if $Grid->oDataRow[k]->iType & 8}
+							<td align="center" ><a href="{$Grid->oDataRow[k]->vProperty.Link}?{getfixquery input=$Grid->oDataRow[k]->vProperty.FixedQueryString}{getfloatquery input=$Grid->oDataRow[k]->vProperty.FloatingQueryString data=$Grid->oData[j]}">{$Grid->oDataRow[k]->vProperty.Text}</a></td>
+						{/if}
+						{if $Grid->oDataRow[k]->iType & 64}
+							<td align="left"><a href="{$Grid->oDataRow[k]->vProperty.Link}?{getfixquery input=$Grid->oDataRow[k]->vProperty.FixedQueryString}{getfloatquery input=$Grid->oDataRow[k]->vProperty.FloatingQueryString data=$Grid->oData[j]}{if $Grid->staticLink neq ''}{$Grid->staticLink}{/if}"  {if $Grid->oDataRow[k]->vProperty.bNewWindow} target='_blank'{/if}><img class="tool" src="{$Grid->oDataRow[k]->vProperty.Image}" border="0" title="{$Grid->oDataRow[k]->vProperty.Text}"></a></td>
+						{/if}
+						
+						{if $Grid->oDataRow[k]->iType & 256}
+							<td align="center">
+							{if $Grid->oData[j]->$col & 4}
+								Replied									
+							{elseif $Grid->oData[j]->$col & 1}
+								Read
+							{elseif $Grid->oData[j]->$col & 2}
+								Sent
+							{else}
+								Unread
+							{/if}
+
+							</td>
+						{/if}
+						{if $Grid->oDataRow[k]->iType & 512}
+							<td align="left" width=100  class="verdana0ru000000"><a  class="arial11nufefefe_link" href="{$Grid->oDataRow[k]->vProperty.Link}?{getfixquery input=$Grid->oDataRow[k]->vProperty.FixedQueryString}{getfloatquery input=$Grid->oDataRow[k]->vProperty.FloatingQueryString data=$Grid->oData[j]}{if $Grid->staticLink neq ''}{$Grid->staticLink}{/if}" {if $Grid->oDataRow[k]->vProperty.bNewWindow} target='_blank'{/if} >{$Grid->oData[j]->$col|wordwrap:20:"\n":true}</a></td>
+						{/if}
+						<!-- displaying Data Images-->						
+						{if $Grid->oDataRow[k]->iType & 2048}
+							{if $Grid->oData[j]->$col eq ""}
+								<td height='120' align='center' valign='center'><img class="tool" src="{$Grid->imagePath}/no-pic.gif" border="0"></td>
+							{else}
+								<td height='120' align='center' valign='center'><img class="tool" src="{$Grid->imagePath}{$Grid->oData[j]->$col}" border="0"></td>
+							{/if}
+						{/if}
+						<!-- displaying Data Images-->
+						{if $Grid->oDataRow[k]->iType & 1024}
+							<td align="left">
+							{if $Grid->oData[j]->$col & 1}
+								Activated
+							{else}
+								Deactivated
+							{/if}
+
+							</td>
+						{/if}
+						
+					{/section}
+				<th width="16">&nbsp;</th>
+					</tr>
+					<tr>
+					<td height="1" colspan="13"><img src="images/trans.gif" width="1" height="1"></td></tr>
+				{sectionelse}
+					<td colspan="15" align='center' height='30' valign='bottom' class="arial11nFEC136"> No record found</td>
+				{/section}
+				<!-- /Data-->
+				</tbody>
+			</table>
+		</td>
+		<!-- /Grid Code -->
+	</tr>
+
+		<input type="hidden" name="sFolder" value="{$sFolder}">
+		<input type="hidden" name="stage" value="{$Grid->sStage}">
+		<input type="hidden" name="id" value="{$smarty.request.id}">
+		<input type="hidden" name="mode" value="{$smarty.request.mode}">
+		<input type="hidden" name="pos" value="{$smarty.request.pos|default:0}">
+		<input type="hidden" name="sort" value="{$smarty.request.sort}">
+		<input type="hidden" name="direction" value="{$smarty.request.direction}">
+
+		<input type="hidden" name="barid" value="{$smarty.request.barid}">
+
+	<tr>
+		{if $Grid->sStage eq "mail"}
+			<td></td>
+		{/if}
+		<td colspan="10" align=left valign='top'><table cellspacing='3' cellpadding='3' border='0'><tr><td>
+		{section loop=$Grid->SVerticalOperation.Text name=vopr}
+			{if $smarty.section.vopr.first}
+			<select name="op_mode">
+				<option value="{$smarty.request.mode}">-Select-</option>
+			{/if}
+				<option value="{$Grid->SVerticalOperation.Operation[vopr]}">{$Grid->SVerticalOperation.Text[vopr]}</option>
+			{if $smarty.section.vopr.last}	
+			</select></td><td><input type="image" name="operation" value="Go" src='../images/btn_go.gif' onclick="return validateVerticalOperation()"> <!-- <input type='submit' name='operation' value="Go" onclick="return validateVerticalOperation()"/> -->
+			{/if}
+		{/section}
+		</td></tr>
+		
+		</table>
+		</td>
+	</tr>
+	{$Grid->customLink}
+	</form>
+</table>

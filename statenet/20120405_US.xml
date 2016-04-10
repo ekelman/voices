@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<legtrack_feed version_id="2012-04-05-01">
+	<bill_profile>
+		<bill_key>
+			<state>US</state>
+			<session_id>2011000</session_id>
+			<legtype>S</legtype>
+			<bill_number>2038</bill_number>
+		</bill_key>
+		<related_bills>
+			<related_bill>
+				<related_bill_key>
+					<related_state>US</related_state>
+					<related_session_id>2011000</related_session_id>
+					<related_legtype>H</related_legtype>
+					<related_bill_number>1148</related_bill_number>
+				</related_bill_key>
+				<type_description>Related</type_description>
+			</related_bill>
+			<related_bill>
+				<related_bill_key>
+					<related_state>US</related_state>
+					<related_session_id>2011000</related_session_id>
+					<related_legtype>H</related_legtype>
+					<related_bill_number>4054</related_bill_number>
+				</related_bill_key>
+				<type_description>Related</type_description>
+			</related_bill>
+		</related_bills>
+		<authors>
+			<author>
+				<name>Lieberman</name>
+				<party>D</party>
+				<house>S</house>
+			</author>
+		</authors>
+		<bill_title>Members of Congress Use of Nonpublic Information</bill_title>
+		<intro_date>2012-01-26</intro_date>
+		<last_amend_date>2012-02-09</last_amend_date>
+		<final_status>
+			<date>2012-04-04</date>
+			<action>Enacted</action>
+		</final_status>
+		<current_disposition>Enacted</current_disposition>
+		<bill_location>Chaptered</bill_location>
+		<chapter_number>112-105</chapter_number>
+		<bill_summary>Prohibits Members of Congress and employees of Congress from using nonpublic information derived from their official positions for personal benefit.</bill_summary>
+		<status_actions>
+			<status_action>
+				<action_text>INTRODUCED.</action_text>
+				<action_date>2012-01-26</action_date>
+			</status_action>
+			<status_action>
+				<action_text><![CDATA[In SENATE Committee on HOMELAND SEC. & GOV. AFFAIRS: Reported by Senator Lieberman without amend. & without written report.]]></action_text>
+				<action_date>2012-01-26</action_date>
+			</status_action>
+			<status_action>
+				<action_text>Reported in SENATE. Printed version.</action_text>
+				<action_date>2012-01-26</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In SENATE.  Placed on SENATE Legislative Calendar.</action_text>
+				<action_date>2012-01-26</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In SENATE.  Motion to proceed to consideration of the bill agreed to.</action_text>
+				<action_date>2012-01-31</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In SENATE.  Amendment SA 1470 proposed by Senator Reid.</action_text>
+				<action_date>2012-01-31</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In SENATE.  Amendment SA 1482 proposed by Senator Reid for Senator Lieberman to Amendment SA 1470.</action_text>
+				<action_date>2012-01-31</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In SENATE.  Amendment SA 1478 proposed by Senator Brown to Amendment SA 1470.</action_text>
+				<action_date>2012-01-31</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In SENATE.  Amendment SA 1481 proposed by Senator Brown to Amendment SA 1470.</action_text>
+				<action_date>2012-01-31</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In SENATE.  Amendment SA 1472 proposed by Senator Toomey to Amendment SA 1470.</action_text>
+				<action_date>2012-01-31</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In SENATE.  Amendment SA 1477 proposed by Senator Thune to Amendment SA 1470.</action_text>
+				<action_date>2012-01-31</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In SENATE.  Amendment SA 1471 proposed by Senator McCain to Amendment SA 1470.</action_text>
+				<action_date>2012-01-31</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In SENATE.  Amendment SA 1483 proposed by Senator Leahy to Amendment SA 1470.</action_text>
+				<action_date>2012-01-31</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In SENATE.  Amendment SA 1473 proposed by Senator Coburn to Amendment SA 1470.</action_text>
+				<action_date>2012-01-31</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In SENATE.  Amendment SA 1474 proposed by Senator Coburn to Amendment SA 1470.</action_text>
+				<action_date>2012-01-31</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In SENATE.  Amendment SA 1476 proposed by Senator Coburn to Amendment SA 1470.</action_text>
+				<action_date>2012-01-31</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In SENATE.  Amendment SA 1484 proposed by Senator Paul to Amendment SA 1470.</action_text>
+				<action_date>2012-01-31</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In SENATE.  Amendment SA 1485 proposed by Senator Paul to Amendment SA 1470.</action_text>
+				<action_date>2012-01-31</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In SENATE.  Amendment SA 1487 proposed by Senator Paul to Amendment SA 1470.</action_text>
+				<action_date>2012-01-31</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In SENATE.  Amendment SA 1488 proposed by Senator DeMint to Amendment SA 1470.</action_text>
+				<action_date>2012-01-31</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In SENATE.  Amendment SA 1490 proposed by Senator Paul to Amendment SA 1470.</action_text>
+				<action_date>2012-01-31</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In SENATE.  Amendment SA 1498 proposed by Senator Blumenthal to Amendment SA 1470.</action_text>
+				<action_date>2012-02-01</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In SENATE.  Amendment SA 1491 proposed by Senator Shelby to Amendment SA 1470.</action_text>
+				<action_date>2012-02-01</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In SENATE.  Amendment SA 1500 proposed by Senator Inhofe to Amendment SA 1470.</action_text>
+				<action_date>2012-02-01</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In SENATE.  Amendment SA 1489 proposed by Senator Boxer to Amendment SA 1470.</action_text>
+				<action_date>2012-02-01</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In SENATE.  Amendment SA 1492 proposed by Senator Tester to Amendment SA 1470.</action_text>
+				<action_date>2012-02-01</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In SENATE.  Amendment SA 1503 proposed by Senator Tester to Amendment SA 1470.</action_text>
+				<action_date>2012-02-01</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In SENATE.  SA 1478 withdrawn.</action_text>
+				<action_date>2012-02-02</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In SENATE.  SA 1477 withdrawn.</action_text>
+				<action_date>2012-02-02</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In SENATE.  SA 1474 withdrawn.</action_text>
+				<action_date>2012-02-02</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In SENATE.  SA 1476 withdrawn.</action_text>
+				<action_date>2012-02-02</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In SENATE.  SA 1490 withdrawn.</action_text>
+				<action_date>2012-02-02</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In SENATE.  SA 1492 withdrawn.</action_text>
+				<action_date>2012-02-02</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In SENATE.  SA 1503 withdrawn.</action_text>
+				<action_date>2012-02-02</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In SENATE.  Amendment SA 1493 proposed by Senator Grassley to Amendment SA 1470.</action_text>
+				<action_date>2012-02-02</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In SENATE.  Amendment SA 1511 proposed by Senator Gillibrand for Senator Lieberman to Amendment SA 1470.</action_text>
+				<action_date>2012-02-02</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In SENATE.  Amendment SA 1505 proposed by Senator Gillibrand for Senator Portman to Amendment SA 1470.</action_text>
+				<action_date>2012-02-02</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In SENATE.  SA 1482 agreed to on SENATE floor.</action_text>
+				<action_date>2012-02-02</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In SENATE.  SA 1484 failed on SENATE floor.</action_text>
+				<action_date>2012-02-02</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In SENATE.  SA 1487 failed on SENATE floor.</action_text>
+				<action_date>2012-02-02</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In SENATE.  SA 1511 agreed to on SENATE floor.</action_text>
+				<action_date>2012-02-02</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In SENATE.  SA 1491 as modified agreed to on SENATE floor.</action_text>
+				<action_date>2012-02-02</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In SENATE.  SA 1485 withdrawn.</action_text>
+				<action_date>2012-02-02</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In SENATE.  SA 1489 as modified agreed to on SENATE floor.</action_text>
+				<action_date>2012-02-02</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In SENATE.  SA 1505 agreed to on SENATE floor.</action_text>
+				<action_date>2012-02-02</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In SENATE.  Amendment SA 1510 proposed by Senator Collins for Senator Enzi to Amendment SA 1470.</action_text>
+				<action_date>2012-02-02</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In SENATE.  SA 1510 agreed to on SENATE floor.</action_text>
+				<action_date>2012-02-02</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In SENATE.  SA 1498 agreed to on SENATE floor.</action_text>
+				<action_date>2012-02-02</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In SENATE.  SA 1472 failed on SENATE floor.</action_text>
+				<action_date>2012-02-02</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In SENATE.  SA 1500 failed on SENATE floor.</action_text>
+				<action_date>2012-02-02</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In SENATE.  SA 1471 agreed to on SENATE floor.</action_text>
+				<action_date>2012-02-02</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In SENATE.  SA 1483 agreed to on SENATE floor.</action_text>
+				<action_date>2012-02-02</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In SENATE.  SA 1473 failed on SENATE floor.</action_text>
+				<action_date>2012-02-02</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In SENATE.  SA 1488 failed on SENATE floor.</action_text>
+				<action_date>2012-02-02</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In SENATE.  SA 1493 agreed to on SENATE floor.</action_text>
+				<action_date>2012-02-02</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In SENATE.  SA 1481 failed on SENATE floor.</action_text>
+				<action_date>2012-02-02</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In SENATE.  SA 1470 agreed to on SENATE floor by unanimous consent.</action_text>
+				<action_date>2012-02-02</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In SENATE.  Amended on SENATE floor.</action_text>
+				<action_date>2012-02-02</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In SENATE.  Passed SENATE.  *****To HOUSE.</action_text>
+				<action_date>2012-02-02</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In HOUSE.  Amended on HOUSE floor.</action_text>
+				<action_date>2012-02-09</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In HOUSE.  Passed HOUSE.  *****To SENATE for concurrence.</action_text>
+				<action_date>2012-02-09</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In SENATE.  Amendment SA 1940 proposed by Senator Reid.</action_text>
+				<action_date>2012-03-20</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In SENATE.  Amendment SA 1941 proposed by Senator Reid to Amendment SA 1940.</action_text>
+				<action_date>2012-03-20</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In SENATE.  Amendment SA 1942 proposed by Senator Reid.</action_text>
+				<action_date>2012-03-20</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In SENATE.  Amendment SA 1943 proposed by Senator Reid to Amendment SA 1942.</action_text>
+				<action_date>2012-03-20</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In SENATE.  Amendment SA 1944 proposed by Senator Reid to Amendment SA 1943.</action_text>
+				<action_date>2012-03-20</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In SENATE.  Cloture on motion to concur in House Amendment invoked.</action_text>
+				<action_date>2012-03-22</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In SENATE.  SA 1942 fell when cloture on motion to concur in House Amendment invoked.</action_text>
+				<action_date>2012-03-22</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In SENATE.  SA 1943 fell when SA 1942 fell.</action_text>
+				<action_date>2012-03-22</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In SENATE.  SA 1944 fell when SA 1943 fell.</action_text>
+				<action_date>2012-03-22</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In SENATE.  SA 1940 withdrawn.</action_text>
+				<action_date>2012-03-22</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In SENATE.  SA 1941 fell when SA 1940 withdrawn.</action_text>
+				<action_date>2012-03-22</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In SENATE.  SENATE concurred in HOUSE amendments.</action_text>
+				<action_date>2012-03-22</action_date>
+			</status_action>
+			<status_action>
+				<action_text>Enrolled.  Cleared for White House.</action_text>
+				<action_date>2012-03-22</action_date>
+			</status_action>
+			<status_action>
+				<action_text>*****To PRESIDENT.</action_text>
+				<action_date>2012-03-28</action_date>
+			</status_action>
+			<status_action>
+				<action_text>Signed by PRESIDENT.</action_text>
+				<action_date>2012-04-04</action_date>
+			</status_action>
+			<status_action>
+				<action_text>Public Law No. 112-105</action_text>
+				<action_date>2012-04-04</action_date>
+			</status_action>
+		</status_actions>
+		<public_text_link><![CDATA[http://custom.statenet.com/public/resources.cgi?id=ID:bill:US2011000S2038&ciq=voices&client_md=0e983be2e97f45cd8781e94873419891&mode=current_text]]></public_text_link>
+	</bill_profile>
+</legtrack_feed>

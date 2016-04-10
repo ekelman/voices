@@ -1,0 +1,116 @@
+<table width="100%" cellspacing="0" cellpadding="0" border="0">
+<tbody>
+<tr>
+	<td class="arial_16_c40306">
+	<table width="100%" cellspacing="0" cellpadding="0" border="0">
+	<tbody>
+	<tr>
+		<td valign="top" align="left" class="arial_16_c40306">
+		<table width="100%" cellspacing="0" cellpadding="0" border="0">
+		<tbody>
+		<tr>
+			<td valign="top" align="left">
+			<table width="100%" cellspacing="0" cellpadding="0" border="0">
+			<tr>
+				<td width="34%" valign="middle" style="padding-left: 14px;" class="topsublink_bg arial_15_000_bold">Bill Details</td>
+				<td width="66%" valign="middle" style="padding: 6px 14px;" class="topsublink_bg">
+				<table cellspacing="0" cellpadding="0" border="0" align="right">
+				<tbody>
+				<tr>
+					<td width="106" align="right" valign="top">
+					<a class="button" href="index.php?stage=affiliates&mode=VoteAlerts"><span>Bills List</span></a>
+					</td>
+				</tr>
+				</tbody>
+				</table>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" align="left" style="padding: 16px 5px 11px 15px;" class="votealert_bg_new" colspan="2">
+				<table width="100%">
+				{section loop=$affiliateVoteAlerts name=i}
+				<tr>
+					<td align="left" valign="top">
+					<table width="100%" border="0" cellspacing="0" cellpadding="0">
+					<tr>
+						<td width="47" align="center" valign="top">
+							<img src="images/icon_doc.gif" width="27" height="36" alt="" style="margin-top: 20px" />
+						</td>
+						<td width="847" align="left" valign="top" class="bg_f7f6ee">
+						<table width="100%" border="0" cellspacing="0" cellpadding="0">
+						<tr>
+							<td height="22" align="left" valign="top">
+							<span class="arialB13000000" style="text-decoration:none;">
+							{$affiliateVoteAlerts[i].article_title}
+							</span>
+							&nbsp;&nbsp;
+							{if $affiliateVoteAlerts[i].support_file neq ''}
+							[<a href="./UserFiles/affiliates_doc/{$affiliateVoteAlerts[i].support_file}" target="_blank" class="arial12Ba60000">Read Attachment</a>]	 
+							{/if}
+							</td>
+						</tr>
+						<tr>
+							<td align="left" valign="top">
+							{$affiliateVoteAlerts[i].affiliate_comment}</td>
+						</tr>
+						<tr>
+							<td height="26" align="right" valign="bottom">
+								<span class="arial12Ba60000" style="float: left">Dated:
+									<span class="arial11Na60000">{$affiliateVoteAlerts[i].created}</span>
+								</span> 
+							</td>
+						</tr>
+						<tr>
+							<td height="26" align="right" valign="bottom">
+								<span  style="float: left">																									
+									{if  $affiliateVoteAlerts[i].indication_of_position  eq 'oppose'}
+										You have voted <b>against</b> this bill.
+									{elseif $affiliateVoteAlerts[i].indication_of_position  eq 'support'}	
+										You have voted <b>in favor of</b> this bill.
+									{/if}								
+								</span> 
+							</td>
+						</tr>
+						<!-- <tr>
+							<td height="26" align="left" valign="bottom">
+							{if $affiliateVoteAlerts[i].allow_voting eq 'yes'}
+							<span class="arialB13000000" style="text-decoration:none;">
+								Voting Start Date:
+							</span>
+							&nbsp;&nbsp;	
+								{$affiliateVoteAlerts[i].voting_start}
+							{/if}							
+							</td>
+						</tr> -->
+						<tr>
+							<td height="26" align="left" valign="bottom">
+							{if $affiliateVoteAlerts[i].allow_voting eq "yes"}							
+								{if $affiliateVoteAlerts[i].current_disposition neq 'Pending'}	
+									<span class="arial12Ba60000" style="float: left">Voting results:</span>&nbsp;&nbsp;[Support - {$supportPercentage}%]  [Oppose - {$opposePercentage}%] 
+								{/if}
+							{/if}												
+							</td>
+						</tr>																						
+						</table>
+						</td>
+					</tr>
+					</table>
+					</td>
+				</tr>
+				{/section}
+				</table>
+				</td>
+			</tr>
+			</table>
+			</td>
+		</tr>
+		</tbody>
+		</table>
+		</td>
+	</tr>
+	</tbody>
+	</table>
+	</td>
+</tr>
+</tbody>
+</table>

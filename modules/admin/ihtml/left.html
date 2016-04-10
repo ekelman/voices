@@ -1,0 +1,15 @@
+<br>
+<table class="adminleft" width="100%" cellpadding="4" cellspacing="0" border="0">
+	{foreach name=left_menu key=count from=$Menu item=admin_menu}
+		<tr class="lefhead">
+			<td width="20" align="right">{$smarty.foreach.left_menu.iteration}</td>
+			<td align=left>{$admin_menu.Title}</td>
+		</tr>
+		{section name=left_link loop=$admin_menu.Link}
+			<tr>
+				<td align="right">{$smarty.foreach.left_menu.iteration}.{$smarty.section.left_link.iteration}</td>
+				<td class="leftext" align='left'><a class="arial13n000000" href="{$admin_menu.Target[left_link]}" onClick="{$admin_menu.Script[left_link]}" >{$admin_menu.Link[left_link]}</a></td>
+			</tr>
+		{/section}
+	{/foreach}
+</table>

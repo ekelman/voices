@@ -1,0 +1,312 @@
+
+<table width="100%" cellspacing="0" cellpadding="0" border="0">
+	<tbody>
+		<tr>
+			<td class="arial_16_c40306">
+				<table width="100%" cellspacing="0" cellpadding="0" border="0">
+					<tbody>
+						<tr>
+							<td valign="top" align="left" class="arial_16_c40306">
+								<table width="100%" cellspacing="0" cellpadding="0" border="0">
+									<tbody>
+										<tr>
+											<td valign="top" align="left">{if
+												$BillResourcesBillDetailView} {section loop=$Bills name=i}
+												<table width="100%" cellspacing="0" cellpadding="0"
+													border="0">
+													<tr>
+														<td valign="top" align="left" height="37"
+															class="Trebuchet_27_c60000" ><a
+															href="{$Bills[i].public_text_link}"
+															class="Trebuchet_27_c60000" target="_blank">
+																{$Bills[i].bill_title}</a>&nbsp;-&nbsp;<a
+															href="{$Bills[i].public_text_link}"
+															class="Trebuchet_27_c60000">{$Bills[i].legtype}{$Bills[i].bill_number}</a>
+														</td>
+														
+														<td valign="bottom" align="left" height="37">
+																<a class="arial12Ba60000" target="_blank" href="http://www.lexisnexis.com/terms/general.aspx">State Net's Terms and conditions</a>	
+														</td>
+													</tr>
+
+
+													<tr>
+														<td valign="top" align="left"
+															style="padding: 16px 5px 11px 15px;"
+															class="votealert_bg_new" colspan="2">
+
+															<table width="100%" cellspacing="0" cellpadding="0"
+																border="0">
+
+																<tr>
+																	<td align="left" valign="top">
+																		<table width="100%" border="0" cellspacing="0"
+																			cellpadding="0">
+																			<tr>
+																				<td align="left" valign="top" class="bg_f7f6ee">
+																					<table width="100%" border="0" cellspacing="0"
+																						cellpadding="0">
+																						<tr>
+																							<td align="left" valign="top">
+																							<span
+																								class="arialB13000000"
+																								style="text-decoration: none;">
+																									{$Bills[i].bill_title} 
+																							</span>																						
+																							
+																							</td>
+																						</tr>
+																						<tr>
+																							<td align="left" valign="top"><br />
+																								{$Bills[i].bill_summary}</td>
+																						</tr>
+																					</table>
+																				</td>
+																			</tr>
+																		</table>
+																	</td>
+																</tr>
+
+																<tr>
+																	<td>
+
+
+																		<table width="100%" border="0" cellspacing="0"
+																			cellpadding="0">
+																			<tr>
+																				<td align="left" valign="top">&nbsp;</td>
+																			</tr>
+																			<tr>
+																				<td align="center" valign="top">
+																					<table style="width: 872px" border="0"
+																						cellspacing="0" cellpadding="0">
+																						<tr>
+																							<td style="width: 416px" align="left"
+																								valign="top">
+
+																								<table width="416" border="0" cellspacing="0"
+																									cellpadding="0">
+																									<tr>
+																										<td width="416" align="left" valign="top">
+
+																											<table width="416" border="0" cellspacing="0"
+																												cellpadding="0">
+																												<tr>
+																													<td width="416" height="32" align="left"
+																														valign="middle" class="tophead_grad">In
+																														favor of</td>
+																												</tr>
+
+																												<tr>
+																													<td align="left" valign="top"
+																														class="votealert_bg">
+																														<table width="100%" border="0"
+																															cellspacing="0" cellpadding="0">
+																															{section loop=$AffiliateDetailsInSupport
+																															name=i}
+																															<tr>
+																																<td align="left" valign="top">
+																																	<table width="100%" border="0"
+																																		cellspacing="0" cellpadding="0">
+																																		<tr>
+																																			<td width="47" align="center"
+																																				valign="top"><img
+																																				src="images/icon_doc.gif" width="27"
+																																				height="36" alt=""
+																																				style="margin-top: 20px" />
+																																			</td>
+																																			<td width="367" align="left"
+																																				valign="top" class="bg_f7f6ee">
+																																				<table width="100%" border="0"
+																																					cellspacing="0" cellpadding="0">
+																																					<tr>
+																																						<td height="22" align="left"
+																																							valign="top"><a
+																																							href="index.php?stage=affiliates&mode=listaffiliates"
+																																							class="arialB13000000"
+																																							style="text-decoration: none">{$AffiliateDetailsInSupport[i].organisation_name}</a>
+																																							<br/>																																							
+																																								<a class="arial12Ba60000" href="index.php?stage=subscriber&mode=VoteAlertsDetail&id={$AffiliateDetailsInSupport[i].article_id}">Cast your vote</a>
+																																						</td>
+																																					</tr>
+																																					<tr>
+																																						<td align="left" valign="top">
+																																							{$AffiliateDetailsInSupport[i].affiliate_comment}
+																																							
+																																							
+
+																																						</td>
+																																					</tr>
+																																				</table></td>
+																																		</tr>
+																																	</table>
+																																</td>
+																															</tr>
+
+																															<tr>
+																																<td align="left" valign="top"
+																																	class="border_dashed"></td>
+																															</tr>
+																															{sectionelse}
+																															<tr>
+																																<td align="left" valign="top"
+																																	class="bg_f7f6ee">No Record Found</td>
+																															</tr>
+																															{/section}
+																														</table>
+																													</td>
+																												</tr>
+
+
+																											</table>
+																										</td>
+																									</tr>
+
+																									<tr>
+																										<td height="35" align="left" valign="top">&nbsp;</td>
+																									</tr>
+
+																								</table>
+																							</td>
+
+																							<td style="width: 40px" align="left" valign="top">&nbsp;</td>
+
+																							<td style="width: 416px" align="left"
+																								valign="top">
+																								<table width="416" border="0" cellspacing="0"
+																									cellpadding="0">
+																									<tr>
+																										<td width="416" align="left" valign="top">
+
+
+
+																											<table width="416" border="0" cellspacing="0"
+																												cellpadding="0">
+																												<tr>
+																													<td width="416" height="32" align="left"
+																														valign="middle" class="tophead_grad">We
+																														oppose</td>
+																												</tr>
+
+																												<tr>
+																													<td align="left" valign="top"
+																														class="votealert_bg">
+																														<table width="100%" border="0"
+																															cellspacing="0" cellpadding="0">
+																															{section loop=$AffiliateDetailsAgainst
+																															name=i}
+																															<tr>
+																																<td align="left" valign="top">
+																																	<table width="100%" border="0"
+																																		cellspacing="0" cellpadding="0">
+																																		<tr>
+																																			<td width="47" align="center"
+																																				valign="top"><img
+																																				src="images/icon_doc.gif" width="27"
+																																				height="36" alt=""
+																																				style="margin-top: 20px" />
+																																			</td>
+																																			<td width="367" align="left"
+																																				valign="top" class="bg_f7f6ee">
+																																				<table width="100%" border="0"
+																																					cellspacing="0" cellpadding="0">
+																																					<tr>
+																																						<td height="22" align="left"
+																																							valign="top"><a
+																																							href="index.php?stage=affiliates&mode=listaffiliates"
+																																							class="arialB13000000"
+																																							style="text-decoration: none">
+																																								{$AffiliateDetailsAgainst[i].organisation_name}																																								
+																																							</a>
+																																								<br/>
+																																							<a class="arial12Ba60000" href="index.php?stage=subscriber&mode=VoteAlertsDetail&id={$AffiliateDetailsAgainst[i].article_id}">Cast your vote</a>
+																																						</td>
+																																					</tr>
+																																					<tr>
+																																						<td align="left" valign="top">
+																																							{$AffiliateDetailsAgainst[i].affiliate_comment}
+
+																																						</td>
+																																					</tr>
+																																				</table></td>
+																																		</tr>
+																																	</table>
+																																</td>
+																															</tr>
+
+																															<tr>
+																																<td align="left" valign="top"
+																																	class="border_dashed"></td>
+																															</tr>
+
+																															{sectionelse}
+																															<tr>
+																																<td align="left" valign="top"
+																																	class="bg_f7f6ee">No Record Found</td>
+																															</tr>
+																															{/section}
+																														</table>
+																													</td>
+																												</tr>
+
+
+																											</table>
+																										</td>
+																									</tr>
+																									<tr>
+																										<td height="35" align="left" valign="top">&nbsp;</td>
+																									</tr>
+																								</table></td>
+																						</tr>
+																					</table></td>
+																			</tr>
+																		</table>
+																	</td>
+																</tr>
+
+																<!--<tr>
+																	<td align="left" valign="top">
+																		<table width="100%" border="0" cellspacing="0"
+																			cellpadding="0">
+																			<tr>
+																				<td align="left" valign="top" class="bg_f7f6ee">
+																					<table width="100%" border="0" cellspacing="0" cellpadding="0">
+																						<tr>
+																							<td align="left" valign="top">
+																								Petition
+																								
+																							</td>
+																						</tr>
+																					</table>
+																				</td>
+																			</tr>
+																		</table>
+																	</td>
+																</tr>-->
+
+
+															</table></td>
+													</tr>
+												</table> {/section} {else}
+										
+										
+										<tr>
+											<td valign="top" align="center">
+												<div class="arial12Ba60000"
+													style="margin: 50px; height: 100px">You are not authorized
+													to view bill details.</div>
+											</td>
+										</tr>
+										{/if}
+
+										</td>
+										</tr>
+									</tbody>
+								</table></td>
+						</tr>
+					</tbody>
+				</table></td>
+		</tr>
+	</tbody>
+</table>
+

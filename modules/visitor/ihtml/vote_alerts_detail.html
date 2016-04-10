@@ -1,0 +1,154 @@
+
+<table width="100%" cellspacing="0" cellpadding="0" border="0">
+	<tbody>
+		<tr>
+			<td class="arial_16_c40306"><table width="100%" cellspacing="0"
+					cellpadding="0" border="0">
+					<tbody>
+						<tr>
+							<td valign="top" align="left" class="arial_16_c40306"><table
+									width="100%" cellspacing="0" cellpadding="0" border="0">
+									<tbody>
+										<tr>
+											<td valign="top" align="left">
+
+												<table width="100%" cellspacing="0" cellpadding="0"
+													border="0">
+													<tr>
+														<td valign="top" align="left" height="37"
+															class="Trebuchet_27_c60000" colspan="2">
+															{$ProfileInfo[0]->first_name}
+															{$ProfileInfo[0]->last_name}'s Profile</td>
+													</tr>
+
+													<tr>
+														<td width="34%" valign="middle"
+															style="padding-left: 14px;"
+															class="topsublink_bg arial_15_000_bold">Vote Alerts</td>
+														<td width="66%" valign="middle" style="padding: 6px 14px;"
+															class="topsublink_bg"><table cellspacing="0"
+																cellpadding="0" border="0" align="right">
+																<tbody>
+																	<tr>
+																		<td width="106" align="right" valign="top"><a
+																			class="button"
+																			href="index.php?stage=subscriber&mode=VoteAlerts"><span>Vote
+																					Alerts</span>
+																		</a>
+																		</td>
+																		<td width="100" align="right" valign="top"><a
+																			href="index.php?stage=subscriber&mode=MyProfile"
+																			class="button"><span> My Profile</span>
+																		</a>
+																		</td>
+																		<td width="202" align="right" valign="top"><a
+																			href="index.php?stage=subscriber&mode=ElectedRepresentatives"
+																			class="button"><span>Elected
+																					Representatives</span>
+																		</a>
+																		</td>
+																		<td width="117" align="right" valign="top"><a
+																			href="index.php?stage=subscriber&mode=MyAffiliates"
+																			class="button"><span>My Affiliates</span>
+																		</a>
+																		</td>
+																	</tr>
+																</tbody>
+															</table>
+														</td>
+													</tr>
+
+													<tr>
+														<td valign="top" align="left"
+															style="padding: 16px 5px 11px 15px;"
+															class="votealert_bg_new" colspan="2">
+															<table width="100%" cellspacing="0" cellpadding="0"
+																border="0">
+																{section loop=$MyAffiliateArticles name=i}
+																<tr>
+																	<td align="left" valign="top">
+																		<table width="100%" border="0" cellspacing="0"
+																			cellpadding="0">
+																			<tr>
+																				<td width="47" align="center" valign="top"><img
+																					src="images/icon_doc.gif" width="27" height="36"
+																					alt="" style="margin-top: 20px" /></td>
+																				<td width="847" align="left" valign="top"
+																					class="bg_f7f6ee">
+																					<table width="100%" border="0" cellspacing="0"
+																						cellpadding="0">
+																						<tr>
+																							<td height="22" align="left" valign="top">
+																							<span class="arialB13000000" style="text-decoration:none;">
+																								{$MyAffiliateArticles[i].article_title} 
+																							</span>
+																							&nbsp;&nbsp;
+																							 	{if $MyAffiliateArticles[i].support_file neq ''}
+																								[
+																									<a href="./UserFiles/affiliates_doc/{ $MyAffiliateArticles[i].support_file}"
+																									target="_blank" class="arial12Ba60000">
+																										Supported File 
+																									</a>
+																								]	 
+																								{/if} 
+																							
+																							</td>
+																						</tr>
+																						<tr>
+																							<td align="left" valign="top">
+																								{$MyAffiliateArticles[i].affiliate_comment}</td>
+																						</tr>
+																						<tr>
+																							<td height="26" align="right" valign="bottom">
+																								<span class="arial12Ba60000" style="float: left">Dated:
+																									<span class="arial11Na60000"> { $MyAffiliateArticles[i].created}</span>
+																									
+																								</span> 																						
+																							{if isset($affiliate_content_bills_vote_on_content) and $affiliate_content_bills_vote_on_content eq 'Y'} 
+																								{if $MyAffiliateArticles[i].allow_voting eq 'yes'}																									
+																									{if $voting_details eq 'oppose'}
+																										You have voted against this bill.
+																									{elseif $voting_details eq 'support'}	
+																										You have voted in favor of this bill.
+																									{elseif ($MyAffiliateArticles[i].voting_start le $smarty.now|date_format:'%Y-%m-%d') 
+																										  and  																										  
+																									 ($MyAffiliateArticles[i].current_disposition eq 'Pending')}
+																									{* elseif ($MyAffiliateArticles[i].voting_start le $smarty.now|date_format:'%Y-%m-%d') and ($MyAffiliateArticles[i].voting_end ge $smarty.now|date_format:'%Y-%m-%d') *}
+																										<a href='index.php?stage=member&mode=castYourVote&articleID={$MyAffiliateArticles[i].article_id}&status=support' style="cursor: pointer">
+																											<img src="images/btn_i_support_this_bill.gif" alt="" style="border:none;"/>
+																										</a> &nbsp;&nbsp; 																									
+																										<a href='index.php?stage=member&mode=castYourVote&articleID={$MyAffiliateArticles[i].article_id}&status=oppose' style="cursor: pointer"> 
+																											<img src="images/btn_i_oppose_this_bill.gif" alt="" style="border:none;"/>
+																										</a>
+																									{elseif $MyAffiliateArticles[i].voting_start gt $smarty.now|date_format:'%Y-%m-%d'}
+																										Voting will start on {$MyAffiliateArticles[i].voting_start}
+																									{elseif $MyAffiliateArticles[i].current_disposition neq 'Pending'}																										
+																										Current state of bill is {$MyAffiliateArticles[i].current_disposition} state	
+																									{/if}
+																								{/if}
+																							{/if}	
+																							</td>
+																						</tr>
+																					</table></td>
+																			</tr>
+																		</table></td>
+																</tr>
+																{/section}
+
+
+															</table>
+														</td>
+													</tr>
+												</table></td>
+										</tr>
+									</tbody>
+								</table>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</td>
+		</tr>
+	</tbody>
+</table>
+

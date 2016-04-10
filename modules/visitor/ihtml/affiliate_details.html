@@ -1,0 +1,573 @@
+{literal}
+<script language="javascript" src="scripts/gen_validatorv4.js"></script>
+<script language="javascript" src="scripts/jquery-1.3.2.min.js"></script>
+
+<!-- page specific scripts -->
+<script type="text/javascript" charset="utf-8">	
+{/literal}
+	var headerTitle = "{$vAffiliate->organisation_name}";
+	var bgImage 	= "{$vAffiliate->banner}";
+{literal}	
+$(function()
+{
+	$('.headerTitle').html(headerTitle );	
+	if(bgImage != "")		
+	{
+		$(".img_top_banner_inner").attr("style","background-image:url('')");
+		$(".img_top_banner_inner").attr("style","background-image:url('../UserFiles/affiliates_logo/" + bgImage + "')");
+	}
+});
+</script>
+
+<!-- page specific styles -->
+
+{/literal}
+<tr>
+	<td class="arial_16_c40306">
+		<table width="100%" border="0" cellspacing="0" cellpadding="0">
+			<tr>
+				<td align="left" valign="top" class="arial_16_c40306">
+					<table width="100%" border="0" cellspacing="0" cellpadding="0">
+
+						<tr>
+							<td align="center" valign="top"
+								style="padding: 16px 13px 13px 13px" class="bg_f7f6f2">
+								<table width="100%" border="0" cellspacing="0" cellpadding="0">
+
+									<!-- -->
+
+									<tr>
+										<td class="bg_f7f6f2">
+											<table width="100%" border="0" cellspacing="0"
+												cellpadding="0">
+												<tr>
+													<td align="left" valign="top" class="arial_16_c40306">
+														<table width="100%" border="0" cellspacing="0"
+															cellpadding="0">
+
+															<!-- HEADER SECTION -->
+															<tr>
+																<td colspan="2" align="center">
+																	<table width="97%">
+																		<tr>
+																			<td align="left" valign="top"
+																				class="Trebuchet_27_c60000">
+																				{$vAffiliate->first_name} {$vAffiliate->last_name}'s
+																				Detail</td>
+																			<td align="right" valign="middle"></td>
+																		</tr>
+																	</table>
+																</td>
+															</tr>
+															<tr>
+																<td valign="top" align="left"><table width="100%"
+																		cellspacing="0" cellpadding="0" border="0">
+																		<tbody>
+																			<tr>
+																				<td valign="top" align="center" class="bg_f7f6f2"><table
+																						width="97%" cellspacing="0" cellpadding="0"
+																						border="0">
+																						<tbody>
+																							<tr>
+																								<td valign="top" align="left"
+																									style="padding-top: 7px;"><table
+																										width="100%" cellspacing="0" cellpadding="0"
+																										border="0">
+																										<tbody>
+																											<tr>
+																												<td style="border: 2px solid #893E43;"
+																													valign="top" align="left">
+
+																													<table width="100%" cellspacing="0"
+																														cellpadding="0" border="0">
+																														<tbody>
+																															<tr>
+																																<td width="100%" valign="top"
+																																	align="left"
+																																	class="img_top_banner_inner"><span
+																																	class="headerTitle">VoicesForChange</span>
+																																</td>
+																															</tr>
+																														</tbody>
+																													</table></td>
+																											</tr>
+																										</tbody>
+																									</table></td>
+																							</tr>
+																						</tbody>
+																					</table></td>
+																			</tr>
+
+																		</tbody>
+																	</table></td>
+															</tr>
+															<tr>
+																<td class="bg_f7f6f2" valign="top" align="center">
+																	<table width="97%">
+																		<tr>
+																			<td align="left"><span class="arial_15_000_bold"><h2
+																						class="billFormHeadingabout">About Us</h2> </span></td>
+																		</tr>
+																		<tr>
+																			<td align="left"><span class="arial_12_000">{$vAffiliate->description}</span>
+																			</td>
+																		</tr>
+																	</table>
+																</td>
+															</tr>
+															<tr>
+																<td align="center" valign="top" style="padding: 13px"
+																	class="bg_f7f6f2">
+
+																	<table width="100%" border="0" cellspacing="0"
+																		cellpadding="0">
+																		<tr>
+																			<td colspan="2" align="left" valign="top">
+																				<table width="100%" border="0" cellspacing="0"
+																					cellpadding="0">
+																					<tr>
+																						<td align="left" valign="top">&nbsp;</td>
+																					</tr>
+																					<tr>
+																						<td align="center" class="error-message">
+																							{$vMsg}</td>
+																					</tr>
+																					<tr>
+																						<td colspan="2" align="left" valign="top">
+																							<table width="100%" border="0" cellspacing="0"
+																								cellpadding="0">
+																								<tr>
+																									<td align="left" valign="top">&nbsp;</td>
+																								</tr>
+																								<tr>
+																									<td align="center" valign="top">
+																										<table style="width: 872px" border="0"
+																											cellspacing="0" cellpadding="0">
+																											<tr>
+																												<td style="width: 832px" align="left"
+																													valign="top">
+																													<table width="832" border="0"
+																														cellspacing="0" cellpadding="0">
+																														<!-- News -->
+																														<tr>
+																															<td width="832" align="left" valign="top">
+																																<table width="832" border="0"
+																																	cellspacing="0" cellpadding="0">
+																																	<tr>
+																																		<td width="832" height="32"
+																																			align="left" valign="middle"
+																																			class="tophead_grad">News</td>
+																																	</tr>
+																																	<tr>
+																																		<td align="left" valign="top"
+																																			class="votealert_bg"><table
+																																				width="100%" border="0"
+																																				cellspacing="0" cellpadding="0">
+																																				{section name=i loop=$affiliateNews}
+																																				<tr>
+																																					<td align="left" valign="top"><table
+																																							width="100%" border="0"
+																																							cellspacing="0" cellpadding="0">
+																																							<tr>
+																																								<td width="47" align="center"
+																																									valign="top"><img
+																																									src="images/icon_doc.gif"
+																																									width="27" height="36" alt=""
+																																									style="margin-top: 20px" /></td>
+																																								<td width="367" align="left"
+																																									valign="top" class="bg_f7f6ee"><table
+																																										width="100%" border="0"
+																																										cellspacing="0"
+																																										cellpadding="0">
+																																										<tr>
+																																											<td height="22" align="left"
+																																												valign="top"><a
+																																												href="index.php?stage=subscriber&mode=NewsDetail&affID={$vAffiliate->member_id}&id={$affiliateNews[i].article_id}"
+																																												class="arialB13000000">
+																																													{$affiliateNews[i].article_title}
+																																											</a></td>
+																																										</tr>
+																																										<tr>
+																																											<td align="left" valign="top">
+
+																																												{$affiliateNews[i].affiliate_comment}
+
+																																											</td>
+																																										</tr>
+																																										<tr>
+																																											<td height="26" align="right"
+																																												valign="bottom"><span
+																																												class="arial12Ba60000"
+																																												style="float: left">Dated:<span
+																																													class="arial11Na60000">
+																																														{$affiliateNews[i].created}
+
+																																												</span> </span><a
+																																												href="index.php?stage=subscriber&mode=NewsDetail&affID={$vAffiliate->member_id}&id={$affiliateNews[i].article_id}"
+																																												class="arial12Ba60000">
+																																													[read more]</a></td>
+																																										</tr>
+																																									</table></td>
+																																							</tr>
+																																						</table></td>
+																																				</tr>
+																																				<tr>
+																																					<td align="left" valign="top"
+																																						class="border_dashed"></td>
+																																				</tr>
+																																				{sectionelse}
+																																				<tr>
+																																					<td align="left" valign="top"
+																																						class="border_dashed">
+																																						<table width="100%">
+																																							<tr>
+																																								<td valign="top"
+																																									class="bg_f7f6ee"
+																																									align="center">No News.</td>
+																																							</tr>
+																																						</table></td>
+																																				</tr>
+																																				{/section}
+																																				<tr>
+																																					<td height="40" align="center"
+																																						valign="middle"><a
+																																						href="index.php?stage=subscriber&mode=AffiliateNews&affID={$vAffiliate->member_id}"
+																																						class="arial12BUa60000">view more...</a></td>
+																																				</tr>
+																																			</table>
+																																		</td>
+																																	</tr>
+																																</table></td>
+																														</tr>
+																														<!-- News -->
+																														<!-- Vote alerts  -->
+																														
+																														<tr>
+																															<td width="832" align="left" valign="top"><img
+																																src="images/trans.gif" height="20px" />
+																															</td>
+																														</tr>
+																														<tr>
+																															<td width="832" align="left" valign="top">
+																																<table width="832" border="0"
+																																	cellspacing="0" cellpadding="0">
+																																	<tr>
+																																		<td width="832" height="32"
+																																			align="left" valign="middle"
+																																			class="tophead_grad">Vote Alerts</td>
+																																	</tr>
+																																	<tr>
+																																		<td align="left" valign="top"
+																																			class="votealert_bg"><table
+																																				width="100%" border="0"
+																																				cellspacing="0" cellpadding="0">
+																																				{section name=i loop=$affiliateVoteAlert}
+																																				<tr>
+																																					<td align="left" valign="top"><table
+																																							width="100%" border="0"
+																																							cellspacing="0" cellpadding="0">
+																																							<tr>
+																																								<td width="47" align="center"
+																																									valign="top"><img
+																																									src="images/icon_doc.gif"
+																																									width="27" height="36" alt=""
+																																									style="margin-top: 20px" /></td>
+																																								<td width="367" align="left"
+																																									valign="top" class="bg_f7f6ee"><table
+																																										width="100%" border="0"
+																																										cellspacing="0"
+																																										cellpadding="0">
+																																										<tr>
+																																											<td height="22" align="left"
+																																												valign="top"><a
+																																												href="index.php?stage=subscriber&mode=AffiliateVoteAlertsDetail&affID={$vAffiliate->member_id}&id={$affiliateVoteAlert[i].article_id}"
+																																												class="arialB13000000">
+																																													{$affiliateVoteAlert[i].article_title}
+																																											</a></td>
+																																										</tr>
+																																										<tr>
+																																											<td align="left" valign="top">
+
+																																												{$affiliateVoteAlert[i].affiliate_comment}
+
+																																											</td>
+																																										</tr>
+																																										<tr>
+																																											<td height="26" align="right"
+																																												valign="bottom"><span
+																																												class="arial12Ba60000"
+																																												style="float: left">Dated:<span
+																																													class="arial11Na60000">
+																																														{$affiliateVoteAlert[i].created}
+
+																																												</span> </span><a
+																																												href="index.php?stage=subscriber&mode=AffiliateVoteAlertsDetail&affID={$vAffiliate->member_id}&id={$affiliateVoteAlert[i].article_id}"
+																																												class="arial12Ba60000">
+																																													[read more]</a></td>
+																																										</tr>
+																																									</table></td>
+																																							</tr>
+																																						</table></td>
+																																				</tr>
+																																				<tr>
+																																					<td align="left" valign="top"
+																																						class="border_dashed"></td>
+																																				</tr>
+
+																																				{sectionelse}
+
+																																				<tr>
+																																					<td align="left" valign="top"
+																																						class="border_dashed">
+																																						<table width="100%">
+																																							<tr>
+																																								<td valign="top"
+																																									class="bg_f7f6ee"
+																																									align="center">Vote Alerts
+																																									are empty.</td>
+																																							</tr>
+																																						</table></td>
+																																				</tr>
+
+																																				{/section}
+
+																																				<tr>
+																																					<td height="40" align="center"
+																																						valign="middle"><a
+																																						href="index.php?stage=subscriber&mode=AffiliateVoteAlerts&affID={$vAffiliate->member_id}"
+																																						class="arial12BUa60000">view
+																																							more...</a></td>
+																																				</tr>
+																																			</table></td>
+																																	</tr>
+																																</table></td>
+																														</tr>
+																														
+																														<!-- Vote alerts  -->
+																														
+																														<!-- Petitions  -->
+																														
+																														<tr>
+																															<td width="832" align="left" valign="top"><img
+																																src="images/trans.gif" height="20px" />
+																															</td>
+																														</tr>
+																														<tr>
+																															<td width="832" align="left" valign="top">
+																																<table width="832" border="0"
+																																	cellspacing="0" cellpadding="0">
+																																	<tr>
+																																		<td width="832" height="32"
+																																			align="left" valign="middle"
+																																			class="tophead_grad">Petitions</td>
+																																	</tr>
+																																	<tr>
+																																		<td align="left" valign="top"
+																																			class="votealert_bg"><table
+																																				width="100%" border="0"
+																																				cellspacing="0" cellpadding="0">
+																																				{section name=i loop=$affiliatePetitions}																											
+																																				{* show petitions to user only if voting is not done *}
+																																				{if ($affiliatePetitions[i].voting_end ge $smarty.now|date_format:'%Y-%m-%d')} 
+																																				<tr>
+																																					<td align="left" valign="top"><table
+																																							width="100%" border="0"
+																																							cellspacing="0" cellpadding="0">
+																																							<tr>
+																																								<td width="47" align="center"
+																																									valign="top"><img
+																																									src="images/icon_doc.gif"
+																																									width="27" height="36" alt=""
+																																									style="margin-top: 20px" /></td>
+																																								<td width="367" align="left"
+																																									valign="top" class="bg_f7f6ee"><table
+																																										width="100%" border="0"
+																																										cellspacing="0"
+																																										cellpadding="0">
+																																										<tr>
+																																											<td height="22" align="left"
+																																												valign="top"><a
+																																												href="index.php?stage=subscriber&mode=affiliatePetitionsDetail&affID={$vAffiliate->member_id}&id={$affiliatePetitions[i].article_id}"
+																																												class="arialB13000000">
+																																													{$affiliatePetitions[i].article_title}
+																																											</a></td>
+																																										</tr>
+																																										<tr>
+																																											<td align="left" valign="top">
+
+																																												{$affiliatePetitions[i].affiliate_comment}
+
+																																											</td>
+																																										</tr>
+																																										<tr>
+																																											<td height="26" align="right"
+																																												valign="bottom"><span
+																																												class="arial12Ba60000"
+																																												style="float: left">Dated:<span
+																																													class="arial11Na60000">
+																																														{$affiliatePetitions[i].created}
+
+																																												</span> </span><a
+																																												href="index.php?stage=subscriber&mode=affiliatePetitionsDetail&affID={$vAffiliate->member_id}&id={$affiliatePetitions[i].article_id}"
+																																												class="arial12Ba60000">
+																																													[read more]</a></td>
+																																										</tr>
+																																									</table></td>
+																																							</tr>
+																																						</table></td>
+																																				</tr>
+																																				<tr>
+																																					<td align="left" valign="top"
+																																						class="border_dashed"></td>
+																																				</tr>
+																																				{/if}
+																																				{sectionelse}
+
+																																				<tr>
+																																					<td align="left" valign="top"
+																																						class="border_dashed">
+																																						<table width="100%">
+																																							<tr>
+																																								<td valign="top"
+																																									class="bg_f7f6ee"
+																																									align="center">Vote Alerts
+																																									are empty.</td>
+																																							</tr>
+																																						</table></td>
+																																				</tr>
+
+																																				{/section}
+
+																																				<tr>
+																																					<td height="40" align="center"
+																																						valign="middle"><a
+																																						href="index.php?stage=subscriber&mode=affiliatePetitions&affID={$vAffiliate->member_id}"
+																																						class="arial12BUa60000">view
+																																							more...</a></td>
+																																				</tr>
+																																			</table></td>
+																																	</tr>
+																																</table></td>
+																														</tr>
+																														
+																														<!-- Petitions -->
+																														<!-- Bulletins  -->
+																														<tr>
+																															<td width="832" align="left" valign="top"><img
+																																src="images/trans.gif" height="20px" />
+																															</td>
+																														</tr>
+																														
+																														<tr>
+																															<td width="832" align="left" valign="top">
+																																<table width="832" border="0"
+																																	cellspacing="0" cellpadding="0">
+																																	<tr>
+																																		<td width="832" height="32"
+																																			align="left" valign="middle"
+																																			class="tophead_grad">Bulletins</td>
+																																	</tr>
+																																	<tr>
+																																		<td align="left" valign="top"
+																																			class="votealert_bg"><table
+																																				width="100%" border="0"
+																																				cellspacing="0" cellpadding="0">
+																																				{section name=i
+																																				loop=$affiliateBulletin}
+																																				<tr>
+																																					<td align="left" valign="top"><table
+																																							width="100%" border="0"
+																																							cellspacing="0" cellpadding="0">
+																																							<tr>
+																																								<td width="47" align="center"
+																																									valign="top"><img
+																																									src="images/icon_doc.gif"
+																																									width="27" height="36" alt=""
+																																									style="margin-top: 20px" /></td>
+																																								<td width="367" align="left"
+																																									valign="top" class="bg_f7f6ee"><table
+																																										width="100%" border="0"
+																																										cellspacing="0"
+																																										cellpadding="0">
+																																										<tr>
+																																											<td height="22" align="left"
+																																												valign="top"><a
+																																												href="index.php?stage=subscriber&mode=BulletinsDetail&id={$affiliateBulletin[i].article_id}&affID={$vAffiliate->member_id}"
+																																												class="arialB13000000">
+																																													{$affiliateBulletin[i].article_title}
+																																											</a></td>
+																																										</tr>
+																																										<tr>
+																																											<td align="left" valign="top">
+
+																																												{$affiliateBulletin[i].affiliate_comment}
+
+																																											</td>
+																																										</tr>
+																																										<tr>
+																																											<td height="26" align="right"
+																																												valign="bottom"><span
+																																												class="arial12Ba60000"
+																																												style="float: left">Dated:<span
+																																													class="arial11Na60000">
+																																														{$affiliateBulletin[i].created}
+
+																																												</span> </span><a
+																																												href="index.php?stage=subscriber&mode=BulletinsDetail&id={$affiliateBulletin[i].article_id}&affID={$vAffiliate->member_id}"
+																																												class="arial12Ba60000">
+																																													[read more]</a></td>
+																																										</tr>
+																																									</table></td>
+																																							</tr>
+																																						</table></td>
+																																				</tr>
+																																				<tr>
+																																					<td align="left" valign="top"
+																																						class="border_dashed"></td>
+																																				</tr>
+
+																																				{sectionelse}
+
+																																				<tr>
+																																					<td align="left" valign="top"
+																																						class="border_dashed">
+																																						<table width="100%">
+																																							<tr>
+																																								<td valign="top"
+																																									class="bg_f7f6ee"
+																																									align="center">No
+																																									Bulletin.</td>
+																																							</tr>
+																																						</table></td>
+																																				</tr>
+
+																																				{/section}
+
+																																				<tr>
+																																					<td height="40" align="center"
+																																						valign="middle"><a
+																																						href="index.php?stage=subscriber&mode=AffiliateBulletin&affID={$vAffiliate->member_id}"
+																																						class="arial12BUa60000">view
+																																							more...</a></td>
+																																				</tr>
+																																			</table></td>
+																																	</tr>
+																																</table></td>
+																														</tr>
+																														<!-- Bulletins  -->
+																													</table></td>
+																											</tr>
+																										</table></td>
+																								</tr>
+																							</table></td>
+																					</tr>
+																				</table></td>
+																		</tr>
+																		<tr>
+																			<td align="left" valign="top">&nbsp;</td>
+																		</tr>
+																	</table>
+																</td>
+															</tr>
+														</table></td>
+												</tr>

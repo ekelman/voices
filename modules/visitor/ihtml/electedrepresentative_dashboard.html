@@ -1,0 +1,373 @@
+<tr>
+	<td class="arial_16_c40306">
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr>
+		<td align="left" valign="top" class="arial_16_c40306">
+		<table width="100%" border="0" cellspacing="0" cellpadding="0">
+		<tr>
+			<td align="center" valign="top"	style="padding: 16px 13px 13px 13px" class="bg_f7f6f2">
+			<table width="100%" border="0" cellspacing="0" cellpadding="0">
+			<tr>
+				<td class="bg_f7f6f2">
+				<table width="100%" border="0" cellspacing="0" cellpadding="0">
+				<tr>
+					<td align="left" valign="top" class="arial_16_c40306">
+					<table width="100%" border="0" cellspacing="0" cellpadding="0">
+					<tr>
+						<td colspan="2" align="center">
+						<table width="97%">
+						<tr>
+							<td align="left" valign="top" class="Trebuchet_27_c60000">
+							{$oElectoralDistrict->First_Name} {$oElectoralDistrict->Middle_Name} {$oElectoralDistrict->Last_Name}'s Dashboard</td>
+							<td align="right" valign="middle">&nbsp;</td>
+						</tr>
+						</table></td>
+					</tr>
+					<tr>
+						<td class="bg_f7f6f2" valign="top" align="center">
+						<table width="97%" cellspacing="0" cellpadding="0" border="0">
+						<tr>
+							<td valign="top" bgcolor="#b1b0ac" align="left" colspan="2" class="arial_20_c40306"><img width="1" height="1" src="images/trans.gif" alt=""></td><tr>
+						</table></td>
+					</tr>
+					<tr>
+						<td valign="top" align="left" style="padding: 16px 5px 11px 15px;">
+						<table width="100%" cellspacing="0" cellpadding="0" border="0">
+                           <tbody><tr>
+                             <td width="20" valign="top" align="left">&nbsp;</td>
+                             <td width="732" valign="top" align="left">
+                             <table width="100%" cellspacing="0" cellpadding="0" border="0">
+                           	<tbody>
+                           	<tr>
+                             <td width="125" valign="top" align="left"><img width="113" height="87" class="pic_border" alt="" src="{$oElectoralDistrict->OfficerProfileImage}"></td>
+                             <td width="20" valign="top" align="left">&nbsp;</td>
+                             <td width="732" valign="top" align="left">
+                               <table width="100%" cellspacing="0" cellpadding="0" border="0">
+                               <tbody>
+                               <tr>
+                               		<td valign="top" align="left" height="22" width="75%"><span class="arial12Ba60000">{$oElectoralDistrict->First_Name} {$oElectoralDistrict->Last_Name} - {$oElectoralDistrict->Title}</span><br /><span class="arial11Na60000"> {$oElectoralDistrict->Party}</span></td>
+	<td valign="top" align="left" height="22" width="25%"><span class="arial12B000000">Current Term:</span> <span class="arial11N000000">{$oElectoralDistrict->Term_Start|date_format:"%Y"} - {$oElectoralDistrict->Term_End|date_format:"%Y"}</span></td>
+                                </tr>
+								<tr>
+                                	<td valign="top" align="left" height="22" colspan="2"></td>
+                                </tr>
+                               	<tr>
+                               		<td valign="top" align="left" height="22" colspan="2">
+                               		<table width="100%" cellspacing="0" cellpadding="0" border="0">
+                               		<tr>
+                                 	<td>
+                                 	<td valign="top" align="left" class="arial_12_000" width="50%"><span class="arial12B000000">Address:</span><br /><span class="arial11N000000">{$oElectoralDistrict->address}</span></td>
+                                 	<td valign="top" align="left" class="arial_12_000"  width="50%">
+                                 	{if $oElectoralDistrict->PrimaryPhone1 neq ''}
+                               		<span class="arial12B000000">Phone:</span><span class="arial11N000000"> {$oElectoralDistrict->PrimaryPhone1}</span>
+									{/if}
+									{if $oElectoralDistrict->PrimaryFax1 neq ''}
+									<br />
+                                	<span class="arial12B000000">Fax:</span><span class="arial11N000000"> {$oElectoralDistrict->PrimaryFax1}</span>
+									{/if}
+									{if $oElectoralDistrict->EMail1 neq ''}
+                                	<br />
+                                	<span class="arial12B000000">Email:</span>&nbsp;&nbsp;<span class="arial11N000000"><a title="" href="mailto:{$oElectoralDistrict->EMail1}">{$oElectoralDistrict->EMail1}</a></span>
+									{/if}
+									{if $oElectoralDistrict->Url1 neq ''}
+		                            <br />
+                                	<span class="arial12B000000">Web Site:</span><span class="arial11N000000"><a title="" href="{$oElectoralDistrict->Url1}" target="_blank">{$oElectoralDistrict->Url1}</a></span>
+									{/if}
+									</td>
+                                 	</tr>
+                                 	</table>
+                                 	</td>
+                                 </tr>
+                               </tbody></table></td>
+                             </tr>
+                           </tbody></table>
+                            	</td>
+                            </tr>
+                        	</tbody></table></td>
+						</tr>
+						<tr>
+						<td align="center" valign="top" style="padding: 13px" class="bg_f7f6f2">
+						<table width="100%" border="0" cellspacing="0" cellpadding="0">
+						<tr>
+							<td align="left" valign="top" width="68%">
+							<table width="100%" border="0" cellspacing="0" cellpadding="0">
+							{if $vMsg neq ""}
+							<tr>
+							<td align="center" class="error-message">
+							{$vMsg}</td>
+							</tr>
+							{/if}
+							<tr>
+								<td colspan="2" align="left" valign="top">
+								<table width="100%" border="0" cellspacing="0" cellpadding="0">
+								<tr>
+									<td align="center" valign="top">
+									<table style="width: 540px" border="0"
+								cellspacing="0" cellpadding="0">
+									<tr>
+										<td style="width:540px" align="left"
+								valign="top">
+										<table width="540" border="0"
+								cellspacing="0" cellpadding="0">
+										<tr>
+											<td width="540" align="left" valign="top">
+											<table width="540" border="0" cellspacing="0"
+								cellpadding="0">
+											<tr>
+												<td width="540" height="32" align="left" valign="middle" class="tophead_grad">My Articles</td>
+											</tr>
+											<tr>
+												<td align="left" valign="top"
+								class="votealert_bg">
+												<table width="100%" border="0" cellspacing="0" cellpadding="0">
+												{section name=index loop=$oElectoralDistrictComments}
+												<tr>
+													<td align="left" valign="top">
+													<table width="100%" border="0" cellspacing="0" cellpadding="0">
+													<tr>
+														<td width="47" align="center"
+														valign="top">
+														<img src="images/icon_doc.gif" width="27" height="36" alt="" style="margin-top: 20px" />
+														</td>
+														<td width="367" align="left" valign="top" class="bg_f7f6ee">
+														<table width="100%" border="0" cellspacing="0" cellpadding="0">
+														<tr>
+															<td align="left" valign="top">
+															{$oElectoralDistrictComments[index]->comment}
+															</td>
+														</tr>
+														<tr>
+														<td height="26" align="right" valign="bottom">
+														<span
+															class="arial12Ba60000"
+															style="float: left">Dated:<span
+																class="arial11Na60000">{$oElectoralDistrictComments[index]->comment_date|date_format:"%Y-%m-%d"}</span></span>
+																<a href="index.php?stage=subscriber&mode=ArticleDetail&id={$oElectoralDistrictComments[index]->article_id}&er_id={$ElectedOfficialID}"
+															class="arial12Ba60000">
+															[read more]</a>
+														</td>
+														</tr>
+														</table>
+														</td>
+													</tr>
+													</table>
+													</td>
+												</tr>
+												<tr>
+													<td align="left" valign="top" class="border_dashed"></td>
+												</tr>
+												{sectionelse}
+												<tr>
+													<td align="left" valign="top" class="border_dashed" width="100%">
+													<table width="100%">
+													<tr>
+														<td valign="top" class="bg_f7f6ee" align="center">
+													No Articles.</td>
+													</tr>
+													</table>
+													</td>
+												</tr>
+												{/section}
+												<tr>
+													<td height="40" align="center"
+														valign="middle"><a href="index.php?stage=subscriber&mode=ERArticles&er_id={$ElectedOfficialID}"
+														class="arial12BUa60000">view more...</a>
+													</td>
+												</tr>
+												</table>
+												</td>
+											</tr>
+											</table>
+											</td>
+										</tr>
+										</table>
+										</td>
+									</tr>
+									</table>
+									</td>
+								</tr>
+								</table>
+								</td>
+							</tr>
+							<tr>
+								<td align="left" valign="top">&nbsp;</td>
+							</tr>										
+							<tr>
+								<td colspan="2" align="left" valign="top">
+								<table width="100%" border="0" cellspacing="0" cellpadding="0">
+								<tr>
+									<td align="center" valign="top">
+									<table style="width: 540px" border="0"
+								cellspacing="0" cellpadding="0">
+									<tr>
+										<td style="width: 540px" align="left"
+								valign="top">
+										<table width="540" border="0"
+								cellspacing="0" cellpadding="0">
+										<tr>
+											<td width="540" align="left" valign="top">
+											<table width="540" border="0" cellspacing="0"
+								cellpadding="0">
+											<tr>
+												<td width="540" height="32" align="left" valign="middle" class="tophead_grad">My Polls</td>
+											</tr>
+											<tr>
+												<td align="left" valign="top"
+								class="votealert_bg">
+												<table width="100%" border="0"
+								cellspacing="0" cellpadding="0">{section name=index loop=$oElectoralDistrictPolls}
+												<tr>
+													<td align="left" valign="top">
+													<table width="100%" border="0" cellspacing="0" cellpadding="0">
+													<tr>
+														<td width="47" align="center"
+														valign="top">
+														<img src="images/icon_doc.gif" width="27" height="36" alt="" style="margin-top: 20px" />
+														</td>
+														<td width="367" align="left" valign="top" class="bg_f7f6ee">
+														<table width="100%" border="0" cellspacing="0" cellpadding="0">
+														<tr>
+															<td align="left" valign="top">
+															{$oElectoralDistrictPolls[index]->comment}
+															</td>
+														</tr>
+														<tr>
+														<td height="26" align="right" valign="bottom">
+														<span class="arial12Ba60000" style="float: left">Dated:<span
+																class="arial11Na60000">{$oElectoralDistrictPolls[index]->comment_date|date_format:"%Y-%m-%d"}</span></span>
+																<a href="index.php?stage=subscriber&mode=PollsDetail&id={$oElectoralDistrictPolls[index]->article_id}&er_id={$ElectedOfficialID}"
+															class="arial12Ba60000">
+															[read more]</a>
+														</td>
+														</td>
+														</tr>
+														</table>
+														</td>
+													</tr>
+													</table>
+													</td>
+												</tr>
+												<tr>
+													<td align="left" valign="top" class="border_dashed"></td>
+												</tr>
+												{sectionelse}
+												<tr>
+													<td align="left" valign="top" class="border_dashed" width="100%">
+													<table width="100%">
+													<tr>
+														<td valign="top" class="bg_f7f6ee" align="center">
+													No Comments.</td>
+													</tr>
+													</table>
+													</td>
+												</tr>
+												{/section}
+												<tr>
+													<td height="40" align="center"
+														valign="middle"><a href="index.php?stage=subscriber&mode=ERPolls&er_id={$ElectedOfficialID}"
+														class="arial12BUa60000">view more...</a>
+													</td>
+												</tr></table>
+												</td>
+											</tr>
+											</table>
+											</td>
+										</tr>
+										</table>
+										</td>
+									</tr>
+									</table>
+									</td>
+								</tr>
+								</table>
+								</td>
+							</tr>
+							</table>
+							</td>
+							<td align="left" valign="top" width="2%"><img src="images/trans.gif" height="1" width="10px"/></td>
+							<td align="left" valign="top" width="30%">
+							<table width="100%" border="0" cellspacing="0" cellpadding="0">
+							<tr>
+								<td align="center" valign="top">
+								<table style="width: 300px" border="0"
+							cellspacing="0" cellpadding="0">
+								<tr>
+									<td style="width: 300px" align="left"
+							valign="top">
+									<table width="300" border="0"
+							cellspacing="0" cellpadding="0">
+									<tr>
+										<td width="300" align="left" valign="top">
+										<table width="300" border="0" cellspacing="0"
+							cellpadding="0">
+										<tr>
+											<td width="300" height="32" align="left" valign="middle" class="tophead_grad">Report Card</td>
+										</tr>
+										<tr>
+											<td align="left" valign="top" class="votealert_bg">
+											<table width="100%" border="0" cellspacing="0" cellpadding="0">
+											{section name=index loop=$oElectoralDistrictPolls}
+											<tr>
+												<td align="left" valign="top">
+												<table width="100%" border="0" cellspacing="0" cellpadding="0">
+												<tr>
+													<td width="300" align="left" valign="top" class="bg_f7f6ee">
+													<table width="100%" border="0" cellspacing="0" cellpadding="0">
+													<tr>
+														<td align="left" valign="top">{$oElectoralDistrictPolls[index]->comment}</td>
+													</tr>
+													<tr>
+													<td height="26" align="left" valign="bottom">
+													<span class="arial12B000000">Support:</span>&nbsp;<span	class="arial12N000000">40%</span>
+													&nbsp;&nbsp;<span class="arial12B000000">Oppose:</span>&nbsp;<span	class="arial12N000000">60%</span></td>
+													</tr>
+													</table>
+													</td>
+												</tr>
+												</table>
+												</td>
+											</tr>
+											<tr>
+												<td align="left" valign="top" class="border_dashed"></td>
+											</tr>
+											{sectionelse}
+											<tr>
+												<td align="left" valign="top" class="border_dashed" width="100%">
+												<table width="100%">
+												<tr>
+													<td valign="top" class="bg_f7f6ee" align="center">
+												No Comments.</td>
+												</tr>
+												</table>
+												</td>
+											</tr>
+											{/section}
+											<tr>
+												<td height="40" align="center"
+													valign="middle"><a href="index.php?stage=subscriber&mode=ERReportCard&er_id={$ElectedOfficialID}"
+													class="arial12BUa60000">view more...</a>
+												</td>
+											</tr>
+											</table>
+											</td>
+										</tr>
+										</table>
+										</td>
+									</tr>
+									</table>
+									</td>
+								</tr>
+								</table>
+								</td>
+							</tr>
+							</table>
+							</td>
+						</tr>
+						<tr>
+							<td align="left" valign="top" colspan="3">&nbsp;</td>
+						</tr>
+						</table></td>
+					</tr>
+					</table>
+					</td>
+</tr>

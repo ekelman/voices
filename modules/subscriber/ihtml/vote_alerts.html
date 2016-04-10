@@ -1,0 +1,144 @@
+<tr>
+	<td valign="top" align="left" style="padding-top: 10px;">
+	<table width="100%" cellspacing="0" cellpadding="0" border="0">
+	<tbody>
+	<tr>
+		<td valign="top" align="left" style="padding: 24px 15px 51px 12px;" class="bg_f7f6f2">
+		<table width="100%" cellspacing="0" cellpadding="0" border="0">
+		<tbody>
+		<tr>
+			<td class="arial_16_c40306">
+			<table width="100%" cellspacing="0" cellpadding="0" border="0">
+			<tbody>
+			<tr>
+				<td valign="top" align="left" class="arial_16_c40306">
+				<table width="100%" cellspacing="0" cellpadding="0" border="0">
+				<tbody>
+				<tr>
+					<td valign="top" align="left">
+					<table width="100%" cellspacing="0" cellpadding="0" border="0">
+					<tr>
+						<td valign="top" align="left" height="37" class="Trebuchet_27_c60000" colspan="2">
+						{$ProfileInfo[0]->first_name} {$ProfileInfo[0]->last_name} 's Profile</td>
+					</tr>
+					<tr>
+						<td width="34%" valign="middle" align="left" style="padding-left: 14px;" class="topsublink_bg arial_15_000_bold"></td>
+						<td width="66%" valign="middle" align="right" style="padding: 6px 14px;" class="topsublink_bg">
+							<table cellspacing="0" cellpadding="0" border="0">
+								<tbody>
+									<tr>
+										{* Temporary solution to make affiliates hidden for observer person *}								
+										{if $smarty.session.member_type eq 'subscriber'}													
+											<td width="117" align="right" valign="top"><a href="index.php?stage=subscriber&mode=MyAffiliates" class="button"><span>My Affiliates</span></a></td>
+											<td width="106" align="right" valign="top"><a class="Activebutton" href="index.php?stage=subscriber&mode=VoteAlerts"><span>Vote Alerts</span></a></td>																		
+											<td width="100" align="right" valign="top"><a class="button" href="index.php?stage=subscriber&mode=MyProfile" class="button"><span> My Profile</span></a></td>																										
+										{/if}
+											<td width="202" align="right" valign="top"><a href="index.php?stage=subscriber&mode=ElectedRepresentatives" class="button"><span>Elected Representatives</span></a></td>
+									</tr>									
+								</tbody>
+							</table>
+						</td>
+					</tr>
+					<tr>
+						<td valign="top" align="left" style="padding: 16px 5px 11px 15px;" class="votealert_bg_new" colspan="2">
+						<table width="100%" cellspacing="0" cellpadding="0" border="0">
+						{section loop=$MyAffiliateArticles name=i}
+						{if $MyAffiliateArticles[i].article_type eq 'bill'}
+						<tr>
+							<td align="left" valign="top">
+							<table width="100%" border="0" cellspacing="0" cellpadding="0">
+							<tr>
+								<td width="47" align="center" valign="top">
+								<img src="images/icon_doc.gif" width="27" height="36" alt="" style="margin-top: 20px" /></td>
+								<td width="847" align="left" valign="top" class="bg_f7f6ee">
+								<table width="100%" border="0" cellspacing="0" cellpadding="0">
+								<tr>
+									<td height="22" align="left" valign="top">
+										<a href="index.php?stage=subscriber&mode=VoteAlertsDetail&id={$MyAffiliateArticles[i].article_id}" class="arialB13000000">{$MyAffiliateArticles[i].article_title|html_entity_decode}</a>
+										{if $MyAffiliateArticles[i].vote_status eq 'NA'}
+											<a href="index.php?stage=subscriber&mode=VoteAlertsDetail&id={$MyAffiliateArticles[i].article_id}">
+											<img src="images/btn_new.gif" alt="" width="24" height="14" border="0" /></a>
+										{/if}										 
+									</td>
+								</tr>
+								<tr>
+									<td align="left" valign="top">{$MyAffiliateArticles[i].affiliate_comment|html_entity_decode}</td>
+								</tr>
+								<tr>
+									<td height="26" align="right" valign="bottom">
+									<span class="arial12Ba60000" style="float: left">Dated:
+											<span class="arial11Na60000">{$MyAffiliateArticles[i].created|date_format:'%Y-%m-%d'}</span></span>
+									<a href="index.php?stage=subscriber&mode=VoteAlertsDetail&id={$MyAffiliateArticles[i].article_id}" class="arial12Ba60000">[read more]</a>
+									</td>
+								</tr>
+								</table>
+								</td>
+							</tr>
+							</table>
+							</td>
+						</tr>
+						{elseif	$MyAffiliateArticles[i].article_type eq "petition"} 
+						{if ($MyAffiliateArticles[i].voting_end ge $smarty.now|date_format:'%Y-%m-%d')}
+						<tr>
+							<td align="left" valign="top">
+							<table width="100%" border="0" cellspacing="0" cellpadding="0">
+								<tr>
+									<td width="47" align="center" valign="top">
+										<img src="images/icon_doc.gif" width="27" height="36" alt="" style="margin-top: 20px" />
+									</td>
+									<td width="847" align="left" valign="top" class="bg_f7f6ee">
+									<table width="100%" border="0" cellspacing="0" cellpadding="0">
+									<tr>
+										<td height="22" align="left" valign="top">
+										<a href="index.php?stage=subscriber&mode=petitionsDetail&affID={$MyAffiliateArticles[i].affiliate_id}&id={$MyAffiliateArticles[i].article_id}" class="arialB13000000">
+										{$MyAffiliateArticles[i].article_title|html_entity_decode}</a>
+										{if $MyAffiliateArticles[i].vote_status eq 'NA'}
+										<a href="index.php?stage=subscriber&mode=petitionsDetail&affID={$MyAffiliateArticles[i].affiliate_id}&id={$MyAffiliateArticles[i].article_id}" class="arialB13000000">
+											<img border="0" width="24" height="14" alt="" src="images/btn_new.gif" style="border:none;">
+										</a>
+										{/if}
+										</td>
+									</tr>
+									<tr>
+										<td align="left" valign="top">{$MyAffiliateArticles[i].affiliate_comment|html_entity_decode}</td>
+									</tr>
+									<tr>
+										<td height="26" align="right" valign="bottom">
+										<span class="arial12Ba60000" style="float: left">Dated:&nbsp;<span class="arial11Na60000">{$MyAffiliateArticles[i].created|date_format:'%Y-%m-%d'}</span></span>
+										<a href="index.php?stage=subscriber&mode=petitionsDetail&affID={$MyAffiliateArticles[i].affiliate_id}&id={$MyAffiliateArticles[i].article_id}" class="arial12Ba60000">[read more]</a>
+										</td>
+									</tr>
+									</table></td>
+								</tr>
+							</table>
+							</td>
+						</tr>
+						{/if}
+						{/if}
+						{sectionelse}
+						<tr>
+							<td align="center" valign="top" class="bg_f7f6ee">No Alerts.</td>
+						</tr>
+						{/section}
+						</table>
+						</td>
+					</tr>
+					</table>
+					</td>
+				</tr>
+				</tbody>
+				</table>
+				</td>
+			</tr>
+			</tbody>
+			</table>
+			</td>
+		</tr>
+		</tbody>
+		</table>
+		</td>
+	</tr>
+	</tbody>
+	</table>
+	</td>
+</tr>

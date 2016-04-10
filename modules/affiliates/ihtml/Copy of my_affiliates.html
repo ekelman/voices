@@ -1,0 +1,190 @@
+<tr>
+		<td valign="top" align="left" style="padding: 24px 15px 51px 12px;" class="bg_f7f6f2"><table width="100%" cellspacing="0" cellpadding="0" border="0">
+		  <tbody><tr>
+			<td class="arial_16_c40306"><table width="100%" cellspacing="0" cellpadding="0" border="0">
+			  <tbody><tr>
+				<td valign="top" align="left" class="arial_16_c40306"><table width="100%" cellspacing="0" cellpadding="0" border="0">
+				  <tbody><tr>
+					<td valign="top" align="left"><table width="100%" cellspacing="0" cellpadding="0" border="0">
+					  <tbody>
+					 <tr>
+						<td valign="top" align="left" height="37" class="Trebuchet_27_c60000" colspan="2">{$Name}'s Profile
+						<span style="float:right;padding:15px 0px 0px 0px;">
+								<a style="color: #C30100;font-family: Arial,Helvetica,sans-serif;font-size: 14px;font-weight: bold;" href="index.php?stage=affiliates&mode=EditProfile">Edit</a>
+						</span>
+						</td>	
+						
+					</tr>
+
+
+										
+																
+																<tr>
+																	<td width="34%" valign="middle" align="left" style="padding-left: 14px;" class="topsublink_bg arial_15_000_bold"></td>
+																	<td width="66%" valign="middle" align="right" style="padding: 6px 14px;" class="topsublink_bg">
+																	<table cellspacing="0" cellpadding="0" border="0">
+																		<tbody>
+																			<tr>
+																				{* Temporary solution to make affiliates hidden for observer person *}								
+																				{if $smarty.session.member_type eq 'affiliate'}													
+																					<td width="117" align="right" valign="top"><a href="index.php?stage=affiliates&mode=MyAffiliates" class="Activebutton"><span>My Affiliates</span></a></td>
+																					<td width="126" align="right" valign="top"><a href="index.php?stage=affiliates&mode=AddNewSponsors"
+																									class="button">
+																									<span>
+																										Add a sponsor
+																									</span>
+																								</a></td>																		
+																					<td width="175" align="right" valign="top"><a
+																								href="index.php?stage=affiliates&mode=SubmitNewContent"
+																								class="button"><span>Submit New
+																										Content</span>
+																								</a></td>																										
+																				{/if}							
+																					
+																					<td width="115" align="right" valign="top"><a
+																							href="index.php?stage=affiliates&mode=AffiliateProfile" class="button">
+																								<span>View Profile</span>
+																								</a></td>
+																					
+																			</tr>									
+																		</tbody>
+																	</table>
+																	</td>
+																</tr>
+																<tr>
+																	<td valign="bottom" align="left" height="37" style="padding-bottom: 5px;" class="arial_14_c30100" colspan="2">&nbsp;</td>
+																</tr>
+															
+		<!--<tr>
+			<td valign="top" align="left" style="padding: 16px 5px 11px 15px;" class="votealert_bg_new" colspan="2">			
+				<table width="100%" cellspacing="0" cellpadding="0" border="0">
+					<tbody>-->
+					{if isset($affiliate_content_page_header_view) and $affiliate_content_page_header_view eq 'Y'}
+					
+					{if $reqAffiliates|count neq 0}
+					<tr><td valign="top" align="left" height="37" class="Trebuchet_27_c60000" colspan="2">New Association Requests</td></tr>
+					{section loop=$reqAffiliates name=i}								
+						<tr>
+						<td valign="top" align="left" colspan="2" class="votealert_bg_new" style="padding: 16px 5px 11px 15px;">
+						<table width="100%" cellspacing="0" cellpadding="0" border="0">
+						<tbody>
+						<tr>						
+							<td width="125" valign="top" align="left">
+							{if $reqAffiliates[i].banner neq ""}
+							<img width="125" height="99" alt="" src="./UserFiles/affiliates_logo/{$reqAffiliates[i].banner}" />
+							{else}
+							<img width="125" height="99" alt="" src="./images/no-image.jpg" />
+							{/if}
+							</td>
+							<td width="20" valign="top" align="left">&nbsp;</td>
+							<td width="732" valign="top" align="left">
+								<table width="100%" cellspacing="0" cellpadding="0" border="0">
+									<tbody>
+										<tr>
+											<td valign="top" align="left" height="22">
+												<a href="index.php?stage=subscriber&mode=AffiliateDetails&id={$reqAffiliates[i].member_id}"
+													class="arial12Ba60000">
+													{$reqAffiliates[i].organisation_name|html_entity_decode}
+												</a>	
+											</td>
+										</tr>
+										<tr>
+											<td valign="top" align="left" class="arial_12_000">
+											{$reqAffiliates[i].description|html_entity_decode}</td>
+										</tr>
+										<tr>
+											<td valign="bottom" align="left" height="26"><div style="float:left;with:300px">
+											<!--<span class="arial12Ba60000">Dated: 
+												<span class="arial11Na60000"> {$MyAffiliates[i].reg_date} </span>
+											</span>--></div><div style="float:right;with:300px;padding-right:20px;">
+											<a href="index.php?stage=affiliates&mode=confirmAffAssociation&id={$reqAffiliates[i].member_id}"	class="button"><span>Confirm Association</span></a><a href="index.php?stage=affiliates&mode=cancelAffAssociation&id={$reqAffiliates[i].member_id}" class="button"><span>Not Confirm</span></a>
+											</div></td>
+										</tr>
+									</tbody>
+								</table>
+							</td>
+						</tr>
+						</tbody>
+						</table>
+						</td>
+						</tr>
+						
+						{/section}
+						
+						{/if}
+						
+						<tr><td valign="top" align="left" height="37" class="Trebuchet_27_c60000" colspan="2">My Associated Affiliates</td></tr>
+						{if $MyAffiliates|count neq 0}
+					{section loop=$MyAffiliates name=i}								
+						<tr>
+						<td valign="top" align="left" colspan="2" class="votealert_bg_new" style="padding: 16px 5px 11px 15px;">
+						<table width="100%" cellspacing="0" cellpadding="0" border="0">
+						<tbody>
+						<tr>						
+							<td width="125" valign="top" align="left">
+							{if $MyAffiliates[i].banner neq ""}
+							<img width="125" height="99" alt="" src="./UserFiles/affiliates_logo/{$MyAffiliates[i].banner}" />
+							{else}
+							<img width="125" height="99" alt="" src="./images/no-image.jpg" />
+							{/if}
+							</td>
+							<td width="20" valign="top" align="left">&nbsp;</td>
+							<td width="732" valign="top" align="left">
+								<table width="100%" cellspacing="0" cellpadding="0" border="0">
+									<tbody>
+										<tr>
+											<td valign="top" align="left" height="22">
+												<a href="index.php?stage=subscriber&mode=AffiliateDetails&id={$MyAffiliates[i].member_id}"
+													class="arial12Ba60000">
+													{$MyAffiliates[i].organisation_name|html_entity_decode}
+												</a>	
+											</td>
+										</tr>
+										<tr>
+											<td valign="top" align="left" class="arial_12_000">
+											{$MyAffiliates[i].description|html_entity_decode}</td>
+										</tr>
+										<tr>
+											<td valign="bottom" align="left" height="26"><div style="float:right;with:300px;padding-right:20px;">
+											<a href="index.php?stage=affiliates&mode=RemoveAffAssociation&id={$MyAffiliates[i].member_id}"	class="button"><span>Remove</span></a>
+											</div></td>
+										</tr>
+									</tbody>
+								</table>
+							</td>
+						</tr>
+						</tbody>
+						</table>
+						</td>
+						</tr>
+						
+						{/section}
+						{else}
+						<tr>
+						<td valign="top" align="left" colspan="2" class="votealert_bg_new" style="padding: 16px 5px 11px 15px;">No Affiliates</td></tr>
+						{/if}
+						
+						{/if}
+						
+							
+												
+																
+																<tr>
+																	<td valign="top" align="left" class="border_dashed" colspan="2"></td>
+																</tr>
+																
+																</tbody></table></td>
+					  </tr>
+					  
+					</tbody></table></td>
+				  </tr>
+				 
+				 
+				</tbody></table></td>
+				</tr>
+			  </tbody></table></td>
+			</tr>
+		  </tbody></table></td>
+	  </tr>
+	
+

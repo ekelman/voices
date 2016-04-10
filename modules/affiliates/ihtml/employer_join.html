@@ -1,0 +1,750 @@
+{literal}
+	<script language=javascript src="scripts/gen_validatorv2.js"></script>
+	<script type='text/javascript'>
+// JScript File
+function RefreshParent()
+{
+	document.aspnetForm.submit();
+}
+
+function OpenDocumentUploadPopUp(querystring)
+{	
+	var winHandle = window.open("DocumentUpload.aspx?"+querystring,"FileUpload","modal,toolbar=false,location=false,directories=false,status=false,menubar=false,scrollbars=yes,resizable=no,width=450,height=350");  	
+	winHandle.focus();
+	return false;
+}
+
+function RefreshParent()
+{
+	    document.aspnetForm.submit();
+}
+function OnTextPaste(txtBox)
+{	
+	var data="";	
+	data=window.clipboardData.getData("Text");					
+	if(data)
+	{
+		var ret=ValidateText(data);
+		if(!ret)
+			alert('Sorry, you can not paste text having !,#, <, > in it.');
+		return ret;
+	}
+	else
+		return false;
+}
+
+function ValidateText(str)
+{
+	var ret;
+	if(str.indexOf('!') != -1)
+		ret=false;
+	else if(str.indexOf('#') != -1)
+		ret=false;	
+	else if(str.indexOf('<') != -1)
+		ret=false;
+	else if(str.indexOf('>') != -1)
+		ret=false;
+	else
+		ret=true;	
+	return ret;
+}
+function ValidateTextBox(txtBox)
+{	
+	return ValidateText(String.fromCharCode(event.keyCode));	
+}
+
+
+function OnDeleteZip(Zip)
+{
+	if(event.keyCode == 8 || event.keyCode == 46 )
+	{
+				var Length;
+				var str=Zip.value;
+				var newVal;				
+				str=str.replace("-","");				
+				Length=str.length;				
+				str=str.substring(0,Length-1)												
+				if(Length <= 1)
+				{
+					Zip.value="";										
+				}
+				else if(Length <= 6)
+				{
+					newVal=str;
+					Zip.value=newVal;					
+				}
+				else if(Length <= 9)
+				{
+					newVal=str.substring(0,5);
+					newVal=newVal+"-"+str.substring(5,9);
+					Zip.value=newVal;									
+				}								
+				return false;	
+	}
+}
+
+function countcharacters(postal_code)
+{
+	if(postal_code.value.length == 3)
+	{
+		document.employerJoin.postal_code1.focus();
+	}
+}
+function countPhoneCharacters1(phone_no1)
+{
+	if(phone_no1.value.length == 3)
+	{
+		document.employerJoin.phone_no2.focus();
+	}
+}
+function countPhoneCharacters2(phone_no2)
+{
+	if(phone_no2.value.length == 3)
+	{
+		document.employerJoin.phone_no3.focus();
+	}
+}
+function countPhoneCharacters3(phone_no3)
+{
+	if(phone_no3.value.length == 4)
+	{
+		document.employerJoin.ext.focus();
+	}
+}
+function OnDeletePhone(Phone)
+{
+	if(event.keyCode == 8 || event.keyCode == 46)
+	{		
+				var Length;
+				var str=Phone.value;				
+				var newVal;
+				str=str.replace("(","");
+				str=str.replace(")","");				
+				str=str.replace("-","");	
+				str=str.replace(" extn. ","");
+				str=str.replace(" ","");
+				Length=str.length;					
+				str=str.substring(0,Length-1)												
+				if(Length <= 1)
+				{
+					Phone.value="";										
+				}
+				else if(Length <= 4)
+				{					
+					newVal="("+str+")";					
+					Phone.value=newVal;										
+				}
+				else if(Length <= 7)
+				{
+					newVal="("+ str.substring(0,3) +")";
+					newVal=newVal+" "+ str.substring(3,6);
+					Phone.value=newVal;					
+				}
+				else if(Length <= 11)
+				{
+					newVal="("+ str.substring(0,3) +")";
+					newVal=newVal+" "+ str.substring(3,6);
+					newVal=newVal+"-"+ str.substring(6,10);
+					Phone.value=newVal;										
+				}	
+				else if(Length <= 14)
+				{					
+					newVal="("+ str.substring(0,3) +")";
+					newVal=newVal+" "+ str.substring(3,6);
+					newVal=newVal+"-"+ str.substring(6,10);					
+					newVal=newVal+" extn. "+ str.substring(10,15);										
+					Phone.value=newVal;					
+				}		
+			return false;
+	}
+}
+
+	function setAmount(Amount)
+	{		
+			if(event.keyCode == 46 || (event.keyCode >= 48 && event.keyCode <= 57) )
+			{
+				if(Amount.value.indexOf('.')!= -1 && event.keyCode == 46)
+				{										
+					return false;				
+				}				
+				
+				var Length;
+				var str=Amount.value+String.fromCharCode(event.keyCode);				
+				var newVal;
+				str=str.replace("$","");				
+				str=str.replace(" ","");
+				Length=str.length;
+					 
+				if(str.indexOf('.')==-1)
+				    {
+				      if(str.length>8)
+				        return false;
+				       			       
+				    }
+				  if(str.indexOf('.')==10)
+				  {
+				    return false;
+				  }  
+				if(str.indexOf('.')==0)
+					return false;
+				
+				if((str.indexOf('.')+4==Length) && str.indexOf('.') != -1)				
+					return false;
+				
+				if(Length >= 1)
+				{
+					newVal="$"+str;
+					Amount.value=newVal;					
+				}								
+			}
+			return false;
+	}
+	
+	function OnDeleteAmount(Amount)
+	{		
+			if(event.keyCode == 8 || event.keyCode == 46 )
+			{		
+				var Length;
+				var str=Amount.value;				
+				var newVal;
+				str=str.replace("$","");
+				str=str.replace(" ","");
+				Length=str.length;					
+				str=str.substring(0,Length-1)																				
+				if(Length <= 1)
+				{
+					Amount.value="";										
+				}
+				else 
+				{
+					newVal="$"+str;					
+					Amount.value=newVal;
+				}
+				if(Amount.value.substring(Amount.value.length-1,Amount.value.length)==".")
+					Amount.value=Amount.value.substring(0,Amount.value.length-1)
+				return false;			
+		}			
+	}
+
+function setPhone(Phone)
+		{
+			
+			if(event.keyCode >= 48 && event.keyCode <= 57 )
+			{
+				var Length;
+				var str=Phone.value+String.fromCharCode(event.keyCode);				
+				var newVal;
+				str=str.replace("(","");
+				str=str.replace(")","");				
+				str=str.replace("-","");	
+				str=str.replace(" extn. ","");
+				str=str.replace(" ","");
+				Length=str.length;
+				if(Length <= 3)
+				{
+					newVal="("+str+")";
+					Phone.value=newVal;					
+				}
+				else if(Length <= 6)
+				{
+					newVal="("+ str.substring(0,3) +")";
+					newVal=newVal+" "+ str.substring(3,6);
+					Phone.value=newVal;
+				}
+				else if(Length <= 10)
+				{
+					newVal="("+ str.substring(0,3) +")";
+					newVal=newVal+" "+ str.substring(3,6);
+					newVal=newVal+"-"+ str.substring(6,10);
+					Phone.value=newVal;
+					
+				}	
+				else if(Length <= 14)
+				{
+					newVal="("+ str.substring(0,3) +")";
+					newVal=newVal+" "+ str.substring(3,6);
+					newVal=newVal+"-"+ str.substring(6,10);					
+					newVal=newVal+" extn. "+ str.substring(10,15);										
+					Phone.value=newVal;
+				}				
+				return false;		
+			}
+			return false;
+		}
+function setPhoneWithoutExten(Phone)
+		{
+			if(event.keyCode >= 48 && event.keyCode <= 57 )
+			{
+				var Length;
+				var str=Phone.value+String.fromCharCode(event.keyCode);				
+				var newVal;
+				str=str.replace("(","");
+				str=str.replace(")","");				
+				str=str.replace("-","");	
+				str=str.replace(" extn. ","");
+				str=str.replace(" ","");
+				Length=str.length;
+				if(Length <= 3)
+				{
+					newVal="("+str+")";
+					Phone.value=newVal;					
+				}
+				else if(Length <= 6)
+				{
+					newVal="("+ str.substring(0,3) +")";
+					newVal=newVal+" "+ str.substring(3,6);
+					Phone.value=newVal;
+				}
+				else if(Length <= 10)
+				{
+					newVal="("+ str.substring(0,3) +")";
+					newVal=newVal+" "+ str.substring(3,6);
+					newVal=newVal+"-"+ str.substring(6,10);
+					Phone.value=newVal;
+					
+				}					
+				return false;		
+			}
+			return false;
+		}
+function setZip(Zip)
+		{	
+			
+			if(event.keyCode >= 48 && event.keyCode <= 57 )
+			{
+				var Length;
+				var str=Zip.value+String.fromCharCode(event.keyCode);				
+				var newVal;				
+				str=str.replace("-","");				
+				Length=str.length;
+				if(Length <= 5)
+				{
+					newVal=str;
+					Zip.value=newVal;					
+				}
+				else if(Length <= 9)
+				{
+					newVal=str.substring(0,5);
+					newVal=newVal+"-"+str.substring(5,9);
+					Zip.value=newVal;									
+				}								
+				return false;		
+			}
+			return false;
+		}
+		
+function Hide(ID)
+{
+        document.getElementById(ID).style.display="none";
+}
+function Show(ID)
+{
+        document.getElementById(ID).style.display="";
+}
+function fnBudget(source,args)
+    {         
+     
+                var str=document.getElementById("ctl00$MainContent$txtBudget").value;				
+				
+				str=str.replace("$","");
+				str=str.replace(" ",""); 
+			
+           if(str!="")
+           {
+           if(str==0)   
+                 args.IsValid=false
+            else
+                args.IsValid=true
+           }
+           else
+           {
+             args.IsValid=true
+           }
+                
+             
+    }
+
+    
+</script>
+{/literal}
+<form name='employerJoin' method='post' enctype="multipart/form-data">
+ <table width="720" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td height="24" align="left" valign="top" class="arial18b005B91" style="padding-left:10px">Employer Sign-Up</td>
+  </tr>
+		  
+		  <tr>
+			<td height="5" align="left" valign="top"><img src="images/img_hding_line.gif" alt="" width="720" height="1" /></td>
+		  </tr>
+		  <tr>
+    <td height="25" align="right" valign="top"><span class="error">*&nbsp;Mandatory Fields</span></td>
+  </tr>
+		  {if $sErrorMsg neq ''}
+		  <tr>
+			<td align="center" class="error" valign="top">{$sErrorMsg}</td>
+		  </tr>
+		  <tr><td style='height:10px'></td></tr>
+		  {/if}
+		  <tr>
+			<td align="left" valign="top">
+		
+		<table width="720" border="0" cellspacing="0" cellpadding="0">
+		  <tr>
+			<td width="377" align="left" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+			  <tr>
+				<td width="8%" height="30" align="left" valign="top"><img src="images/trans.gif" alt="" width="31" height="1" /></td>
+				<td width="29%" align="left" valign="middle" class="arial11b000000"><span class="error">*</span>&nbsp;First Name:</td>
+				<td width="55%" align="left" valign="middle"><input name='first_name' value="{$oEmployer->first_name|html_entity_decode|stripslashes|default:''}" type="text" size="35" maxlength='40' />            </td>
+				
+			  </tr>
+			  <tr>
+				<td height="30" align="left" valign="top">&nbsp;</td>
+				<td align="left" valign="middle" class="arial11b000000"><span class="error">*</span>&nbsp;Last Name:</td>
+				<td align="left" valign="middle"><input name='last_name' value="{$oEmployer->last_name|html_entity_decode|stripslashes|default:''}" type="text" size="35" maxlength='40'/></td>
+				
+			  </tr>
+			  <tr>
+				<td height="30" align="left" valign="top">&nbsp;</td>
+				<td align="left" valign="middle" class="arial11b000000"><span class="error">*</span>&nbsp;Job Title:</td>
+				<td align="left" valign="middle"><input name='job_title' value="{$oEmployer->job_title|html_entity_decode|stripslashes|default:''}" type="text" size="35" maxlength='80'/></td>
+				
+			  </tr>
+			   <tr>
+            <td height="30" align="left" valign="top">&nbsp;</td>
+            <td align="left" valign="middle" class="arial11b000000"><span class="error">*</span>&nbsp;Company Name:</td>
+            <td align="left" valign="middle"><input name='company_name' value="{$oEmployer->company_name|html_entity_decode|stripslashes|default:''}" type="text" size="35" maxlength='80'/></td>
+				
+          </tr>
+          <tr>
+            <td height="30" align="left" valign="top">&nbsp;</td>
+            <td align="left" valign="middle" class="arial11b000000"><span class="error">*</span>&nbsp;Company<br>&nbsp;&nbsp; Address:</td>
+            <td align="left" valign="middle"><input name='address' value="{$oEmployer->address|html_entity_decode|stripslashes|default:''}" type="text" size="35" maxlength='255'/></td>
+				
+          </tr>
+		  <tr>
+            <td height="30" align="left" valign="top">&nbsp;</td>
+            <td align="left" valign="middle" class="arial11b000000"><span class="error">*</span>&nbsp;City:</td>
+            <td align="left" valign="middle"><input name='city' value="{$oEmployer->city|html_entity_decode|stripslashes|default:''}" type="text" size="35" maxlength='15'/>
+             </td>
+            <td align="left" valign="top"></td>
+          </tr>
+          <tr>
+            <td height="30" align="left" valign="top">&nbsp;</td>
+            <td align="left" valign="middle" class="arial11b000000"><span class="error">*</span>&nbsp;Province:</td>
+            <td align="left" valign="middle"><select name='province_id' class="arial11n000000" style="width:199px;">
+			<option value=''>---Select Province--</option>
+			{html_options options=$oProvince selected=$oEmployer->province}
+			</select>
+</td>
+            <td align="left" valign="top"></td>
+          </tr>
+		  
+		  
+      
+		  <tr>
+            <td height="30" align="left" valign="top">&nbsp;</td>
+            <td align="left" valign="middle" class="arial11b000000"><span class="error">*</span>&nbsp;Postal Code:</td>
+         
+			<td align="left" valign="middle"><table width="207" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td width="52" align="left" valign="middle"><input type=text name='postal_code' value="{$oEmployer->postal_code|default:''}" style="width:50px" maxlength="3" onkeyup='countcharacters(this)'/></td>
+                <td  style="padding-left:4px;" align="left" valign="middle"><input type=text name='postal_code1' value="{$oEmployer->postal_code1|default:''}" style="width:50px" maxlength="3" /></td>
+                </tr>
+            </table></td>
+          </tr>
+			  
+			  <tr>
+			  <td height="30" align="left" valign="top">&nbsp;</td>
+            <td align="left" valign="middle" class="arial11b000000"><span class="error">*</span>&nbsp;Work Phone No.:<br /></td>
+            <td align="left" valign="middle"><table width='100%' cellspacing='0' cellpadding='0'><tr><td>(<input 
+                                type="text" name='phone_no1' value="{$oEmployer->phone_no1|default:''}" class="arial11n000000" 
+                                style="WIDTH: 26px; height:17px;" onkeyup='countPhoneCharacters1(this)' maxlength="3" />)&nbsp;<input 
+                               name='phone_no2' value="{$oEmployer->phone_no2|default:''}" class="arial11n000000" 
+                                style="WIDTH: 26px; height:17px;" 
+                                onkeyup='countPhoneCharacters2(this)' maxlength="3" />
+                                &nbsp;-&nbsp;
+                                <input 
+                                name='phone_no3' class="arial11n000000" 
+                                style="WIDTH: 32px; height:17px;" 
+                                value="{$oEmployer->phone_no3|default:''}" onkeyup='countPhoneCharacters3(this)' maxlength="4" />
+                                &nbsp;Ext.
+                                <input 
+                                name='ext'  value="{$oEmployer->ext|default:''}" class="arial11n000000" 
+                                style="WIDTH: 38px; height:17px;" maxlength="5" /><!-- <input type=text name='phone_no' value="{$oEmployer->phone_no|default:''}" size="35" maxlength='25' onkeypress="return setPhone(this)" 
+                                onpaste="return false;" onkeydown="return OnDeletePhone(this)"/> --></td></tr></table></td>
+            <td align="left" valign="top">&nbsp;</td>
+				
+          </tr>
+		  
+          <tr>
+            <td height="30" align="left" valign="top">&nbsp;</td>
+            <td align="left" valign="top" class="arial11b000000">&nbsp;&nbsp;Company Website:</td>
+            <td align="left" valign="top"><input name='company_website' value="{$oEmployer->comp_website|html_entity_decode|stripslashes|default:''}" type="text" style="width:202px" class="arial11n000000" maxlength='50'/></td>
+            <td align="left" valign="top"></td>
+          </tr>
+		  <tr>
+            <td height="30" align="left" valign="top">&nbsp;</td>
+            <td align="left" valign="top" class="arial11b000000">&nbsp;&nbsp;Upload Logo:</td>
+            <td align="left" valign="top" class="arial11b000000"><input type=file name='company_logo' size="22" /></td>
+              <td align="left" valign="top"></td>
+          </tr>
+        </table></td>
+        <td width="343" align="left" valign="top"><table width="343"  border="0" cellspacing="0" cellpadding="0">
+          <tr>
+		    
+            <td height="30" align="left" valign="top"  class="arial11b000000" style="padding-left:5">How did you hear about us?:</td>
+            <td align="left" valign="middle" style="padding-left:3px">
+			<select name='hear_mode[]' class="arial11n000000" size="4" style="width:200px;" multiple>
+			{html_options options=$hear_mode selected=$oEmployer->hear_mode}
+			</select>
+			</td>
+            
+          </tr>
+          <tr><td style="height:5px"></td></tr>
+          <tr> 
+            <td height="30" align="left" valign="middle" class="arial11b000000" style="padding-left:3px"><span class="error">*</span> E-mail &nbsp;&nbsp;Address:</td>
+            <td align="left" valign="middle"><label>
+              <input name='email' id="email" value="{$oEmployer->email|html_entity_decode|stripslashes|default:''}" type="text" size="32" maxlength='80' />
+            </label></td>
+          
+          </tr>
+          <tr>
+            <td height="30" align="left" valign="middle" class="arial11b000000" style="padding-left:3px"><span class="error">*</span> Confirm <br /> &nbsp;&nbsp;&nbsp;E-mail:</td>
+            <td align="left" valign="middle"><label>
+              <input  name='r_email' value="{$oEmployer->r_email|html_entity_decode|stripslashes|default:''}" type="text" size="32" />
+            </label></td>
+           
+          </tr>
+          <tr>
+		   <td  align="left" valign="top"></td>
+            <td height="10" align="left" valign="top" class="error"  style="padding-left:8">(Password needs to be at least six characters and contain at least one number)</td>
+          </tr>
+			<tr>
+            <td rowspan="2" align="left" valign="top" class="arial11b000000" style="padding-left:3px; padding-top:8px;"><span class="error">*</span>&nbsp;Password:</td>
+            <td height="30" align="left" valign="middle">
+              <input type="password" name="password" size="32" maxlength="40" value="" autocomplete="off"/></td>
+          </tr>
+          
+          <tr>
+            <td height="1" align="left" valign="top"></td>
+          </tr>
+            
+       
+          <tr>
+            <td height="30" align="left" valign="middle" class="arial11b000000" style="padding-left:3px"><span class="error">*</span>&nbsp;Confirm<br />&nbsp;&nbsp; password:</td>
+            <td align="left" valign="middle"><label>
+              <input type="password" name="r_password" value="" size="32"/>
+            </label></td>
+            
+          </tr>
+          <tr>
+            <td height="30" align="left" valign="middle" class="arial11b000000" style="padding-left:3px"><span class="error">*</span>&nbsp;Security<br/>&nbsp;&nbsp;question:</td>
+            <td align="left" valign="middle"><label>
+              <select name='security_question' class="arial11n000000" style="width:185px;">
+			<option value="">--Select Question--</option>{html_options options=$security_question selected=$oEmployer->security_question}
+			</select>
+            </label></td>
+          
+          </tr>
+          <tr>
+            <td height="30" align="left" valign="middle" class="arial11b000000" style="padding-left:3px"><span class="error">*</span>&nbsp;Answer:</td>
+            <td align="left" valign="middle"><label>
+              <input name='answer' value="{$oEmployer->security_ans|html_entity_decode|stripslashes|default:''}" size="32" maxlength='255'/>
+            </label></td>
+            
+          </tr>
+        </table></td>
+      </tr>
+    </table>	</td>
+  </tr>
+  
+    <td align="left" valign="top"><img src="images/trans.gif" alt="" width="1" height="5" /></td>
+  </tr>
+  <tr><td><table cellspacing='0' cellpadding='0' border='0'>
+  <tr>
+            <td  width='34' align="left" valign="top">&nbsp;</td>
+            <td align="left" valign="top" class="arial11b000000">Meet The Company (Company Profile):</td>
+            <td align="left" valign="top"></td>
+        </tr>
+		<tr><td style='height:10px'></td></tr>
+		<tr><td  width='34' align="left" valign="top">&nbsp;</td><td class='arial11b7D32FE'>(If you are going to cut and paste text into this section, eliminate formatting errors by first pasting the text into a word document and save this as Plain Text. Reopen the document and cut and paste the text into the field below)</td><td align="left" valign="top"></td></tr>
+		<tr><td style='height:10px'></td></tr>
+  <tr>
+
+            <td  width='34' align="left" valign="top">&nbsp;</td>
+            <td align="left" valign="top" style="padding-bottom:5px;"><textarea name="company_bio" style="width:650px; height:90px;" class="arial11n000000" >{$oEmployer->company_bio|default:''}</textarea></td>
+            <td align="left" valign="top"></td>
+        </tr>
+</table>
+</td></tr>
+<tr><td style='height:10px'></td></tr>
+  <tr>
+    <td align="center" valign="bottom"><table width="111" height="21" border="0" cellpadding="0" cellspacing="0">
+              <tr>
+                <td width="92" align="center" valign="middle" class="arial12Bffffff" >
+				<input type="hidden" name="stage" value="employer" />
+				<input type="hidden" name="mode" value="SaveEmployerJoin" />
+				<input type=image name='next' src='images/btn_next.gif' style='width:49;height:21; border:none' border='0' title="Next"></td>
+              </tr>
+    </table></td>
+  </tr>
+  
+</table>
+</form>
+					  
+{literal}
+<script language='javascript' type='text/javascript'>
+
+var frmvalidator	=	new Validator("employerJoin");
+	frmvalidator.addValidation("first_name","req","Please enter your First Name");
+	//frmvalidator.addValidation("first_name","alphabeticspace","Only alphabets are allowed in First Name");
+	frmvalidator.addValidation("last_name","req","Please enter your Last Name");
+	//frmvalidator.addValidation("last_name","alphabeticspace","Only alphabets are allowed in Last Name");
+	frmvalidator.addValidation("company_name","req","Please enter Company Name");
+	
+	frmvalidator.addValidation("job_title","req","Please enter occupation");
+	frmvalidator.addValidation("address","req","Please enter company Address");
+	frmvalidator.addValidation("province_id","req","Please select Province");
+	frmvalidator.addValidation("city","req","Please enter City");
+	frmvalidator.addValidation("city","alphabeticspace","Only alphabets are allowed in City");
+	
+	frmvalidator.addValidation("postal_code","req","Please enter Postal Code");
+	frmvalidator.addValidation("postal_code","alphanumeric","Please input a valid Postal Code");
+	frmvalidator.addValidation("postal_code","minlen=3","Please input a valid Postal Code");
+	//frmvalidator.addValidation("postal_code","numeric","Postal Code must be numeric");
+	frmvalidator.addValidation("postal_code1","req","Please enter Postal Code");
+	frmvalidator.addValidation("postal_code1",'alphanumeric',"Please input a valid Postal Code.");
+	frmvalidator.addValidation("postal_code1","minlen=3","Please input a valid Postal Code");
+
+
+	//frmvalidator.addValidation("postal_code1","numeric","Postal Code must be numeric");
+	frmvalidator.addValidation("phone_no1","req","Please enter Phone Number");
+	frmvalidator.addValidation("phone_no1","numeric","Phone Number must be numeric");
+	frmvalidator.addValidation("phone_no1","minlen=3","Please input a valid Phone Number");
+
+	frmvalidator.addValidation("phone_no2","req","Please enter Phone Number");
+	frmvalidator.addValidation("phone_no2","numeric","Phone Number must be numeric");
+	frmvalidator.addValidation("phone_no2","minlen=3","Please input a valid Phone Number");
+
+
+	frmvalidator.addValidation("phone_no3","req","Please enter Phone Number");
+	frmvalidator.addValidation("phone_no3","numeric","Phone Number must be numeric");
+	frmvalidator.addValidation("phone_no3","minlen=4","Please input a valid Phone Number");
+	
+	
+	//frmvalidator.addValidation("hear_mode[]","req","Select atleast one Hear Mode");
+	frmvalidator.addValidation("company_website","url","Please enter proper format of Company Website.");
+	frmvalidator.addValidation("email","req","Please enter your Email Address");
+	frmvalidator.addValidation("email","email","Format of Email provided is incorrect");	
+	frmvalidator.addValidation("r_email","req","Please enter your Confirm Email Address");
+	
+	frmvalidator.addValidation("password","req","Please enter your Password");
+	//frmvalidator.addValidation("password","one_alphabet","Password must contain at least one alphabet");
+	frmvalidator.addValidation("password","one_numeric","Password must contain at least one number (0-9)");
+	
+	frmvalidator.addValidation("r_password","req","Please enter your Confirm Password");
+	//frmvalidator.addValidation("r_password","one_alphabet","Password must contain at least one alphabet");
+	frmvalidator.addValidation("r_password","one_numeric","Password must contain at least one number (0-9)");
+	
+	frmvalidator.addValidation("security_question","req","Please enter Security Answer");	
+	frmvalidator.addValidation("answer","req","Please enter Security Answer");
+	//frmvalidator.addValidation("company_bio","req","Please enter Meet The Company");
+	
+	
+	frmvalidator.setAddnlValidationFunction("DoCustomValidation2");
+    function DoCustomValidation2()
+	{
+	var form = document.forms["employerJoin"];
+			
+			if(form.company_logo.value != "")
+			{
+				var ext = form.company_logo.value.toLowerCase();
+				//alert(ext.lastIndexOf(".png"));
+				 if((ext.lastIndexOf(".jpg")==-1) && (ext.lastIndexOf(".jpeg")==-1) && (ext.lastIndexOf(".gif")==-1))
+				 {
+				   alert("Please upload jpg or gif logo");
+				   return false;
+				 }
+		}
+		  if(!validateEmailv2(Trim(form.email.value))) 
+		   { 
+			strError = "Format of Email provided is incorrect"; 
+				alert(strError);
+				form.email.focus();
+				return false;
+			}
+
+			if(Trim(form.r_email.value)== "")
+			{
+				alert("Please enter your Confirm Email Address");
+				form.r_email.focus();
+				return false;
+			}
+			var NoOfDots=0;	
+			var whereIsAt	=	str.indexOf('@'); //first pos	=	0;
+			var stringAfterAt	=	str.substr(whereIsAt+1,str.length);
+			while(stringAfterAt!="")
+			{				
+				if(stringAfterAt.charAt(stringAfterAt.length-1) == ".")
+					NoOfDots	=	NoOfDots +1;
+				stringAfterAt	= stringAfterAt.substring(0,stringAfterAt.length-1);				
+			}
+			if(NoOfDots>3)
+			{
+				strError = "Format of Confirm Email provided is incorrect"; 
+				alert(strError);
+				form.r_email.focus();
+				return false; 
+			}
+		   if(!validateEmailv2(Trim(form.r_email.value))) 
+		   { 
+			strError = "Format of Confirm Email provided is incorrect"; 
+				alert(strError);
+				form.r_email.focus();
+				return false;
+			}
+			if(Trim(form.email.value) != Trim(form.r_email.value))
+			{		
+				alert('The Email and Confirm Email does not match');
+				form.r_email.select();
+				form.r_email.focus();
+				return false;
+			}
+			
+		if(Trim(form.password.value) == Trim(form.r_password.value)) 
+		{			
+			if(form.password.value.length < 6) 
+			{
+				alert("Error: Password must contain at least six characters");
+				form.password.focus();
+				return false;
+			}
+						
+		} 
+		else 
+		{
+		  alert("The Password and Confirm password does not match");
+		  form.password.focus();
+		  return false;
+		}	
+		return true;
+			
+	}//ef*/
+	
+function trim(str)
+{ 
+	while(str.charAt(0) == (" ") )
+	{ 
+		str = str.substring(1);
+	}		
+	while(str.charAt(str.length-1) == " " )
+	{ 
+		str = str.substring(0,str.length-1);
+	}
+	return str;
+}
+   
+
+
+</script>
+{/literal}	

@@ -1,0 +1,95 @@
+<tr><td valign="top" align="left" style="padding: 24px 15px 51px 12px;" class="bg_f7f6f2">
+<table width="100%" cellspacing="0" cellpadding="0" border="0">
+<tbody><tr>
+<td class="arial_16_c40306"><table width="100%" cellspacing="0" cellpadding="0" border="0">
+	<tbody><tr>
+	<td valign="top" align="left" class="arial_16_c40306"><table width="100%" cellspacing="0" cellpadding="0" border="0">
+	  <tbody><tr>
+		<td valign="top" align="left"><table width="100%" cellspacing="0" cellpadding="0" border="0">
+			<tbody><tr>
+			<td valign="top" align="left" height="37" class="Trebuchet_27_c60000" colspan="2">Affiliates</td>
+			</tr>
+			<tr>
+			<td valign="top" bgcolor="#b1b0ac" align="left" class="arial_20_c40306" colspan="2"><img width="1" height="1" alt="" src="images/trans.gif"></td>
+			</tr>
+			<tr>
+			<td valign="bottom" align="left" height="37" style="padding-bottom: 5px;" class="arial_14_c30100" colspan="2">&nbsp;</td>
+			</tr>                                 
+			{section name=index loop=$oAffiliate}	
+			<tr>
+			<td valign="top" align="left" style="padding: 16px 5px 11px 15px;" class="votealert_bg_new" colspan="2">			
+				<table width="100%" cellspacing="0" cellpadding="0" border="0">
+					<tbody>					
+						<tr>	
+							{if $AffiliateContentPageHeaderView}						
+							<td width="125" valign="top" align="left">
+								
+								{if $oAffiliate[index]->banner neq ''}
+									<img width="125" height="99" class="pic_border" alt="" src="./UserFiles/affiliates_logo/{$oAffiliate[index]->banner}" />									
+								{else}
+									<img width="125" height="99" class="pic_border" alt="" src="images/no-image.jpg">
+								{/if}
+								
+							</td>							
+							<td width="20" valign="top" align="left">&nbsp;</td>
+							<td width="732" valign="top" align="left">
+							{else}
+								<td width="877" valign="top" align="left">							
+							{/if}							
+							
+							<table width="100%" cellspacing="0" cellpadding="0" border="0">
+									<tbody>
+										<tr>
+											<td valign="top" align="left" height="22">
+											
+											{php}{/php}											
+											{if isset($smarty.session.member_type)}
+												{*$oAffiliate[index]->name*}
+												<a class="arial12Ba60000" href="index.php?stage=subscriber&amp;mode=AffiliateDetails&amp;id={$oAffiliate[index]->affiliate_id}">
+													{$oAffiliate[index]->organisation_name}
+												</a>
+											{else}
+												<strong>												
+													{$oAffiliate[index]->organisation_name}
+												</strong>	
+											{/if}	
+											</td>
+										</tr>
+										<tr>
+											<td valign="top" align="left" class="arial_12_000">{$oAffiliate[index]->description}</td>
+										</tr>
+										<tr>
+											<td valign="bottom" align="left" height="26">
+											<span class="arial12Ba60000">Dated: 
+												<span class="arial11Na60000"> {$oAffiliate[index]->reg_date|date_format:"%Y-%m-%d"} </span>
+											</span></td>
+										</tr>
+									</tbody>
+							</table>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</td>
+		</tr>
+        <tr>
+        	<td>test</td>
+        </tr>
+		{sectionelse}
+		<tr>
+	       	<td valign="top" align="center" style="padding: 16px 5px 11px 15px;" class="votealert_bg_new" colspan="2">No Affiliate data.</td>
+		</tr>
+		{/section}
+									
+		<tr>
+		<td valign="top" align="left" class="border_dashed" colspan="2"></td>
+		</tr>
+	  </tbody></table></td>
+	  	  
+	  
+	  </tr>
+	  </tbody></table></td>
+	</tr>
+  </tbody></table></td>
+</tr>
+</tbody></table></td></tr>

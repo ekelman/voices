@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<legtrack_feed version_id="2012-04-06-01">
+	<bill_profile>
+		<bill_key>
+			<state>US</state>
+			<session_id>2011000</session_id>
+			<legtype>HR</legtype>
+			<bill_number>3606</bill_number>
+		</bill_key>
+		<related_bills>
+			<related_bill>
+				<related_bill_key>
+					<related_state>US</related_state>
+					<related_session_id>2011000</related_session_id>
+					<related_legtype>S</related_legtype>
+					<related_bill_number>1933</related_bill_number>
+				</related_bill_key>
+				<type_description>Identical</type_description>
+			</related_bill>
+			<related_bill>
+				<related_bill_key>
+					<related_state>US</related_state>
+					<related_session_id>2011000</related_session_id>
+					<related_legtype>HRES</related_legtype>
+					<related_bill_number>572</related_bill_number>
+				</related_bill_key>
+				<type_description>Related</type_description>
+			</related_bill>
+		</related_bills>
+		<authors>
+			<author>
+				<name>Fincher</name>
+				<party>R</party>
+				<house>H</house>
+			</author>
+		</authors>
+		<bill_title>American Job Creation and Economic Growth</bill_title>
+		<intro_date>2011-12-08</intro_date>
+		<last_amend_date>2012-03-22</last_amend_date>
+		<final_status>
+			<date>2012-04-05</date>
+			<action>Enacted</action>
+		</final_status>
+		<current_disposition>Enacted</current_disposition>
+		<bill_location>Chaptered</bill_location>
+		<chapter_number>112-106</chapter_number>
+		<bill_summary>Increases American job creation and economic growth by improving access to the public capital markets for emerging growth companies; relates to initial public offerings of such companies; exempts such companies from executive compensation reporting; limits the number of years of audited financial statements that must be submitted for an initial public offering registration.</bill_summary>
+		<status_actions>
+			<status_action>
+				<action_text>INTRODUCED.</action_text>
+				<action_date>2011-12-08</action_date>
+			</status_action>
+			<status_action>
+				<action_text>To HOUSE Committee on FINANCIAL SERVICES.</action_text>
+				<action_date>2011-12-08</action_date>
+			</status_action>
+			<status_action>
+				<action_text><![CDATA[In HOUSE Committee on FINANCIAL SERVICES: Referred to Subcmt CAPITAL MARKETS & GOVERNMENT SPONSORED ENTERPRISES.]]></action_text>
+				<action_date>2012-01-12</action_date>
+			</status_action>
+			<status_action>
+				<action_text>From HOUSE Committee on FINANCIAL SERVICES:  Reported as amended.</action_text>
+				<action_date>2012-03-01</action_date>
+			</status_action>
+			<status_action>
+				<action_text>Reported in HOUSE. Printed version.</action_text>
+				<action_date>2012-03-01</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In HOUSE.  Placed on HOUSE Union Calendar.</action_text>
+				<action_date>2012-03-01</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In HOUSE.  Rules Committee Resolution H. Res. 572 Passed House.</action_text>
+				<action_date>2012-03-07</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In HOUSE.  Considered under the provisions of Rules Committee Resolution H. Res. 572.</action_text>
+				<action_date>2012-03-07</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In HOUSE.  HA 968 Amendment offered by Representative Fincher.</action_text>
+				<action_date>2012-03-07</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In HOUSE.  HA 968.  Representative Fincher  amendment agreed to on HOUSE floor.</action_text>
+				<action_date>2012-03-07</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In HOUSE.  HA 969 Amendment offered by Representative McIntyre.</action_text>
+				<action_date>2012-03-07</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In HOUSE.  HA 969.  Representative McIntyre  amendment agreed to on HOUSE floor.</action_text>
+				<action_date>2012-03-07</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In HOUSE.  HA 970 Amendment offered by Representative Himes.</action_text>
+				<action_date>2012-03-07</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In HOUSE.  HA 971 Amendment offered by Representative Jackson Lee.</action_text>
+				<action_date>2012-03-07</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In HOUSE.  HA 971.  Representative Jackson Lee  amendment agreed to on HOUSE floor.</action_text>
+				<action_date>2012-03-07</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In HOUSE.  HA 972 Amendment offered by Representative Ellison.</action_text>
+				<action_date>2012-03-07</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In HOUSE.  HA 973 Amendment offered by Representative Waters.</action_text>
+				<action_date>2012-03-07</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In HOUSE.  HA 974 Amendment offered by Representative Jackson Lee.</action_text>
+				<action_date>2012-03-07</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In HOUSE.  HA 974.  Representative Jackson Lee amendment failed on HOUSE floor.</action_text>
+				<action_date>2012-03-07</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In HOUSE.  HA 975 Amendment offered by Representative Jackson Lee.</action_text>
+				<action_date>2012-03-07</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In HOUSE.  HA 975 by Representative Jackson Lee withdrawn.</action_text>
+				<action_date>2012-03-07</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In HOUSE.  HA 976 Amendment offered by Representative Connolly.</action_text>
+				<action_date>2012-03-07</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In HOUSE.  HA 977 Amendment offered by Representative McCarthy.</action_text>
+				<action_date>2012-03-07</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In HOUSE.  HA 977.  Representative McCarthy  amendment agreed to on HOUSE floor.</action_text>
+				<action_date>2012-03-07</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In HOUSE.  HA 970.  Representative Himes amendment failed on HOUSE floor.</action_text>
+				<action_date>2012-03-07</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In HOUSE.  HA 972.  Representative Ellison amendment failed on HOUSE floor.</action_text>
+				<action_date>2012-03-07</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In HOUSE.  HA 973.  Representative Waters amendment failed on HOUSE floor.</action_text>
+				<action_date>2012-03-07</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In HOUSE.  HA 976.  Representative Connolly amendment failed on HOUSE floor.</action_text>
+				<action_date>2012-03-07</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In HOUSE.  HA 978 Amendment offered by Representative McHenry.</action_text>
+				<action_date>2012-03-08</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In HOUSE.  HA 978.  Representative McHenry  amendment agreed to on HOUSE floor.</action_text>
+				<action_date>2012-03-08</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In HOUSE.  HA 979 Amendment offered by Representative Miller.</action_text>
+				<action_date>2012-03-08</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In HOUSE.  HA 979.  Representative Miller  amendment agreed to on HOUSE floor.</action_text>
+				<action_date>2012-03-08</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In HOUSE.  HA 980 Amendment offered by Representative Schweikert.</action_text>
+				<action_date>2012-03-08</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In HOUSE.  HA 980.  Representative Schweikert  amendment agreed to on HOUSE floor.</action_text>
+				<action_date>2012-03-08</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In HOUSE.  HA 981 Amendment offered by Representative Capuano.</action_text>
+				<action_date>2012-03-08</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In HOUSE.  HA 981.  Representative Capuano amendment failed on HOUSE floor.</action_text>
+				<action_date>2012-03-08</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In HOUSE.  HA 982 Amendment offered by Representative Peters.</action_text>
+				<action_date>2012-03-08</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In HOUSE.  HA 983 Amendment offered by Representative Capps.</action_text>
+				<action_date>2012-03-08</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In HOUSE.  HA 984 Amendment offered by Representative Loebsack.</action_text>
+				<action_date>2012-03-08</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In HOUSE.  HA 984.  Representative Loebsack  amendment agreed to on HOUSE floor.</action_text>
+				<action_date>2012-03-08</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In HOUSE.  HA 982.  Representative Peters amendment failed on HOUSE floor.</action_text>
+				<action_date>2012-03-08</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In HOUSE.  HA 983.  Representative Capps amendment failed on HOUSE floor.</action_text>
+				<action_date>2012-03-08</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In HOUSE.  Committee amendment in the nature of a substitute adopted on HOUSE floor.</action_text>
+				<action_date>2012-03-08</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In HOUSE.  Passed HOUSE.  *****To SENATE.</action_text>
+				<action_date>2012-03-08</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In SENATE.  Placed on SENATE Legislative Calendar.</action_text>
+				<action_date>2012-03-12</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In SENATE.  Read second time.</action_text>
+				<action_date>2012-03-13</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In SENATE.  Placed on SENATE Legislative Calendar.</action_text>
+				<action_date>2012-03-13</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In SENATE.  Amendment SA 1833 proposed by Senator Reid for Senator Reed.</action_text>
+				<action_date>2012-03-15</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In SENATE.  Amendment SA 1834 proposed by Senator Reid to Amendment SA 1833.</action_text>
+				<action_date>2012-03-15</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In SENATE.  Amendment SA 1835 proposed by Senator Reid to Amendment SA 1834.</action_text>
+				<action_date>2012-03-15</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In SENATE.  Amendment SA 1836 proposed by Senator Reid to Amendment SA 1833.</action_text>
+				<action_date>2012-03-15</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In SENATE.  Amendment SA 1837 proposed by Senator Reid to Amendment SA 1836.</action_text>
+				<action_date>2012-03-15</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In SENATE.  Amendment SA 1838 proposed by Senator Reid.</action_text>
+				<action_date>2012-03-15</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In SENATE.  Amendment SA 1839 proposed by Senator Reid to Amendment SA 1838.</action_text>
+				<action_date>2012-03-15</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In SENATE.  Amendment SA 1840 proposed by Senator Reid to Amendment SA 1839.</action_text>
+				<action_date>2012-03-15</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In SENATE.  Cloture motion on the bill presented.</action_text>
+				<action_date>2012-03-15</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In SENATE.  Cloture motion on amendment SA 1833 not invoked.</action_text>
+				<action_date>2012-03-20</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In SENATE.  Cloture motion on amendment SA 1836 not invoked.</action_text>
+				<action_date>2012-03-20</action_date>
+			</status_action>
+			<status_action>
+				<action_text>Cloture motion on the bill invoked.</action_text>
+				<action_date>2012-03-21</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In SENATE.  SA 1838 fell when cloture invoked on bill.</action_text>
+				<action_date>2012-03-21</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In SENATE.  SA 1839 fell when SA 1838 fell.</action_text>
+				<action_date>2012-03-21</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In SENATE.  SA 1840 fell when SA 1839 fell.</action_text>
+				<action_date>2012-03-21</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In SENATE.  Point of order raised with respect to SA 1836.</action_text>
+				<action_date>2012-03-21</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In SENATE.  SA 1836 ruled non-germane by the chair.</action_text>
+				<action_date>2012-03-21</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In SENATE.  SA 1837  fell when SA 1836 ruled non-germane by the chair..</action_text>
+				<action_date>2012-03-21</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In SENATE.  Point of order raised with respect to SA 1833.</action_text>
+				<action_date>2012-03-21</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In SENATE.  SA 1833 ruled non-germane by the chair.</action_text>
+				<action_date>2012-03-21</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In SENATE.  SA 1834 fell when SA 1833 ruled non-germane by the chair.</action_text>
+				<action_date>2012-03-21</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In SENATE.  SA 1835 fell when SA 1834 fell.</action_text>
+				<action_date>2012-03-21</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In SENATE.  Amendment SA 1884 proposed by Senator Reid for Senator Merkley.</action_text>
+				<action_date>2012-03-21</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In SENATE.  Amendment SA 1931 proposed by Senator Reid for Senator Reed.</action_text>
+				<action_date>2012-03-21</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In SENATE.  SA 1931 failed on SENATE floor.</action_text>
+				<action_date>2012-03-22</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In SENATE.  SA 1884 agreed to on SENATE floor.</action_text>
+				<action_date>2012-03-22</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In SENATE.  Passed SENATE.  *****To HOUSE for concurrence.</action_text>
+				<action_date>2012-03-22</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In HOUSE.  HOUSE concurred in SENATE amendments.</action_text>
+				<action_date>2012-03-27</action_date>
+			</status_action>
+			<status_action>
+				<action_text>Enrolled.  Cleared for White House.</action_text>
+				<action_date>2012-03-27</action_date>
+			</status_action>
+			<status_action>
+				<action_text>*****To PRESIDENT.</action_text>
+				<action_date>2012-03-27</action_date>
+			</status_action>
+			<status_action>
+				<action_text>Signed by PRESIDENT.</action_text>
+				<action_date>2012-04-05</action_date>
+			</status_action>
+			<status_action>
+				<action_text>Public Law No. 112-106</action_text>
+				<action_date>2012-04-05</action_date>
+			</status_action>
+		</status_actions>
+		<public_text_link><![CDATA[http://custom.statenet.com/public/resources.cgi?id=ID:bill:US2011000H3606&ciq=voices&client_md=3208422465a744194af984703066ce52&mode=current_text]]></public_text_link>
+	</bill_profile>
+</legtrack_feed>

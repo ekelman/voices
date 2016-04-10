@@ -1,0 +1,32 @@
+<tr>
+    <td align="left" valign="top"  style="padding-top:10px;">
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+    <tr>
+    <td align="left" valign="top" class="bg_f7f6f2"  style="padding:24px 15px 51px 12px;">
+	<table cellspacing='0' cellpadding='0' border='0' align='center' height='250'>
+	<tr>
+	<td>
+	<table cellspacing='0' cellpadding='0' border='0' align='center'>
+		{if $message eq 'registration'}
+		<tr><td align='center' class="arial_12_000">Thank you for your interest. Your VOICES member account has been created. Thank You.</td></tr>
+		<tr><td height='20'></td></tr>
+		<tr><td align='center'><A HREF="{$_CONF.SiteUrl}/index.php" class='arial_12_a60000_bold'>Go to Home Page</A></td></tr>
+		{else if $message eq 'commingsoon'}
+		<tr><td align='center' class="arial_12_000">Comming soon...</td></tr>
+		<tr><td height='20'></td></tr>
+		<tr><td align='center'><A HREF="{$_CONF.SiteUrl}/index.php" class='arial_12_a60000_bold'>Go to Home Page</A></td></tr>
+		{else if $message eq 'invalidaccess'}
+		<tr><td align='center' class="arial_12_000">Invalid access, you don't have right to access this area of the website.</td></tr>
+		<tr><td height='20'></td></tr>
+		<tr><td align='center'><A HREF="{$_CONF.SiteUrl}/index.php" class='arial_12_a60000_bold'>Go to Home Page</A></td></tr>
+		{/if}		
+		
+		</table>
+	</td>
+	</tr>
+	</table>
+	</td>
+    </tr>
+    </table>
+	</td>
+</tr>		

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<legtrack_feed version_id="2012-04-16-01">
+	<bill_profile>
+		<bill_key>
+			<state>US</state>
+			<session_id>2011000</session_id>
+			<legtype>HR</legtype>
+			<bill_number>4089</bill_number>
+		</bill_key>
+		<authors>
+			<author>
+				<name>Miller J</name>
+				<party>R</party>
+				<house>H</house>
+			</author>
+		</authors>
+		<bill_title>Sportsmen's Heritage Act of 2012</bill_title>
+		<intro_date>2012-02-27</intro_date>
+		<current_disposition>Pending</current_disposition>
+		<bill_location>HOUSE</bill_location>
+		<bill_summary>Relates to the Sportsmen's Heritage Act of 2012; protects and enhances opportunities for recreational hunting, fishing and shooting.</bill_summary>
+		<status_actions>
+			<status_action>
+				<action_text>INTRODUCED.</action_text>
+				<action_date>2012-02-27</action_date>
+			</status_action>
+			<status_action>
+				<action_text>To HOUSE Committee on NATURAL RESOURCES.</action_text>
+				<action_date>2012-02-27</action_date>
+			</status_action>
+			<status_action>
+				<action_text>Additionally referred to HOUSE Committee on AGRICULTURE.</action_text>
+				<action_date>2012-02-27</action_date>
+			</status_action>
+			<status_action>
+				<action_text>Additionally referred to HOUSE Committee on ENERGY AND COMMERCE.</action_text>
+				<action_date>2012-02-27</action_date>
+			</status_action>
+			<status_action>
+				<action_text>From HOUSE Committee on NATURAL RESOURCES:  Reported as amended.</action_text>
+				<action_date>2012-04-13</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In HOUSE.  Discharged from HOUSE Committee on AGRICULTURE.</action_text>
+				<action_date>2012-04-13</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In HOUSE.  Discharged from HOUSE Committee on ENERGY AND COMMERCE.</action_text>
+				<action_date>2012-04-13</action_date>
+			</status_action>
+			<status_action>
+				<action_text>Reported in HOUSE. Printed version.</action_text>
+				<action_date>2012-04-13</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In HOUSE.  Placed on HOUSE Union Calendar.</action_text>
+				<action_date>2012-04-13</action_date>
+			</status_action>
+		</status_actions>
+		<public_text_link><![CDATA[http://custom.statenet.com/public/resources.cgi?id=ID:bill:US2011000H4089&ciq=voices&client_md=be81ef4d208451b1ca57c9056bcdc378&mode=current_text]]></public_text_link>
+	</bill_profile>
+</legtrack_feed>

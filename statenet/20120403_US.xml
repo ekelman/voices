@@ -1,0 +1,517 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<legtrack_feed version_id="2012-04-03-01">
+	<bill_profile>
+		<bill_key>
+			<state>US</state>
+			<session_id>2011000</session_id>
+			<legtype>HR</legtype>
+			<bill_number>473</bill_number>
+		</bill_key>
+		<related_bills>
+			<related_bill>
+				<related_bill_key>
+					<related_state>US</related_state>
+					<related_session_id>2011000</related_session_id>
+					<related_legtype>S</related_legtype>
+					<related_bill_number>610</related_bill_number>
+				</related_bill_key>
+				<type_description>Identical</type_description>
+			</related_bill>
+		</related_bills>
+		<authors>
+			<author>
+				<name>Boren</name>
+				<party>D</party>
+				<house>H</house>
+			</author>
+		</authors>
+		<bill_title>Conveyance 140 Acres of Land in Oklahoma to Boy Scouts</bill_title>
+		<intro_date>2011-01-26</intro_date>
+		<last_amend_date>2011-10-03</last_amend_date>
+		<final_status>
+			<date>2012-04-02</date>
+			<action>Enacted</action>
+		</final_status>
+		<current_disposition>Enacted</current_disposition>
+		<bill_location>Chaptered</bill_location>
+		<chapter_number>112-103</chapter_number>
+		<bill_summary>Provides for the conveyance of approximately 140 Acres of land in the Ouachita National Forest in Oklahoma to the Indian Nations Council, Inc., of the Boy Scouts of America, and for other purposes.</bill_summary>
+		<status_actions>
+			<status_action>
+				<action_text>INTRODUCED.</action_text>
+				<action_date>2011-01-26</action_date>
+			</status_action>
+			<status_action>
+				<action_text>To HOUSE Committee on NATURAL RESOURCES.</action_text>
+				<action_date>2011-01-26</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In HOUSE Committee on NATURAL RESOURCES:  Referred to Subcommittee on NATIONAL PARKS, FORESTS AND PUBLIC LANDS.</action_text>
+				<action_date>2011-02-04</action_date>
+			</status_action>
+			<status_action>
+				<action_text>Subcommittee on NATIONAL PARKS, FORESTS AND PUBLIC LANDS discharged.</action_text>
+				<action_date>2011-07-20</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In HOUSE Committee on NATURAL RESOURCES:  Consideration and mark-up session held.</action_text>
+				<action_date>2011-07-20</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In HOUSE Committee on NATURAL RESOURCES:  Ordered to be reported as amended.</action_text>
+				<action_date>2011-07-20</action_date>
+			</status_action>
+			<status_action>
+				<action_text>From HOUSE Committee on NATURAL RESOURCES:  Reported as amended.</action_text>
+				<action_date>2011-09-23</action_date>
+			</status_action>
+			<status_action>
+				<action_text>Reported in HOUSE. Printed version.</action_text>
+				<action_date>2011-09-23</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In HOUSE.  Placed on HOUSE Union Calendar.</action_text>
+				<action_date>2011-09-23</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In HOUSE.  Amended on HOUSE floor.</action_text>
+				<action_date>2011-10-03</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In HOUSE.  Passed HOUSE.  *****To SENATE.</action_text>
+				<action_date>2011-10-03</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In SENATE.  Read second time.</action_text>
+				<action_date>2011-10-04</action_date>
+			</status_action>
+			<status_action>
+				<action_text>To SENATE Committee on AGRICULTURE, NUTRITION AND FORESTRY.</action_text>
+				<action_date>2011-10-04</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In SENATE.  Discharged from SENATE Committee on AGRICULTURE, NUTRITION AND FORESTRY.</action_text>
+				<action_date>2012-03-15</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In SENATE.  Passed SENATE.</action_text>
+				<action_date>2012-03-15</action_date>
+			</status_action>
+			<status_action>
+				<action_text>Enrolled.  Cleared for White House.</action_text>
+				<action_date>2012-03-15</action_date>
+			</status_action>
+			<status_action>
+				<action_text>*****To PRESIDENT.</action_text>
+				<action_date>2012-03-22</action_date>
+			</status_action>
+			<status_action>
+				<action_text>Signed by PRESIDENT.</action_text>
+				<action_date>2012-04-02</action_date>
+			</status_action>
+			<status_action>
+				<action_text>Public Law No. 112-103</action_text>
+				<action_date>2012-04-02</action_date>
+			</status_action>
+		</status_actions>
+		<public_text_link><![CDATA[http://custom.statenet.com/public/resources.cgi?id=ID:bill:US2011000H473&ciq=voices&client_md=3867c683f56e70123fde9b954c5e770c&mode=current_text]]></public_text_link>
+	</bill_profile>
+	<bill_profile>
+		<bill_key>
+			<state>US</state>
+			<session_id>2011000</session_id>
+			<legtype>HR</legtype>
+			<bill_number>886</bill_number>
+		</bill_key>
+		<related_bills>
+			<related_bill>
+				<related_bill_key>
+					<related_state>US</related_state>
+					<related_session_id>2011000</related_session_id>
+					<related_legtype>S</related_legtype>
+					<related_bill_number>431</related_bill_number>
+				</related_bill_key>
+				<type_description>Identical</type_description>
+			</related_bill>
+		</related_bills>
+		<authors>
+			<author>
+				<name>Womack</name>
+				<party>R</party>
+				<house>H</house>
+			</author>
+		</authors>
+		<bill_title>Coins to Commemorate US Marshal Service</bill_title>
+		<intro_date>2011-03-02</intro_date>
+		<last_amend_date>2012-03-15</last_amend_date>
+		<final_status>
+			<date>2012-04-02</date>
+			<action>Enacted</action>
+		</final_status>
+		<current_disposition>Enacted</current_disposition>
+		<bill_location>Chaptered</bill_location>
+		<chapter_number>112-104</chapter_number>
+		<bill_summary>Requires the Secretary of the Treasury to mint coins in commemoration of the 225th anniversary of the establishment of the Nation's first Federal law enforcement agency, the United States Marshals Service.</bill_summary>
+		<status_actions>
+			<status_action>
+				<action_text>INTRODUCED.</action_text>
+				<action_date>2011-03-02</action_date>
+			</status_action>
+			<status_action>
+				<action_text>To HOUSE Committee on FINANCIAL SERVICES.</action_text>
+				<action_date>2011-03-02</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In HOUSE Committee on FINANCIAL SERVICES: Referred to Subcmt on DOMESTIC MONETARY POLICY AND TECHNOLOGY.</action_text>
+				<action_date>2011-04-04</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In HOUSE.  Rules Suspended. Discharged from all committees.</action_text>
+				<action_date>2011-12-13</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In HOUSE.  Amended on HOUSE floor.</action_text>
+				<action_date>2011-12-15</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In HOUSE.  Passed HOUSE.  *****To SENATE.</action_text>
+				<action_date>2011-12-15</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In SENATE.  Read second time.</action_text>
+				<action_date>2011-12-17</action_date>
+			</status_action>
+			<status_action>
+				<action_text>To SENATE Committee on BANKING, HOUSING AND URBAN AFFAIRS.</action_text>
+				<action_date>2011-12-17</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In SENATE.  Discharged from SENATE Committee on BANKING, HOUSING AND URBAN AFFAIRS.</action_text>
+				<action_date>2012-03-15</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In SENATE.  Amendment SA 1847 proposed by Senator Reid for Senator Boozman.</action_text>
+				<action_date>2012-03-15</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In SENATE.  SA 1847 agreed to on SENATE floor by unanimous consent.</action_text>
+				<action_date>2012-03-15</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In SENATE.  Amended on SENATE floor.</action_text>
+				<action_date>2012-03-15</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In SENATE.  Passed SENATE.  *****To HOUSE for concurrence.</action_text>
+				<action_date>2012-03-15</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In HOUSE.  HOUSE concurred in SENATE amendments.</action_text>
+				<action_date>2012-03-21</action_date>
+			</status_action>
+			<status_action>
+				<action_text>Enrolled.  Cleared for White House.</action_text>
+				<action_date>2012-03-21</action_date>
+			</status_action>
+			<status_action>
+				<action_text>*****To PRESIDENT.</action_text>
+				<action_date>2012-03-23</action_date>
+			</status_action>
+			<status_action>
+				<action_text>Signed by PRESIDENT.</action_text>
+				<action_date>2012-04-02</action_date>
+			</status_action>
+			<status_action>
+				<action_text>Public Law No. 112-104</action_text>
+				<action_date>2012-04-02</action_date>
+			</status_action>
+		</status_actions>
+		<public_text_link><![CDATA[http://custom.statenet.com/public/resources.cgi?id=ID:bill:US2011000H886&ciq=voices&client_md=ce14dec3a826766a58f707059afbc224&mode=current_text]]></public_text_link>
+	</bill_profile>
+	<bill_profile>
+		<bill_key>
+			<state>US</state>
+			<session_id>2011000</session_id>
+			<legtype>HR</legtype>
+			<bill_number>4211</bill_number>
+		</bill_key>
+		<authors>
+			<author>
+				<name>Poe</name>
+				<party>R</party>
+				<house>H</house>
+			</author>
+		</authors>
+		<bill_title>Strategic Petroleum Reserve</bill_title>
+		<intro_date>2012-03-19</intro_date>
+		<current_disposition>Pending</current_disposition>
+		<bill_location><![CDATA[House Transportation & Infrastructure Committee]]></bill_location>
+		<bill_summary>Relates to the American Energy First Act; prohibits the drawdown of petroleum from the Strategic Petroleum Reserve unless the President has taken certain actions.</bill_summary>
+		<status_actions>
+			<status_action>
+				<action_text>INTRODUCED.</action_text>
+				<action_date>2012-03-19</action_date>
+			</status_action>
+			<status_action>
+				<action_text>To HOUSE Committee on NATURAL RESOURCES.</action_text>
+				<action_date>2012-03-19</action_date>
+			</status_action>
+			<status_action>
+				<action_text>Additionally referred to HOUSE Committee on ENERGY AND COMMERCE.</action_text>
+				<action_date>2012-03-19</action_date>
+			</status_action>
+			<status_action>
+				<action_text>Additionally referred to HOUSE Committee on TRANSPORTATION AND INFRASTRUCTURE.</action_text>
+				<action_date>2012-03-19</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In HOUSE Committee on NATURAL RESOURCES:  Referred to Subcommittee on ENERGY AND MINERAL RESOURCES.</action_text>
+				<action_date>2012-04-02</action_date>
+			</status_action>
+		</status_actions>
+		<public_text_link><![CDATA[http://custom.statenet.com/public/resources.cgi?id=ID:bill:US2011000H4211&ciq=voices&client_md=68c607e01b6ea302cd99f53e6fbba621&mode=current_text]]></public_text_link>
+	</bill_profile>
+	<bill_profile>
+		<bill_key>
+			<state>US</state>
+			<session_id>2011000</session_id>
+			<legtype>HR</legtype>
+			<bill_number>4222</bill_number>
+		</bill_key>
+		<authors>
+			<author>
+				<name>Grijalva</name>
+				<party>D</party>
+				<house>H</house>
+			</author>
+		</authors>
+		<bill_title>Certain Land Inholdings Owned In Arizona</bill_title>
+		<intro_date>2012-03-20</intro_date>
+		<current_disposition>Pending</current_disposition>
+		<bill_location>House Natural Resources Committee</bill_location>
+		<bill_summary>Provides for the conveyance of certain land inholdings owned by the United States to the Tucson Unified School District and to the Pascua Yaqui Tribe of Arizona, and for other purposes.</bill_summary>
+		<status_actions>
+			<status_action>
+				<action_text>INTRODUCED.</action_text>
+				<action_date>2012-03-20</action_date>
+			</status_action>
+			<status_action>
+				<action_text>To HOUSE Committee on NATURAL RESOURCES.</action_text>
+				<action_date>2012-03-20</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In HOUSE Committee on NATURAL RESOURCES:  Referred to Subcommittee on NATIONAL PARKS, FORESTS AND PUBLIC LANDS.</action_text>
+				<action_date>2012-04-02</action_date>
+			</status_action>
+		</status_actions>
+		<public_text_link><![CDATA[http://custom.statenet.com/public/resources.cgi?id=ID:bill:US2011000H4222&ciq=voices&client_md=eb30049648c39f71bf9393767d65f107&mode=current_text]]></public_text_link>
+	</bill_profile>
+	<bill_profile>
+		<bill_key>
+			<state>US</state>
+			<session_id>2011000</session_id>
+			<legtype>HR</legtype>
+			<bill_number>4224</bill_number>
+		</bill_key>
+		<authors>
+			<author>
+				<name>Broun</name>
+				<party>R</party>
+				<house>H</house>
+			</author>
+		</authors>
+		<bill_title>Offering Patients True Individualized Options Now Act</bill_title>
+		<intro_date>2012-03-20</intro_date>
+		<current_disposition>Pending</current_disposition>
+		<bill_location>House House Administration Committee</bill_location>
+		<bill_summary>Relates to the Offering Patients True Individualized Options now Act of 2012; repeals the Patient Protection and Affordable Care Act and the Health Care and Education Reconciliation Act of 2010, to amend the Internal Revenue Code of 1986 to repeal the percentage floor on medical expense deductions, expand the use of tax-preferred health care accounts, and establish a charity care credit.</bill_summary>
+		<status_actions>
+			<status_action>
+				<action_text>INTRODUCED.</action_text>
+				<action_date>2012-03-20</action_date>
+			</status_action>
+			<status_action>
+				<action_text>To HOUSE Committee on ENERGY AND COMMERCE.</action_text>
+				<action_date>2012-03-20</action_date>
+			</status_action>
+			<status_action>
+				<action_text>Additionally referred to HOUSE Committee on WAYS AND MEANS.</action_text>
+				<action_date>2012-03-20</action_date>
+			</status_action>
+			<status_action>
+				<action_text>Additionally referred to HOUSE Committee on EDUCATION AND THE WORKFORCE.</action_text>
+				<action_date>2012-03-20</action_date>
+			</status_action>
+			<status_action>
+				<action_text>Additionally referred to HOUSE Committee on JUDICIARY.</action_text>
+				<action_date>2012-03-20</action_date>
+			</status_action>
+			<status_action>
+				<action_text>Additionally referred to HOUSE Committee on NATURAL RESOURCES.</action_text>
+				<action_date>2012-03-20</action_date>
+			</status_action>
+			<status_action>
+				<action_text>Additionally referred to HOUSE Committee on RULES.</action_text>
+				<action_date>2012-03-20</action_date>
+			</status_action>
+			<status_action>
+				<action_text>Additionally referred to HOUSE Committee on APPROPRIATIONS.</action_text>
+				<action_date>2012-03-20</action_date>
+			</status_action>
+			<status_action>
+				<action_text>Additionally referred to HOUSE Committee on HOUSE ADMINISTRATION.</action_text>
+				<action_date>2012-03-20</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In HOUSE Committee on NATURAL RESOURCES:  Referred to Subcommittee on INDIAN AND ALASKAN NATIVE AFFAIRS.</action_text>
+				<action_date>2012-04-02</action_date>
+			</status_action>
+		</status_actions>
+		<public_text_link><![CDATA[http://custom.statenet.com/public/resources.cgi?id=ID:bill:US2011000H4224&ciq=voices&client_md=f5be0e58e7d1ab1fd51cbb0ec7f54888&mode=current_text]]></public_text_link>
+	</bill_profile>
+	<bill_profile>
+		<bill_key>
+			<state>US</state>
+			<session_id>2011000</session_id>
+			<legtype>HR</legtype>
+			<bill_number>4233</bill_number>
+		</bill_key>
+		<authors>
+			<author>
+				<name>Lamborn</name>
+				<party>R</party>
+				<house>H</house>
+			</author>
+		</authors>
+		<bill_title>National Geospatial Technology Administration</bill_title>
+		<intro_date>2012-03-21</intro_date>
+		<current_disposition>Pending</current_disposition>
+		<bill_location>House Agriculture Committee</bill_location>
+		<bill_summary>Establishes the National Geospatial Technology Administration within the United States Geological Survey to enhance the use of geospatial data, products, technology, and services, to increase the economy and efficiency of Federal geospatial activities.</bill_summary>
+		<status_actions>
+			<status_action>
+				<action_text>INTRODUCED.</action_text>
+				<action_date>2012-03-21</action_date>
+			</status_action>
+			<status_action>
+				<action_text>To HOUSE Committee on NATURAL RESOURCES.</action_text>
+				<action_date>2012-03-21</action_date>
+			</status_action>
+			<status_action>
+				<action_text>Additionally referred to HOUSE Committee on OVERSIGHT AND GOVERNMENT REFORM.</action_text>
+				<action_date>2012-03-21</action_date>
+			</status_action>
+			<status_action>
+				<action_text>Additionally referred to HOUSE Committee on SCIENCE, SPACE, AND TECHNOLOGY.</action_text>
+				<action_date>2012-03-21</action_date>
+			</status_action>
+			<status_action>
+				<action_text>Additionally referred to HOUSE Committee on AGRICULTURE.</action_text>
+				<action_date>2012-03-21</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In HOUSE Committee on NATURAL RESOURCES:  Referred to Subcmt on FISHERIES, WILDLIFE, OCEANS AND INSULAR AFFAIRS.</action_text>
+				<action_date>2012-04-02</action_date>
+			</status_action>
+		</status_actions>
+		<public_text_link><![CDATA[http://custom.statenet.com/public/resources.cgi?id=ID:bill:US2011000H4233&ciq=voices&client_md=130eecb8e2836aadfa7416ca326dd977&mode=current_text]]></public_text_link>
+	</bill_profile>
+	<bill_profile>
+		<bill_key>
+			<state>US</state>
+			<session_id>2011000</session_id>
+			<legtype>HR</legtype>
+			<bill_number>4242</bill_number>
+		</bill_key>
+		<authors>
+			<author>
+				<name>Heck J</name>
+				<party>R</party>
+				<house>H</house>
+			</author>
+		</authors>
+		<bill_title>Patient Protection and Affordable Care Act</bill_title>
+		<intro_date>2012-03-22</intro_date>
+		<current_disposition>Pending</current_disposition>
+		<bill_location>House Appropriations Committee</bill_location>
+		<bill_summary>Repeals the Patient Protection and Affordable Care Act, to amend the Public Health Service Act to provide individual and group market reforms to protect health insurance consumers, and for other purposes.</bill_summary>
+		<status_actions>
+			<status_action>
+				<action_text>INTRODUCED.</action_text>
+				<action_date>2012-03-22</action_date>
+			</status_action>
+			<status_action>
+				<action_text>To HOUSE Committee on ENERGY AND COMMERCE.</action_text>
+				<action_date>2012-03-22</action_date>
+			</status_action>
+			<status_action>
+				<action_text>Additionally referred to HOUSE Committee on WAYS AND MEANS.</action_text>
+				<action_date>2012-03-22</action_date>
+			</status_action>
+			<status_action>
+				<action_text>Additionally referred to HOUSE Committee on EDUCATION AND THE WORKFORCE.</action_text>
+				<action_date>2012-03-22</action_date>
+			</status_action>
+			<status_action>
+				<action_text>Additionally referred to HOUSE Committee on JUDICIARY.</action_text>
+				<action_date>2012-03-22</action_date>
+			</status_action>
+			<status_action>
+				<action_text>Additionally referred to HOUSE Committee on NATURAL RESOURCES.</action_text>
+				<action_date>2012-03-22</action_date>
+			</status_action>
+			<status_action>
+				<action_text>Additionally referred to HOUSE Committee on RULES.</action_text>
+				<action_date>2012-03-22</action_date>
+			</status_action>
+			<status_action>
+				<action_text>Additionally referred to HOUSE Committee on HOUSE ADMINISTRATION.</action_text>
+				<action_date>2012-03-22</action_date>
+			</status_action>
+			<status_action>
+				<action_text>Additionally referred to HOUSE Committee on APPROPRIATIONS.</action_text>
+				<action_date>2012-03-22</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In HOUSE Committee on NATURAL RESOURCES:  Referred to Subcommittee on INDIAN AND ALASKAN NATIVE AFFAIRS.</action_text>
+				<action_date>2012-04-02</action_date>
+			</status_action>
+		</status_actions>
+		<public_text_link><![CDATA[http://custom.statenet.com/public/resources.cgi?id=ID:bill:US2011000H4242&ciq=voices&client_md=cbea4744c47022a8c0d82001a4e8273f&mode=current_text]]></public_text_link>
+	</bill_profile>
+	<bill_profile>
+		<bill_key>
+			<state>US</state>
+			<session_id>2011000</session_id>
+			<legtype>HR</legtype>
+			<bill_number>4267</bill_number>
+		</bill_key>
+		<authors>
+			<author>
+				<name>Matheson</name>
+				<party>D</party>
+				<house>H</house>
+			</author>
+		</authors>
+		<bill_title>Uinta-Wasatch-Cache National Forest</bill_title>
+		<intro_date>2012-03-27</intro_date>
+		<current_disposition>Pending</current_disposition>
+		<bill_location>House Natural Resources Committee</bill_location>
+		<bill_summary>Designates certain National Forest System land in the Uinta-Wasatch-Cache National Forest in Salt Lake County, Utah, as wilderness, to facilitate a land exchange involving certain land in such National Forest, and for other purposes.</bill_summary>
+		<status_actions>
+			<status_action>
+				<action_text>INTRODUCED.</action_text>
+				<action_date>2012-03-27</action_date>
+			</status_action>
+			<status_action>
+				<action_text>To HOUSE Committee on NATURAL RESOURCES.</action_text>
+				<action_date>2012-03-27</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In HOUSE Committee on NATURAL RESOURCES:  Referred to Subcommittee on NATIONAL PARKS, FORESTS AND PUBLIC LANDS.</action_text>
+				<action_date>2012-04-02</action_date>
+			</status_action>
+		</status_actions>
+		<public_text_link><![CDATA[http://custom.statenet.com/public/resources.cgi?id=ID:bill:US2011000H4267&ciq=voices&client_md=5d26a6eaee28cc296383372dfe869a25&mode=current_text]]></public_text_link>
+	</bill_profile>
+</legtrack_feed>

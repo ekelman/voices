@@ -1,0 +1,117 @@
+{literal}
+<script>
+function delete_article(id,type)
+{
+	
+	if (confirm("Are you sure to delete this article ?"))
+	  {
+		location.href='index.php?stage=affiliates&mode=NewsDelete&id='+id+'&type='+type;
+	  }
+	
+}
+</script>
+{/literal}
+<table width="100%" cellspacing="0" cellpadding="0" border="0">
+	<tbody>
+		<tr>
+			<td class="arial_16_c40306"><table width="100%" cellspacing="0"
+					cellpadding="0" border="0">
+					<tbody>
+						<tr>
+							<td valign="top" align="left" class="arial_16_c40306"><table
+									width="100%" cellspacing="0" cellpadding="0" border="0">
+									<tbody>
+										<tr>
+											<td valign="top" align="left">
+												<table width="100%" cellspacing="0" cellpadding="0"
+													border="0">
+													<tr>
+														<td width="34%" valign="middle"
+															style="padding-left: 14px;"
+															class="topsublink_bg arial_15_000_bold">Pettitions</td>
+														<td width="66%" valign="middle" style="padding: 6px 14px;height:30px"
+															class="topsublink_bg"><img src="images/trans.gif" height="30px" /></td
+													</tr>
+													{if $vMsg neq ''}
+													<tr>
+														<td valign="bottom" align="center" class="error-message" colspan="2" height="25">{$vMsg}</td>
+													</tr>
+													{/if}
+													<tr>
+														<td valign="top" align="left"
+															style="padding: 16px 5px 11px 15px;"
+															class="votealert_bg_new" colspan="2">
+															<table width="100%" cellspacing="0" cellpadding="0"
+																border="0">
+																{section loop=$affiliatePetition name=i}
+																<tr>
+																	<td align="left" valign="top">
+																		<table width="100%" border="0" cellspacing="0"
+																			cellpadding="0">
+																			<tr>
+																				<td width="47" align="center" valign="top"><img
+																					src="images/icon_doc.gif" width="27" height="36"
+																					alt="" style="margin-top: 20px" /></td>
+																				<td width="847" align="left" valign="top"
+																					class="bg_f7f6ee">
+																					<table width="100%" border="0" cellspacing="0"
+																						cellpadding="0">
+																						<tr>
+																							<td height="22" align="left" valign="top">
+																								
+																								<a
+																								href="index.php?stage=affiliates&mode=PetitionsDetail&id={$affiliatePetition[i].article_id}"
+																								class="arialB13000000"> 
+																										{$affiliatePetition[i].article_title} </a>
+																								<span style="padding-left:10px;">
+																								{if $AffiliateContentPetitionsEdit}
+																								<a class="arial12Ba60000" href="index.php?stage=affiliates&mode=NewsEdit&id={$affiliatePetition[i].article_id}"><img src="images/icon_edit.png"  border="0" alt="Edit" title="Edit" /> </a>
+																								{/if}
+																								{if $AffiliateContentPetitionsDelete}	
+	
+																							<a onclick="return delete_article({$affiliatePetition[i].article_id},'{$affiliatePetition[i].article_type}')"
+																														href="javascript:"
+																														class="arial12Ba60000">
+																															<img src="images/icon_delete.png"  border="0" alt="Delete" title="Delete" /></a>	</span>
+																														{/if}	
+																										<!--   <a
+																									href="#"> <img src="images/btn_new.gif"
+																										alt="" width="24" height="14" border="0" /> </a>-->
+																							</td>
+																						</tr>
+																						<tr>
+																							<td align="left" valign="top">
+																								{$affiliatePetition[i].affiliate_comment}</td>
+																						</tr>
+																						<tr>
+																							<td height="26" align="right" valign="bottom">
+																								<span class="arial12Ba60000" style="float: left">Dated:
+																									<span class="arial11Na60000">{$affiliatePetition[i].created}</span>
+																							</span> 
+																							
+																							<a
+																								href="index.php?stage=affiliates&mode=PetitionsDetail&id={$affiliatePetition[i].article_id}"
+																								class="arial12Ba60000"> [read more] </a> 
+																								
+																							</td>
+																						</tr>
+																					</table></td>
+																			</tr>
+																		</table></td>
+																</tr>
+																{/section}
+															</table>
+														</td>
+													</tr>
+												</table></td>
+										</tr>
+									</tbody>
+								</table>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</td>
+		</tr>
+	</tbody>
+</table>

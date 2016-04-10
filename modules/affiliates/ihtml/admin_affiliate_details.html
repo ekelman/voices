@@ -1,0 +1,31 @@
+<table cellspacing='0' width='96%' cellpadding='0' border='0' bordercolor='#ffffff'>
+<tr><td height="10px"></td></tr>
+<tr height='28'><td bgcolor="#005388" align="center" style="padding-left:3px"><font color="#FFFFFF"><b>Affiliate Details</b></font></td></tr>
+<tr>
+	<td>
+	
+		<table align="center" width='70%'cellspacing='1' cellpadding='3' border='0'  bordercolor='#f7f7f7'>
+			<tr><td class="arial11b000000" width="35%"><B>Name</B></td><td>{$oAffiliate->first_name|html_entity_decode|stripslashes}&nbsp;{$oAffiliate->last_name|html_entity_decode|stripslashes}</td></tr>
+			<tr><td class="arial11b000000"><B>User Name</B></td><td>{$oAffiliate->user_name|html_entity_decode|stripslashes}</td></tr>
+			<tr><td class="arial11b000000"><B>Email</B></td><td>{$oAffiliate->email|html_entity_decode|stripslashes}</td></tr>
+			<tr><td class="arial11b000000"><B>Address</B></td><td>{$oAffiliate->street_address|html_entity_decode|stripslashes}</td></tr>
+			<tr><td class="arial11b000000"><B>City</B></td><td>{$oAffiliate->city|html_entity_decode|stripslashes}</td></tr>
+			<tr><td class="arial11b000000"><B>State</B></td><td>{$oAffiliate->state|default:""|html_entity_decode|stripslashes}</td></tr>
+			<tr><td class="arial11b000000"><B>Zip Code</B></td><td>{$oAffiliate->zip_code|default:""|html_entity_decode|stripslashes}</td></tr>
+			<tr><td class="arial11b000000"><B>Country</B></td><td>{$oAffiliate->country|html_entity_decode|stripslashes}</td></tr>
+			
+			<tr><td class="arial11b000000"><B>Organisation </B></td><td>{$oAffiliate->organisation_name|html_entity_decode|stripslashes}</td></tr>
+			<tr><td class="arial11b000000"><B>Organisation Website</B></td><td>
+			<a href="{$oAffiliate->organisation_website|html_entity_decode|stripslashes}" target="_blank">
+				{$oAffiliate->organisation_website|html_entity_decode|stripslashes}
+			</a></td></tr>			
+			<tr><td class="arial11b000000"><B>Description </B></td><td>{$oAffiliate->description|default:""|html_entity_decode|stripslashes}</td></tr>
+			<tr><td class="arial11b000000"><B>Affiliate Code</B></td><td>{$oAffiliate->affiliate_code|default:""|html_entity_decode|stripslashes}</td></tr>
+			<tr><td class="arial11b000000"><B>Promo Code</B></td><td>{$oAffiliate->promo_code|html_entity_decode|stripslashes}</td></tr>
+			<tr><td class="arial11b000000"><B>Donation URL</B></td><td>{$oAffiliate->donation_url|html_entity_decode|stripslashes}</td></tr>
+			
+			<tr><td colspan='2' align='center'><a class="arial11b000000" href="index.php?stage=affiliates&mode=ListAffiliates" style='cursor:hand'>&lt;&lt;Back</A></tr>
+		</table>
+	</td>
+</tr>
+</table>

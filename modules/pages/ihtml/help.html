@@ -1,0 +1,130 @@
+{literal}
+	<script language=javascript src="scripts/gen_validatorv2.js"></script>
+{/literal}
+<form method="post" name="frmWork" action="">
+                      <table width="720" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                          <td width="720" class="arial18b005B91" align="left" valign="top">Help</td>
+                        </tr>
+                        <tr>
+                          <td align="left" valign="top"><img src="images/img_b_line.gif" alt="" width="720" height="1" /></td>
+                        </tr>
+                        <tr>
+                          <td align="left" valign="top"><img src="images/trans.gif" alt="" width="1" height="15" /></td>
+                        </tr>
+                        <tr>
+                          <td align="left" valign="top"><table width="720" border="0" cellspacing="0" cellpadding="0">
+                              <tr>
+                                <td align="left" valign="top">&nbsp;</td>
+                                <td align="center" valign="middle">&nbsp;</td>
+                                <td align="left" valign="top">&nbsp;</td>
+                              </tr>
+                              <tr>
+                                <td align="left" valign="top">&nbsp;</td>
+                                <td align="center" valign="middle">&nbsp;</td>
+                                <td align="left" valign="top">&nbsp;</td>
+                              </tr>
+                              <tr>
+                                <td align="left" valign="top">&nbsp;</td>
+                                <td align="center" valign="middle">&nbsp;</td>
+                                <td align="left" valign="top">&nbsp;</td>
+                              </tr>
+                              <tr>
+                                <td width="8" align="left" valign="top"><img src="images/trans.gif" alt="" width="8" height="1" /></td>
+                                <td width="704" align="center" valign="middle"><strong>{$oLanguage[0]->lang_value|html_entity_decode|stripslashes}</strong></td>
+                                <td width="8" align="left" valign="top"><img src="images/trans.gif" alt="" width="8" height="1" /></td>
+                              </tr>
+                              <tr>
+                                <td align="left" valign="top">&nbsp;</td>
+                                <td align="center" valign="middle">&nbsp;</td>
+                                <td align="left" valign="top">&nbsp;</td>
+                              </tr>
+                              <tr>
+                                <td align="left" valign="top">&nbsp;</td>
+                                <td align="center" valign="middle">&nbsp;</td>
+                                <td align="left" valign="top">&nbsp;</td>
+                              </tr>
+                                <tr>
+                                <td width="704" align="center" valign="middle" colspan="3"><!--
+								
+								<table border="0">
+  {if $sErrorMsg neq ''}
+  <tr>
+    <td align="center" class="error">{$sErrorMsg}</td>
+  </tr>
+    <tr>
+      <td align="center" class="error">&nbsp;</td>
+    </tr>
+  {/if}
+  <tr>
+    <td align="center"><table border="0" align="center" cellpadding="0" cellspacing="0">
+      <tr>
+        <td class="arial11b000000" align="center" valign="middle" colspan="2">{$oLanguage[0]->lang_value|html_entity_decode|stripslashes}</td>
+      </tr>
+      <tr>
+        <td colspan="2" align="left" valign="top" style="height:30px;">&nbsp;</td>
+      </tr>
+      <tr>
+        <td height="28" align="right" valign="middle" class="arial11b000000"><span class="error">*</span>&nbsp;Name:&nbsp;</td>
+        <td align="left" valign="middle"><input name="name" type="text" class="arial11n000000" size="35" /></td>
+      </tr>
+      <tr>
+        <td height="28" align="right" valign="middle" class="arial11b000000"><span class="error">*</span>&nbsp;Email Address:&nbsp;</td>
+        <td align="left" valign="middle"><input name="email" type="text" class="arial11n000000" size="35" /></td>
+      </tr>
+      <tr>
+        <td height="28" align="right" valign="middle" class="arial11b000000"><span class="error">*</span>&nbsp;Phone Number:&nbsp;</td>
+        <td align="left" valign="middle"><input name="phone_no" type="text" class="arial11n000000" size="35" /></td>
+      </tr>
+      <tr>
+        <td  height="28" align="right" class="arial11b000000" valign="top"><span class="error">*</span>&nbsp;Message:&nbsp;</td>
+        <td><textarea name="message" cols="32" rows="5" class="arial11n000000"></textarea></td>
+      </tr>
+      <tr>
+        <td colspan="2" align="center">&nbsp;</td>
+      </tr>
+    </table></td>
+  </tr>
+  <tr>
+    <td colspan="2"align="center"><table  width="94" height="21" border="0" cellpadding="0" cellspacing="0">
+      <tr>
+        <td align="left" valign="middle" class="arial12Bffffff" ><input type="hidden" name="stage" value="pages">
+              <input type="hidden" name="mode" value="SubmitContact">
+          
+              <input type=image name='next' src='images/btn_submit.gif' style='width:63;height:21' border='0' alt="Submit">
+        </td>
+      </tr>
+    </table></td>
+  </tr>
+</table>
+--></td>
+                              </tr>
+                              
+                              <tr>
+                                <td align="left" valign="top">&nbsp;</td>
+                                <td align="left" valign="top"></td>
+                                <td align="left" valign="top">&nbsp;</td>
+                              </tr>
+                              
+                          </table></td>
+                        </tr>
+                      </table>
+					 
+					<table>
+</form>
+					
+	{literal}
+<!--<script language='javascript' type='text/javascript'>
+
+	var frmvalidator	=	new Validator("frmWork");
+	frmvalidator.addValidation("name","req","Please enter your name");
+	frmvalidator.addValidation("name","alphabetic","Only alphabets are allowed in name");
+	frmvalidator.addValidation("email","req","Please enter your email address");
+	frmvalidator.addValidation("email","email","Format of email provided is incorrect");	
+	frmvalidator.addValidation("phone_no","req","Please enter Phone No");
+	frmvalidator.addValidation("phone_no",'maxlen=15',"Maximum 15 characters are required");
+	frmvalidator.addValidation("phone_no","numeric","Phone Number should be in Numerics");
+    frmvalidator.addValidation("message","req","Please enter Message");
+
+</script>-->
+{/literal}

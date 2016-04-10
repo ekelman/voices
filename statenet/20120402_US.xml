@@ -1,0 +1,2448 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<legtrack_feed version_id="2012-04-02-01">
+	<bill_profile>
+		<bill_key>
+			<state>US</state>
+			<session_id>2011000</session_id>
+			<legtype>HR</legtype>
+			<bill_number>473</bill_number>
+		</bill_key>
+		<related_bills>
+			<related_bill>
+				<related_bill_key>
+					<related_state>US</related_state>
+					<related_session_id>2011000</related_session_id>
+					<related_legtype>S</related_legtype>
+					<related_bill_number>610</related_bill_number>
+				</related_bill_key>
+				<type_description>Identical</type_description>
+			</related_bill>
+		</related_bills>
+		<authors>
+			<author>
+				<name>Boren</name>
+				<party>D</party>
+				<house>H</house>
+			</author>
+		</authors>
+		<bill_title>Conveyance 140 Acres of Land in Oklahoma to Boy Scouts</bill_title>
+		<intro_date>2011-01-26</intro_date>
+		<last_amend_date>2011-10-03</last_amend_date>
+		<final_status>
+			<date>2012-04-02</date>
+			<action>Enacted</action>
+		</final_status>
+		<current_disposition>Enacted</current_disposition>
+		<bill_location>Signed by President</bill_location>
+		<bill_summary>Provides for the conveyance of approximately 140 Acres of land in the Ouachita National Forest in Oklahoma to the Indian Nations Council, Inc., of the Boy Scouts of America, and for other purposes.</bill_summary>
+		<status_actions>
+			<status_action>
+				<action_text>INTRODUCED.</action_text>
+				<action_date>2011-01-26</action_date>
+			</status_action>
+			<status_action>
+				<action_text>To HOUSE Committee on NATURAL RESOURCES.</action_text>
+				<action_date>2011-01-26</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In HOUSE Committee on NATURAL RESOURCES:  Referred to Subcommittee on NATIONAL PARKS, FORESTS AND PUBLIC LANDS.</action_text>
+				<action_date>2011-02-04</action_date>
+			</status_action>
+			<status_action>
+				<action_text>Subcommittee on NATIONAL PARKS, FORESTS AND PUBLIC LANDS discharged.</action_text>
+				<action_date>2011-07-20</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In HOUSE Committee on NATURAL RESOURCES:  Consideration and mark-up session held.</action_text>
+				<action_date>2011-07-20</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In HOUSE Committee on NATURAL RESOURCES:  Ordered to be reported as amended.</action_text>
+				<action_date>2011-07-20</action_date>
+			</status_action>
+			<status_action>
+				<action_text>From HOUSE Committee on NATURAL RESOURCES:  Reported as amended.</action_text>
+				<action_date>2011-09-23</action_date>
+			</status_action>
+			<status_action>
+				<action_text>Reported in HOUSE. Printed version.</action_text>
+				<action_date>2011-09-23</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In HOUSE.  Placed on HOUSE Union Calendar.</action_text>
+				<action_date>2011-09-23</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In HOUSE.  Amended on HOUSE floor.</action_text>
+				<action_date>2011-10-03</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In HOUSE.  Passed HOUSE.  *****To SENATE.</action_text>
+				<action_date>2011-10-03</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In SENATE.  Read second time.</action_text>
+				<action_date>2011-10-04</action_date>
+			</status_action>
+			<status_action>
+				<action_text>To SENATE Committee on AGRICULTURE, NUTRITION AND FORESTRY.</action_text>
+				<action_date>2011-10-04</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In SENATE.  Discharged from SENATE Committee on AGRICULTURE, NUTRITION AND FORESTRY.</action_text>
+				<action_date>2012-03-15</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In SENATE.  Passed SENATE.</action_text>
+				<action_date>2012-03-15</action_date>
+			</status_action>
+			<status_action>
+				<action_text>Enrolled.  Cleared for White House.</action_text>
+				<action_date>2012-03-15</action_date>
+			</status_action>
+			<status_action>
+				<action_text>*****To PRESIDENT.</action_text>
+				<action_date>2012-03-22</action_date>
+			</status_action>
+			<status_action>
+				<action_text>Signed by PRESIDENT.</action_text>
+				<action_date>2012-04-02</action_date>
+			</status_action>
+		</status_actions>
+		<public_text_link><![CDATA[http://custom.statenet.com/public/resources.cgi?id=ID:bill:US2011000H473&ciq=voices&client_md=3867c683f56e70123fde9b954c5e770c&mode=current_text]]></public_text_link>
+	</bill_profile>
+	<bill_profile>
+		<bill_key>
+			<state>US</state>
+			<session_id>2011000</session_id>
+			<legtype>HR</legtype>
+			<bill_number>886</bill_number>
+		</bill_key>
+		<related_bills>
+			<related_bill>
+				<related_bill_key>
+					<related_state>US</related_state>
+					<related_session_id>2011000</related_session_id>
+					<related_legtype>S</related_legtype>
+					<related_bill_number>431</related_bill_number>
+				</related_bill_key>
+				<type_description>Identical</type_description>
+			</related_bill>
+		</related_bills>
+		<authors>
+			<author>
+				<name>Womack</name>
+				<party>R</party>
+				<house>H</house>
+			</author>
+		</authors>
+		<bill_title>Coins to Commemorate US Marshal Service</bill_title>
+		<intro_date>2011-03-02</intro_date>
+		<last_amend_date>2012-03-15</last_amend_date>
+		<final_status>
+			<date>2012-04-02</date>
+			<action>Enacted</action>
+		</final_status>
+		<current_disposition>Enacted</current_disposition>
+		<bill_location>Signed by President</bill_location>
+		<bill_summary>Requires the Secretary of the Treasury to mint coins in commemoration of the 225th anniversary of the establishment of the Nation's first Federal law enforcement agency, the United States Marshals Service.</bill_summary>
+		<status_actions>
+			<status_action>
+				<action_text>INTRODUCED.</action_text>
+				<action_date>2011-03-02</action_date>
+			</status_action>
+			<status_action>
+				<action_text>To HOUSE Committee on FINANCIAL SERVICES.</action_text>
+				<action_date>2011-03-02</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In HOUSE Committee on FINANCIAL SERVICES: Referred to Subcmt on DOMESTIC MONETARY POLICY AND TECHNOLOGY.</action_text>
+				<action_date>2011-04-04</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In HOUSE.  Rules Suspended. Discharged from all committees.</action_text>
+				<action_date>2011-12-13</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In HOUSE.  Amended on HOUSE floor.</action_text>
+				<action_date>2011-12-15</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In HOUSE.  Passed HOUSE.  *****To SENATE.</action_text>
+				<action_date>2011-12-15</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In SENATE.  Read second time.</action_text>
+				<action_date>2011-12-17</action_date>
+			</status_action>
+			<status_action>
+				<action_text>To SENATE Committee on BANKING, HOUSING AND URBAN AFFAIRS.</action_text>
+				<action_date>2011-12-17</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In SENATE.  Discharged from SENATE Committee on BANKING, HOUSING AND URBAN AFFAIRS.</action_text>
+				<action_date>2012-03-15</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In SENATE.  Amendment SA 1847 proposed by Senator Reid for Senator Boozman.</action_text>
+				<action_date>2012-03-15</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In SENATE.  SA 1847 agreed to on SENATE floor by unanimous consent.</action_text>
+				<action_date>2012-03-15</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In SENATE.  Amended on SENATE floor.</action_text>
+				<action_date>2012-03-15</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In SENATE.  Passed SENATE.  *****To HOUSE for concurrence.</action_text>
+				<action_date>2012-03-15</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In HOUSE.  HOUSE concurred in SENATE amendments.</action_text>
+				<action_date>2012-03-21</action_date>
+			</status_action>
+			<status_action>
+				<action_text>Enrolled.  Cleared for White House.</action_text>
+				<action_date>2012-03-21</action_date>
+			</status_action>
+			<status_action>
+				<action_text>*****To PRESIDENT.</action_text>
+				<action_date>2012-03-23</action_date>
+			</status_action>
+			<status_action>
+				<action_text>Signed by PRESIDENT.</action_text>
+				<action_date>2012-04-02</action_date>
+			</status_action>
+		</status_actions>
+		<public_text_link><![CDATA[http://custom.statenet.com/public/resources.cgi?id=ID:bill:US2011000H886&ciq=voices&client_md=ce14dec3a826766a58f707059afbc224&mode=current_text]]></public_text_link>
+	</bill_profile>
+	<bill_profile>
+		<bill_key>
+			<state>US</state>
+			<session_id>2011000</session_id>
+			<legtype>HR</legtype>
+			<bill_number>4281</bill_number>
+		</bill_key>
+		<related_bills>
+			<related_bill>
+				<related_bill_key>
+					<related_state>US</related_state>
+					<related_session_id>2011000</related_session_id>
+					<related_legtype>H</related_legtype>
+					<related_bill_number>662</related_bill_number>
+				</related_bill_key>
+				<type_description>Related</type_description>
+			</related_bill>
+			<related_bill>
+				<related_bill_key>
+					<related_state>US</related_state>
+					<related_session_id>2011000</related_session_id>
+					<related_legtype>H</related_legtype>
+					<related_bill_number>2887</related_bill_number>
+				</related_bill_key>
+				<type_description>Related</type_description>
+			</related_bill>
+			<related_bill>
+				<related_bill_key>
+					<related_state>US</related_state>
+					<related_session_id>2011000</related_session_id>
+					<related_legtype>H</related_legtype>
+					<related_bill_number>4239</related_bill_number>
+				</related_bill_key>
+				<type_description>Related</type_description>
+			</related_bill>
+			<related_bill>
+				<related_bill_key>
+					<related_state>US</related_state>
+					<related_session_id>2011000</related_session_id>
+					<related_legtype>H</related_legtype>
+					<related_bill_number>4276</related_bill_number>
+				</related_bill_key>
+				<type_description>Related</type_description>
+			</related_bill>
+			<related_bill>
+				<related_bill_key>
+					<related_state>US</related_state>
+					<related_session_id>2011000</related_session_id>
+					<related_legtype>HRES</related_legtype>
+					<related_bill_number>600</related_bill_number>
+				</related_bill_key>
+				<type_description>Related</type_description>
+			</related_bill>
+			<related_bill>
+				<related_bill_key>
+					<related_state>US</related_state>
+					<related_session_id>2011000</related_session_id>
+					<related_legtype>S</related_legtype>
+					<related_bill_number>1525</related_bill_number>
+				</related_bill_key>
+				<type_description>Related</type_description>
+			</related_bill>
+		</related_bills>
+		<authors>
+			<author>
+				<name>Mica</name>
+				<party>R</party>
+				<house>H</house>
+			</author>
+		</authors>
+		<bill_title>Surface Transportation Extension Act of 2012</bill_title>
+		<intro_date>2012-03-28</intro_date>
+		<final_status>
+			<date>2012-03-30</date>
+			<action>Enacted</action>
+		</final_status>
+		<current_disposition>Enacted</current_disposition>
+		<bill_location>Chaptered</bill_location>
+		<chapter_number>112-102</chapter_number>
+		<bill_summary>Relates to the Surface Transportation Extension Act of 2012; provides an extension of Federal-aid highway, highway safety, motor carrier safety, transit, and other programs funded out of the Highway Trust Fund pending enactment of a multiyear law reauthorizing such programs; provides for the extension of specified highway-related and small-engine fuel tax provisions.</bill_summary>
+		<status_actions>
+			<status_action>
+				<action_text>INTRODUCED.</action_text>
+				<action_date>2012-03-28</action_date>
+			</status_action>
+			<status_action>
+				<action_text>To HOUSE Committee on TRANSPORTATION AND INFRASTRUCTURE.</action_text>
+				<action_date>2012-03-28</action_date>
+			</status_action>
+			<status_action>
+				<action_text>Additionally referred to HOUSE Committee on WAYS AND MEANS.</action_text>
+				<action_date>2012-03-28</action_date>
+			</status_action>
+			<status_action>
+				<action_text>Additionally referred to HOUSE Committee on NATURAL RESOURCES.</action_text>
+				<action_date>2012-03-28</action_date>
+			</status_action>
+			<status_action>
+				<action_text>Additionally referred to HOUSE Committee on SCIENCE, SPACE, AND TECHNOLOGY.</action_text>
+				<action_date>2012-03-28</action_date>
+			</status_action>
+			<status_action>
+				<action_text>Additionally referred to HOUSE Committee on ENERGY AND COMMERCE.</action_text>
+				<action_date>2012-03-28</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In HOUSE.  Rules Suspended. Discharged from all committees.</action_text>
+				<action_date>2012-03-28</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In HOUSE.  Rules Committee Resolution 600 Reported to House.</action_text>
+				<action_date>2012-03-28</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In HOUSE.  Rules Committee Resolution H. Res. 600 Passed House.</action_text>
+				<action_date>2012-03-29</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In HOUSE.  Considered under the provisions of Rules Committee Resolution H. Res. 600.</action_text>
+				<action_date>2012-03-29</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In HOUSE.  Passed HOUSE.  *****To SENATE.</action_text>
+				<action_date>2012-03-29</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In SENATE.  Read second time.</action_text>
+				<action_date>2012-03-29</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In SENATE.  Passed SENATE.</action_text>
+				<action_date>2012-03-29</action_date>
+			</status_action>
+			<status_action>
+				<action_text>Enrolled.  Cleared for White House.</action_text>
+				<action_date>2012-03-29</action_date>
+			</status_action>
+			<status_action>
+				<action_text>*****To PRESIDENT.</action_text>
+				<action_date>2012-03-29</action_date>
+			</status_action>
+			<status_action>
+				<action_text>Signed by PRESIDENT.</action_text>
+				<action_date>2012-03-30</action_date>
+			</status_action>
+			<status_action>
+				<action_text>Public Law No. 112-102</action_text>
+				<action_date>2012-03-30</action_date>
+			</status_action>
+		</status_actions>
+		<public_text_link><![CDATA[http://custom.statenet.com/public/resources.cgi?id=ID:bill:US2011000H4281&ciq=voices&client_md=a7c2d56ae1827fac83e2cbc128575b97&mode=current_text]]></public_text_link>
+	</bill_profile>
+	<bill_profile>
+		<bill_key>
+			<state>US</state>
+			<session_id>2011000</session_id>
+			<legtype>HR</legtype>
+			<bill_number>4297</bill_number>
+		</bill_key>
+		<authors>
+			<author>
+				<name>Foxx</name>
+				<party>R</party>
+				<house>H</house>
+			</author>
+		</authors>
+		<bill_title>Workforce Investment System of the Nation</bill_title>
+		<intro_date>2012-03-29</intro_date>
+		<current_disposition>Pending</current_disposition>
+		<bill_location><![CDATA[House Transportation & Infrastructure Committee]]></bill_location>
+		<bill_summary>Reforms and strengthens the workforce investment system of the Nation to put Americans back to work and make the United States more competitive in the 21st Century.</bill_summary>
+		<status_actions>
+			<status_action>
+				<action_text>INTRODUCED.</action_text>
+				<action_date>2012-03-29</action_date>
+			</status_action>
+			<status_action>
+				<action_text>To HOUSE Committee on EDUCATION AND THE WORKFORCE.</action_text>
+				<action_date>2012-03-29</action_date>
+			</status_action>
+			<status_action>
+				<action_text>Additionally referred to HOUSE Committee on JUDICIARY.</action_text>
+				<action_date>2012-03-29</action_date>
+			</status_action>
+			<status_action>
+				<action_text>Additionally referred to HOUSE Committee on AGRICULTURE.</action_text>
+				<action_date>2012-03-29</action_date>
+			</status_action>
+			<status_action>
+				<action_text>Additionally referred to HOUSE Committee on ENERGY AND COMMERCE.</action_text>
+				<action_date>2012-03-29</action_date>
+			</status_action>
+			<status_action>
+				<action_text>Additionally referred to HOUSE Committee on TRANSPORTATION AND INFRASTRUCTURE.</action_text>
+				<action_date>2012-03-29</action_date>
+			</status_action>
+		</status_actions>
+		<public_text_link><![CDATA[http://custom.statenet.com/public/resources.cgi?id=ID:bill:US2011000H4297&ciq=voices&client_md=000210dd5dc92a5867af3cb672176a16&mode=current_text]]></public_text_link>
+	</bill_profile>
+	<bill_profile>
+		<bill_key>
+			<state>US</state>
+			<session_id>2011000</session_id>
+			<legtype>HR</legtype>
+			<bill_number>4298</bill_number>
+		</bill_key>
+		<authors>
+			<author>
+				<name>McKinley</name>
+				<party>R</party>
+				<house>H</house>
+			</author>
+		</authors>
+		<bill_title>Federal Black Lung Benefits Program</bill_title>
+		<intro_date>2012-03-29</intro_date>
+		<current_disposition>Pending</current_disposition>
+		<bill_location>House Education and the Workforce Committee</bill_location>
+		<bill_summary>Directs the Secretary of Labor to conduct a review of the forms related to obtaining workers' compensation benefits under the Federal Black Lung Benefits Program.</bill_summary>
+		<status_actions>
+			<status_action>
+				<action_text>INTRODUCED.</action_text>
+				<action_date>2012-03-29</action_date>
+			</status_action>
+			<status_action>
+				<action_text>To HOUSE Committee on EDUCATION AND THE WORKFORCE.</action_text>
+				<action_date>2012-03-29</action_date>
+			</status_action>
+		</status_actions>
+		<public_text_link><![CDATA[http://custom.statenet.com/public/resources.cgi?id=ID:bill:US2011000H4298&ciq=voices&client_md=dc58af9b83f8b08e2702d7c75d9c8877&mode=current_text]]></public_text_link>
+	</bill_profile>
+	<bill_profile>
+		<bill_key>
+			<state>US</state>
+			<session_id>2011000</session_id>
+			<legtype>HR</legtype>
+			<bill_number>4299</bill_number>
+		</bill_key>
+		<authors>
+			<author>
+				<name>McNerney</name>
+				<party>D</party>
+				<house>H</house>
+			</author>
+		</authors>
+		<bill_title>Specially Adapted Housing Assistance</bill_title>
+		<intro_date>2012-03-29</intro_date>
+		<current_disposition>Pending</current_disposition>
+		<bill_location>House Veterans' Affairs Committee</bill_location>
+		<bill_summary>Amends title 38, United States Code, to extend the authority of the Secretary of Veterans Affairs to provide specially adapted housing assistance to individuals residing temporarily in housing owned by a family member.</bill_summary>
+		<status_actions>
+			<status_action>
+				<action_text>INTRODUCED.</action_text>
+				<action_date>2012-03-29</action_date>
+			</status_action>
+			<status_action>
+				<action_text>To HOUSE Committee on VETERANS' AFFAIRS.</action_text>
+				<action_date>2012-03-29</action_date>
+			</status_action>
+		</status_actions>
+		<public_text_link><![CDATA[http://custom.statenet.com/public/resources.cgi?id=ID:bill:US2011000H4299&ciq=voices&client_md=331671815714b42f1fa331bfd7ccf2d8&mode=current_text]]></public_text_link>
+	</bill_profile>
+	<bill_profile>
+		<bill_key>
+			<state>US</state>
+			<session_id>2011000</session_id>
+			<legtype>HR</legtype>
+			<bill_number>4300</bill_number>
+		</bill_key>
+		<authors>
+			<author>
+				<name>McNerney</name>
+				<party>D</party>
+				<house>H</house>
+			</author>
+		</authors>
+		<bill_title>Work Study Allowance for Certain Activities</bill_title>
+		<intro_date>2012-03-29</intro_date>
+		<current_disposition>Pending</current_disposition>
+		<bill_location>House Veterans' Affairs Committee</bill_location>
+		<bill_summary>Amends title 38, United States Code, to make permanent the authority to provide work-study allowance for certain activities by individuals receiving educational assistance by the Secretary of Veterans Affairs.</bill_summary>
+		<status_actions>
+			<status_action>
+				<action_text>INTRODUCED.</action_text>
+				<action_date>2012-03-29</action_date>
+			</status_action>
+			<status_action>
+				<action_text>To HOUSE Committee on VETERANS' AFFAIRS.</action_text>
+				<action_date>2012-03-29</action_date>
+			</status_action>
+		</status_actions>
+		<public_text_link><![CDATA[http://custom.statenet.com/public/resources.cgi?id=ID:bill:US2011000H4300&ciq=voices&client_md=8d7a70f3ba83bb1cff627f290b4a5fed&mode=current_text]]></public_text_link>
+	</bill_profile>
+	<bill_profile>
+		<bill_key>
+			<state>US</state>
+			<session_id>2011000</session_id>
+			<legtype>HR</legtype>
+			<bill_number>4301</bill_number>
+		</bill_key>
+		<authors>
+			<author>
+				<name>Duncan Je</name>
+				<party>R</party>
+				<house>H</house>
+			</author>
+		</authors>
+		<bill_title>Growth of the American Economy</bill_title>
+		<intro_date>2012-03-29</intro_date>
+		<current_disposition>Pending</current_disposition>
+		<bill_location>House Oversight and Government Reform Committee</bill_location>
+		<bill_summary>Contributes to the growth of the American economy and the strength of American national security by streamlining regulatory permitting procedures and increasing domestic production from all energy sources.</bill_summary>
+		<status_actions>
+			<status_action>
+				<action_text>INTRODUCED.</action_text>
+				<action_date>2012-03-29</action_date>
+			</status_action>
+			<status_action>
+				<action_text>To HOUSE Committee on NATURAL RESOURCES.</action_text>
+				<action_date>2012-03-29</action_date>
+			</status_action>
+			<status_action>
+				<action_text>Additionally referred to HOUSE Committee on ENERGY AND COMMERCE.</action_text>
+				<action_date>2012-03-29</action_date>
+			</status_action>
+			<status_action>
+				<action_text>Additionally referred to HOUSE Committee on TRANSPORTATION AND INFRASTRUCTURE.</action_text>
+				<action_date>2012-03-29</action_date>
+			</status_action>
+			<status_action>
+				<action_text>Additionally referred to HOUSE Committee on JUDICIARY.</action_text>
+				<action_date>2012-03-29</action_date>
+			</status_action>
+			<status_action>
+				<action_text>Additionally referred to HOUSE Committee on RULES.</action_text>
+				<action_date>2012-03-29</action_date>
+			</status_action>
+			<status_action>
+				<action_text>Additionally referred to HOUSE Committee on WAYS AND MEANS.</action_text>
+				<action_date>2012-03-29</action_date>
+			</status_action>
+			<status_action>
+				<action_text>Additionally referred to HOUSE Committee on AGRICULTURE.</action_text>
+				<action_date>2012-03-29</action_date>
+			</status_action>
+			<status_action>
+				<action_text>Additionally referred to HOUSE Committee on ARMED SERVICES.</action_text>
+				<action_date>2012-03-29</action_date>
+			</status_action>
+			<status_action>
+				<action_text>Additionally referred to HOUSE Committee on OVERSIGHT AND GOVERNMENT REFORM.</action_text>
+				<action_date>2012-03-29</action_date>
+			</status_action>
+		</status_actions>
+		<public_text_link><![CDATA[http://custom.statenet.com/public/resources.cgi?id=ID:bill:US2011000H4301&ciq=voices&client_md=28f630cce5d00421d602caa7dbdc3f0e&mode=current_text]]></public_text_link>
+	</bill_profile>
+	<bill_profile>
+		<bill_key>
+			<state>US</state>
+			<session_id>2011000</session_id>
+			<legtype>HR</legtype>
+			<bill_number>4303</bill_number>
+		</bill_key>
+		<authors>
+			<author>
+				<name>McCaul</name>
+				<party>R</party>
+				<house>H</house>
+			</author>
+		</authors>
+		<bill_title>Designation As Foreign Terrorist Organization</bill_title>
+		<intro_date>2012-03-29</intro_date>
+		<current_disposition>Pending</current_disposition>
+		<bill_location>House Foreign Affairs Committee</bill_location>
+		<bill_summary>Directs the Secretary of State to designate as foreign terrorist organizations certain Mexican drug cartels and submit a report on the activities the Department of State is taking to assist Mexico with drug cartel violence.</bill_summary>
+		<status_actions>
+			<status_action>
+				<action_text>INTRODUCED.</action_text>
+				<action_date>2012-03-29</action_date>
+			</status_action>
+			<status_action>
+				<action_text>To HOUSE Committee on JUDICIARY.</action_text>
+				<action_date>2012-03-29</action_date>
+			</status_action>
+			<status_action>
+				<action_text>Additionally referred to HOUSE Committee on FOREIGN AFFAIRS.</action_text>
+				<action_date>2012-03-29</action_date>
+			</status_action>
+		</status_actions>
+		<public_text_link><![CDATA[http://custom.statenet.com/public/resources.cgi?id=ID:bill:US2011000H4303&ciq=voices&client_md=58f74e2c67f18810ed01a36d7b321280&mode=current_text]]></public_text_link>
+	</bill_profile>
+	<bill_profile>
+		<bill_key>
+			<state>US</state>
+			<session_id>2011000</session_id>
+			<legtype>HR</legtype>
+			<bill_number>4305</bill_number>
+		</bill_key>
+		<authors>
+			<author>
+				<name>Chabot</name>
+				<party>R</party>
+				<house>H</house>
+			</author>
+		</authors>
+		<bill_title>Grant to Assist in Recovery of Missing Individuals</bill_title>
+		<intro_date>2012-03-29</intro_date>
+		<current_disposition>Pending</current_disposition>
+		<bill_location>House Judiciary Committee</bill_location>
+		<bill_summary>Authorizes the Attorney General to provide a grant to assist Federal, State, tribal, and local law enforcement agencies in the rapid recovery of missing individuals.</bill_summary>
+		<status_actions>
+			<status_action>
+				<action_text>INTRODUCED.</action_text>
+				<action_date>2012-03-29</action_date>
+			</status_action>
+			<status_action>
+				<action_text>To HOUSE Committee on JUDICIARY.</action_text>
+				<action_date>2012-03-29</action_date>
+			</status_action>
+		</status_actions>
+		<public_text_link><![CDATA[http://custom.statenet.com/public/resources.cgi?id=ID:bill:US2011000H4305&ciq=voices&client_md=f40b4a93687112871571c6a7d738d23e&mode=current_text]]></public_text_link>
+	</bill_profile>
+	<bill_profile>
+		<bill_key>
+			<state>US</state>
+			<session_id>2011000</session_id>
+			<legtype>HR</legtype>
+			<bill_number>4306</bill_number>
+		</bill_key>
+		<authors>
+			<author>
+				<name>Fitzpatrick</name>
+				<party>R</party>
+				<house>H</house>
+			</author>
+		</authors>
+		<bill_title>Commerce of Prohibited Wildlife Species</bill_title>
+		<intro_date>2012-03-29</intro_date>
+		<current_disposition>Pending</current_disposition>
+		<bill_location>House Natural Resources Committee</bill_location>
+		<bill_summary>Amends the Lacey Act Amendments of 1981 to prohibit the importation, exportation, transportation, and sale, receipt, acquisition, or purchase in interstate or foreign commerce, of any live animal of any prohibited wildlife species.</bill_summary>
+		<status_actions>
+			<status_action>
+				<action_text>INTRODUCED.</action_text>
+				<action_date>2012-03-29</action_date>
+			</status_action>
+			<status_action>
+				<action_text>To HOUSE Committee on NATURAL RESOURCES.</action_text>
+				<action_date>2012-03-29</action_date>
+			</status_action>
+		</status_actions>
+		<public_text_link><![CDATA[http://custom.statenet.com/public/resources.cgi?id=ID:bill:US2011000H4306&ciq=voices&client_md=7005dc6621b84d5c6f7bcf32c465d1d7&mode=current_text]]></public_text_link>
+	</bill_profile>
+	<bill_profile>
+		<bill_key>
+			<state>US</state>
+			<session_id>2011000</session_id>
+			<legtype>HR</legtype>
+			<bill_number>4308</bill_number>
+		</bill_key>
+		<authors>
+			<author>
+				<name>Clarke H</name>
+				<party>D</party>
+				<house>H</house>
+			</author>
+		</authors>
+		<bill_title>Growth and Stability Funding for Detroit</bill_title>
+		<intro_date>2012-03-29</intro_date>
+		<current_disposition>Pending</current_disposition>
+		<bill_location>House Oversight and Government Reform Committee</bill_location>
+		<bill_summary>Authorizes the Secretary of the Treasury to provide growth and stability funding for the city of Detroit.</bill_summary>
+		<status_actions>
+			<status_action>
+				<action_text>INTRODUCED.</action_text>
+				<action_date>2012-03-29</action_date>
+			</status_action>
+			<status_action>
+				<action_text>To HOUSE Committee on OVERSIGHT AND GOVERNMENT REFORM.</action_text>
+				<action_date>2012-03-29</action_date>
+			</status_action>
+		</status_actions>
+		<public_text_link><![CDATA[http://custom.statenet.com/public/resources.cgi?id=ID:bill:US2011000H4308&ciq=voices&client_md=aae4dc82f4d4f892ead08c678973d2f5&mode=current_text]]></public_text_link>
+	</bill_profile>
+	<bill_profile>
+		<bill_key>
+			<state>US</state>
+			<session_id>2011000</session_id>
+			<legtype>HR</legtype>
+			<bill_number>4309</bill_number>
+		</bill_key>
+		<authors>
+			<author>
+				<name>Reichert</name>
+				<party>R</party>
+				<house>H</house>
+			</author>
+		</authors>
+		<bill_title>Cases Involving Crimes of Violence to Federal Court</bill_title>
+		<intro_date>2012-03-29</intro_date>
+		<current_disposition>Pending</current_disposition>
+		<bill_location>House Judiciary Committee</bill_location>
+		<bill_summary>Permits Federal officers to remove cases involving crimes of violence to Federal court.</bill_summary>
+		<status_actions>
+			<status_action>
+				<action_text>INTRODUCED.</action_text>
+				<action_date>2012-03-29</action_date>
+			</status_action>
+			<status_action>
+				<action_text>To HOUSE Committee on JUDICIARY.</action_text>
+				<action_date>2012-03-29</action_date>
+			</status_action>
+		</status_actions>
+		<public_text_link><![CDATA[http://custom.statenet.com/public/resources.cgi?id=ID:bill:US2011000H4309&ciq=voices&client_md=8338aa59a7aac7874130846ffdbfd533&mode=current_text]]></public_text_link>
+	</bill_profile>
+	<bill_profile>
+		<bill_key>
+			<state>US</state>
+			<session_id>2011000</session_id>
+			<legtype>HR</legtype>
+			<bill_number>4312</bill_number>
+		</bill_key>
+		<authors>
+			<author>
+				<name>Bishop T</name>
+				<party>D</party>
+				<house>H</house>
+			</author>
+		</authors>
+		<bill_title>Preference Eligibles for Treatment in Civil Service</bill_title>
+		<intro_date>2012-03-29</intro_date>
+		<current_disposition>Pending</current_disposition>
+		<bill_location>House Oversight and Government Reform Committee</bill_location>
+		<bill_summary>Amends chapter 21 of title 5, United States Code, to provide that fathers of certain permanently disabled or deceased veterans shall be included with mothers of such veterans as preference eligibles for treatment in the civil service.</bill_summary>
+		<status_actions>
+			<status_action>
+				<action_text>INTRODUCED.</action_text>
+				<action_date>2012-03-29</action_date>
+			</status_action>
+			<status_action>
+				<action_text>To HOUSE Committee on OVERSIGHT AND GOVERNMENT REFORM.</action_text>
+				<action_date>2012-03-29</action_date>
+			</status_action>
+		</status_actions>
+		<public_text_link><![CDATA[http://custom.statenet.com/public/resources.cgi?id=ID:bill:US2011000H4312&ciq=voices&client_md=d3ab724738a1913637436b93390774a3&mode=current_text]]></public_text_link>
+	</bill_profile>
+	<bill_profile>
+		<bill_key>
+			<state>US</state>
+			<session_id>2011000</session_id>
+			<legtype>HR</legtype>
+			<bill_number>4314</bill_number>
+		</bill_key>
+		<authors>
+			<author>
+				<name>Capps</name>
+				<party>D</party>
+				<house>H</house>
+			</author>
+		</authors>
+		<bill_title>Coastal Climate Change Adaptation Program</bill_title>
+		<intro_date>2012-03-29</intro_date>
+		<current_disposition>Pending</current_disposition>
+		<bill_location>House Natural Resources Committee</bill_location>
+		<bill_summary>Amends the Coastal Zone Management Act of 1972 to require the Secretary of Commerce to establish a coastal climate change adaptation planning and response program.</bill_summary>
+		<status_actions>
+			<status_action>
+				<action_text>INTRODUCED.</action_text>
+				<action_date>2012-03-29</action_date>
+			</status_action>
+			<status_action>
+				<action_text>To HOUSE Committee on NATURAL RESOURCES.</action_text>
+				<action_date>2012-03-29</action_date>
+			</status_action>
+		</status_actions>
+		<public_text_link><![CDATA[http://custom.statenet.com/public/resources.cgi?id=ID:bill:US2011000H4314&ciq=voices&client_md=97ac475cbb6b977645a228734f8d9e0e&mode=current_text]]></public_text_link>
+	</bill_profile>
+	<bill_profile>
+		<bill_key>
+			<state>US</state>
+			<session_id>2011000</session_id>
+			<legtype>HR</legtype>
+			<bill_number>4315</bill_number>
+		</bill_key>
+		<authors>
+			<author>
+				<name>Carnahan</name>
+				<party>D</party>
+				<house>H</house>
+			</author>
+		</authors>
+		<bill_title>Health Care for Mental Illnesses of Veterans</bill_title>
+		<intro_date>2012-03-29</intro_date>
+		<current_disposition>Pending</current_disposition>
+		<bill_location>House Veterans' Affairs Committee</bill_location>
+		<bill_summary>Amends title 38, United States Code, to provide for unlimited eligibility for health care for mental illnesses for veterans of combat service during certain periods of hostilities and war.</bill_summary>
+		<status_actions>
+			<status_action>
+				<action_text>INTRODUCED.</action_text>
+				<action_date>2012-03-29</action_date>
+			</status_action>
+			<status_action>
+				<action_text>To HOUSE Committee on VETERANS' AFFAIRS.</action_text>
+				<action_date>2012-03-29</action_date>
+			</status_action>
+		</status_actions>
+		<public_text_link><![CDATA[http://custom.statenet.com/public/resources.cgi?id=ID:bill:US2011000H4315&ciq=voices&client_md=2dd65c9c1ef9e046977c4004c1a613d5&mode=current_text]]></public_text_link>
+	</bill_profile>
+	<bill_profile>
+		<bill_key>
+			<state>US</state>
+			<session_id>2011000</session_id>
+			<legtype>HR</legtype>
+			<bill_number>4320</bill_number>
+		</bill_key>
+		<authors>
+			<author>
+				<name>Fattah</name>
+				<party>D</party>
+				<house>H</house>
+			</author>
+		</authors>
+		<bill_title>Long Term Cost Benefit Analyses of Introduced Bills</bill_title>
+		<intro_date>2012-03-29</intro_date>
+		<current_disposition>Pending</current_disposition>
+		<bill_location>House Budget Committee</bill_location>
+		<bill_summary>Amends the Congressional Budget Act of 1974 to require long-term cost benefit analyses of introduced bills.</bill_summary>
+		<status_actions>
+			<status_action>
+				<action_text>INTRODUCED.</action_text>
+				<action_date>2012-03-29</action_date>
+			</status_action>
+			<status_action>
+				<action_text>To HOUSE Committee on RULES.</action_text>
+				<action_date>2012-03-29</action_date>
+			</status_action>
+			<status_action>
+				<action_text>Additionally referred to HOUSE Committee on BUDGET.</action_text>
+				<action_date>2012-03-29</action_date>
+			</status_action>
+		</status_actions>
+		<public_text_link><![CDATA[http://custom.statenet.com/public/resources.cgi?id=ID:bill:US2011000H4320&ciq=voices&client_md=b216380cbdb06fc6aab0f478249fa8f2&mode=current_text]]></public_text_link>
+	</bill_profile>
+	<bill_profile>
+		<bill_key>
+			<state>US</state>
+			<session_id>2011000</session_id>
+			<legtype>HR</legtype>
+			<bill_number>4321</bill_number>
+		</bill_key>
+		<authors>
+			<author>
+				<name>Gerlach</name>
+				<party>R</party>
+				<house>H</house>
+			</author>
+		</authors>
+		<bill_title>Excise Tax on Heavy Trucks and Trailers</bill_title>
+		<intro_date>2012-03-29</intro_date>
+		<current_disposition>Pending</current_disposition>
+		<bill_location>House Ways and Means Committee</bill_location>
+		<bill_summary>Amends the Internal Revenue Code of 1986 to repeal the excise tax on heavy trucks and trailers.</bill_summary>
+		<status_actions>
+			<status_action>
+				<action_text>INTRODUCED.</action_text>
+				<action_date>2012-03-29</action_date>
+			</status_action>
+			<status_action>
+				<action_text>To HOUSE Committee on WAYS AND MEANS.</action_text>
+				<action_date>2012-03-29</action_date>
+			</status_action>
+		</status_actions>
+		<public_text_link><![CDATA[http://custom.statenet.com/public/resources.cgi?id=ID:bill:US2011000H4321&ciq=voices&client_md=75daf419e8198b4c673cc078a4352074&mode=current_text]]></public_text_link>
+	</bill_profile>
+	<bill_profile>
+		<bill_key>
+			<state>US</state>
+			<session_id>2011000</session_id>
+			<legtype>HR</legtype>
+			<bill_number>4322</bill_number>
+		</bill_key>
+		<authors>
+			<author>
+				<name>Gohmert</name>
+				<party>R</party>
+				<house>H</house>
+			</author>
+		</authors>
+		<bill_title>Regulation of Hydraulic Fracturing on Federal Land</bill_title>
+		<intro_date>2012-03-29</intro_date>
+		<current_disposition>Pending</current_disposition>
+		<bill_location>House Energy and Commerce Committee</bill_location>
+		<bill_summary>Clarifies that a State has the sole authority to regulate hydraulic fracturing on Federal land within the boundaries of the State.</bill_summary>
+		<status_actions>
+			<status_action>
+				<action_text>INTRODUCED.</action_text>
+				<action_date>2012-03-29</action_date>
+			</status_action>
+			<status_action>
+				<action_text>To HOUSE Committee on NATURAL RESOURCES.</action_text>
+				<action_date>2012-03-29</action_date>
+			</status_action>
+			<status_action>
+				<action_text>Additionally referred to HOUSE Committee on AGRICULTURE.</action_text>
+				<action_date>2012-03-29</action_date>
+			</status_action>
+			<status_action>
+				<action_text>Additionally referred to HOUSE Committee on TRANSPORTATION AND INFRASTRUCTURE.</action_text>
+				<action_date>2012-03-29</action_date>
+			</status_action>
+			<status_action>
+				<action_text>Additionally referred to HOUSE Committee on ENERGY AND COMMERCE.</action_text>
+				<action_date>2012-03-29</action_date>
+			</status_action>
+		</status_actions>
+		<public_text_link><![CDATA[http://custom.statenet.com/public/resources.cgi?id=ID:bill:US2011000H4322&ciq=voices&client_md=a3e7f90fbc3d57d29923c8ee2b3a2cd9&mode=current_text]]></public_text_link>
+	</bill_profile>
+	<bill_profile>
+		<bill_key>
+			<state>US</state>
+			<session_id>2011000</session_id>
+			<legtype>HR</legtype>
+			<bill_number>4323</bill_number>
+		</bill_key>
+		<authors>
+			<author>
+				<name>Huizenga</name>
+				<party>R</party>
+				<house>H</house>
+			</author>
+		</authors>
+		<bill_title>Points and Fees in Connection with Mortgage Transaction</bill_title>
+		<intro_date>2012-03-29</intro_date>
+		<current_disposition>Pending</current_disposition>
+		<bill_location>House Financial Services Committee</bill_location>
+		<bill_summary>Amends the Truth in Lending Act to improve upon the definitions provided for points and fees in connection with a mortgage transaction.</bill_summary>
+		<status_actions>
+			<status_action>
+				<action_text>INTRODUCED.</action_text>
+				<action_date>2012-03-29</action_date>
+			</status_action>
+			<status_action>
+				<action_text>To HOUSE Committee on FINANCIAL SERVICES.</action_text>
+				<action_date>2012-03-29</action_date>
+			</status_action>
+		</status_actions>
+		<public_text_link><![CDATA[http://custom.statenet.com/public/resources.cgi?id=ID:bill:US2011000H4323&ciq=voices&client_md=69b9608f5099c3b8f5748382f5391b94&mode=current_text]]></public_text_link>
+	</bill_profile>
+	<bill_profile>
+		<bill_key>
+			<state>US</state>
+			<session_id>2011000</session_id>
+			<legtype>HR</legtype>
+			<bill_number>4324</bill_number>
+		</bill_key>
+		<authors>
+			<author>
+				<name>Kind</name>
+				<party>D</party>
+				<house>H</house>
+			</author>
+		</authors>
+		<bill_title>Employee Health Insurance Expenses of Small Employers</bill_title>
+		<intro_date>2012-03-29</intro_date>
+		<current_disposition>Pending</current_disposition>
+		<bill_location>House Ways and Means Committee</bill_location>
+		<bill_summary>Amends the Internal Revenue Code of 1986 to expand the credit for employee health insurance expenses of small employers.</bill_summary>
+		<status_actions>
+			<status_action>
+				<action_text>INTRODUCED.</action_text>
+				<action_date>2012-03-29</action_date>
+			</status_action>
+			<status_action>
+				<action_text>To HOUSE Committee on WAYS AND MEANS.</action_text>
+				<action_date>2012-03-29</action_date>
+			</status_action>
+		</status_actions>
+		<public_text_link><![CDATA[http://custom.statenet.com/public/resources.cgi?id=ID:bill:US2011000H4324&ciq=voices&client_md=744a7a60cd5a4c32e1c2c5a80b6afaa7&mode=current_text]]></public_text_link>
+	</bill_profile>
+	<bill_profile>
+		<bill_key>
+			<state>US</state>
+			<session_id>2011000</session_id>
+			<legtype>HR</legtype>
+			<bill_number>4325</bill_number>
+		</bill_key>
+		<authors>
+			<author>
+				<name>Markey Ed</name>
+				<party>D</party>
+				<house>H</house>
+			</author>
+		</authors>
+		<bill_title>Acceptance of Bids on Any New Oil and Gas Leases</bill_title>
+		<intro_date>2012-03-29</intro_date>
+		<current_disposition>Pending</current_disposition>
+		<bill_location>House Natural Resources Committee</bill_location>
+		<bill_summary>Provides that the Secretary of the Interior may accept bids on any new oil and gas leases of Federal lands (including submerged lands) only from bidders certifying that all oil produced pursuant to such leases, and all refined petroleum products produced from such oil, shall be offered for sale only in the United States.</bill_summary>
+		<status_actions>
+			<status_action>
+				<action_text>INTRODUCED.</action_text>
+				<action_date>2012-03-29</action_date>
+			</status_action>
+			<status_action>
+				<action_text>To HOUSE Committee on NATURAL RESOURCES.</action_text>
+				<action_date>2012-03-29</action_date>
+			</status_action>
+		</status_actions>
+		<public_text_link><![CDATA[http://custom.statenet.com/public/resources.cgi?id=ID:bill:US2011000H4325&ciq=voices&client_md=54a13b2b629f60b542ed4cda048d388c&mode=current_text]]></public_text_link>
+	</bill_profile>
+	<bill_profile>
+		<bill_key>
+			<state>US</state>
+			<session_id>2011000</session_id>
+			<legtype>HR</legtype>
+			<bill_number>4327</bill_number>
+		</bill_key>
+		<authors>
+			<author>
+				<name>Michaud</name>
+				<party>D</party>
+				<house>H</house>
+			</author>
+		</authors>
+		<bill_title>Secretary of Veterans Affairs</bill_title>
+		<intro_date>2012-03-29</intro_date>
+		<current_disposition>Pending</current_disposition>
+		<bill_location>House Veterans' Affairs Committee</bill_location>
+		<bill_summary>Directs the Secretary of Veterans Affairs to recognize tinnitus as a mandatory condition for research and treatment by the Department of Veterans Affairs.</bill_summary>
+		<status_actions>
+			<status_action>
+				<action_text>INTRODUCED.</action_text>
+				<action_date>2012-03-29</action_date>
+			</status_action>
+			<status_action>
+				<action_text>To HOUSE Committee on VETERANS' AFFAIRS.</action_text>
+				<action_date>2012-03-29</action_date>
+			</status_action>
+		</status_actions>
+		<public_text_link><![CDATA[http://custom.statenet.com/public/resources.cgi?id=ID:bill:US2011000H4327&ciq=voices&client_md=865570e0ae498fa59ea66cedd2e76b47&mode=current_text]]></public_text_link>
+	</bill_profile>
+	<bill_profile>
+		<bill_key>
+			<state>US</state>
+			<session_id>2011000</session_id>
+			<legtype>HR</legtype>
+			<bill_number>4333</bill_number>
+		</bill_key>
+		<authors>
+			<author>
+				<name>Paulsen</name>
+				<party>R</party>
+				<house>H</house>
+			</author>
+		</authors>
+		<bill_title>Supplemental Nutrition Assistance Benefits</bill_title>
+		<intro_date>2012-03-29</intro_date>
+		<current_disposition>Pending</current_disposition>
+		<bill_location>House Agriculture Committee</bill_location>
+		<bill_summary>Amends the Food and Nutrition Act of 2008 to permit providers of eligible food purchasing and delivery services to be approved as retail food stores that accept and redeem supplemental nutrition assistance benefits.</bill_summary>
+		<status_actions>
+			<status_action>
+				<action_text>INTRODUCED.</action_text>
+				<action_date>2012-03-29</action_date>
+			</status_action>
+			<status_action>
+				<action_text>To HOUSE Committee on AGRICULTURE.</action_text>
+				<action_date>2012-03-29</action_date>
+			</status_action>
+		</status_actions>
+		<public_text_link><![CDATA[http://custom.statenet.com/public/resources.cgi?id=ID:bill:US2011000H4333&ciq=voices&client_md=f681e0a315a661a67ad3c06a4d41eff0&mode=current_text]]></public_text_link>
+	</bill_profile>
+	<bill_profile>
+		<bill_key>
+			<state>US</state>
+			<session_id>2011000</session_id>
+			<legtype>HR</legtype>
+			<bill_number>4335</bill_number>
+		</bill_key>
+		<authors>
+			<author>
+				<name>Rahall</name>
+				<party>D</party>
+				<house>H</house>
+			</author>
+		</authors>
+		<bill_title>Postal Regulatory Commission</bill_title>
+		<intro_date>2012-03-29</intro_date>
+		<current_disposition>Pending</current_disposition>
+		<bill_location>House Oversight and Government Reform Committee</bill_location>
+		<bill_summary>Amends title 39, United States Code, to allow the Postal Regulatory Commission to set aside determinations by the United States Postal Service to close or consolidate postal facilities that would deny essential postal services to rural areas, communities, or small towns.</bill_summary>
+		<status_actions>
+			<status_action>
+				<action_text>INTRODUCED.</action_text>
+				<action_date>2012-03-29</action_date>
+			</status_action>
+			<status_action>
+				<action_text>To HOUSE Committee on OVERSIGHT AND GOVERNMENT REFORM.</action_text>
+				<action_date>2012-03-29</action_date>
+			</status_action>
+		</status_actions>
+		<public_text_link><![CDATA[http://custom.statenet.com/public/resources.cgi?id=ID:bill:US2011000H4335&ciq=voices&client_md=2bc0113d535c7064ae04c4acc708e09c&mode=current_text]]></public_text_link>
+	</bill_profile>
+	<bill_profile>
+		<bill_key>
+			<state>US</state>
+			<session_id>2011000</session_id>
+			<legtype>HR</legtype>
+			<bill_number>4336</bill_number>
+		</bill_key>
+		<authors>
+			<author>
+				<name>Reed T</name>
+				<party>R</party>
+				<house>H</house>
+			</author>
+		</authors>
+		<bill_title>Qualified Principal Residence Indebtedness</bill_title>
+		<intro_date>2012-03-29</intro_date>
+		<current_disposition>Pending</current_disposition>
+		<bill_location>House Ways and Means Committee</bill_location>
+		<bill_summary>Amends the Internal Revenue Code of 1986 to extend the exclusion from gross income of discharges of qualified principal residence indebtedness.</bill_summary>
+		<status_actions>
+			<status_action>
+				<action_text>INTRODUCED.</action_text>
+				<action_date>2012-03-29</action_date>
+			</status_action>
+			<status_action>
+				<action_text>To HOUSE Committee on WAYS AND MEANS.</action_text>
+				<action_date>2012-03-29</action_date>
+			</status_action>
+		</status_actions>
+		<public_text_link><![CDATA[http://custom.statenet.com/public/resources.cgi?id=ID:bill:US2011000H4336&ciq=voices&client_md=e4e26f1d3a934ba9ad4421857a594ef0&mode=current_text]]></public_text_link>
+	</bill_profile>
+	<bill_profile>
+		<bill_key>
+			<state>US</state>
+			<session_id>2011000</session_id>
+			<legtype>HR</legtype>
+			<bill_number>4337</bill_number>
+		</bill_key>
+		<authors>
+			<author>
+				<name>Reed T</name>
+				<party>R</party>
+				<house>H</house>
+			</author>
+		</authors>
+		<bill_title>Authority of the Administrator of the EPA</bill_title>
+		<intro_date>2012-03-29</intro_date>
+		<current_disposition>Pending</current_disposition>
+		<bill_location>House Agriculture Committee</bill_location>
+		<bill_summary>Limits the authority of the Administrator of the Environmental Protection Agency to implement certain actions related to Chesapeake Bay watershed total maximum daily loads.</bill_summary>
+		<status_actions>
+			<status_action>
+				<action_text>INTRODUCED.</action_text>
+				<action_date>2012-03-29</action_date>
+			</status_action>
+			<status_action>
+				<action_text>To HOUSE Committee on TRANSPORTATION AND INFRASTRUCTURE.</action_text>
+				<action_date>2012-03-29</action_date>
+			</status_action>
+			<status_action>
+				<action_text>Additionally referred to HOUSE Committee on AGRICULTURE.</action_text>
+				<action_date>2012-03-29</action_date>
+			</status_action>
+		</status_actions>
+		<public_text_link><![CDATA[http://custom.statenet.com/public/resources.cgi?id=ID:bill:US2011000H4337&ciq=voices&client_md=b0decc544c26c0620fab269a95e76e47&mode=current_text]]></public_text_link>
+	</bill_profile>
+	<bill_profile>
+		<bill_key>
+			<state>US</state>
+			<session_id>2011000</session_id>
+			<legtype>HR</legtype>
+			<bill_number>4338</bill_number>
+		</bill_key>
+		<authors>
+			<author>
+				<name>Sablan</name>
+				<party>I</party>
+				<house>H</house>
+			</author>
+		</authors>
+		<bill_title>Overhaul and Repair of Vessels in Foreign Shipyards</bill_title>
+		<intro_date>2012-03-29</intro_date>
+		<current_disposition>Pending</current_disposition>
+		<bill_location>House Armed Services Committee</bill_location>
+		<bill_summary>Amends title 10, United States Code, to expand certain restrictions relating to the overhaul and repair of vessels in foreign shipyards to the Commonwealth of the Northern Mariana Islands.</bill_summary>
+		<status_actions>
+			<status_action>
+				<action_text>INTRODUCED.</action_text>
+				<action_date>2012-03-29</action_date>
+			</status_action>
+			<status_action>
+				<action_text>To HOUSE Committee on ARMED SERVICES.</action_text>
+				<action_date>2012-03-29</action_date>
+			</status_action>
+		</status_actions>
+		<public_text_link><![CDATA[http://custom.statenet.com/public/resources.cgi?id=ID:bill:US2011000H4338&ciq=voices&client_md=675d86a1658d20ffe3d9029851cb4f9d&mode=current_text]]></public_text_link>
+	</bill_profile>
+	<bill_profile>
+		<bill_key>
+			<state>US</state>
+			<session_id>2011000</session_id>
+			<legtype>HR</legtype>
+			<bill_number>4341</bill_number>
+		</bill_key>
+		<authors>
+			<author>
+				<name>Stivers</name>
+				<party>R</party>
+				<house>H</house>
+			</author>
+		</authors>
+		<bill_title>Working Group To Review TRICARE Policy</bill_title>
+		<intro_date>2012-03-29</intro_date>
+		<current_disposition>Pending</current_disposition>
+		<bill_location>House Armed Services Committee</bill_location>
+		<bill_summary>Directs the Secretary of Defense to establish a working group to review TRICARE policy with respect to providing health care to children and determine how to improve such policy.</bill_summary>
+		<status_actions>
+			<status_action>
+				<action_text>INTRODUCED.</action_text>
+				<action_date>2012-03-29</action_date>
+			</status_action>
+			<status_action>
+				<action_text>To HOUSE Committee on ARMED SERVICES.</action_text>
+				<action_date>2012-03-29</action_date>
+			</status_action>
+		</status_actions>
+		<public_text_link><![CDATA[http://custom.statenet.com/public/resources.cgi?id=ID:bill:US2011000H4341&ciq=voices&client_md=3f2b28cd7fb348451edf68f55d11717e&mode=current_text]]></public_text_link>
+	</bill_profile>
+	<bill_profile>
+		<bill_key>
+			<state>US</state>
+			<session_id>2011000</session_id>
+			<legtype>HR</legtype>
+			<bill_number>4342</bill_number>
+		</bill_key>
+		<authors>
+			<author>
+				<name>Whitfield</name>
+				<party>R</party>
+				<house>H</house>
+			</author>
+		</authors>
+		<bill_title>Funding for Projects on United States Waterways</bill_title>
+		<intro_date>2012-03-29</intro_date>
+		<current_disposition>Pending</current_disposition>
+		<bill_location>House Ways and Means Committee</bill_location>
+		<bill_summary>Provides for funding for construction and major rehabilitation for projects located on inland and intracoastal waterways of the United States.</bill_summary>
+		<status_actions>
+			<status_action>
+				<action_text>INTRODUCED.</action_text>
+				<action_date>2012-03-29</action_date>
+			</status_action>
+			<status_action>
+				<action_text>To HOUSE Committee on TRANSPORTATION AND INFRASTRUCTURE.</action_text>
+				<action_date>2012-03-29</action_date>
+			</status_action>
+			<status_action>
+				<action_text>Additionally referred to HOUSE Committee on WAYS AND MEANS.</action_text>
+				<action_date>2012-03-29</action_date>
+			</status_action>
+		</status_actions>
+		<public_text_link><![CDATA[http://custom.statenet.com/public/resources.cgi?id=ID:bill:US2011000H4342&ciq=voices&client_md=7b371e42c4ea2370aff1e28e9abea376&mode=current_text]]></public_text_link>
+	</bill_profile>
+	<bill_profile>
+		<bill_key>
+			<state>US</state>
+			<session_id>2011000</session_id>
+			<legtype>HR</legtype>
+			<bill_number>4343</bill_number>
+		</bill_key>
+		<authors>
+			<author>
+				<name>Wolf</name>
+				<party>R</party>
+				<house>H</house>
+			</author>
+		</authors>
+		<bill_title>Lobbying on Behalf of Foreign Governments</bill_title>
+		<intro_date>2012-03-29</intro_date>
+		<current_disposition>Pending</current_disposition>
+		<bill_location>House Judiciary Committee</bill_location>
+		<bill_summary>Amends title 18, United States Code, to prohibit the President, the Vice President, Members of Congress, and other officers of the executive branch from lobbying on behalf of foreign governments or instrumentalities for 10 years after leaving office.</bill_summary>
+		<status_actions>
+			<status_action>
+				<action_text>INTRODUCED.</action_text>
+				<action_date>2012-03-29</action_date>
+			</status_action>
+			<status_action>
+				<action_text>To HOUSE Committee on JUDICIARY.</action_text>
+				<action_date>2012-03-29</action_date>
+			</status_action>
+		</status_actions>
+		<public_text_link><![CDATA[http://custom.statenet.com/public/resources.cgi?id=ID:bill:US2011000H4343&ciq=voices&client_md=8568f9d3ca36196715f13a65817484a0&mode=current_text]]></public_text_link>
+	</bill_profile>
+	<bill_profile>
+		<bill_key>
+			<state>US</state>
+			<session_id>2011000</session_id>
+			<legtype>HR</legtype>
+			<bill_number>4344</bill_number>
+		</bill_key>
+		<authors>
+			<author>
+				<name>Smith C</name>
+				<party>R</party>
+				<house>H</house>
+			</author>
+		</authors>
+		<bill_title>International Commission on Missing Persons</bill_title>
+		<intro_date>2012-03-30</intro_date>
+		<current_disposition>Pending</current_disposition>
+		<bill_location>House Foreign Affairs Committee</bill_location>
+		<bill_summary>Authorizes the Secretary of State to assist the International Commission on Missing Persons to establish a permanent and international legal status with the immunities required for operations globally, to continue the financial support of the United States of the ICMP in their work to assist governments and other authorities in locating and identifying persons missing as a result of conflicts or natural or man-made disasters, and to support the investigation of genocide and mass atrocities.</bill_summary>
+		<status_actions>
+			<status_action>
+				<action_text>INTRODUCED.</action_text>
+				<action_date>2012-03-30</action_date>
+			</status_action>
+			<status_action>
+				<action_text>To HOUSE Committee on FOREIGN AFFAIRS.</action_text>
+				<action_date>2012-03-30</action_date>
+			</status_action>
+		</status_actions>
+		<public_text_link><![CDATA[http://custom.statenet.com/public/resources.cgi?id=ID:bill:US2011000H4344&ciq=voices&client_md=e462a798b14fadf9839bd65496b573e8&mode=current_text]]></public_text_link>
+	</bill_profile>
+	<bill_profile>
+		<bill_key>
+			<state>US</state>
+			<session_id>2011000</session_id>
+			<legtype>HR</legtype>
+			<bill_number>4345</bill_number>
+		</bill_key>
+		<authors>
+			<author>
+				<name>Shimkus</name>
+				<party>R</party>
+				<house>H</house>
+			</author>
+		</authors>
+		<bill_title>Liability Protection for Certain Claims</bill_title>
+		<intro_date>2012-03-30</intro_date>
+		<current_disposition>Pending</current_disposition>
+		<bill_location>House Judiciary Committee</bill_location>
+		<bill_summary>Provides liability protection for claims based on the design, manufacture, sale, offer for sale, introduction into commerce, or use of certain fuels and fuel additives.</bill_summary>
+		<status_actions>
+			<status_action>
+				<action_text>INTRODUCED.</action_text>
+				<action_date>2012-03-30</action_date>
+			</status_action>
+			<status_action>
+				<action_text>To HOUSE Committee on ENERGY AND COMMERCE.</action_text>
+				<action_date>2012-03-30</action_date>
+			</status_action>
+			<status_action>
+				<action_text>Additionally referred to HOUSE Committee on JUDICIARY.</action_text>
+				<action_date>2012-03-30</action_date>
+			</status_action>
+		</status_actions>
+		<public_text_link><![CDATA[http://custom.statenet.com/public/resources.cgi?id=ID:bill:US2011000H4345&ciq=voices&client_md=980a2f6811add74a3a7d4b0296355730&mode=current_text]]></public_text_link>
+	</bill_profile>
+	<bill_profile>
+		<bill_key>
+			<state>US</state>
+			<session_id>2011000</session_id>
+			<legtype>HR</legtype>
+			<bill_number>4346</bill_number>
+		</bill_key>
+		<authors>
+			<author>
+				<name>Pingree</name>
+				<party>D</party>
+				<house>H</house>
+			</author>
+		</authors>
+		<bill_title>Labels on Packages of Meat</bill_title>
+		<intro_date>2012-03-30</intro_date>
+		<current_disposition>Pending</current_disposition>
+		<bill_location>House Agriculture Committee</bill_location>
+		<bill_summary>Amends the Federal Meat Inspection Act so that labels on packages of meat include a statement on whether the meat contains lean finely textured beef.</bill_summary>
+		<status_actions>
+			<status_action>
+				<action_text>INTRODUCED.</action_text>
+				<action_date>2012-03-30</action_date>
+			</status_action>
+			<status_action>
+				<action_text>To HOUSE Committee on AGRICULTURE.</action_text>
+				<action_date>2012-03-30</action_date>
+			</status_action>
+		</status_actions>
+		<public_text_link><![CDATA[http://custom.statenet.com/public/resources.cgi?id=ID:bill:US2011000H4346&ciq=voices&client_md=b6b5a228bdeb965ba36455bdd68dedb0&mode=current_text]]></public_text_link>
+	</bill_profile>
+	<bill_profile>
+		<bill_key>
+			<state>US</state>
+			<session_id>2011000</session_id>
+			<legtype>HR</legtype>
+			<bill_number>4347</bill_number>
+		</bill_key>
+		<authors>
+			<author>
+				<name>Young D</name>
+				<party>R</party>
+				<house>H</house>
+			</author>
+		</authors>
+		<bill_title>United States Courthouse Designation</bill_title>
+		<intro_date>2012-03-30</intro_date>
+		<current_disposition>Pending</current_disposition>
+		<bill_location><![CDATA[House Transportation & Infrastructure Committee]]></bill_location>
+		<bill_summary>Designates the United States courthouse located at 709 West 9th Street in Juneau, Alaska, as the "Robert Boochever United States Courthouse".</bill_summary>
+		<status_actions>
+			<status_action>
+				<action_text>INTRODUCED.</action_text>
+				<action_date>2012-03-30</action_date>
+			</status_action>
+			<status_action>
+				<action_text>To HOUSE Committee on TRANSPORTATION AND INFRASTRUCTURE.</action_text>
+				<action_date>2012-03-30</action_date>
+			</status_action>
+		</status_actions>
+		<public_text_link><![CDATA[http://custom.statenet.com/public/resources.cgi?id=ID:bill:US2011000H4347&ciq=voices&client_md=c71fbd57f13240439a0931894d63cfb1&mode=current_text]]></public_text_link>
+	</bill_profile>
+	<bill_profile>
+		<bill_key>
+			<state>US</state>
+			<session_id>2011000</session_id>
+			<legtype>HRES</legtype>
+			<bill_number>602</bill_number>
+		</bill_key>
+		<authors>
+			<author>
+				<name>Biggert</name>
+				<party>R</party>
+				<house>H</house>
+			</author>
+		</authors>
+		<bill_title>Read Across America Day</bill_title>
+		<intro_date>2012-03-29</intro_date>
+		<current_disposition>Pending</current_disposition>
+		<bill_location>House Education and the Workforce Committee</bill_location>
+		<bill_summary>Encourages people in the United States to recognize March 2, 2012, as Read Across America Day.</bill_summary>
+		<status_actions>
+			<status_action>
+				<action_text>INTRODUCED.</action_text>
+				<action_date>2012-03-29</action_date>
+			</status_action>
+			<status_action>
+				<action_text>To HOUSE Committee on EDUCATION AND THE WORKFORCE.</action_text>
+				<action_date>2012-03-29</action_date>
+			</status_action>
+		</status_actions>
+		<public_text_link><![CDATA[http://custom.statenet.com/public/resources.cgi?id=ID:bill:US2011000HRES602&ciq=voices&client_md=77ff92e64162b48c3c3fdfcba38b4d8b&mode=current_text]]></public_text_link>
+	</bill_profile>
+	<bill_profile>
+		<bill_key>
+			<state>US</state>
+			<session_id>2011000</session_id>
+			<legtype>HRES</legtype>
+			<bill_number>612</bill_number>
+		</bill_key>
+		<authors>
+			<author>
+				<name>Cleaver</name>
+				<party>D</party>
+				<house>H</house>
+			</author>
+		</authors>
+		<bill_title>Life of Trayvon Martin</bill_title>
+		<intro_date>2012-03-30</intro_date>
+		<current_disposition>Pending</current_disposition>
+		<bill_location>House Judiciary Committee</bill_location>
+		<bill_summary>Honors the life of 17-year-old, Trayvon Martin, urges the State of Florida and others to repeal the Stand Your Ground law, and admonishes involved parties to pursue full investigations into all homicides, regardless of defenses asserted by the offender.</bill_summary>
+		<status_actions>
+			<status_action>
+				<action_text>INTRODUCED.</action_text>
+				<action_date>2012-03-30</action_date>
+			</status_action>
+			<status_action>
+				<action_text>To HOUSE Committee on JUDICIARY.</action_text>
+				<action_date>2012-03-30</action_date>
+			</status_action>
+		</status_actions>
+		<public_text_link><![CDATA[http://custom.statenet.com/public/resources.cgi?id=ID:bill:US2011000HRES612&ciq=voices&client_md=b1943389ae8da4f5953159b7fbbe69a2&mode=current_text]]></public_text_link>
+	</bill_profile>
+	<bill_profile>
+		<bill_key>
+			<state>US</state>
+			<session_id>2011000</session_id>
+			<legtype>S</legtype>
+			<bill_number>2250</bill_number>
+		</bill_key>
+		<authors>
+			<author>
+				<name>Stabenow</name>
+				<party>D</party>
+				<house>S</house>
+			</author>
+		</authors>
+		<bill_title>Taxes on Forgiven Mortgage Loan Debt</bill_title>
+		<intro_date>2012-03-29</intro_date>
+		<current_disposition>Pending</current_disposition>
+		<bill_location>Senate Finance Committee</bill_location>
+		<bill_summary>Prevents homeowners from being forced to pay taxes on forgiven mortgage loan debt.</bill_summary>
+		<status_actions>
+			<status_action>
+				<action_text>INTRODUCED.</action_text>
+				<action_date>2012-03-29</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In SENATE.  Read second time.</action_text>
+				<action_date>2012-03-29</action_date>
+			</status_action>
+			<status_action>
+				<action_text>To SENATE Committee on FINANCE.</action_text>
+				<action_date>2012-03-29</action_date>
+			</status_action>
+		</status_actions>
+		<public_text_link><![CDATA[http://custom.statenet.com/public/resources.cgi?id=ID:bill:US2011000S2250&ciq=voices&client_md=827b7969050fb0980a309e7b85060f76&mode=current_text]]></public_text_link>
+	</bill_profile>
+	<bill_profile>
+		<bill_key>
+			<state>US</state>
+			<session_id>2011000</session_id>
+			<legtype>S</legtype>
+			<bill_number>2252</bill_number>
+		</bill_key>
+		<authors>
+			<author>
+				<name>Harkin</name>
+				<party>D</party>
+				<house>S</house>
+			</author>
+		</authors>
+		<bill_title>Rebuilding of American Middle Class</bill_title>
+		<intro_date>2012-03-29</intro_date>
+		<current_disposition>Pending</current_disposition>
+		<bill_location>Senate Finance Committee</bill_location>
+		<bill_summary>Rebuilds the American middle class by creating jobs, investing in our future, building opportunity for working families, and restoring balance to the tax code.</bill_summary>
+		<status_actions>
+			<status_action>
+				<action_text>INTRODUCED.</action_text>
+				<action_date>2012-03-29</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In SENATE.  Read second time.</action_text>
+				<action_date>2012-03-29</action_date>
+			</status_action>
+			<status_action>
+				<action_text>To SENATE Committee on FINANCE.</action_text>
+				<action_date>2012-03-29</action_date>
+			</status_action>
+		</status_actions>
+		<public_text_link><![CDATA[http://custom.statenet.com/public/resources.cgi?id=ID:bill:US2011000S2252&ciq=voices&client_md=3dbe371414574f55462f2e123fef3c72&mode=current_text]]></public_text_link>
+	</bill_profile>
+	<bill_profile>
+		<bill_key>
+			<state>US</state>
+			<session_id>2011000</session_id>
+			<legtype>S</legtype>
+			<bill_number>2253</bill_number>
+		</bill_key>
+		<authors>
+			<author>
+				<name>Durbin</name>
+				<party>D</party>
+				<house>S</house>
+			</author>
+		</authors>
+		<bill_title>Individuals Who File Under the Ethics in Government Act</bill_title>
+		<intro_date>2012-03-29</intro_date>
+		<current_disposition>Pending</current_disposition>
+		<bill_location>Senate Homeland Security and Governmental Affairs Committee</bill_location>
+		<bill_summary>Requires individuals who file under the Ethics in Government Act of 1978 to disclose any financial accounts that are or have been deposited in a country that is a tax haven.</bill_summary>
+		<status_actions>
+			<status_action>
+				<action_text>INTRODUCED.</action_text>
+				<action_date>2012-03-29</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In SENATE.  Read second time.</action_text>
+				<action_date>2012-03-29</action_date>
+			</status_action>
+			<status_action>
+				<action_text>To SENATE Committee on HOMELAND SECURITY AND GOVERNMENTAL AFFAIRS.</action_text>
+				<action_date>2012-03-29</action_date>
+			</status_action>
+		</status_actions>
+		<public_text_link><![CDATA[http://custom.statenet.com/public/resources.cgi?id=ID:bill:US2011000S2253&ciq=voices&client_md=dfa3100e98e12de48755475db476eddd&mode=current_text]]></public_text_link>
+	</bill_profile>
+	<bill_profile>
+		<bill_key>
+			<state>US</state>
+			<session_id>2011000</session_id>
+			<legtype>S</legtype>
+			<bill_number>2254</bill_number>
+		</bill_key>
+		<authors>
+			<author>
+				<name>Portman</name>
+				<party>R</party>
+				<house>S</house>
+			</author>
+		</authors>
+		<bill_title>Uniform Standards for Exchange of Certain Information</bill_title>
+		<intro_date>2012-03-29</intro_date>
+		<current_disposition>Pending</current_disposition>
+		<bill_location>Senate Health, Education, Labor and Pensions Committee</bill_location>
+		<bill_summary>Directs the Attorney General to establish uniform standards for the exchange of controlled substance and prescription information for the purpose of preventing diversion, fraud, and abuse of controlled substances and other prescription drugs.</bill_summary>
+		<status_actions>
+			<status_action>
+				<action_text>INTRODUCED.</action_text>
+				<action_date>2012-03-29</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In SENATE.  Read second time.</action_text>
+				<action_date>2012-03-29</action_date>
+			</status_action>
+			<status_action>
+				<action_text>To SENATE Committee on HEALTH, EDUCATION, LABOR AND PENSIONS.</action_text>
+				<action_date>2012-03-29</action_date>
+			</status_action>
+		</status_actions>
+		<public_text_link><![CDATA[http://custom.statenet.com/public/resources.cgi?id=ID:bill:US2011000S2254&ciq=voices&client_md=ba29cc1d9801fdd24d96860a83785d2a&mode=current_text]]></public_text_link>
+	</bill_profile>
+	<bill_profile>
+		<bill_key>
+			<state>US</state>
+			<session_id>2011000</session_id>
+			<legtype>S</legtype>
+			<bill_number>2255</bill_number>
+		</bill_key>
+		<authors>
+			<author>
+				<name>Burr</name>
+				<party>R</party>
+				<house>S</house>
+			</author>
+		</authors>
+		<bill_title>Welcome Home Vietnam Veterans Day</bill_title>
+		<intro_date>2012-03-29</intro_date>
+		<current_disposition>Pending</current_disposition>
+		<bill_location>Senate Judiciary Committee</bill_location>
+		<bill_summary>Amends chapter 1 of title 36, United States Code, to add Welcome Home Vietnam Veterans Day as a patriotic and National observance.</bill_summary>
+		<status_actions>
+			<status_action>
+				<action_text>INTRODUCED.</action_text>
+				<action_date>2012-03-29</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In SENATE.  Read second time.</action_text>
+				<action_date>2012-03-29</action_date>
+			</status_action>
+			<status_action>
+				<action_text>To SENATE Committee on JUDICIARY.</action_text>
+				<action_date>2012-03-29</action_date>
+			</status_action>
+		</status_actions>
+		<public_text_link><![CDATA[http://custom.statenet.com/public/resources.cgi?id=ID:bill:US2011000S2255&ciq=voices&client_md=fc84b94fb8fd4c66f4a2a63615e5b9ad&mode=current_text]]></public_text_link>
+	</bill_profile>
+	<bill_profile>
+		<bill_key>
+			<state>US</state>
+			<session_id>2011000</session_id>
+			<legtype>S</legtype>
+			<bill_number>2257</bill_number>
+		</bill_key>
+		<authors>
+			<author>
+				<name>Stabenow</name>
+				<party>D</party>
+				<house>S</house>
+			</author>
+		</authors>
+		<bill_title>Community Behavioral Health Services for All Americans</bill_title>
+		<intro_date>2012-03-29</intro_date>
+		<current_disposition>Pending</current_disposition>
+		<bill_location>Senate Health, Education, Labor and Pensions Committee</bill_location>
+		<bill_summary>Increases access to community behavioral health services for all Americans and improves Medicaid reimbursement for community behavioral health services.</bill_summary>
+		<status_actions>
+			<status_action>
+				<action_text>INTRODUCED.</action_text>
+				<action_date>2012-03-29</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In SENATE.  Read second time.</action_text>
+				<action_date>2012-03-29</action_date>
+			</status_action>
+			<status_action>
+				<action_text>To SENATE Committee on HEALTH, EDUCATION, LABOR AND PENSIONS.</action_text>
+				<action_date>2012-03-29</action_date>
+			</status_action>
+		</status_actions>
+		<public_text_link><![CDATA[http://custom.statenet.com/public/resources.cgi?id=ID:bill:US2011000S2257&ciq=voices&client_md=3cb1ad82336dec2e6a79e91c90d7dfe0&mode=current_text]]></public_text_link>
+	</bill_profile>
+	<bill_profile>
+		<bill_key>
+			<state>US</state>
+			<session_id>2011000</session_id>
+			<legtype>S</legtype>
+			<bill_number>2258</bill_number>
+		</bill_key>
+		<authors>
+			<author>
+				<name>Snowe</name>
+				<party>R</party>
+				<house>S</house>
+			</author>
+		</authors>
+		<bill_title>5 Year Amortization of Expenses Incurred</bill_title>
+		<intro_date>2012-03-29</intro_date>
+		<current_disposition>Pending</current_disposition>
+		<bill_location>Senate Finance Committee</bill_location>
+		<bill_summary>Amends the Internal Revenue Code of 1986 to make permanent the rule providing 5-year amortization of expenses incurred in creating or acquiring music or music copyrights.</bill_summary>
+		<status_actions>
+			<status_action>
+				<action_text>INTRODUCED.</action_text>
+				<action_date>2012-03-29</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In SENATE.  Read second time.</action_text>
+				<action_date>2012-03-29</action_date>
+			</status_action>
+			<status_action>
+				<action_text>To SENATE Committee on FINANCE.</action_text>
+				<action_date>2012-03-29</action_date>
+			</status_action>
+		</status_actions>
+		<public_text_link><![CDATA[http://custom.statenet.com/public/resources.cgi?id=ID:bill:US2011000S2258&ciq=voices&client_md=3853c892305581f5bea201ab8d482d77&mode=current_text]]></public_text_link>
+	</bill_profile>
+	<bill_profile>
+		<bill_key>
+			<state>US</state>
+			<session_id>2011000</session_id>
+			<legtype>S</legtype>
+			<bill_number>2259</bill_number>
+		</bill_key>
+		<authors>
+			<author>
+				<name>Tester</name>
+				<party>D</party>
+				<house>S</house>
+			</author>
+		</authors>
+		<bill_title>Rates of Compensation for Certain Veterans</bill_title>
+		<intro_date>2012-03-29</intro_date>
+		<current_disposition>Pending</current_disposition>
+		<bill_location>Senate Veterans' Affairs Committee</bill_location>
+		<bill_summary>Provides for an increase, effective December 1, 2012, in the rates of compensation for veterans with service-connected disabilities and the rates of dependency and indemnity compensation for the survivors of certain disabled veterans.</bill_summary>
+		<status_actions>
+			<status_action>
+				<action_text>INTRODUCED.</action_text>
+				<action_date>2012-03-29</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In SENATE.  Read second time.</action_text>
+				<action_date>2012-03-29</action_date>
+			</status_action>
+			<status_action>
+				<action_text>To SENATE Committee on VETERANS' AFFAIRS.</action_text>
+				<action_date>2012-03-29</action_date>
+			</status_action>
+		</status_actions>
+		<public_text_link><![CDATA[http://custom.statenet.com/public/resources.cgi?id=ID:bill:US2011000S2259&ciq=voices&client_md=3cccf14fe0afb2389ccb08772141c581&mode=current_text]]></public_text_link>
+	</bill_profile>
+	<bill_profile>
+		<bill_key>
+			<state>US</state>
+			<session_id>2011000</session_id>
+			<legtype>S</legtype>
+			<bill_number>2260</bill_number>
+		</bill_key>
+		<authors>
+			<author>
+				<name>Harkin</name>
+				<party>D</party>
+				<house>S</house>
+			</author>
+		</authors>
+		<bill_title>Choice of Federal Budget Priorities</bill_title>
+		<intro_date>2012-03-29</intro_date>
+		<current_disposition>Pending</current_disposition>
+		<bill_location>Senate Finance Committee</bill_location>
+		<bill_summary>Allows taxpayers the opportunity to specify their choice of Federal budget priorities.</bill_summary>
+		<status_actions>
+			<status_action>
+				<action_text>INTRODUCED.</action_text>
+				<action_date>2012-03-29</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In SENATE.  Read second time.</action_text>
+				<action_date>2012-03-29</action_date>
+			</status_action>
+			<status_action>
+				<action_text>To SENATE Committee on FINANCE.</action_text>
+				<action_date>2012-03-29</action_date>
+			</status_action>
+		</status_actions>
+		<public_text_link><![CDATA[http://custom.statenet.com/public/resources.cgi?id=ID:bill:US2011000S2260&ciq=voices&client_md=47db26f2803c1653da0213a8a8564843&mode=current_text]]></public_text_link>
+	</bill_profile>
+	<bill_profile>
+		<bill_key>
+			<state>US</state>
+			<session_id>2011000</session_id>
+			<legtype>S</legtype>
+			<bill_number>2262</bill_number>
+		</bill_key>
+		<authors>
+			<author>
+				<name>Johnson T</name>
+				<party>D</party>
+				<house>S</house>
+			</author>
+		</authors>
+		<bill_title>Fetal Alcohol Syndrome Prevention Program</bill_title>
+		<intro_date>2012-03-29</intro_date>
+		<current_disposition>Pending</current_disposition>
+		<bill_location>Senate Health, Education, Labor and Pensions Committee</bill_location>
+		<bill_summary>Amends the Public Health Service Act to reauthorize and extend the Fetal Alcohol Syndrome prevention and services program.</bill_summary>
+		<status_actions>
+			<status_action>
+				<action_text>INTRODUCED.</action_text>
+				<action_date>2012-03-29</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In SENATE.  Read second time.</action_text>
+				<action_date>2012-03-29</action_date>
+			</status_action>
+			<status_action>
+				<action_text>To SENATE Committee on HEALTH, EDUCATION, LABOR AND PENSIONS.</action_text>
+				<action_date>2012-03-29</action_date>
+			</status_action>
+		</status_actions>
+		<public_text_link><![CDATA[http://custom.statenet.com/public/resources.cgi?id=ID:bill:US2011000S2262&ciq=voices&client_md=175a95d45f004bcc61b27c964f624c8c&mode=current_text]]></public_text_link>
+	</bill_profile>
+	<bill_profile>
+		<bill_key>
+			<state>US</state>
+			<session_id>2011000</session_id>
+			<legtype>S</legtype>
+			<bill_number>2265</bill_number>
+		</bill_key>
+		<authors>
+			<author>
+				<name>Inhofe</name>
+				<party>R</party>
+				<house>S</house>
+			</author>
+		</authors>
+		<bill_title>Coverage of Screening Computed Tomography Colonography</bill_title>
+		<intro_date>2012-03-29</intro_date>
+		<current_disposition>Pending</current_disposition>
+		<bill_location>Senate Finance Committee</bill_location>
+		<bill_summary>Amends title XVIII of the Social Security Act to cover screening computed tomography colonography as a colorectal cancer screening test under the Medicare program.</bill_summary>
+		<status_actions>
+			<status_action>
+				<action_text>INTRODUCED.</action_text>
+				<action_date>2012-03-29</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In SENATE.  Read second time.</action_text>
+				<action_date>2012-03-29</action_date>
+			</status_action>
+			<status_action>
+				<action_text>To SENATE Committee on FINANCE.</action_text>
+				<action_date>2012-03-29</action_date>
+			</status_action>
+		</status_actions>
+		<public_text_link><![CDATA[http://custom.statenet.com/public/resources.cgi?id=ID:bill:US2011000S2265&ciq=voices&client_md=8d3b13ae6279c9c597644e3625a4d249&mode=current_text]]></public_text_link>
+	</bill_profile>
+	<bill_profile>
+		<bill_key>
+			<state>US</state>
+			<session_id>2011000</session_id>
+			<legtype>S</legtype>
+			<bill_number>2266</bill_number>
+		</bill_key>
+		<authors>
+			<author>
+				<name>Burr</name>
+				<party>R</party>
+				<house>S</house>
+			</author>
+		</authors>
+		<bill_title>Sharing of Immigration Information</bill_title>
+		<intro_date>2012-03-29</intro_date>
+		<current_disposition>Pending</current_disposition>
+		<bill_location>Senate Judiciary Committee</bill_location>
+		<bill_summary>Improves sharing of immigration information among Federal, State, and local law enforcement officials, to improve State and local enforcement of immigration laws.</bill_summary>
+		<status_actions>
+			<status_action>
+				<action_text>INTRODUCED.</action_text>
+				<action_date>2012-03-29</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In SENATE.  Read second time.</action_text>
+				<action_date>2012-03-29</action_date>
+			</status_action>
+			<status_action>
+				<action_text>To SENATE Committee on JUDICIARY.</action_text>
+				<action_date>2012-03-29</action_date>
+			</status_action>
+		</status_actions>
+		<public_text_link><![CDATA[http://custom.statenet.com/public/resources.cgi?id=ID:bill:US2011000S2266&ciq=voices&client_md=1e114aa6413b1a494ac5d6e2d6ea7382&mode=current_text]]></public_text_link>
+	</bill_profile>
+	<bill_profile>
+		<bill_key>
+			<state>US</state>
+			<session_id>2011000</session_id>
+			<legtype>S</legtype>
+			<bill_number>2268</bill_number>
+		</bill_key>
+		<authors>
+			<author>
+				<name>Gillibrand</name>
+				<party>D</party>
+				<house>S</house>
+			</author>
+		</authors>
+		<bill_title>Gift Shop of the National Park Service</bill_title>
+		<intro_date>2012-03-29</intro_date>
+		<current_disposition>Pending</current_disposition>
+		<bill_location>Senate Energy and Natural Resources Committee</bill_location>
+		<bill_summary>Ensures that all items offered for sale in any gift shop of the National Park Service or of the National Archives and Records Administration are produced in the United States.</bill_summary>
+		<status_actions>
+			<status_action>
+				<action_text>INTRODUCED.</action_text>
+				<action_date>2012-03-29</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In SENATE.  Read second time.</action_text>
+				<action_date>2012-03-29</action_date>
+			</status_action>
+			<status_action>
+				<action_text>To SENATE Committee on ENERGY AND NATURAL RESOURCES.</action_text>
+				<action_date>2012-03-29</action_date>
+			</status_action>
+		</status_actions>
+		<public_text_link><![CDATA[http://custom.statenet.com/public/resources.cgi?id=ID:bill:US2011000S2268&ciq=voices&client_md=b0d4e535ea7d8afe9bbd8b5a794939ec&mode=current_text]]></public_text_link>
+	</bill_profile>
+	<bill_profile>
+		<bill_key>
+			<state>US</state>
+			<session_id>2011000</session_id>
+			<legtype>S</legtype>
+			<bill_number>2270</bill_number>
+		</bill_key>
+		<authors>
+			<author>
+				<name>Harkin</name>
+				<party>D</party>
+				<house>S</house>
+			</author>
+		</authors>
+		<bill_title>Improvement of Energy Programs</bill_title>
+		<intro_date>2012-03-29</intro_date>
+		<current_disposition>Pending</current_disposition>
+		<bill_location><![CDATA[Senate Agriculture, Nutrition & Forestry Committee]]></bill_location>
+		<bill_summary>Amends the Farm Security and Rural Investment Act of 2002 to improve energy programs.</bill_summary>
+		<status_actions>
+			<status_action>
+				<action_text>INTRODUCED.</action_text>
+				<action_date>2012-03-29</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In SENATE.  Read second time.</action_text>
+				<action_date>2012-03-29</action_date>
+			</status_action>
+			<status_action>
+				<action_text>To SENATE Committee on AGRICULTURE, NUTRITION AND FORESTRY.</action_text>
+				<action_date>2012-03-29</action_date>
+			</status_action>
+		</status_actions>
+		<public_text_link><![CDATA[http://custom.statenet.com/public/resources.cgi?id=ID:bill:US2011000S2270&ciq=voices&client_md=7332294a2e5fdd2d70035666bc653c10&mode=current_text]]></public_text_link>
+	</bill_profile>
+	<bill_profile>
+		<bill_key>
+			<state>US</state>
+			<session_id>2011000</session_id>
+			<legtype>S</legtype>
+			<bill_number>2271</bill_number>
+		</bill_key>
+		<authors>
+			<author>
+				<name>Franken</name>
+				<party>D</party>
+				<house>S</house>
+			</author>
+		</authors>
+		<bill_title>Time for Making S Corporation Elections</bill_title>
+		<intro_date>2012-03-29</intro_date>
+		<current_disposition>Pending</current_disposition>
+		<bill_location>Senate Finance Committee</bill_location>
+		<bill_summary>Amends the Internal Revenue Code of 1986 to extend the time for making S corporation elections.</bill_summary>
+		<status_actions>
+			<status_action>
+				<action_text>INTRODUCED.</action_text>
+				<action_date>2012-03-29</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In SENATE.  Read second time.</action_text>
+				<action_date>2012-03-29</action_date>
+			</status_action>
+			<status_action>
+				<action_text>To SENATE Committee on FINANCE.</action_text>
+				<action_date>2012-03-29</action_date>
+			</status_action>
+		</status_actions>
+		<public_text_link><![CDATA[http://custom.statenet.com/public/resources.cgi?id=ID:bill:US2011000S2271&ciq=voices&client_md=3a4d6d7f3d0f87d98d26ccbf0104f1d7&mode=current_text]]></public_text_link>
+	</bill_profile>
+	<bill_profile>
+		<bill_key>
+			<state>US</state>
+			<session_id>2011000</session_id>
+			<legtype>S</legtype>
+			<bill_number>2274</bill_number>
+		</bill_key>
+		<authors>
+			<author>
+				<name>Roberts</name>
+				<party>R</party>
+				<house>S</house>
+			</author>
+		</authors>
+		<bill_title>Foundation for Food and Agriculture Research</bill_title>
+		<intro_date>2012-03-29</intro_date>
+		<current_disposition>Pending</current_disposition>
+		<bill_location><![CDATA[Senate Agriculture, Nutrition & Forestry Committee]]></bill_location>
+		<bill_summary>Requires the Secretary of Agriculture to establish a nonprofit corporation to be known as the Foundation for Food and Agriculture Research.</bill_summary>
+		<status_actions>
+			<status_action>
+				<action_text>INTRODUCED.</action_text>
+				<action_date>2012-03-29</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In SENATE.  Read second time.</action_text>
+				<action_date>2012-03-29</action_date>
+			</status_action>
+			<status_action>
+				<action_text>To SENATE Committee on AGRICULTURE, NUTRITION AND FORESTRY.</action_text>
+				<action_date>2012-03-29</action_date>
+			</status_action>
+		</status_actions>
+		<public_text_link><![CDATA[http://custom.statenet.com/public/resources.cgi?id=ID:bill:US2011000S2274&ciq=voices&client_md=5b90389f14861f72e8d81232340ff28d&mode=current_text]]></public_text_link>
+	</bill_profile>
+	<bill_profile>
+		<bill_key>
+			<state>US</state>
+			<session_id>2011000</session_id>
+			<legtype>S</legtype>
+			<bill_number>2275</bill_number>
+		</bill_key>
+		<authors>
+			<author>
+				<name>Gillibrand</name>
+				<party>D</party>
+				<house>S</house>
+			</author>
+		</authors>
+		<bill_title>Grant Program Within Rural Broadband Program</bill_title>
+		<intro_date>2012-03-29</intro_date>
+		<current_disposition>Pending</current_disposition>
+		<bill_location><![CDATA[Senate Agriculture, Nutrition & Forestry Committee]]></bill_location>
+		<bill_summary>Amends the Rural Electrification Act of 1936 to establish a grant program within the rural broadband program of the Department of Agriculture.</bill_summary>
+		<status_actions>
+			<status_action>
+				<action_text>INTRODUCED.</action_text>
+				<action_date>2012-03-29</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In SENATE.  Read second time.</action_text>
+				<action_date>2012-03-29</action_date>
+			</status_action>
+			<status_action>
+				<action_text>To SENATE Committee on AGRICULTURE, NUTRITION AND FORESTRY.</action_text>
+				<action_date>2012-03-29</action_date>
+			</status_action>
+		</status_actions>
+		<public_text_link><![CDATA[http://custom.statenet.com/public/resources.cgi?id=ID:bill:US2011000S2275&ciq=voices&client_md=8ede9baf19c8c4d4075d843584759040&mode=current_text]]></public_text_link>
+	</bill_profile>
+	<bill_profile>
+		<bill_key>
+			<state>US</state>
+			<session_id>2011000</session_id>
+			<legtype>S</legtype>
+			<bill_number>2276</bill_number>
+		</bill_key>
+		<authors>
+			<author>
+				<name>Grassley</name>
+				<party>R</party>
+				<house>S</house>
+			</author>
+		</authors>
+		<bill_title>Crimes of Violence to Federal Court</bill_title>
+		<intro_date>2012-03-29</intro_date>
+		<current_disposition>Pending</current_disposition>
+		<bill_location>Senate Judiciary Committee</bill_location>
+		<bill_summary>Permits Federal officers to remove cases involving crimes of violence to Federal court.</bill_summary>
+		<status_actions>
+			<status_action>
+				<action_text>INTRODUCED.</action_text>
+				<action_date>2012-03-29</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In SENATE.  Read second time.</action_text>
+				<action_date>2012-03-29</action_date>
+			</status_action>
+			<status_action>
+				<action_text>To SENATE Committee on JUDICIARY.</action_text>
+				<action_date>2012-03-29</action_date>
+			</status_action>
+		</status_actions>
+		<public_text_link><![CDATA[http://custom.statenet.com/public/resources.cgi?id=ID:bill:US2011000S2276&ciq=voices&client_md=76ea87a6aeee6993195d4c5edef78c66&mode=current_text]]></public_text_link>
+	</bill_profile>
+	<bill_profile>
+		<bill_key>
+			<state>US</state>
+			<session_id>2011000</session_id>
+			<legtype>S</legtype>
+			<bill_number>2278</bill_number>
+		</bill_key>
+		<authors>
+			<author>
+				<name>Vitter</name>
+				<party>R</party>
+				<house>S</house>
+			</author>
+		</authors>
+		<bill_title>Exemption To Certain Escrow Requirements</bill_title>
+		<intro_date>2012-03-29</intro_date>
+		<current_disposition>Pending</current_disposition>
+		<bill_location>Senate Banking, Housing and Urban Affairs Committee</bill_location>
+		<bill_summary>Provides for an exemption for community banks to certain escrow requirements under the Truth in Lending Act.</bill_summary>
+		<status_actions>
+			<status_action>
+				<action_text>INTRODUCED.</action_text>
+				<action_date>2012-03-29</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In SENATE.  Read second time.</action_text>
+				<action_date>2012-03-29</action_date>
+			</status_action>
+			<status_action>
+				<action_text>To SENATE Committee on BANKING, HOUSING AND URBAN AFFAIRS.</action_text>
+				<action_date>2012-03-29</action_date>
+			</status_action>
+		</status_actions>
+		<public_text_link><![CDATA[http://custom.statenet.com/public/resources.cgi?id=ID:bill:US2011000S2278&ciq=voices&client_md=8a239e7a3ccf3b5824b4bb10a96e89e6&mode=current_text]]></public_text_link>
+	</bill_profile>
+	<bill_profile>
+		<bill_key>
+			<state>US</state>
+			<session_id>2011000</session_id>
+			<legtype>S</legtype>
+			<bill_number>2280</bill_number>
+		</bill_key>
+		<authors>
+			<author>
+				<name>Durbin</name>
+				<party>D</party>
+				<house>S</house>
+			</author>
+		</authors>
+		<bill_title>Creditor Certification Requirement</bill_title>
+		<intro_date>2012-03-29</intro_date>
+		<current_disposition>Pending</current_disposition>
+		<bill_location>Senate Banking, Housing and Urban Affairs Committee</bill_location>
+		<bill_summary>Amends the Truth in Lending Act and the Higher Education Act of 1965 to require certain creditors to obtain certifications from institutions of higher education.</bill_summary>
+		<status_actions>
+			<status_action>
+				<action_text>INTRODUCED.</action_text>
+				<action_date>2012-03-29</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In SENATE.  Read second time.</action_text>
+				<action_date>2012-03-29</action_date>
+			</status_action>
+			<status_action>
+				<action_text>To SENATE Committee on BANKING, HOUSING AND URBAN AFFAIRS.</action_text>
+				<action_date>2012-03-29</action_date>
+			</status_action>
+		</status_actions>
+		<public_text_link><![CDATA[http://custom.statenet.com/public/resources.cgi?id=ID:bill:US2011000S2280&ciq=voices&client_md=feb721c08143f7deb66058d8277a4afd&mode=current_text]]></public_text_link>
+	</bill_profile>
+	<bill_profile>
+		<bill_key>
+			<state>US</state>
+			<session_id>2011000</session_id>
+			<legtype>S</legtype>
+			<bill_number>2282</bill_number>
+		</bill_key>
+		<authors>
+			<author>
+				<name>Inhofe</name>
+				<party>R</party>
+				<house>S</house>
+			</author>
+		</authors>
+		<bill_title>Appropriations To Carry Out Wetlands Conservation</bill_title>
+		<intro_date>2012-03-29</intro_date>
+		<current_disposition>Pending</current_disposition>
+		<bill_location>Senate Environment and Public Works Committee</bill_location>
+		<bill_summary>Extends the authorization of appropriations to carry out approved wetlands conservation projects under the North American Wetlands Conservation Act through fiscal year 2017.</bill_summary>
+		<status_actions>
+			<status_action>
+				<action_text>INTRODUCED.</action_text>
+				<action_date>2012-03-29</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In SENATE.  Read second time.</action_text>
+				<action_date>2012-03-29</action_date>
+			</status_action>
+			<status_action>
+				<action_text>To SENATE Committee on ENVIRONMENT AND PUBLIC WORKS.</action_text>
+				<action_date>2012-03-29</action_date>
+			</status_action>
+		</status_actions>
+		<public_text_link><![CDATA[http://custom.statenet.com/public/resources.cgi?id=ID:bill:US2011000S2282&ciq=voices&client_md=1b36628f5a47305e930be5e833133a79&mode=current_text]]></public_text_link>
+	</bill_profile>
+	<bill_profile>
+		<bill_key>
+			<state>US</state>
+			<session_id>2011000</session_id>
+			<legtype>SCR</legtype>
+			<bill_number>37</bill_number>
+		</bill_key>
+		<authors>
+			<author>
+				<name>Toomey</name>
+				<party>R</party>
+				<house>S</house>
+			</author>
+		</authors>
+		<bill_title>Congressional Budget for Fiscal Year 2013</bill_title>
+		<intro_date>2012-03-29</intro_date>
+		<current_disposition>Pending</current_disposition>
+		<bill_location>Senate Budget Committee</bill_location>
+		<bill_summary>Sets forth the congressional budget for the United States Government for fiscal year 2013, and setting forth the appropriate budgetary levels for fiscal years 2014 through 2022.</bill_summary>
+		<status_actions>
+			<status_action>
+				<action_text>INTRODUCED.</action_text>
+				<action_date>2012-03-29</action_date>
+			</status_action>
+			<status_action>
+				<action_text>To SENATE Committee on BUDGET.</action_text>
+				<action_date>2012-03-29</action_date>
+			</status_action>
+		</status_actions>
+		<public_text_link><![CDATA[http://custom.statenet.com/public/resources.cgi?id=ID:bill:US2011000SCR37&ciq=voices&client_md=4dabb5f6a96b3d06c5168e6f9f5b4fbc&mode=current_text]]></public_text_link>
+	</bill_profile>
+	<bill_profile>
+		<bill_key>
+			<state>US</state>
+			<session_id>2011000</session_id>
+			<legtype>SCR</legtype>
+			<bill_number>38</bill_number>
+		</bill_key>
+		<authors>
+			<author>
+				<name>Reid</name>
+				<party>D</party>
+				<house>S</house>
+			</author>
+		</authors>
+		<bill_title>Conditional Adjournment or Recess of the Senate</bill_title>
+		<intro_date>2012-03-29</intro_date>
+		<final_status>
+			<date>2012-03-30</date>
+			<action>Enacted</action>
+		</final_status>
+		<current_disposition>Adopted</current_disposition>
+		<bill_location>Adopted</bill_location>
+		<bill_summary>Provides for a conditional adjournment or recess of the Senate and an adjournment of the House of Representatives.</bill_summary>
+		<status_actions>
+			<status_action>
+				<action_text>INTRODUCED.</action_text>
+				<action_date>2012-03-29</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In SENATE.  Passed SENATE.  *****To HOUSE.</action_text>
+				<action_date>2012-03-29</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In HOUSE.  Passed HOUSE.</action_text>
+				<action_date>2012-03-30</action_date>
+			</status_action>
+		</status_actions>
+		<public_text_link><![CDATA[http://custom.statenet.com/public/resources.cgi?id=ID:bill:US2011000SCR38&ciq=voices&client_md=3ac50576932fff4de68facf29113fee9&mode=current_text]]></public_text_link>
+	</bill_profile>
+	<bill_profile>
+		<bill_key>
+			<state>US</state>
+			<session_id>2011000</session_id>
+			<legtype>SCR</legtype>
+			<bill_number>39</bill_number>
+		</bill_key>
+		<authors>
+			<author>
+				<name>Paul Ra</name>
+				<party>R</party>
+				<house>S</house>
+			</author>
+		</authors>
+		<bill_title>Congressional Budget for Fiscal Year 2013</bill_title>
+		<intro_date>2012-03-29</intro_date>
+		<current_disposition>Pending</current_disposition>
+		<bill_location>Senate Budget Committee</bill_location>
+		<bill_summary>Sets forth the congressional budget for the United States Government for fiscal year 2013, revising the appropriate budgetary levels for fiscal year 2012, and setting forth the appropriate budgetary levels for fiscal years 2013 through 2022.</bill_summary>
+		<status_actions>
+			<status_action>
+				<action_text>INTRODUCED.</action_text>
+				<action_date>2012-03-29</action_date>
+			</status_action>
+			<status_action>
+				<action_text>To SENATE Committee on BUDGET.</action_text>
+				<action_date>2012-03-29</action_date>
+			</status_action>
+		</status_actions>
+		<public_text_link><![CDATA[http://custom.statenet.com/public/resources.cgi?id=ID:bill:US2011000SCR39&ciq=voices&client_md=5297c003028a25dfe10f3af3e1798d0f&mode=current_text]]></public_text_link>
+	</bill_profile>
+	<bill_profile>
+		<bill_key>
+			<state>US</state>
+			<session_id>2011000</session_id>
+			<legtype>SRES</legtype>
+			<bill_number>414</bill_number>
+		</bill_key>
+		<authors>
+			<author>
+				<name>Burr</name>
+				<party>R</party>
+				<house>S</house>
+			</author>
+		</authors>
+		<bill_title>125th Anniversary of the University of North Carolina</bill_title>
+		<intro_date>2012-03-29</intro_date>
+		<final_status>
+			<date>2012-03-29</date>
+			<action>Enacted</action>
+		</final_status>
+		<current_disposition>Adopted</current_disposition>
+		<bill_location>Adopted</bill_location>
+		<bill_summary>Commemorates the 125th anniversary of the University of North Carolina at Pembroke.</bill_summary>
+		<status_actions>
+			<status_action>
+				<action_text>INTRODUCED.</action_text>
+				<action_date>2012-03-29</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In SENATE.  Passed SENATE.</action_text>
+				<action_date>2012-03-29</action_date>
+			</status_action>
+		</status_actions>
+		<public_text_link><![CDATA[http://custom.statenet.com/public/resources.cgi?id=ID:bill:US2011000SRES414&ciq=voices&client_md=afdb046f80b078c376a15aadc7d3b45c&mode=current_text]]></public_text_link>
+	</bill_profile>
+	<bill_profile>
+		<bill_key>
+			<state>US</state>
+			<session_id>2011000</session_id>
+			<legtype>SRES</legtype>
+			<bill_number>415</bill_number>
+		</bill_key>
+		<authors>
+			<author>
+				<name>Wicker</name>
+				<party>R</party>
+				<house>S</house>
+			</author>
+		</authors>
+		<bill_title>National Association of Junior Auxiliaries Day</bill_title>
+		<intro_date>2012-03-29</intro_date>
+		<final_status>
+			<date>2012-03-29</date>
+			<action>Enacted</action>
+		</final_status>
+		<current_disposition>Adopted</current_disposition>
+		<bill_location>Adopted</bill_location>
+		<bill_summary>Designates April 4, 2012, as "National Association of Junior Auxiliaries Day".</bill_summary>
+		<status_actions>
+			<status_action>
+				<action_text>INTRODUCED.</action_text>
+				<action_date>2012-03-29</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In SENATE.  Passed SENATE.</action_text>
+				<action_date>2012-03-29</action_date>
+			</status_action>
+		</status_actions>
+		<public_text_link><![CDATA[http://custom.statenet.com/public/resources.cgi?id=ID:bill:US2011000SRES415&ciq=voices&client_md=924eefc3c4291ee44f090548ca5d0956&mode=current_text]]></public_text_link>
+	</bill_profile>
+	<bill_profile>
+		<bill_key>
+			<state>US</state>
+			<session_id>2011000</session_id>
+			<legtype>SRES</legtype>
+			<bill_number>416</bill_number>
+		</bill_key>
+		<authors>
+			<author>
+				<name>Stabenow</name>
+				<party>D</party>
+				<house>S</house>
+			</author>
+		</authors>
+		<bill_title>Parkinsons Awareness Month</bill_title>
+		<intro_date>2012-03-29</intro_date>
+		<final_status>
+			<date>2012-03-29</date>
+			<action>Enacted</action>
+		</final_status>
+		<current_disposition>Adopted</current_disposition>
+		<bill_location>Adopted</bill_location>
+		<bill_summary>Supports the designation of April as Parkinson's Awareness Month.</bill_summary>
+		<status_actions>
+			<status_action>
+				<action_text>INTRODUCED.</action_text>
+				<action_date>2012-03-29</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In SENATE.  Passed SENATE.</action_text>
+				<action_date>2012-03-29</action_date>
+			</status_action>
+		</status_actions>
+		<public_text_link><![CDATA[http://custom.statenet.com/public/resources.cgi?id=ID:bill:US2011000SRES416&ciq=voices&client_md=c3f38ffa90dd29883f065afdd815c603&mode=current_text]]></public_text_link>
+	</bill_profile>
+</legtrack_feed>

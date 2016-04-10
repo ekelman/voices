@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<legtrack_feed version_id="2012-04-11-01">
+	<bill_profile>
+		<bill_key>
+			<state>US</state>
+			<session_id>2011000</session_id>
+			<legtype>HR</legtype>
+			<bill_number>9</bill_number>
+		</bill_key>
+		<authors>
+			<author>
+				<name>Cantor</name>
+				<party>R</party>
+				<house>H</house>
+			</author>
+		</authors>
+		<bill_title>Small Business Tax Cut Act</bill_title>
+		<intro_date>2012-03-21</intro_date>
+		<current_disposition>Pending</current_disposition>
+		<bill_location>HOUSE</bill_location>
+		<bill_summary>Relates to the Small Business Tax Cut Act; amends the Internal Revenue Code of 1986 to provide a deduction for domestic business income of qualified small businesses.</bill_summary>
+		<status_actions>
+			<status_action>
+				<action_text>INTRODUCED.</action_text>
+				<action_date>2012-03-21</action_date>
+			</status_action>
+			<status_action>
+				<action_text>To HOUSE Committee on WAYS AND MEANS.</action_text>
+				<action_date>2012-03-21</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In HOUSE Committee on WAYS AND MEANS:  Consideration and mark-up session held.</action_text>
+				<action_date>2012-03-28</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In HOUSE Committee on WAYS AND MEANS:  Ordered to be reported as amended.</action_text>
+				<action_date>2012-03-28</action_date>
+			</status_action>
+			<status_action>
+				<action_text>From HOUSE Committee on WAYS AND MEANS:  Reported as amended.</action_text>
+				<action_date>2012-04-10</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In HOUSE.  Placed on HOUSE Union Calendar.</action_text>
+				<action_date>2012-04-10</action_date>
+			</status_action>
+		</status_actions>
+		<public_text_link><![CDATA[http://custom.statenet.com/public/resources.cgi?id=ID:bill:US2011000H9&ciq=voices&client_md=60388e37b6f4a074f9703271a82eb1a7&mode=current_text]]></public_text_link>
+	</bill_profile>
+</legtrack_feed>

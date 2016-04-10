@@ -1,0 +1,52 @@
+{literal}
+	<script language=javascript src="../scripts/gen_validatorv4.js"></script>
+{/literal}
+
+
+<table id="form_table"  cellspacing="1" cellpadding="3" border="0" width='100%'>
+	<form name="page_edit" method="post" action="index.php?">
+	<tr><td valign="middle" align="center" class="widget-head" colspan="2">Edit Page</td></tr>
+	<tbody bgcolor="#FFFFFF">
+	<tr>
+		<td align="right"  colspan="2" valign="top"><span class="error-message">* {$MandatoryMessage}</span></td>
+	</tr>
+	<tr><td><span class="error-message">*</span>&nbsp;Title</td>
+	<td><input type="text"  alt="blank"  name="title" value="{$title|stripslashes}" maxlength="100" size="50"></td></tr>
+	<tr><td>&nbsp;&nbsp;Meta-Keyword</td>
+	<td><input type="text" name="metakeyword" value="{$metakeyword|stripslashes}" maxlength="200" size="50" ></td></tr>
+	<tr><td>&nbsp;&nbsp;Meta-Description</td>
+	<td><input type="text" name="metadescription" value="{$metadescription|stripslashes}" maxlength="100" size="50"></td></tr>
+	<tr><td><span class="error-message">*</span>&nbsp;Content</td>
+	<td>{$TextArea}</td></tr>
+	<input type="hidden" name="stage" value="pages">
+	<input type="hidden" name="mode" value="save">
+	<input type="hidden" name="id" value="{$PageId}">
+	<tr><td colspan="2" align="center"><input type="submit" value="Save" name="Save" />&nbsp;&nbsp;<input type="submit" value="Cancel" name="Cancel"/></td></tr>
+	</tbody>
+	</form>
+</table>
+{literal}
+<script language='javascript' type='text/javascript'>
+
+	var frmvalidator	=	new Validator("page_edit");
+	frmvalidator.addValidation("title","req","Please enter Title");
+	frmvalidator.setAddnlValidationFunction(check_image);//custom function runs at last
+ 	function check_image()
+	{
+		if(validateForm(document.page_edit,false,false,false,false))
+		{
+			var oEditor = FCKeditorAPI.GetInstance('content') ;
+			//alert(oEditor.GetXHTML( false ).length);	
+			// Get the editor contents in XHTML.
+			if (oEditor.GetXHTML( false ).length == 0 )
+			{
+				alert( 'Please enter Value.' ) ;
+				return false ;
+			} else {
+				return true;
+			}
+		}
+	}
+</script>
+{/literal}
+	

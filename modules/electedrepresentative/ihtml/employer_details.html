@@ -1,0 +1,25 @@
+<table cellspacing='0' width='96%' cellpadding='0' border='0' bordercolor='#ffffff'>
+<tr><td height="10px"></td></tr>
+<tr height='28'><td bgcolor="#005388" align="center" style="padding-left:3px"><font color="#FFFFFF"><b>Employer Details</b></font></td></tr>
+<tr>
+	<td>
+		<table align="center" width='70%'cellspacing='1' cellpadding='3' border='0'  bordercolor='#f7f7f7'>
+			<tr><td class="arial11b000000"><B>Name</B></td><td>{$oEmployer->first_name|html_entity_decode|stripslashes}&nbsp;{$oEmployer->last_name|html_entity_decode|stripslashes}</td></tr>
+			<tr><td class="arial11b000000"><B>Email</B></td><td>{$oEmployer->email|html_entity_decode|stripslashes}</td></tr>
+			<tr><td class="arial11b000000"><B>Address</B></td><td>{$oEmployer->address|html_entity_decode|stripslashes}</td></tr>
+			<tr><td class="arial11b000000"><B>Phone number</B></td><td>{$oEmployer->phone_no1|html_entity_decode|stripslashes}-{$oEmployer->phone_no2|html_entity_decode|stripslashes}-{$oEmployer->phone_no3|html_entity_decode|stripslashes} Ext-{$oEmployer->ext|html_entity_decode|stripslashes}</td></tr>
+			<tr><td class="arial11b000000"><B>Province</B></td><td>{$oEmployer->province_name|default:""|html_entity_decode|stripslashes}</td></tr>
+			<tr><td class="arial11b000000"><B>City</B></td><td>{$oEmployer->city|default:""|html_entity_decode|stripslashes}</td></tr>
+			<tr><td class="arial11b000000"><B>Postal Code</B></td><td>{$oEmployer->postal_code|html_entity_decode|stripslashes|default:""} {$oEmployer->postal_code1|html_entity_decode|stripslashes|default:""}</td></tr>
+			<tr><td class="arial11b000000"><B>Company Name</B></td><td>{$oEmployer->company_name|html_entity_decode|stripslashes}</td></tr>
+			<!--<tr><td class="arial11b000000"><B>Company Bio</B></td><td>{$oEmployer->company_bio|html_entity_decode|stripslashes}</td></tr>-->
+			<tr><td class="arial11b000000"><B>Job Title</B></td><td>{$oEmployer->job_title|html_entity_decode|stripslashes}</td></tr>
+			<!--<tr><td class="arial11b000000"><B>Hear About Us</B></td><td>{$oEmployer->hear_mode|default:""|stripslashes}</td></tr>-->
+			
+			<!--tr><td colspan='2' align='center'><a class="arial11b000000" onclick="javascript:history.back(0)" style='cursor:hand'>&lt;&lt;Back</A></tr-->
+			
+			<tr><td colspan='2' align='center'><a class="arial11b000000" href="index.php?&stage=employer&mode=ListEmployers&search_field={$search_field}&search_text={$search_text}&pos={$smarty.request.pos}" style='cursor:hand'>&lt;&lt;Back</A></tr>
+		</table>
+	</td>
+</tr>
+</table>

@@ -1,0 +1,604 @@
+{literal}
+<!-- page specific scripts -->
+<script type="text/javascript">
+	$(function()
+	{
+		$("#secondaryAffiliate").change(function(){
+			var value = $("#secondaryAffiliate").val();			
+			if(parseInt(value) > 0)
+			{				
+				window.location.href = "/index.php?stage=subscriber&mode=AffiliateDetails&id="+value;
+			}			
+		});
+	});
+</script>
+{/literal}
+<tr>
+	<td class="arial_16_c40306">
+		<table width="100%" border="0" cellspacing="0" cellpadding="0">
+			<tr>
+				<td align="left" valign="top" class="arial_16_c40306">
+					<table width="100%" border="0" cellspacing="0" cellpadding="0">
+						<tr>
+							<td height="7" align="center" valign="top"></td>
+						</tr>
+						<tr>
+							<td align="center" valign="top"
+								style="padding: 16px 13px 13px 13px" class="bg_f7f6f2">
+								<table width="100%" border="0" cellspacing="0" cellpadding="0">
+									<tr>
+										<td colspan="2" align="left" valign="top"
+											class="Trebuchet_27_c60000">My Dashboard</td>
+									</tr>
+									<tr>
+										<td width="34%" height="44" align="left" valign="middle"
+											class="topsublink_bg arial_15_000_bold"
+											style="padding-left: 14px"><span>Dashboard</span>
+										</td>
+										<td width="66%" align="right" valign="middle"
+											class="topsublink_bg" style="padding-right: 12px;">
+											<table border="0" cellspacing="0" cellpadding="0">
+											<tr>
+												{* Temporary solution to make affiliates hidden for observer person *}								
+												{if $smarty.session.member_type eq 'subscriber'}													
+											
+												<td width="117" align="right" valign="top"><a href="index.php?stage=subscriber&mode=MyAffiliates" class="button"><span>My Affiliates</span></a></td>
+												<td width="106" align="right" valign="top"><a class="button" href="index.php?stage=subscriber&mode=VoteAlerts"><span>Vote Alerts</span></a></td>								
+																							
+												{/if}							
+												<td width="202" align="right" valign="top"><a href="index.php?stage=subscriber&mode=ElectedRepresentatives" class="button"><span>Elected Representatives</span></a></td>
+												<td width="100" align="right" valign="top"><a class="button" href="index.php?stage=subscriber&mode=MyProfile" class="button"><span> My Profile</span></a></td>																
+											</tr>														
+											</table>
+										</td>
+									</tr>
+								</table> <br />
+								
+								{* Temporary solution to make affiliates hidden for observer person *}								
+								{*if $smarty.session.member_type eq 'subscriber'*}
+								
+								<table width="100%" border="0" cellspacing="0" cellpadding="0">
+									<tr>
+										<td width="832" height="32" align="left" valign="middle"
+											class="tophead_grad">Primary Affiliates</td>
+									</tr>
+									<tr>
+										<td align="left" valign="top" class="votealert_bg"
+											style="padding: 16px 5px 11px 15px;">
+											
+											
+											<table width="100%" cellspacing="0" cellpadding="0"
+												border="0">
+												<tbody>
+													<tr>
+														{if $AffiliateContentPageHeaderView}
+														<td width="125" valign="top" align="left">{if
+															$MyAffiliates[0].banner neq ""} <img width="125"
+															height="99" alt=""
+															src="./UserFiles/affiliates_logo/{$MyAffiliates[0].banner}" />
+															{else} <img width="125" height="99" alt=""
+															src="./images/no-image.jpg" /> {/if}</td>
+														<td width="20" valign="top" align="left">&nbsp;</td>
+														<td width="732" valign="top" align="left">{else}
+														
+														<td width="877" valign="top" align="left">{/if}
+															<table width="100%" cellspacing="0" cellpadding="0"
+																border="0">
+																<tbody>
+																	<tr>
+																		<td valign="top" align="left" height="22"><a
+																			href="index.php?stage=subscriber&mode=AffiliateDetails&id={$MyAffiliates[0].member_id}"
+																			class="arial12Ba60000">{$MyAffiliates[0].organisation_name}</a>
+																		</td>
+																	</tr>
+																	<tr>
+																		<td valign="top" align="left" class="arial_12_000"><br />
+																			{$MyAffiliates[0].description|html_entity_decode}</td>
+																	</tr>
+																</tbody>
+															</table>
+														</td>
+													</tr>
+													<tr>
+														{if $AffiliateContentPageHeaderView}
+														{* to display layout properly  *}
+														<td width="125" valign="top" align="left">&nbsp;</td>
+														<td width="20" valign="top" align="left">&nbsp;</td>
+														<td width="732" valign="top" align="left">{else}
+														
+														<td width="877" valign="top" align="left">{/if} <br /> 
+														{if	$AffiliateContentNewsView} <span class="arial12Ba60000">
+																Latest News </span> <br />
+															<table width="100%" cellspacing="0" cellpadding="0"
+																border="0">
+																<tbody>
+																	{section name=i loop=$affiliateNews}
+																	<tr>
+																		<td valign="top" height="8" align="left"></td>
+																	</tr>
+																	<tr>
+																		<td valign="top" height="20" align="left"
+																			class="bg_f7f6f2">
+																			<a href="index.php?stage=subscriber&mode=NewsDetail&affID={$affiliateNews[i].affiliate_id}&id={$affiliateNews[i].article_id}"
+																			class="arial_12_000"> 
+																				<b>{$affiliateNews[i].article_title|html_entity_decode}</b>
+																			</a> <br/> 
+																			<span class="arial_12_000">
+																			{$affiliateNews[i].affiliate_comment|html_entity_decode|substr:0:150}...
+																				<span style="float:right;padding-right:5px;">																			
+																					<a href="index.php?stage=subscriber&mode=NewsDetail&affID={$affiliateNews[i].affiliate_id}&id={$affiliateNews[i].article_id}"
+																							class="arial12Ba60000"> 
+																						[read more] 
+																					</a>	
+																				</span>
+
+																			</span>
+																			
+																		</td>
+																	</tr>
+																	{sectionelse}
+																	<tr>
+																		<td valign="top" height="8" align="left"></td>
+																	</tr>
+																	<tr>
+																		<td valign="top" align="left" class="bg_f7f6f2"><span
+																			class="arial_12_000"> No news found. </span>
+																		</td>
+																	</tr>
+																	{/section}
+
+																</tbody>
+															</table> {/if} <br />
+														</td>
+													</tr>
+												</tbody>
+											</table>
+								
+										</td>
+									</tr>
+								</table> <br />
+								
+								<table width="100%" border="0" cellspacing="0" cellpadding="0">
+									<tr>
+										<td width="832" height="32" align="left" valign="middle"
+											class="tophead_grad">Secondary Affiliates</td>
+									</tr>
+									<tr>
+										<td align="left" valign="top" class="votealert_bg">
+											<table width="100%" border="0" cellspacing="0"
+												cellpadding="0">
+												{section name=i loop=$OtherAffiliates}
+												<tr>
+													<td>
+														<table width="100%" cellspacing="0" cellpadding="0"
+															border="0">
+															<tbody>
+																<tr>
+																	<td width="95%" valign="top" align="center">
+																		<table width="95%" cellspacing="5" cellpadding="5"
+																			border="0">
+																			<tbody>
+																				<tr>
+																					<td valign="top" align="left" height="22"><a
+																						href="index.php?stage=subscriber&mode=AffiliateDetails&id={$OtherAffiliates[i].member_id}"
+																						class="arial12Ba60000">{$OtherAffiliates[i].organisation_name}</a>
+																					</td>
+																				</tr>
+																				<tr>
+																					<td valign="top" align="left" class="arial_12_000">
+																						{$OtherAffiliates[i].description|html_entity_decode}</td>
+																				</tr>
+																			</tbody>
+																		</table>
+																	</td>
+																</tr>
+															</tbody>
+														</table>
+													</td>
+												</tr>
+												<tr>
+													<td align="left" valign="top" class="border_dashed"></td>
+												</tr>
+												{sectionelse}
+												<tr>
+													<td align="left" valign="top" class="border_dashed">
+														<table width="100%">
+															<tr>
+																<td valign="top" class="bg_f7f6ee" align="center">No
+																	secondary affiliates.</td>
+															</tr>
+														</table>
+													</td>
+												</tr>
+												{/section}
+											</table>
+										</td>
+									</tr>
+								</table>
+								
+								{*/if*}
+								
+								<table width="100%" border="0" cellspacing="0" cellpadding="0">
+									<tr>
+										<td align="left" valign="top">
+											<table width="100%" border="0" cellspacing="0"	cellpadding="0">
+												<tr>
+													<td align="left" valign="top">&nbsp;</td>
+												</tr>
+												<tr>
+													<td align="center" valign="top">
+														<table style="width: 100%" border="0" cellspacing="0"	cellpadding="0">
+															<tr>
+																<td style="width:49%;" align="left" valign="top">
+																	<table width="100%" border="0" cellspacing="0"	cellpadding="0">
+																		<tr>
+																			<td width="100%" align="left" valign="top">
+																				<table width="100%" border="0" cellspacing="0"
+																					cellpadding="0">
+																					<tr>
+																						<td width="100%" height="32" align="left"
+																							valign="middle" class="tophead_grad">Alerts</td>
+																					</tr>
+																					<tr>
+																						<td align="left" valign="top" class="votealert_bg">
+																							<!-- all Petitions and bills both while viewed by observer / subscriber -->
+																							<table width="100%" border="0" cellspacing="0" cellpadding="0">																							
+																							{if $AffiliateContentBillsView}																						
+																								{section loop=$MyAffiliateArticles name=i} 
+																									{if $MyAffiliateArticles[i].article_type eq 'bill'}
+																									<tr>
+																										<td align="left" valign="top">
+																										<table width="100%" border="0" cellspacing="0">
+																										<tr>
+																											<td width="47" align="center" valign="top">
+																											<img src="images/icon_doc.gif" width="27" height="36" alt="" style="margin-top: 20px" />
+																													</td>
+																													<td width="367" align="left" valign="top"
+																														class="bg_f7f6ee">
+																														<table width="100%" border="0"
+																															cellspacing="0" cellpadding="0">
+																															<tr>
+																																<td height="22" align="left" valign="top">
+																																	<a	href="index.php?stage=subscriber&mode=VoteAlertsDetail&id={$MyAffiliateArticles[i].article_id}&new={$MyAffiliateArticles[i].id}"
+																																	class="arialB13000000">
+																																		{$MyAffiliateArticles[i].article_title|html_entity_decode}
+																																	</a>
+																																	{if $MyAffiliateArticles[i].is_new eq 1 } 
+																																	<a href="index.php?stage=subscriber&mode=VoteAlertsDetail&id={$MyAffiliateArticles[i].article_id}&new={$MyAffiliateArticles[i].id}"
+																																	class="arialB13000000"> <img border="0"
+																																		width="28" height="18" alt=""
+																																		src="images/btn_new.gif"
+																																		style="border: none;"> </a> 
+																																	{/if}
+																																</td>
+																															</tr>
+																															<tr>
+																																<td align="left" valign="top">{$MyAffiliateArticles[i].affiliate_comment|html_entity_decode}</td>
+																															</tr>
+																															<tr>
+																																<td height="26" align="right"
+																																	valign="bottom"><span
+																																	class="arial12Ba60000"
+																																	style="float: left">Dated:<span
+																																		class="arial11Na60000">
+																																			{$MyAffiliateArticles[i].created|date_format:'%Y-%m-%d'}</span>
+																																</span><a
+																																	href="index.php?stage=subscriber&mode=VoteAlertsDetail&id={$MyAffiliateArticles[i].article_id}&new={$MyAffiliateArticles[i].id}"
+																																	class="arial12Ba60000"> [read more] </a>
+																																</td>
+																															</tr>
+																														</table>
+																													</td>
+																												</tr>
+																											</table>
+																										</td>
+																									</tr>
+																									<tr>
+																										<td align="left" valign="top"
+																											class="border_dashed"></td>
+																									</tr>
+																									
+{elseif $MyAffiliateArticles[i].article_type eq 'news'}
+																									<tr>
+																										<td align="left" valign="top">
+																										<table width="100%" border="0" cellspacing="0">
+																										<tr>
+																											<td width="47" align="center" valign="top">
+																											<img src="images/icon_doc.gif" width="27" height="36" alt="" style="margin-top: 20px" />
+																													</td>
+																													<td width="367" align="left" valign="top"
+																														class="bg_f7f6ee">
+																														<table width="100%" border="0"
+																															cellspacing="0" cellpadding="0">
+																															<tr>
+																																<td height="22" align="left" valign="top">
+																																	<a	href="index.php?stage=subscriber&mode=NewsDetail&affID={$MyAffiliateArticles[i].affiliate_id}&id={$MyAffiliateArticles[i].article_id}&new={$MyAffiliateArticles[i].id}"
+																																	class="arialB13000000">
+																																		{$MyAffiliateArticles[i].article_title|html_entity_decode}
+																																	</a>
+																																	{if $MyAffiliateArticles[i].is_new eq 1 } 
+																																	<a href="index.php?stage=subscriber&mode=NewsDetail&affID={$MyAffiliateArticles[i].affiliate_id}&id={$MyAffiliateArticles[i].article_id}&new={$MyAffiliateArticles[i].id}"
+																																	class="arialB13000000"> <img border="0"
+																																		width="28" height="18" alt=""
+																																		src="images/btn_new.gif"
+																																		style="border: none;"> </a> 
+																																	{/if}
+																																</td>
+																															</tr>
+																															<tr>
+																																<td align="left" valign="top">{$MyAffiliateArticles[i].affiliate_comment|html_entity_decode}</td>
+																															</tr>
+																															<tr>
+																																<td height="26" align="right"
+																																	valign="bottom"><span
+																																	class="arial12Ba60000"
+																																	style="float: left">Dated:<span
+																																		class="arial11Na60000">
+																																			{$MyAffiliateArticles[i].created|date_format:'%Y-%m-%d'}</span>
+																																</span><a
+																																	href="index.php?stage=subscriber&mode=NewsDetail&affID={$MyAffiliateArticles[i].affiliate_id}&id={$MyAffiliateArticles[i].article_id}&new={$MyAffiliateArticles[i].id}"
+																																	class="arial12Ba60000"> [read more] </a>
+																																</td>
+																															</tr>
+																														</table>
+																													</td>
+																												</tr>
+																											</table>
+																										</td>
+																									</tr>
+																									<tr>
+																										<td align="left" valign="top"
+																											class="border_dashed"></td>
+																									</tr>
+																									
+																									{elseif $MyAffiliateArticles[i].article_type eq "petition"} 
+																											{if ($MyAffiliateArticles[i].voting_end ge	$smarty.now|date_format:'%Y-%m-%d')}
+																									<tr>
+																										<td align="left" valign="top">
+																											<table width="100%" border="0" cellspacing="0"
+																												cellpadding="0">
+																												<tr>
+																													<td width="47" align="center" valign="top">
+																														<img src="images/icon_doc.gif" width="27"
+																														height="36" alt="" style="margin-top: 20px" />
+																													</td>
+																													<td width="367" align="left" valign="top"
+																														class="bg_f7f6ee">
+																														<table width="100%" border="0"
+																															cellspacing="0" cellpadding="0">
+																															<tr>
+																																<td height="22" align="left" valign="top">
+																																	<a
+																																	href="index.php?stage=subscriber&mode=petitionsDetail&affID={$MyAffiliateArticles[i].affiliate_id}&id={$MyAffiliateArticles[i].article_id}&new={$MyAffiliateArticles[i].id}"
+																																	class="arialB13000000">
+																																		{$MyAffiliateArticles[i].article_title|html_entity_decode}
+																																</a>  
+{if $MyAffiliateArticles[i].is_new eq 1 } 																																
+																																<a
+																																	href="index.php?stage=subscriber&mode=petitionsDetail&affID={$MyAffiliateArticles[i].affiliate_id}&id={$MyAffiliateArticles[i].article_id}&new={$MyAffiliateArticles[i].id}"
+																																	class="arialB13000000"> <img border="0"
+																																		width="28" height="18" alt=""
+																																		src="images/btn_new.gif"
+																																		style="border: none;"> </a> 
+	{/if}																																</td>
+																															</tr>
+																															<tr>
+																																<td align="left" valign="top">
+																																	{$MyAffiliateArticles[i].affiliate_comment|html_entity_decode}
+																																</td>
+																															</tr>
+																															<tr>
+																																<td height="26" align="right"
+																																	valign="bottom"><span
+																																	class="arial12Ba60000"
+																																	style="float: left">Dated:<span
+																																		class="arial11Na60000">
+																																			{$MyAffiliateArticles[i].created|date_format:'%Y-%m-%d'}</span>
+																																</span> <a
+																																	href="index.php?stage=subscriber&mode=petitionsDetail&affID={$MyAffiliateArticles[i].affiliate_id}&id={$MyAffiliateArticles[i].article_id}&new={$MyAffiliateArticles[i].id}"
+																																	class="arial12Ba60000"> [read more] </a>
+																																</td>
+																															</tr>
+																														</table>
+																													</td>
+																												</tr>
+																											</table>
+																										</td>
+																									</tr>
+
+																									<tr>
+																										<td align="left" valign="top"
+																											class="border_dashed"></td>
+																									</tr>
+																											{/if} 
+																										{/if} 
+																										
+																								{sectionelse}
+																								
+																								<tr>
+																										<td align="center" valign="top" class="bg_f7f6ee">
+																											No Alerts.
+																										</td>
+																								</tr>
+																								{/section}
+																								
+																								<tr>
+																									<td height="40" align="center" valign="middle">
+																										<a
+																										href="index.php?stage=subscriber&mode=VoteAlerts"
+																										id="alert_view_more" class="arial12BUa60000">view
+																											more...</a> <span style="display: none"
+																										id="alertloader"> <img
+																											src="images/ajax-loader.gif" /> </span></td>
+																								</tr>
+
+																							{else}
+																								<tr>
+																									<td align="center" valign="top" class="bg_f7f6ee">
+																										Not Authorized to view alerts.</td>
+																								</tr>
+																							{/if}	
+																							</table>
+																							<!-- Petitions and bills both whle viewed by observer / subscriber -->
+																							
+																						</td>
+																					</tr>
+																				</table> 
+																				<!-- Vote alerts -->
+																				
+																			</td>
+																		</tr>
+
+																		<tr>
+																			<td height="35" align="left" valign="top">&nbsp;</td>
+																		</tr>
+																	</table>
+																</td>
+
+																<td style="width:2%" align="left" valign="top">&nbsp;</td>
+
+																<td style="width:49%" align="left" valign="top">
+																	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+																		<tr>
+																			<td width="100%" align="left" valign="top">
+																				<table width="100%" border="0" cellspacing="0" cellpadding="0">
+																					<tr>
+																						<td width="100%" height="32" align="left" valign="middle" class="tophead_grad">
+																							Elected Representatives
+																						</td>
+																					</tr>
+
+																					<tr>
+																						<td align="left" valign="top" class="votealert_bg">
+																							<table width="100%" border="0" cellspacing="0"
+																								cellpadding="0">
+																								<tr>
+																									<td align="left" valign="top"
+																										style="padding: 9px 11px;"><table width="100%"
+																											border="0" cellspacing="0" cellpadding="0">
+
+																											{section name=index loop=$oMember} {if
+																											$smarty.section.index.iteration le 5}
+																											<tr>
+																												<td align="left" valign="top"><table
+																														width="100%" border="0" cellspacing="0"
+																														cellpadding="0">
+																														<tr>
+																															<td width="102" align="left" valign="top">
+																																{if $oMember[index]->OfficerProfileImage
+																																neq ''} <img width="113" height="87"
+																																class="pic_border" alt=""
+																																src="{$profile_image_root}/{$oMember[index]->OfficerProfileImage}">
+																																{else} <img width="113" height="87"
+																																class="pic_border" alt=""
+																																src="images/no-image.jpg"> {/if}</td>
+																															<td width="10"><img
+																																src="images/trans.gif" height="1"
+																																width="1" /></td>
+																															<td width="274" align="left" valign="top">
+																																<a 
+																																href="index.php?stage=subscriber&mode=ElectedrepresentativeProfile&er_id={$oMember[index]->ElectedOfficialID}"
+																																class="arialB13000000 lineheight">
+																																	{$oMember[index]->First_Name}
+																																	{$oMember[index]->Last_Name} -
+																																	{$oMember[index]->Title} <br />
+																																	{$oMember[index]->Party} </a><br />
+
+																																<div class="arial_12_000">
+																																	<table width="100%" border="0"
+																																		cellpadding="0" cellspacing="2">
+																																		<tr>
+																																			<td>Current Term:</td>
+																																			<td>
+																																				{$oMember[index]->Term_Start|date_format:"%Y"}
+																																				-
+																																				{$oMember[index]->Term_End|date_format:"%Y"}
+																																			</td>
+																																		</tr>
+
+																																		<tr>
+																																			<td valign="top">Address:</td>
+																																			<td valign="top">{if
+																																				$oMember[index]->PrimaryAddress2 neq
+																																				''}{$oMember[index]->PrimaryAddress2}<br />{/if}
+																																				{$oMember[index]->PrimaryCity},
+																																				{$oMember[index]->PrimaryState}
+																																				{$oMember[index]->PrimaryPostalCode}
+																																			</td>
+																																		</tr>
+
+																																		<tr>
+																																		
+																																		
+																																		<tr>
+																																			<td>Last Updated:</td>
+																																			<td>
+																																				{$oMember[index]->LastUpdateDate|date_format:"%Y-%m-%d"}
+																																			</td>
+																																		</tr>
+																																	</table>
+																																	<br />
+																																</div> <br />
+																															</td>
+																														</tr>
+																													</table>
+																												</td>
+																											</tr>
+																											<tr>
+																												<td height="8" align="left" valign="top"></td>
+																											</tr>
+																											{/if} {sectionelse}
+
+																											<tr class="bg_f7f6ee_new">
+																												<td align="center" valign="middle"
+																													class="bg_f7f6ee"><br /> No Elected
+																													Representative data available. <br />
+																												</td>
+																											</tr>
+																											{/section}
+																										</table>
+																									</td>
+																								</tr>
+																								<tr>
+																									<td align="left" valign="top"
+																										class="border_dashed"></td>
+																								</tr>
+
+																								<tr align="center" valign="middle">
+																									<td height="40"><a
+																										href="index.php?stage=subscriber&mode=ElectedRepresentatives"
+																										class="arial12BUa60000">view more...</a>
+																									</td>
+																								</tr>
+																							</table>
+																						</td>
+																					</tr>
+																				</table>
+																			</td>
+																		</tr>
+																		<tr>
+																			<td height="35" align="left" valign="top">&nbsp;</td>
+																		</tr>
+																	</table>
+																</td>
+															</tr>
+														</table>
+													</td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+								</table>
+							</td>
+
+
+						</tr>
+						<tr>
+							<td align="left" valign="top">&nbsp;</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+	</td>
+</tr>

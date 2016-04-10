@@ -1,0 +1,149 @@
+<table width="100%" cellspacing="0" cellpadding="0" border="0">
+<tbody>
+<tr>
+	<td class="arial_16_c40306">
+	<table width="100%" cellspacing="0" cellpadding="0" border="0">
+	<tbody>
+	<tr>
+		<td valign="top" align="left" class="arial_16_c40306">
+		<table width="100%" cellspacing="0" cellpadding="0" border="0">
+		<tbody>
+		{if $vMsg neq ''}
+		<tr>
+			<td valign="bottom" align="center"  class="error-message">{$vMsg}</td>
+		</tr>
+		{/if}
+		<tr>
+			<td valign="top" align="left">
+			<table width="100%" cellspacing="0" cellpadding="0"	border="0">
+			<tr>
+				<td width="34%" valign="middle" style="padding-left: 14px;" class="topsublink_bg arial_15_000_bold">Petition Details</td>
+				<td width="66%" valign="middle" style="padding: 6px 14px;" class="topsublink_bg">
+				<table cellspacing="0" cellpadding="0" border="0" align="right">
+				<tbody>
+				<tr>
+					<td width="auto" align="right" valign="top">
+					<a class="button" href="index.php?stage=subscriber&mode=AffiliateVoteAlerts&affID={$vAffiliate->member_id}"><span>Bills & Petitions</span></a>
+					{if $smarty.session.member_type eq 'affiliate' and $ArticleAssociation eq false}
+																		<a
+																			class="button"
+																			href="index.php?stage=affiliates&articleID={ $affiliatePetitions[0].article_id}&article_type={ $affiliatePetitions[0].article_type}&aff_id={ $affiliatePetitions[0].affiliate_id}&mode=AddAffiliateArticle"><span>Accept</span>
+																		</a>{/if}
+					</td>
+				</tr>
+				</tbody>
+				</table>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" align="left" style="padding: 16px 5px 11px 15px;" class="votealert_bg_new" colspan="2">
+				<table width="100%">
+				{section loop=$affiliatePetitions name=i}
+				<tr>
+					<td align="left" valign="top">
+					<table width="100%" border="0" cellspacing="0" cellpadding="0">
+					<tr>
+						<td width="47" align="center" valign="top">
+						<img src="images/icon_doc.gif" width="27" height="36" alt="" style="margin-top: 20px" />
+						</td>
+						<td width="847" align="left" valign="top" class="bg_f7f6ee">
+						<table width="100%" border="0" cellspacing="0" cellpadding="0">
+						<tr>
+							<td height="22" align="left" valign="top">
+							<span class="arialB13000000" style="text-decoration:none;">{$affiliatePetitions[i].article_title|html_entity_decode}</span>
+							{if $signs_count > 0}({$signs_count}){/if}&nbsp;&nbsp;
+							{if $affiliatePetitions[i].support_file neq ''}
+							[<a href="./UserFiles/affiliates_doc/{ $affiliatePetitions[i].support_file}" target="_blank" class="arial12Ba60000">Read Attachment</a>]	 
+							{/if}
+							{if $smarty.session.member_type eq 'subscriber'}
+					<!-- AddThis Button BEGIN -->
+																								<span class="addthis_toolbox addthis_default_style" style="float:right;width:auto;" >
+																									<a class="addthis_button_preferred_1" addthis:url="voicesforchange.us/index.php?stage=visitor&mode=affiliatePetitionsDetail&affID={$affiliatePetitions[i].affiliate_id}&id={$affiliatePetitions[i].article_id}"></a>
+																									<a class="addthis_button_preferred_2" addthis:url="voicesforchange.us/index.php?stage=visitor&mode=affiliatePetitionsDetail&affID={$affiliatePetitions[i].affiliate_id}&id={$affiliatePetitions[i].article_id}"></a>
+																									<a class="addthis_button_preferred_3" addthis:url="voicesforchange.us/index.php?stage=visitor&mode=affiliatePetitionsDetail&affID={$affiliatePetitions[i].affiliate_id}&id={$affiliatePetitions[i].article_id}"></a>
+																									<a class="addthis_button_preferred_4" addthis:url="voicesforchange.us/index.php?stage=visitor&mode=affiliatePetitionsDetail&affID={$affiliatePetitions[i].affiliate_id}&id={$affiliatePetitions[i].article_id}"></a>
+																									<a class="addthis_button_compact"></a>
+																									<a class="addthis_counter addthis_bubble_style"></a>
+																								</span>
+																								
+																								
+																								<script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=xa-4edeee26461e5e25">
+																								</script>
+																								<!-- AddThis Button END -->
+{/if}
+							</td>
+						</tr>
+						<tr>
+							<td align="left" valign="top">{$affiliatePetitions[i].affiliate_comment|html_entity_decode}</td>
+						</tr>
+						<tr>
+							<td height="35" align="right" valign="bottom">
+							<span class="arial12Ba60000" style="float: left">Dated:<span class="arial11Na60000"> { $affiliatePetitions[i].created}</span></span> <!--Changes by Monika Bansal on 24th July 2012-->
+							{if $smarty.session.member_type eq 'subscriber'}
+							{if $voting_details eq 'support'}
+							{* voting done  *}
+								You have signed this petition.									
+							{else}							
+							{* !voting done  *}
+								{if $affiliate_content_bills_vote_content}																			
+								{* voting is allowed  *}								
+									{if $paymentDone}						
+										{if ($affiliatePetitions[i].voting_start le $smarty.now|date_format:'%Y-%m-%d') and ($affiliatePetitions[i].voting_end ge $smarty.now|date_format:'%Y-%m-%d')}
+											{if $affiliatePetitions[i].petition_level eq 'State' && 
+											$affiliatePetitions[i].petition_state neq $subscriber_state}	
+												You are not a {$affiliatePetitions[i].petition_state} State resident, and may not sign this petition.				
+											{else}												
+											<a href='index.php?stage=member&mode=signPetition&articleID={$affiliatePetitions[i].article_id}&status=support&affID={$affiliatePetitions[i].affiliate_id}' style="cursor: pointer;text-decoration: none;">
+												<img src="images/btn_i_support_this_petition.gif" alt="" style="border:none;"/>
+											</a> 
+											{/if}&nbsp;&nbsp; 
+										{elseif $affiliatePetitions[i].voting_start gt $smarty.now|date_format:'%Y-%m-%d'}
+												Signing of petition will start on {$affiliatePetitions[i].voting_start}
+										{/if}											
+									{else}
+										<!--
+										<a href='index.php?stage=subscriber&mode=MyProfile&affiliateID={$affiliatePetitions[i].affiliate_id}&articleID={$affiliatePetitions[i].article_id}' style="cursor: pointer;text-decoration: none;" class="arial12Ba60000">
+											Upgrade your account to sign this petition
+										</a>
+										-->
+											&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;									
+										{if $affiliatePetitions[i].petition_level eq 'State' && 
+											$affiliatePetitions[i].petition_state neq $subscriber_state}	
+											You are not a {$affiliatePetitions[i].petition_state} State resident, and may not sign this petition.				
+										{else}	
+										<a href="index.php?stage=subscriber&mode=oncePetitionPayment&affiliateID={$affiliatePetitions[i].affiliate_id}&articleID={$affiliatePetitions[i].article_id}" style="cursor: pointer;text-decoration: none;" class="arial12Ba60000">
+											Pay to sign this petition only
+										</a>
+										{/if}		
+									{/if}									
+								{/if}
+							{/if}	
+							{/if}						
+								
+	<!--Changes by Monika Bansal on 24th July 2012-->
+							
+							</td>
+						</tr>
+						</table>
+						</td>
+					</tr>
+					</table>
+					</td>
+				</tr>
+				{/section}
+				</table>
+				</td>
+			</tr>
+			</table>
+			</td>
+		</tr>
+		</tbody>
+		</table>
+		</td>
+	</tr>
+	</tbody>
+	</table>
+	</td>
+</tr>
+</tbody>
+</table>

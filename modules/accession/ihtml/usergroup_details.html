@@ -1,0 +1,31 @@
+<table cellspacing='0' width='96%' cellpadding='0' border='0' bordercolor='#ffffff'>
+<tr><td height="10px"></td></tr>
+<tr bgcolor="#888888" height='28'><td align="center" style="padding-left:3px"><font color="#FFFFFF"><b>User Group Details</b></font></td></tr>
+<tr>
+	<td>
+		<br/>
+		<table align="center" width='70%'cellspacing='1' cellpadding='3' border='0'  bordercolor='#f7f7f7'>
+			<tr>
+				<td class="arial11b000000" width="30%"><B>User Group Name</B></td>
+				<td width="70%">{$oMember->name|html_entity_decode|stripslashes}</td></tr>
+			<tr>
+			<tr>
+				<td class="arial11b000000" width="30%"><B>User Group Name</B></td>
+				<td width="70%">{$oMember->name|html_entity_decode|stripslashes}</td></tr>
+			<tr>
+				<td width="30%" class="arial11b000000"><B>Promo Code</B></td>
+				<td width="70%">{$oMember->promo_code}</td></tr>
+			<tr>
+				<td width="30%" class="arial11b000000"><B>Subscription Price</B></td>
+				<td width="70%">$&nbsp;{$oMember->subscription_price}</td>
+			</tr>
+			<!--<tr><td class="arial11b000000"><B>Company Bio</B></td><td>{$oEmployer->company_bio|html_entity_decode|stripslashes}</td></tr>-->
+			<tr>
+				<td colspan='2' align='center'>
+					<input type="button" value="Back" name="Back" onclick="window.location='index.php?stage=accession&mode=listUserGroups&pos={$smarty.request.pos}'"/></td></tr>					
+				</td>	
+			</tr>
+		</table>
+	</td>
+</tr>
+</table>

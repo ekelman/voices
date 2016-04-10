@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<legtrack_feed version_id="2011-03-20-01">
+	<bill_profile>
+		<bill_key>
+			<state>US</state>
+			<session_id>2011000</session_id>
+			<legtype>HR</legtype>
+			<bill_number>3</bill_number>
+		</bill_key>
+		<authors>
+			<author>
+				<name>Boehner</name>
+				<party>R</party>
+				<house>H</house>
+			</author>
+		</authors>
+		<bill_title>Prohibit Taxpayer Funds to be Used for Abortions</bill_title>
+		<intro_date>2011-01-20</intro_date>
+		<current_disposition>Pending</current_disposition>
+		<bill_location>HOUSE</bill_location>
+		<bill_summary>Prohibits taxpayer funded abortions and to provide for conscience protect ions, and for other purposes.</bill_summary>
+		<status_actions>
+			<status_action>
+				<action_text>INTRODUCED.</action_text>
+				<action_date>2011-01-20</action_date>
+			</status_action>
+			<status_action>
+				<action_text>To HOUSE Committee on JUDICIARY.</action_text>
+				<action_date>2011-01-20</action_date>
+			</status_action>
+			<status_action>
+				<action_text>Additionally referred to HOUSE Committee on ENERGY AND COMMERCE.</action_text>
+				<action_date>2011-01-20</action_date>
+			</status_action>
+			<status_action>
+				<action_text>Additionally referred to HOUSE Committee on WAYS AND MEANS.</action_text>
+				<action_date>2011-01-20</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In HOUSE Committee on ENERGY AND COMMERCE:  Referred to Subcommittee on HEALTH.</action_text>
+				<action_date>2011-02-01</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In HOUSE Committee on JUDICIARY:  Referred to Subcommittee on THE CONSTITUTION.</action_text>
+				<action_date>2011-02-04</action_date>
+			</status_action>
+			<status_action>
+				<action_text>Subcommittee on THE CONSTITUTION discharged.</action_text>
+				<action_date>2011-02-28</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In HOUSE Committee on JUDICIARY:  Ordered to be reported as amended.</action_text>
+				<action_date>2011-03-03</action_date>
+			</status_action>
+			<status_action>
+				<action_text>From HOUSE Committee on JUDICIARY:  Reported as amended.</action_text>
+				<action_date>2011-03-17</action_date>
+			</status_action>
+		</status_actions>
+		<public_text_link><![CDATA[http://custom.statenet.com/public/resources.cgi?id=ID:bill:US2011000H3&ciq=voices&client_md=50bb121395f7e0d5c125f84a1fff9dab&mode=current_text]]></public_text_link>
+	</bill_profile>
+	<bill_profile>
+		<bill_key>
+			<state>US</state>
+			<session_id>2011000</session_id>
+			<legtype>HR</legtype>
+			<bill_number>5</bill_number>
+		</bill_key>
+		<related_bills>
+			<related_bill>
+				<related_bill_key>
+					<related_state>US</related_state>
+					<related_session_id>2011000</related_session_id>
+					<related_legtype>S</related_legtype>
+					<related_bill_number>12</related_bill_number>
+				</related_bill_key>
+				<type_description>Related</type_description>
+			</related_bill>
+			<related_bill>
+				<related_bill_key>
+					<related_state>US</related_state>
+					<related_session_id>2011000</related_session_id>
+					<related_legtype>S</related_legtype>
+					<related_bill_number>218</related_bill_number>
+				</related_bill_key>
+				<type_description>Identical</type_description>
+			</related_bill>
+		</related_bills>
+		<authors>
+			<author>
+				<name>Gingrey</name>
+				<party>R</party>
+				<house>H</house>
+			</author>
+		</authors>
+		<bill_title>Patient Access to Health Care Services</bill_title>
+		<intro_date>2011-01-24</intro_date>
+		<current_disposition>Pending</current_disposition>
+		<bill_location>HOUSE</bill_location>
+		<bill_summary>Improves patient access to health care services and provide improved Medical care by reducing the excessive burden the liability system places on the health care delivery system.</bill_summary>
+		<status_actions>
+			<status_action>
+				<action_text>INTRODUCED.</action_text>
+				<action_date>2011-01-24</action_date>
+			</status_action>
+			<status_action>
+				<action_text>To HOUSE Committee on JUDICIARY.</action_text>
+				<action_date>2011-01-24</action_date>
+			</status_action>
+			<status_action>
+				<action_text>Additionally referred to HOUSE Committee on ENERGY AND COMMERCE.</action_text>
+				<action_date>2011-01-24</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In HOUSE Committee on ENERGY AND COMMERCE:  Referred to Subcommittee on HEALTH.</action_text>
+				<action_date>2011-02-01</action_date>
+			</status_action>
+			<status_action>
+				<action_text>In HOUSE Committee on JUDICIARY:  Consideration and mark-up session held.</action_text>
+				<action_date>2011-02-09</action_date>
+			</status_action>
+			<status_action>
+				<action_text>From HOUSE Committee on JUDICIARY:  Reported as amended.</action_text>
+				<action_date>2011-03-17</action_date>
+			</status_action>
+		</status_actions>
+		<public_text_link><![CDATA[http://custom.statenet.com/public/resources.cgi?id=ID:bill:US2011000H5&ciq=voices&client_md=cfa518a0273e7e3a0b92c46de4660328&mode=current_text]]></public_text_link>
+	</bill_profile>
+</legtrack_feed>

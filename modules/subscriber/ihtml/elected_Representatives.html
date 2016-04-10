@@ -1,0 +1,147 @@
+<tr>
+	<td valign="top" align="left" style="padding-top: 10px;">
+	<table width="100%" cellspacing="0" cellpadding="0" border="0">
+	<tbody>
+	<tr>
+		<td valign="top" align="left" style="padding: 24px 15px 51px 12px;" class="bg_f7f6f2">
+		<table width="100%" cellspacing="0" cellpadding="0" border="0">
+		<tbody>
+		<tr>
+			<td class="arial_16_c40306">
+			<table width="100%" cellspacing="0" cellpadding="0" border="0">
+			<tbody>
+			<tr>
+				<td valign="top" align="left" class="arial_16_c40306">
+				<table width="100%" cellspacing="0" cellpadding="0" border="0">
+				<tbody>
+				<tr>
+					<td valign="top" align="left">
+					<table width="100%" cellspacing="0" cellpadding="0" border="0">
+					<tbody>
+					<tr>
+						<td valign="top" align="left" height="37" class="Trebuchet_27_c60000" colspan="2">
+						Elected Representatives
+						</td>
+					</tr>
+					<tr>
+						<td width="34%" valign="middle" align="left" style="padding-left: 14px;" class="topsublink_bg arial_15_000_bold"></td>
+						<td width="66%" valign="middle" align="right" style="padding: 6px 14px;" class="topsublink_bg">
+						<table cellspacing="0" cellpadding="0" border="0">
+							<tbody>
+								<tr>
+									{* Temporary solution to make affiliates hidden for observer person *}								
+									{if $smarty.session.member_type eq 'subscriber'}													
+									<td width="117" align="right" valign="top"><a href="index.php?stage=subscriber&mode=MyAffiliates" class="button"><span>My Affiliates</span></a></td>
+									<td width="106" align="right" valign="top"><a class="button" href="index.php?stage=subscriber&mode=VoteAlerts"><span>Vote Alerts</span></a></td>																
+									<td width="100" align="right" valign="top"><a  href="index.php?stage=subscriber&mode=MyProfile" class="button"><span> My Profile</span></a></td>					
+									{/if}	
+									
+									
+									<td width="202" align="right" valign="top"><a href="index.php?stage=subscriber&mode=ElectedRepresentatives" class="Activebutton"><span>Elected Representatives</span></a></td>
+									
+								</tr>
+							</tbody>
+						</table>
+				</td>
+			</tr>
+			<tr>
+				<td valign="bottom" align="left" height="37" style="padding-bottom: 5px;" class="arial_14_c30100" colspan="2">&nbsp;</td>
+			</tr>
+			{section name=index loop=$oMember}
+			<tr>
+				<td valign="top" align="left" style="padding: 16px 5px 11px 15px;" class="votealert_bg_new" colspan="2">
+				<table width="100%" cellspacing="0" cellpadding="0" border="0">
+                <tbody>
+				<tr>
+					<td width="20" valign="top" align="left">&nbsp;</td>
+                    <td width="732" valign="top" align="left">
+                    <table width="100%" cellspacing="0" cellpadding="0" border="0">
+                    <tbody>
+					<tr>
+						<td width="125" valign="top" align="left">
+						{if $oMember[index]->OfficerProfileImage neq ''}
+						<img width="113" height="87" class="pic_border" alt="" src="{$profile_image_root}/{$oMember[index]->OfficerProfileImage}">
+						{else}
+						<img width="113" height="87" class="pic_border" alt="" src="images/no-image.jpg">
+						{/if}
+						</td>
+                        <td width="20" valign="top" align="left">&nbsp;</td>
+                        <td width="732" valign="top" align="left">
+						<table width="100%" cellspacing="0" cellpadding="0" border="0">
+                        <tbody>
+						<tr>
+							<td valign="top" align="left" height="22" width="75%"><a href="index.php?stage=subscriber&mode=ElectedrepresentativeProfile&er_id={$oMember[index]->ElectedOfficialID}" class="arialB13000000 lineheight"><span class="arial12Ba60000">{$oMember[index]->First_Name} {$oMember[index]->Last_Name} - {$oMember[index]->Title}</span></a><br /><span class="arial11Na60000"> {$oMember[index]->Party}</span></td>
+							<td valign="top" align="left" height="22" width="25%"><span class="arial12B000000">Current Term:</span> <span class="arial11N000000">{$oMember[index]->Term_Start|date_format:"%Y"} - {$oMember[index]->Term_End|date_format:"%Y"}</span></td>
+                        </tr>
+						<tr>
+							<td valign="top" align="left" height="22" colspan="2"></td>
+						</tr>
+						<tr>
+							<td valign="top" align="left" class="arial_12_000" colspan="2"><span class="arial12B000000">Address:</span><br /><span class="arial11N000000">{$oMember[index]->address}</span></td>
+						</tr>
+						{if $oMember[index]->PrimaryPhone1 neq '' or  $oMember[index]->PrimaryFax1 neq ''}
+						<tr>
+							<td valign="top" align="left" height="15" colspan="2"></td>
+						</tr>
+						{/if}
+						{if $oMember[index]->PrimaryPhone1 neq ''}
+						<tr>
+							<td valign="top" align="left" class="arial_12_000" colspan="2"><span class="arial12B000000">Phone:</span><span class="arial11N000000"> {$oMember[index]->PrimaryPhone1}</span></td>
+						</tr>
+						{/if}
+						{if $oMember[index]->PrimaryFax1 neq ''}
+						<tr>
+							<td valign="top" align="left" class="arial_12_000" colspan="2"><span class="arial12B000000">Fax:</span><span class="arial11N000000"> {$oMember[index]->PrimaryFax1}</span></td>
+						</tr>
+						{/if}
+						
+						{if $oMember[index]->EMail1 neq '' or  $oMember[index]->Url1 neq ''}
+						<tr>
+							<td valign="top" align="left" height="15" colspan="2"></td>
+						</tr>
+						{/if}
+						{if $oMember[index]->EMail1 neq ''}
+						<tr>
+							<td valign="top" align="left" class="arial_12_000" colspan="2"><span class="arial12B000000">Email:</span>&nbsp;&nbsp;<span class="arial11N000000"><a title="" href="mailto:{$oMember[index]->EMail1}">{$oMember[index]->EMail1}</a></span></td>
+						</tr>
+						{/if}
+						{if $oMember[index]->Url1 neq ''}
+						<tr>
+							<td valign="top" align="left" class="arial_12_000" colspan="2"><span class="arial12B000000">Web Site:</span>&nbsp;<span class="arial11N000000"><a title="" href="{$oMember[index]->Url1}" target="_blank"> {$oMember[index]->Url1}</a></span></td>
+						</tr>
+						{/if}
+						</tbody>
+						</table>
+						</td>
+					</tr>
+					</tbody>
+					</table>
+					</td>
+				</tr>
+				</tbody>
+				</table>
+				</td>
+			</tr>
+			{sectionelse}
+			<tr>
+				<td valign="top" align="center" style="padding: 16px 5px 11px 15px;" class="arial_12_000" colspan="2">No Elected official assigned.</td>
+			</tr>
+			{/section}
+			<tr>
+				<td valign="top" align="left" class="border_dashed" colspan="2"></td>
+			</tr>
+			</tbody>
+			</table>
+			</td>
+		</tr>
+		</tbody>
+		</table>
+		</td>
+	</tr>
+    </tbody>
+	</table>
+	</td>
+</tr>
+</tbody>
+</table>
+</td>

@@ -1,0 +1,112 @@
+<table width="100%" cellspacing="0" cellpadding="0" border="0">
+	<tbody>
+		<tr>
+			<td class="arial_16_c40306"><table width="100%" cellspacing="0"
+					cellpadding="0" border="0">
+					<tbody>
+						<tr>
+							<td valign="top" align="left" class="arial_16_c40306"><table
+									width="100%" cellspacing="0" cellpadding="0" border="0">
+									<tbody>
+										<tr>
+											<td valign="top" align="left">
+												<table width="100%" cellspacing="0" cellpadding="0" border="0">
+													<tr>
+														<td width="34%" valign="middle"
+															style="padding-left: 14px;"
+															class="topsublink_bg arial_15_000_bold">Poll Details</td>
+														<td width="66%" valign="middle" style="padding: 6px 14px;"
+															class="topsublink_bg"><table cellspacing="0"
+																cellpadding="0" border="0" align="right">
+																<tbody>
+																<tr>
+																	<td width="106" align="right" valign="top"><a
+																		class="button"
+																		href="index.php?stage=electedrepresentative&mode=ERPolls"><span>My Polls</span>
+																	</a>
+																	</td>
+																</tr>
+																</tbody>
+															</table>
+														</td>
+													</tr>
+
+													<tr>
+														<td valign="top" align="left"
+															style="padding: 16px 5px 11px 15px;"
+															class="votealert_bg_new" colspan="2">
+															<table width="100%">
+																<tr>
+																	<td align="left" valign="top">
+																		<table width="100%" border="0" cellspacing="0"
+																			cellpadding="0">
+																			<tr>
+																				<td width="47" align="center" valign="top"><img
+																					src="images/icon_doc.gif" width="27" height="36"
+																					alt="" style="margin-top: 20px" /></td>
+																				<td width="847" align="left" valign="top"
+																					class="bg_f7f6ee">
+																					<table width="100%" border="0" cellspacing="0"
+																						cellpadding="0">
+																						<tr>
+																							<td align="left" valign="top">
+																								{$oArticle->comment}
+																								<br/>
+																								<br/>
+																							
+																							</td>
+																						</tr>
+																						<tr>
+																							<td height="26" align="right" valign="bottom">
+																							<div style="float:left">	
+																								<span class="arial12Ba60000" style="float: left">
+																									Dated:
+																									<span class="arial11Na60000">
+																										{$oArticle->comment_date|date_format:"%Y-%m-%d"}																																																			
+																									</span>																									
+																								</span>																								
+																							</div>
+																							<div style="clear:both"></div>
+																							<div style="float:left">
+																									<span class="arial12Ba60000" style="float: left">
+																									Voting results  
+																									</span> 
+																									&nbsp;&nbsp;																										
+																									[ Support - {$supportPercentage}%]  [ Oppose - {$opposePercentage}%] 
+																								</span>
+																							</div>	
+																							</td>
+																						</tr>	
+																								
+																						<tr>
+																							<td height="26" align="right" valign="bottom">
+																								
+																								{if $ERContentPollDelete}																																			
+																									<a href = "index.php?stage=electedrepresentative&mode=DeletePoll&pollID={$oArticle->article_id}"
+																										class = "arial12Ba60000" onClick="if(!confirm('Are you sure to delete this poll?')) return false;">
+																										<img src="images/icon_delete.png"  border="0" alt="Delete" title="Delete" /> 
+																									</a>
+																								{/if}
+																								
+																							</td>
+																						</tr>
+																					</table></td>
+																			</tr>
+																		</table></td>
+																</tr>
+															</table>
+														</td>
+													</tr>
+												</table></td>
+										</tr>
+									</tbody>
+								</table>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</td>
+		</tr>
+	</tbody>
+</table>
+

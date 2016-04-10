@@ -1,0 +1,52 @@
+	{if empty($smarty.request.mode)}
+			{include file="user/ihtml/home.html"}
+	{elseif $smarty.request.mode eq "homepage"}
+			{include file="user/ihtml/home.html"}
+	{elseif (
+	
+	($smarty.request.stage eq "visitor" && $smarty.request.mode eq "signingOptions") || 
+	($smarty.request.stage eq "visitor" && $smarty.request.mode eq "EmailMessage") || 
+	($smarty.request.stage eq "visitor" && $smarty.request.mode eq "oneTimePaymentStepOne") || 
+	
+	($smarty.request.stage eq "subscriber" && $smarty.request.mode eq "SaveSubscriberJoinDirect") || 
+	($smarty.request.stage eq "subscriber" && $smarty.request.mode eq "SubscriberJoinDirect") || 
+	($smarty.request.stage eq "subscriber" && $smarty.request.mode eq "SubscriberJoin") || 
+	($smarty.request.stage eq "subscriber" && $smarty.request.mode eq "EmailMessage") || 
+	($smarty.request.stage eq "subscriber" && $smarty.request.mode eq "MemberDashboard")|| 
+	($smarty.request.stage eq "subscriber" && $smarty.request.mode eq "MyProfile") || 
+	($smarty.request.stage eq "subscriber" && $smarty.request.mode eq "ProfileEdit") || 
+	($smarty.request.stage eq "subscriber" && $smarty.request.mode eq "VoteAlerts") || 
+	($smarty.request.stage eq "subscriber" && $smarty.request.mode eq "VoteAlertsDetail") ||	
+	($smarty.request.stage eq "subscriber" && $smarty.request.mode eq "ElectedRepresentatives") ||	
+	($smarty.request.stage eq "subscriber" && $smarty.request.mode eq "MyAffiliates") ||
+	($smarty.request.stage eq "subscriber" && $smarty.request.mode eq "AffiliateDetails") || 	
+	($smarty.request.stage eq "subscriber" && $smarty.request.mode eq "ElectedrepresentativeProfile") ||
+	($smarty.request.stage eq "subscriber" && $smarty.request.mode eq "SaveSubscriberJoin") ||
+	
+	
+	($smarty.request.stage eq "member" && $smarty.request.mode eq "login") || 
+	($smarty.request.stage eq "member" && $smarty.request.mode eq "forgotpassword") || 
+	($smarty.request.stage eq "member" && $smarty.request.mode eq "sendPassword") || 
+
+	($smarty.request.stage eq "affiliates" && $smarty.request.mode eq "AffiliateDashboard") ||
+	($smarty.request.stage eq "affiliates" && $smarty.request.mode eq "SubmitNewContent") ||
+	($smarty.request.stage eq "affiliates" && $smarty.request.mode eq "EditProfile") ||
+	($smarty.request.stage eq "affiliates" && $smarty.request.mode eq "AffiliateProfile") ||	
+	($smarty.request.stage eq "affiliates" && $smarty.request.mode eq "listaffiliates") ||
+	($smarty.request.stage eq "affiliates" && $smarty.request.mode eq "UpdateAffiliate") ||
+	
+	($smarty.request.stage eq "billresources" && $smarty.request.mode eq "billDetail") ||
+
+	($smarty.request.stage eq "electedrepresentative" && $smarty.request.mode eq "electedrepresentativelist") ||
+	($smarty.request.stage eq "electedrepresentative" && $smarty.request.mode eq "SubmitNewPoll") ||
+	($smarty.request.stage eq "electedrepresentative" && $smarty.request.mode eq "SubmitNewContent") ||
+	($smarty.request.stage eq "electedrepresentative" && $smarty.request.mode eq "electedrepresentativedashboard") ||
+	($smarty.request.stage eq "electedrepresentative" && $smarty.request.mode eq "editprofile") ||
+	($smarty.request.stage eq "electedrepresentative" && $smarty.request.mode eq "UpdateElectedrepresentative"))
+	}
+		{include file="user/ihtml/header.html"}
+		{include file="user/ihtml/innerpage.html"}
+		{include file="user/ihtml/footer.html"}
+	{else}
+	  {include file="user/ihtml/inner.html}
+	{/if}

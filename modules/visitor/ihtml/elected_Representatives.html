@@ -1,0 +1,249 @@
+<td valign="top" align="left" style="padding: 24px 15px 51px 12px;" class="bg_f7f6f2"><table width="100%" cellspacing="0" cellpadding="0" border="0">
+                      <tbody><tr>
+                        <td class="arial_16_c40306"><table width="100%" cellspacing="0" cellpadding="0" border="0">
+                          <tbody><tr>
+                            <td valign="top" align="left" class="arial_16_c40306"><table width="100%" cellspacing="0" cellpadding="0" border="0">
+                              <tbody><tr>
+                                <td valign="top" align="left"><table width="100%" cellspacing="0" cellpadding="0" border="0">
+                                  <tbody><tr>
+                                    <td valign="top" align="left" height="37" class="Trebuchet_27_c60000" colspan="2">{$Name}'s Profile</td>
+                                    </tr>
+                                  <tr>
+                                    <td width="27%" valign="middle" align="left" style="padding-left: 14px;" class="topsublink_bg arial_15_000_bold">Elected Representatives
+                                      </td>
+                                    <td width="73%" valign="middle" align="right" style="padding: 6px 14px;" class="topsublink_bg"><table cellspacing="0" cellpadding="0" border="0">
+                                      <tbody><tr>
+                                        <td width="106" align="right" valign="top">
+                                        <a class="button" href="index.php?stage=subscriber&mode=VoteAlerts"><span>Vote Alerts</span></a></td>
+					<td width="100" align="right" valign="top"><a  href="index.php?stage=subscriber&mode=MyProfile" class="button"><span> My Profile</span></a></td>
+					<td width="202" align="right" valign="top"><a href="index.php?stage=subscriber&mode=ElectedRepresentatives" class="Activebutton"><span>Elected Representatives</span></a></td>
+					<td width="117" align="right" valign="top"><a href="index.php?stage=subscriber&mode=MyAffiliates" class="button"><span>My Affiliates</span></a></td>
+                                      </tr>
+                                    </tbody></table></td>
+                                    </tr>
+                                  <tr>
+                                    <td valign="bottom" align="left" height="37" style="padding-bottom: 5px;" class="arial_14_c30100" colspan="2">&nbsp;</td>
+                                    </tr>
+                                 {section name=index loop=$oMember}
+                                  <tr>
+                                    <td valign="top" align="left" style="padding: 16px 5px 11px 15px;" class="votealert_bg_new" colspan="2">
+									<table width="100%" cellspacing="0" cellpadding="0" border="0">
+                                      <tbody><tr>
+                                        <td width="20" valign="top" align="left">&nbsp;</td>
+                                        <td width="732" valign="top" align="left">
+                                          
+                                          <table width="100%" cellspacing="0" cellpadding="0" border="0">
+                                      <tbody><tr>
+                                        <td width="125" valign="top" align="left"><img width="113" height="87" class="pic_border" alt="" src="images/no-image.jpg"></td>
+                                        <td width="20" valign="top" align="left">&nbsp;</td>
+                                        <td width="732" valign="top" align="left"><table width="100%" cellspacing="0" cellpadding="0" border="0">
+                                          <tbody><tr>
+                                            <td valign="top" align="left" height="22" width="75%"><a href="index.php?stage=subscriber&mode=ElectedrepresentativeProfile&er_id={$oMember[index]->ElectedOfficialID}" class="arialB13000000 lineheight"><span class="arial12Ba60000">{$oMember[index]->First_Name} {$oMember[index]->Last_Name} - {$oMember[index]->Title}</span></a><br /><span class="arial11Na60000"> {$oMember[index]->Party}</span></td>
+											<td valign="top" align="left" height="22" width="25%"><span class="arial12B000000">Current Term:</span> <span class="arial11N000000">{$oMember[index]->Term_Start|date_format:"%Y"} - {$oMember[index]->Term_End|date_format:"%Y"}</span></td>
+                                            </tr>
+											<tr>
+                                            <td valign="top" align="left" height="22" colspan="2"></td>
+                                            </tr>
+                                          <tr>
+                                            <td valign="top" align="left" class="arial_12_000" colspan="2"><span class="arial12B000000">Address:</span><br /><span class="arial11N000000">{$oMember[index]->address}<!--<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{$oMember[index]->PrimaryAddress2}<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{$oMember[index]->PrimaryAddress3}<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{$oMember[index]->PrimaryCity}, {$oMember[index]->PrimaryState} {$oMember[index]->PrimaryPostalCode}--></span></td>
+                                            </tr>
+											{if $oMember[index]->PrimaryPhone1 neq '' or  $oMember[index]->PrimaryFax1 neq ''}
+											<tr>
+                                            <td valign="top" align="left" height="15" colspan="2"></td>
+                                            </tr>
+											{/if}
+											{if $oMember[index]->PrimaryPhone1 neq ''}
+                                          <tr>
+                                            <td valign="top" align="left" class="arial_12_000" colspan="2"><span class="arial12B000000">Phone:</span><span class="arial11N000000"> {$oMember[index]->PrimaryPhone1}</span></td>
+                                            </tr>
+											{/if}
+											{if $oMember[index]->PrimaryFax1 neq ''}
+                                          <tr>
+                                            <td valign="top" align="left" class="arial_12_000" colspan="2"><span class="arial12B000000">Fax:</span><span class="arial11N000000"> {$oMember[index]->PrimaryFax1}</span></td>
+                                            </tr>
+											{/if}
+											
+											{if $oMember[index]->EMail1 neq '' or  $oMember[index]->Url1 neq ''}
+											<tr>
+                                            <td valign="top" align="left" height="15" colspan="2"></td>
+                                            </tr>
+											{/if}
+											{if $oMember[index]->EMail1 neq ''}
+                                          <tr>
+                                            <td valign="top" align="left" class="arial_12_000" colspan="2"><span class="arial12B000000">Email:</span>&nbsp;&nbsp;<span class="arial11N000000"><a title="" href="mailto:{$oMember[index]->EMail1}">{$oMember[index]->EMail1}</a></span></td>
+                                            </tr>
+											{/if}
+											{if $oMember[index]->Url1 neq ''}
+                                          <tr>
+                                            <td valign="top" align="left" class="arial_12_000" colspan="2"><span class="arial12B000000">Web Site:</span>&nbsp;<span class="arial11N000000"><a title="" href="{$oMember[index]->Url1}" target="_blank"> {$oMember[index]->Url1}</a></span></td>
+                                            </tr>
+											{/if}
+											
+                                          <!-- tr>
+                                            <td valign="bottom" align="left" height="26"colspan="2"><span class="arial12B000000">Last Updated:</span><span class="arial11N000000"> {$oMember[index]->LastUpdateDate|date_format:"%Y-%m-%d"}</span></td>
+                                            </tr-->
+                                          </tbody></table></td>
+                                        </tr>
+                                      </tbody></table>
+                                          
+                                          
+                                          
+                                          </td>
+                                        </tr>
+                                      </tbody></table></td>
+                                    </tr>
+									{sectionelse}
+									<tr>
+                                    <td valign="top" align="left" style="padding: 16px 5px 11px 15px;" class="votealert_bg_new" colspan="2">No Elected official assigned...</td>
+									</tr>
+									{/section}
+									<tr>
+                                    <td valign="top" align="left" class="border_dashed" colspan="2"></td>
+                                    </tr>
+                                  <!--<tr>
+                                    <td valign="bottom" align="left" height="66" style="padding-bottom: 5px;" class="arial_14_c30100" colspan="2">Latest Comments</td>
+                                    </tr>
+                                  <tr>
+                                    <td valign="top" bgcolor="#b1b0ac" align="left" class="arial_20_c40306" colspan="2"><img width="1" height="1" alt="" src="images/trans.gif"></td>
+                                    </tr>-->
+                                  <!--<tr>
+                                    <td valign="top" align="left" class="votealert_bg" colspan="2"><table width="100%" cellspacing="0" cellpadding="0" border="0">
+                                      
+                                      <tbody><tr>
+                                        <td valign="top" align="left"><table width="100%" cellspacing="0" cellpadding="0" border="0">
+                                          <tbody><tr>
+                                            <td width="47" valign="top" align="center"><img width="27" height="36" style="margin-top: 20px;" alt="" src="images/icon_doc.gif"></td>
+                                            <td width="847" valign="top" align="left" class="bg_f7f6ee"><table width="100%" cellspacing="0" cellpadding="0" border="0">
+                                              <tbody><tr>
+                                                <td valign="top" align="left" height="22"><a class="arialB13000000" href="#">Dummy text is text that is used in the publishing</a></td>
+                                                </tr>
+                                              <tr>
+                                                <td valign="top" align="left" class="arial_12_000">Dummy text is text that is used in the publishing industry or by web. Its function as a filler or as a tool for comparing the visual impression of different typefaces. Dummy text is text that is used in the publishing industry or by web. Dummy text is text that is used in the publishing industry or by web. </td>
+                                                </tr>
+                                              <tr>
+                                                <td valign="bottom" align="left" height="26"><span class="arial12Ba60000">Dated:<span class="arial11Na60000"> 04/04/2011</span></span></td>
+                                                </tr>
+                                              </tbody></table></td>
+                                            </tr>
+                                          </tbody></table></td>
+                                        </tr>
+                                      <tr>
+                                        <td valign="top" align="left" class="border_dashed"></td>
+                                        </tr>
+                                      <tr>
+                                        <td valign="top" align="left"><table width="100%" cellspacing="0" cellpadding="0" border="0">
+                                          <tbody><tr>
+                                            <td width="47" valign="top" align="center"><img width="27" height="36" style="margin-top: 20px;" alt="" src="images/icon_doc.gif"></td>
+                                            <td width="847" valign="top" align="left" class="bg_f7f6ee"><table width="100%" cellspacing="0" cellpadding="0" border="0">
+                                              <tbody><tr>
+                                                <td valign="top" align="left" height="22"><a class="arialB13000000" href="#">Dummy text is text that is used in the publishing</a></td>
+                                                </tr>
+                                              <tr>
+                                                <td valign="top" align="left" class="arial_12_000">Dummy text is text that is used in the publishing industry or by web. Its function as a filler or as a tool for comparing the visual impression of different typefaces. Dummy text is text that is used in the publishing industry or by web. Dummy text is text that is used in the publishing industry or by web. </td>
+                                                </tr>
+                                              <tr>
+                                                <td valign="bottom" align="left" height="26"><span class="arial12Ba60000">Dated:<span class="arial11Na60000"> 04/04/2011</span></span></td>
+                                                </tr>
+                                              </tbody></table></td>
+                                            </tr>
+                                          </tbody></table></td>
+                                        </tr>
+                                      <tr>
+                                        <td valign="top" align="left" class="border_dashed"></td>
+                                        </tr>
+                                      <tr>
+                                        <td valign="top" align="left"><table width="100%" cellspacing="0" cellpadding="0" border="0">
+                                          <tbody><tr>
+                                            <td width="47" valign="top" align="center"><img width="27" height="36" style="margin-top: 20px;" alt="" src="images/icon_doc.gif"></td>
+                                            <td width="847" valign="top" align="left" class="bg_f7f6ee"><table width="100%" cellspacing="0" cellpadding="0" border="0">
+                                              <tbody><tr>
+                                                <td valign="top" align="left" height="22"><a class="arialB13000000" href="#">Dummy text is text that is used in the publishing</a></td>
+                                                </tr>
+                                              <tr>
+                                                <td valign="top" align="left" class="arial_12_000">Dummy text is text that is used in the publishing industry or by web. Its function as a filler or as a tool for comparing the visual impression of different typefaces. Dummy text is text that is used in the publishing industry or by web. Dummy text is text that is used in the publishing industry or by web. </td>
+                                                </tr>
+                                              <tr>
+                                                <td valign="bottom" align="left" height="26"><span class="arial12Ba60000">Dated:<span class="arial11Na60000"> 04/04/2011</span></span></td>
+                                                </tr>
+                                              </tbody></table></td>
+                                            </tr>
+                                          </tbody></table></td>
+                                        </tr>
+                                      <tr>
+                                        <td valign="top" align="left" class="border_dashed"></td>
+                                        </tr>
+                                      <tr>
+                                        <td valign="top" align="left"><table width="100%" cellspacing="0" cellpadding="0" border="0">
+                                          <tbody><tr>
+                                            <td width="47" valign="top" align="center"><img width="27" height="36" style="margin-top: 20px;" alt="" src="images/icon_doc.gif"></td>
+                                            <td width="847" valign="top" align="left" class="bg_f7f6ee"><table width="100%" cellspacing="0" cellpadding="0" border="0">
+                                              <tbody><tr>
+                                                <td valign="top" align="left" height="22"><a class="arialB13000000" href="#">Dummy text is text that is used in the publishing</a></td>
+                                                </tr>
+                                              <tr>
+                                                <td valign="top" align="left" class="arial_12_000">Dummy text is text that is used in the publishing industry or by web. Its function as a filler or as a tool for comparing the visual impression of different typefaces. Dummy text is text that is used in the publishing industry or by web. Dummy text is text that is used in the publishing industry or by web. </td>
+                                                </tr>
+                                              <tr>
+                                                <td valign="bottom" align="left" height="26"><span class="arial12Ba60000">Dated:<span class="arial11Na60000"> 04/04/2011</span></span></td>
+                                                </tr>
+                                              </tbody></table></td>
+                                            </tr>
+                                          </tbody></table></td>
+                                        </tr>
+                                      <tr>
+                                        <td valign="top" align="left" class="border_dashed"></td>
+                                        </tr>
+                                      <tr>
+                                        <td valign="top" align="left"><table width="100%" cellspacing="0" cellpadding="0" border="0">
+                                          <tbody><tr>
+                                            <td width="47" valign="top" align="center"><img width="27" height="36" style="margin-top: 20px;" alt="" src="images/icon_doc.gif"></td>
+                                            <td width="847" valign="top" align="left" class="bg_f7f6ee"><table width="100%" cellspacing="0" cellpadding="0" border="0">
+                                              <tbody><tr>
+                                                <td valign="top" align="left" height="22"><a class="arialB13000000" href="#">Dummy text is text that is used in the publishing</a></td>
+                                                </tr>
+                                              <tr>
+                                                <td valign="top" align="left" class="arial_12_000">Dummy text is text that is used in the publishing industry or by web. Its function as a filler or as a tool for comparing the visual impression of different typefaces. Dummy text is text that is used in the publishing industry or by web. Dummy text is text that is used in the publishing industry or by web. </td>
+                                                </tr>
+                                              <tr>
+                                                <td valign="bottom" align="left" height="26"><span class="arial12Ba60000">Dated:<span class="arial11Na60000"> 04/04/2011</span></span></td>
+                                                </tr>
+                                              </tbody></table></td>
+                                            </tr>
+                                          </tbody></table></td>
+                                        </tr>
+                                      <tr>
+                                        <td valign="top" align="left" class="border_dashed"></td>
+                                        </tr>
+                                      <tr>
+                                        <td valign="top" align="left"><table width="100%" cellspacing="0" cellpadding="0" border="0">
+                                          <tbody><tr>
+                                            <td width="47" valign="top" align="center"><img width="27" height="36" style="margin-top: 20px;" alt="" src="images/icon_doc.gif"></td>
+                                            <td width="847" valign="top" align="left" class="bg_f7f6ee"><table width="100%" cellspacing="0" cellpadding="0" border="0">
+                                              <tbody><tr>
+                                                <td valign="top" align="left" height="22"><a class="arialB13000000" href="#">Dummy text is text that is used in the publishing</a></td>
+                                                </tr>
+                                              <tr>
+                                                <td valign="top" align="left" class="arial_12_000">Dummy text is text that is used in the publishing industry or by web. Its function as a filler or as a tool for comparing the visual impression of different typefaces. Dummy text is text that is used in the publishing industry or by web. Dummy text is text that is used in the publishing industry or by web. </td>
+                                                </tr>
+                                              <tr>
+                                                <td valign="bottom" align="left" height="26"><span class="arial12Ba60000">Dated:<span class="arial11Na60000"> 04/04/2011</span></span></td>
+                                                </tr>
+                                              </tbody></table></td>
+                                            </tr>
+                                          </tbody></table></td>
+                                        </tr>
+                                      <tr>
+                                        <td valign="top" align="left" class="border_dashed"></td>
+                                        </tr>
+                                      <tr>
+                                        <td valign="top" align="center" height="65" class="bg_f7f6ee"><a class="arial12BUa60000" href="#">view more...</a></td>
+                                        </tr>
+                                      </tbody></table></td>
+                                    </tr>-->
+                                  </tbody></table></td>
+                              </tr>
+                              </tbody></table></td>
+                            </tr>
+                          </tbody></table></td>
+                        </tr>
+                      </tbody></table></td>

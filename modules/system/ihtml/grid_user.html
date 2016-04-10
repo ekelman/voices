@@ -1,0 +1,361 @@
+<!--
+	/********************************************************************************************************
+		* Author Name : Kiran
+		* Creation Date : 17 May-2006
+		* FileName : Grid.Html
+		* Called From : Template is called from the function where data grid needs to be displayed
+		* Description : This file is used to create grids on user and admin site
+		* Program Specs :
+		* UTP doc :
+		* Tested By :
+	*******************************************************************************************************/
+-->
+
+<script language="javascript">
+	bConfirm = new Array();
+{section loop=$Grid->SVerticalOperation.Text name=vopr}
+	bConfirm["{$Grid->SVerticalOperation.Operation[vopr]}"] = {$Grid->SVerticalOperation.Confirm[vopr]};
+{/section}
+{literal}
+		/***************************************************************************************************
+		*Function Header
+		*Function Name  : validateGridForm
+		*Function Type  : call by value
+		*Functionality  : function to check that required actions are performed before submitting the grid 					form to perform the operation specified.
+		*Input			: Grid form object
+		*Output			: boolean value if all the required actions are performed to complete the desired operation
+		*Return Value   : NIL
+		*Note			: NIL
+		***************************************************************************************************/
+
+	function validateGridForm(frm){
+		flag =false;
+	{/literal}
+		if("{$smarty.request.mode}" == frm.mode.value)
+		{literal}
+		{
+			alert("Please select an operation to proceed.");
+			frm.op_mode.focus();
+			return false;
+		}
+
+		//loop through all the elements of the form and checks if any checkbox is further selected to perform the required operation, if not alerts the appropriate messsage
+
+		for(i=0;i<frm.elements.length;i++)
+		{
+			if(frm.elements[i].type=="checkbox" && frm.elements[i].name=="identity[]" && true == frm.elements[i].checked){
+				flag = true;
+				flag = true;
+				break;
+			}
+		}
+		if(false == flag){
+			alert("Please check at least one record to proceed.");
+			return false;
+		}
+
+		//checks whether confirmation message is required to be displayed befre performing an operation
+
+		if(bConfirm[frm.mode.value] == true){
+			return ConfirmOperation(frm);
+		}
+		return true;
+	}
+
+
+		/***************************************************************************************************
+		*Function Header
+		*Function Name  : validateVerticalOperation
+		*Function Type  : call by value
+		*Functionality  : function to check that the validity of the information to perform the required operation by calling function validateGridForm to validate.
+		*Input			: Grid form object
+		*Output			: submit the form to perform the desired operation if all the required actions are 					performed to complete the desired operation
+		*Return Value   : NIL
+		*Note			: NIL
+		***************************************************************************************************/
+
+	function validateVerticalOperation(){
+		document.FGrid.mode.value=document.FGrid.op_mode.value;
+		if(validateGridForm(document.FGrid)){
+			document.FGrid.submit();
+		}
+	}
+
+	/***************************************************************************************************
+		*Function Header
+		*Function Name  : Sort
+		*Function Type  : call by value
+		*Functionality  : sorting.
+		*Input			: sort field and direction
+		*Output			: submit the form to as per with information to perform the desired sorting
+		*Return Value   : NIL
+		*Note			: NIL
+	***************************************************************************************************/
+	function Sort(sortby, sortdirection){
+		document.FGrid.sort.value = sortby;
+		document.FGrid.direction.value = sortdirection;
+		document.FGrid.submit();
+	}
+
+	/***************************************************************************************************
+		*Function Header
+		*Function Name  : toggleSelect
+		*Function Type  : call by value
+		*Functionality  : check or uncheck the checkboxes.
+		*Input			: NIL
+		*Output			: toggles selection of checkboxes in grid
+		*Return Value   : NIL
+		*Note			: NIL
+	***************************************************************************************************/
+
+	function toggleSelect(){
+		for(i=0;i<document.FGrid.elements.length;i++){
+			if(document.FGrid.elements[i].type=="checkbox" && document.FGrid.elements[i].name=="identity[]"){
+				document.FGrid.elements[i].checked=document.FGrid._select_all.checked;
+			}
+		}
+	}
+
+	/***************************************************************************************************
+		*Function Header
+		*Function Name  : toggleSelect
+		*Function Type  : call by value
+		*Functionality  : displays alert box for user confirmation.
+		*Input			: NIL
+		*Output			: alerts the message on the basis of confirmaion required
+		*Return Value   : NIL
+		*Note			: NIL
+	***************************************************************************************************/
+
+	function ConfirmOperation(frm){
+		//document.guideform.guidelinks.options[document.guideform.guidelinks.selectedIndex].value
+		if(true == frm._select_all.checked){
+			return confirm("You are about to "+frm.op_mode.options[frm.op_mode.selectedIndex].text.toLowerCase() + " all selected records.");
+		}
+		flag =false;
+		for(i=0;i<frm.elements.length;i++)
+		{
+			if(frm.elements[i].type=="checkbox" && frm.elements[i].name=="identity[]" && true == frm.elements[i].checked)
+			{
+				flag = true;
+				break;
+			}
+		}
+		if(true == flag){
+			return confirm("You are about to " + frm.op_mode.options[frm.op_mode.selectedIndex].text.toLowerCase() + " selected records.");
+		}
+		return false;
+	}
+{/literal}
+</script>
+<table width="589" border=0>
+
+	<tr>
+     <td align="left" valign="top" class="arial11R333333">&nbsp;</td>
+     <td align="left" valign="top" class="arial11R333333">&nbsp;</td>
+    </tr>
+	<tr><td colspan="2" class="arial12B000000">{$Grid->sTitle}</td></tr>
+	<tr><td colspan="2" class="arial11R333333">{$Grid->sDescription}</td></tr>
+	<tr><td colspan="2">{$CustomForm}</td></tr>
+	<!-- Top Operation -->
+	<tr>
+		<!-- Custom Operation -->
+
+		<!-- uncomment to display text<td id="mainmenu">-->
+		<td>
+			<table cellpadding="0" border="0" >
+			<!-- row to generate the image and text links-->
+			<tr>
+			{section loop=$Grid->OCustomOperation name=i}
+				<td align="left"><a href="{$Grid->OCustomOperation[i]->vProperty.Link}?{getfixquery input=$Grid->OCustomOperation[i]->vProperty.FixedQueryString}">{if $Grid->OCustomOperation[i]->iType & 64}<img  src="/images/img_arrowbuttons.gif" border="0" ><img  src="{$Grid->OCustomOperation[i]->vProperty.Image}" border="0" title="{$Grid->OCustomOperation[i]->vProperty.Text}">{/if}
+				{if $Grid->OCustomOperation[i]->iType & 8}<!--{$Grid->OCustomOperation[i]->vProperty.Text}--><img  src="/images/img_arrowbuttons.gif" border="0" ><img src="/images/{$Grid->OCustomOperation[i]->vProperty.Image}" border="0" title="{$Grid->OCustomOperation[i]->vProperty.Text}">
+				{/if}
+				</a></td>
+				<td width=20>&nbsp;</td>
+			{/section}
+			</tr>
+			<!-- end row to generate the image and text links-->
+			</table>
+		</td>
+		<!-- /Custom Operation -->
+
+		<!-- Pager -->
+
+		<td align="right">
+			{if $Grid->oHeadRow[i]->vProperty.Filter eq true OR $smarty.request.bShowFilter}
+				{assign var=forwardvars value="stage,mode,sort,direction,id,bShowFilter"}
+				{foreach from=$oFilter item=itemfilter name=filter}
+					{assign var=forwardvars value=$forwardvars|cat:","|cat:$itemfilter.tablename|cat:"|"|cat:$itemfilter.fieldname|cat:"|"|cat:$itemfilter.fieldtype}
+				{/foreach}
+				{pager rowcount=$Grid->vPage.TotalPages|default:1 txt_first=$L_MORE limit=1 forwardvars=$forwardvars}
+
+			{else}
+				{pager rowcount=$Grid->vPage.TotalPages|default:1 txt_first=$L_MORE limit=1 forwardvars="stage,mode,sort,direction,id"}
+			{/if}
+		</td>
+		<!-- /Pager -->
+	</tr>
+
+		<!-- row to display grid message -->
+	<tr>
+		<td class="error" align=center  colspan="2">
+			{$Grid->sMessage}
+		</td>
+	</tr>
+	{if $smarty.request.sMessage ne ""}
+	<tr>
+		<td class="error" align=center  colspan="2">
+			{$smarty.request.sMessage}
+		</td>
+	</tr>
+	{/if}
+	<!-- /Top Operation -->
+	<form name="FGrid" method="post" action="index.php?">
+	<tr>
+		<!-- Grid Code -->
+		<td colspan="2">
+			<table bgcolor="#9DB88D" cellpadding="3" cellspacing="1" width="100%"  id=form_table>
+				<tbody style="background-color:#FFFFFF">
+				<!-- Header -->
+				<tr>
+				{if $Grid->bShowCheckBoxes eq true} {* If checkbox needs to be shown, place it here *}
+					<th width="20" class="arial11B333333" align="center"><input type="checkbox" name="_select_all" onClick="toggleSelect()"></th>
+				{/if}
+				{if $Grid->bShowSNo eq true}
+					<th width="20" class="arial11B333333" align="right">#</th>
+				{/if}
+				{if $Grid->bShowPlus eq true}
+					<th width="10" class="arial11B333333" align="right">+</th>
+				{/if}
+
+				{section loop=$Grid->oHeadRow name=i}
+					<th class="arial11B333333" align="left" class="arial11B333333">
+						{if $Grid->oHeadRow[i]->vProperty.Sort eq true}
+							<a  class="arial11BUEA6C00" href="javascript:Sort('{$Grid->oDataRow[i]->vProperty.Col}',{math equation='(x+1)%2' x=$smarty.request.direction|default:0})">
+						{/if}
+						{if $Grid->oHeadRow[i]->iType & 4}
+							{$Grid->oHeadRow[i]->vProperty.Text|stripslashes}
+						{/if}
+						{if $Grid->oHeadRow[i]->vProperty.Sort eq true}
+							</a>
+							{if $smarty.request.sort eq $Grid->oDataRow[i]->vProperty.Col}
+								<img src="/images/icons/{$smarty.request.direction}.png">
+							{/if}
+						{/if}
+
+					</th>
+				{/section}
+
+				</tr>
+				
+				<!-- /Header -->
+				<!-- Data-->
+				{assign var="row_id" value=$Grid->sIdentifier}
+				{section loop=$Grid->oData name=j}
+					<tr onMouseOver="this.style.backgroundColor='#F4F7FB'" onMouseOut="this.style.backgroundColor='#FFFFFF'">
+					{if $Grid->bShowCheckBoxes eq true} {* If checkbox needs to be shown, place it here *}
+						<td align="center"><input type="checkbox" name="identity[]" value="{$Grid->oData[j]->$row_id}"></td>
+					{/if}
+					{if $Grid->bShowSNo eq true}
+						{math equation='(x*10)+y' x=$smarty.request.pos|default:0 y=$smarty.section.j.iteration assign=rec_no}
+						<td align="right" class="arial11R333333">{$rec_no}</td>
+					{/if}
+					{section loop=$Grid->oDataRow name=k}
+						{assign var="col" value=$Grid->oDataRow[k]->vProperty.Col}
+						{if $Grid->oDataRow[k]->iType & 512}
+							<td ><a href='#' onClick='this.innerHTML="-";{$Grid->oDataRow[k]->vProperty.sJSFunctionName}("{$Grid->oData[j]->$row_id}","{$Grid->sStage}","{$Grid->oDataRow[k]->vProperty.sFunctionName}");' id="displaySymbol{$Grid->oData[j]->$row_id}">+</a></td>
+						{/if}
+
+						{if $Grid->oDataRow[k]->iType & 1}
+							<td class="arial11R333333" title="{$Grid->oData[j]->$col}"> {$Grid->oData[j]->$col|truncate:30:"...":true|stripslashes}</td>
+						{/if}
+						<!-- text links -->
+						{if $Grid->oDataRow[k]->iType & 8}
+							<td align="left"><a href="{$Grid->oDataRow[k]->vProperty.Link}?{getfixquery input=$Grid->oDataRow[k]->vProperty.FixedQueryString}{getfloatquery input=$Grid->oDataRow[k]->vProperty.FloatingQueryString data=$Grid->oData[j]}">{$Grid->oDataRow[k]->vProperty.Text}</a></td>
+						{/if}
+
+						<!-- mail links -->
+						{if $Grid->oDataRow[k]->iType & 16}
+							<td align="left" ><a href="mailto:{$Grid->oData[j]->$col}" class="arial11R333333">{$Grid->oData[j]->$col}</a></td>
+						{/if}
+						
+						<!-- mail links -->
+						{if $Grid->oDataRow[k]->iType & 32}
+							<td align="left">
+								<img src="{$Grid->oDataRow[k]->vProperty.Image}" title='{$Grid->oDataRow[k]->vProperty.Image}'/>
+							</td>
+						{/if}
+						
+						<!-- image links -->
+						{if $Grid->oDataRow[k]->iType & 64}
+							<td align="left"><a href="{$Grid->oDataRow[k]->vProperty.Link}?{getfixquery input=$Grid->oDataRow[k]->vProperty.FixedQueryString}{getfloatquery input=$Grid->oDataRow[k]->vProperty.FloatingQueryString data=$Grid->oData[j]}" class="arial11R333333"><img class="tool" src="{$Grid->oDataRow[k]->vProperty.Image}" border="0" title="{$Grid->oDataRow[k]->vProperty.Text}"></a></td>
+						{/if}
+
+						<!-- status display-->
+						{if $Grid->oDataRow[k]->iType & 256}
+							<td align="left" class="arial11R333333">
+							{if $Grid->oData[j]->$col & 1}
+								Activated
+							{else}
+								Deactivated
+							{/if}
+							</td>
+						{/if}
+						<!-- date format display-->
+						{if $Grid->oDataRow[k]->iType & 4096}
+							<td class="arial11R333333">{$Grid->oData[j]->$col|date_format:$DATE_FORMAT}</td>
+						{/if}
+						<!-- uploaded image display-->
+						{if $Grid->oDataRow[k]->iType & 16384}
+							<td class="arial11R333333" title="{$Grid->oData[j]->$col}"> 
+							<!--img src="{$Grid->oDataRow[k]->vProperty.Path}{$Grid->oData[j]->$col}" title='{$Grid->oData[j]->$col}'/-->
+							<img src="{$SiteUrl}/supplier_logo.php?sImgName={$Grid->oData[j]->$col}" title='{$Grid->oData[j]->$col}'/>
+							</td>
+						{/if}
+					{/section}
+					</tr>
+					<span id='showDetails{$Grid->oData[j]->$row_id}' style="display:none;" >
+						<tr height=0 style="display:none;" id="Row{$Grid->oData[j]->$row_id}" >
+							<td height=0 id="displayDetails{$Grid->oData[j]->$row_id}" colspan=10  style="display:none;" >
+							</td>
+						</tr>
+					</span>
+				{sectionelse}
+					<td colspan="15" align=center class="arial11R333333">No record found.</td>
+				{/section}
+				<!-- /Data-->
+				</tbody>
+			</table>
+		</td>
+		<!-- /Grid Code -->
+	</tr>
+		<input type="hidden" name="stage" value="{$Grid->sStage}">
+		<input type="hidden" name="mode" value="{$smarty.request.mode}">
+		<input type="hidden" name="sort" value="{$smarty.request.sort}">
+		<input type="hidden" name="bShowfilter" value="{$smarty.request.bShowFilter}">
+		<input type="hidden" name="direction" value="{$smarty.request.direction}">
+		<input type="hidden" name="id" value="{$smarty.request.id}">
+		<input type="hidden" name="isMain" value="{$Grid->isMain}">
+		<input type="hidden" name="pos" value="{$smarty.request.pos|default:0}">
+		<input type="hidden" name="sRedirectURL" value='{$Grid->sRedirectURL|cat:"&pos="|cat:$smarty.request.pos|default:0|cat:"&sort="|cat:$smarty.request.sort|cat:"&direction="|cat:$smarty.request.direction}'>
+		<input type="hidden" name="IdDetails" id="IdDetails" value="">
+
+	<tr>
+		<td colspan="2" valign=top>
+		{section loop=$Grid->SVerticalOperation.Text name=vopr}
+			{if $smarty.section.vopr.first}
+			<select name="op_mode" class="arial11R333333">
+				<option value="{$smarty.request.mode}">-Select-</option>
+			{/if}
+				<option value="{$Grid->SVerticalOperation.Operation[vopr]}">{$Grid->SVerticalOperation.Text[vopr]}</option>
+			{if $smarty.section.vopr.last}
+			</select>
+			<input type="button" name="operation" value="Go" onclick="validateVerticalOperation()">
+			<!--	<input type=image src='\images\btn_go.gif' title="Go" valign=top onclick=" return validateVerticalOperation();">-->
+			{/if}
+		{/section}
+		</td>
+	</tr>
+
+	</form>
+</table>

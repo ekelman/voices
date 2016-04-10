@@ -1,0 +1,422 @@
+{literal}
+<script language="javascript" src="scripts/gen_validatorv4.js"></script>
+<script type='text/javascript' src='scripts/jquery-1.3.2.min.js'></script>
+<script type="text/javascript">
+		$(document).ready(function(){
+		
+		if ($('#billingInfoStatus').attr('checked')) {
+			$("#billingSection").show();
+			$('#isBillingInfo').attr('value','1');
+		}
+		else
+		{
+			$("#billingSection").hide();
+		}
+
+
+			$('#billingInfoStatus').click(function(){
+				$('#billingInfoStatus').is(':checked') ? $("#billingSection").show() : $("#billingSection").hide();
+				$('#billingInfoStatus').is(':checked') ? $('#isBillingInfo').attr('value','1') : $('#isBillingInfo').attr('value','0');
+			});
+			
+			$('#billingInfoStatus').change(function(){
+				$('#billingInfoStatus').is(':checked') ? $("#billingSection").show() : $("#billingSection").hide();
+				$('#billingInfoStatus').is(':checked') ? $('#isBillingInfo').attr('value','1') : $('#isBillingInfo').attr('value','0');
+			});
+		});
+	</script>
+{/literal}
+<form name="profileEdit" method="post" action="index.php?stage=subscriber&mode=ProfileEdit">
+	<tr>
+		<td valign="top" align="left" style="padding-top: 10px;"><table width="100%" cellspacing="0" cellpadding="0" border="0">
+				<tbody>
+				<tr>
+					<td valign="top" align="left" style="padding: 24px 15px 51px 12px;" class="bg_f7f6f2"><table width="100%" cellspacing="0" cellpadding="0" border="0">
+							<tbody>
+							<tr>
+								<td class="arial_16_c40306"><table width="100%" cellspacing="0" cellpadding="0" border="0">
+										<tbody>
+										<tr>
+											<td valign="top" align="left" class="arial_16_c40306"><table width="100%" cellspacing="0" cellpadding="0" border="0">
+													<tbody>
+
+													<tr>
+														<td valign="top" align="left"><table width="100%" cellspacing="0" cellpadding="0" border="0">
+																<tbody>
+																<tr>
+																	<td valign="top" align="left" height="37" class="Trebuchet_27_c60000" colspan="2">{$ProfileInfo[0]->first_name} {$ProfileInfo[0]->last_name}'s Profile</td>
+																</tr>
+																<tr>
+																	<td width="34%" valign="middle" align="left" style="padding-left: 14px;" class="topsublink_bg arial_15_000_bold">My Profile</td>
+																	<td width="73%" valign="middle" align="right" style="padding: 6px 14px;" class="topsublink_bg"><table cellspacing="0" cellpadding="0" border="0">
+																			<tbody>
+																				<tr>
+																					<td width="106" align="right" valign="top"><a class="button" href="index.php?stage=subscriber&mode=VoteAlerts"><span>Vote Alerts</span></a></td>
+																					<td width="100" align="right" valign="top"><a class="Activebutton" href="index.php?stage=subscriber&mode=MyProfile" class="button"><span> My Profile</span></a></td>
+																					<td width="202" align="right" valign="top"><a href="index.php?stage=subscriber&mode=ElectedRepresentatives" class="button"><span>Elected Representatives</span></a></td>
+																					<td width="117" align="right" valign="top"><a href="index.php?stage=subscriber&mode=MyAffiliates" class="button"><span>My Affiliates</span></a></td>
+																				</tr>
+																			</tbody>
+																		</table></td>
+																</tr>
+																<tr>
+																	<td valign="bottom" align="left" height="37" style="padding-bottom: 5px;" class="arial_14_c30100" colspan="2">About me</td>
+																</tr>
+																<tr>
+																	<td valign="top" bgcolor="#b1b0ac" align="left" class="arial_20_c40306" colspan="2"><img width="1" height="1" alt="" src="images/trans.gif"></td>
+																</tr>
+																<tr>
+																	<td valign="top" align="left" style="padding: 0px 5px 34px 0px;" class="arial_12_000" colspan="2"><p>Dummy text is text that is used in the publishing industry or by web. Its function as a filler or as a tool for comparing the visual impression of different typefaces. Dummy text is text that is used in the publishing industry or by web. Dummy text is text that is used in the publishing industry or by web. </p>
+																		<p>Dummy text is text that is used in the publishing industry or by web. Its function as a filler or as a tool for comparing the visual impression of different typefaces. Dummy text is text that is used in the publishing industry or by web. Dummy text is text that is used in the publishing industry or by web. </p></td>
+																</tr>
+																<tr>
+																	<td valign="bottom" align="left" style="padding-bottom: 5px;" class="arial_14_c30100" colspan="2">Personal Infomation 
+																</tr>
+																<tr>
+																	<td valign="top" bgcolor="#b1b0ac" align="left" class="arial_20_c40306" colspan="2"><img width="1" height="1" alt="" src="images/trans.gif"></td>
+																</tr>
+																<tr>
+																	<td valign="top" align="left" style="padding-top: 19px;" colspan="2"><table width="100%" cellspacing="0" cellpadding="0" border="0">
+																			<tbody>
+																			<tr>
+																				<td width="400" valign="top" align="left"><table width="100%" cellspacing="0" cellpadding="0" border="0">
+																						<tbody>
+																							<tr>
+																								<td width="397" valign="middle" align="left" height="50" class="arial_12_3b393a"><span class="arial_11_000"><strong>UserName:</strong></span><strong><br>
+																									<input type="text" style="width: 373px;" id="UserName" name="UserName" value="{$ProfileInfo[0]->user_name}"   READONLY >
+																									<br>
+																									<br>
+																									</strong></td>
+																							</tr>
+																							<tr>
+																								<td width="397" valign="middle" align="left" height="50" class="arial_12_3b393a">
+																								<span class="arial_12_000"><strong>First Name:</strong></span><strong><br>
+																									<input type="text" style="width: 373px;" id="firstName" name="firstName" value="{$ProfileInfo[0]->first_name}"  />
+																									<br>
+																									<br>
+																									</strong></td>
+																							</tr>
+																							<tr>
+																								<td width="397" valign="middle" align="left" height="50" class="arial_12_3b393a"><span class="arial_12_000"><strong>Last  Name:</strong></span><strong><br>
+																								<input type="text" style="width: 373px;" id="lastName" name="lastName" value="{$ProfileInfo[0]->last_name}"  />
+																								
+																								
+																									<br>
+																									<br>
+																									</strong></td>
+																							</tr>
+																							<tr>
+																								<td width="397" valign="middle" align="left" height="55" class="arial_12_3b393a"><span class="arial_11_000"><strong>Password:</strong></span><strong><br>
+																									<input type="password" style="width: 373px;" id="password" name="password" />
+												</td>
+																							</tr>
+																																				
+																																						<tr>
+																								<td width="397" valign="middle" align="left" height="55" class="arial_12_3b393a">											
+																							
+																							<span class="arial_11_000"><strong>Confirm Password:</strong></span><strong><br>
+																								<input type="password" style="width: 373px;" id="re_password" name="re_password" />
+																								</strong>
+																							</td>
+																						</tr>																												
+																								
+																							<tr>
+																								<td width="397" valign="middle" align="left" height="110" class="arial_12_3b393a"><span class="arial_11_000"><strong>Street Address:</strong></span><strong><br>
+																									<textarea style="width: 373px;" rows="5" cols="45" id="streetAddress" name="streetAddress"  > {$ProfileInfo[1][0]->mail_street_address} </textarea>
+																									<br>
+																									</strong></td>
+																							</tr>
+																							<tr>
+																								<td width="397" valign="middle" align="left" height="50" class="arial_12_3b393a"><span class="arial_11_000"><strong>City:</strong></span><strong><br>
+																									<input type="text" style="width: 373px;" id="City" name="City" value="{$ProfileInfo[1][0]->mail_city}"  />
+																									<br>
+																									</strong></td>
+																							</tr>
+																							<tr>
+																								<td valign="middle" align="left" height="50" class="arial_12_3b393a"><table width="100%" cellspacing="0" cellpadding="0" border="0">
+																										<tbody>
+																											<tr>
+																												<td width="24" valign="middle" align="left"><input type="checkbox"  id="billingInfoStatus" name="billingInfoStatus" {$is_billing} />
+																													<input type="hidden" id="isBillingInfo" name="isBillingInfo" value="" />
+																												</td>
+																												<td width="373" valign="middle" align="left" class="arial_11_000"> If Billing address is different?</td>
+																											</tr>
+																										</tbody>
+																									</table></td>
+																							</tr>
+																						</tbody>
+																					</table>
+																					
+																				</td>
+																				<td width="86" valign="top" align="left">&nbsp;</td>
+																				<td valign="top" align="left">
+																					<table width="100%" cellspacing="0" cellpadding="0" border="0">
+																						<tbody>
+																						<tr>
+																							<td width="397" valign="middle" align="left" height="50" class="arial_12_3b393a">
+																							
+																							<span class="arial_11_000"><strong>Email:</strong></span><strong><br>
+																								<input type="text" style="width: 373px;" id="email" name="email" value="{$ProfileInfo[0]->email}"/>
+																								<br>
+																								<br>
+																								</strong></td>
+																						</tr>
+																						<tr>
+																							<td width="397" valign="middle" align="left" height="50" class="arial_12_3b393a">												<span class="arial_11_000"><strong>Prime Afflliate:</strong></span><strong><br>
+																									<input type="text" style="width: 373px;" id="prim_affiliate" name="prim_affiliate" value="{$ProfileInfo[1][0]->affiliate_name}" READONLY>
+																								<br>
+																								<br>
+																								</strong></td>
+																						</tr>
+																					
+																						<tr>
+																							<td valign="middle" align="left" height="50" class="arial_12_3b393a"><table width="100%" cellspacing="0" cellpadding="0" border="0">
+																									<tbody>
+																									<tr>
+																										<td width="379" valign="top" align="left" height="130" class="arial_12_3b393a"><span class="arial_11_000"><strong>Additional Affiliates:</strong></span><br>
+																											<br>
+																											<div class="textbox">
+																												<table width="100%" cellspacing="0" cellpadding="0" border="0">
+																													<tbody>
+																													
+																													{$MyAffiliates}
+																													</tbody>
+																												</table>
+																											</div></td>
+																									</tr>
+																									</tbody>
+																								</table></td>
+																						</tr>
+																						<tr>
+																							<td width="397" valign="middle" align="left" height="50" class="arial_12_3b393a"><span class="arial_11_000"><strong>State:</strong></span><strong><br>
+																								<input type="text" style="width: 373px;" id="state" name="state" value="{$ProfileInfo[1][0]->mail_state}"  />
+																								<br>
+																								</strong></td>
+																						</tr>
+																						<tr>
+																							<td valign="middle" align="left" height="50" class="arial_12_3b393a"><span class="arial_11_000"><strong>Zip Code:</strong></span><strong><br>
+																								<input type="text" style="width: 373px;" id="zipCode" name="zipCode" value="{$ProfileInfo[1][0]->mail_zip_code}"  >
+																								<br>
+																								</strong></td>
+																						</tr>
+																						<tr>
+																							<td valign="middle" align="left" height="57" class="arial_12_3b393a"><span class="arial_11_000"><strong>Country:</strong></span><strong><br>
+																								<input type="text" style="width: 373px;" id="country" name="country" value="{$ProfileInfo[1][0]->mail_country}"  />
+																								<br>
+																								</strong></td>
+																						</tr>
+																						</tbody>
+																					</table></td>
+																			</tr>
+																			</tbody>
+																		</table></td>
+																</tr>
+																<!-- Form Billing Section Starts Here -->
+																
+																<tr>
+																	<td colspan="3">
+																
+																	<table id="billingSection" width="99%" >
+																																																																																																								<tr>
+																		<td colspan="3" valign="top" bgcolor="#b1b0ac" align="left"
+																		 >
+																			<img width="1" height="1" alt="" src="images/trans.gif">
+																		</td>
+																</tr>
+																			<tr>
+																				<td valign="middle" align="left"  class="arial_12_3b393a" ><span class="arial_11_000"><strong>Street Address:</strong></span><strong><br>
+																					<textarea style="width: 373px;" rows="5" cols="45" id="billingAddress" name="billingAddress" >{$ProfileInfo[1][0]->bill_street_address}</textarea>
+																					<br>
+																					</strong> </td>
+																				<td  valign="middle" align="left"  class="arial_12_3b393a" width="100px">&nbsp;</td>
+																				<td valign="top" align="left"  class="arial_12_3b393a" width="400px"><span class="arial_11_000"><strong>State:</strong></span><strong><br>
+																					<input type="text" style="width: 373px;" id="billState" name="billState" value="{$ProfileInfo[1][0]->bill_state}"  />
+																					<br>
+																					</strong> <br />
+																					<span class="arial_11_000"><strong>Zip Code:</strong></span><strong><br>
+																					<input type="text" style="width: 373px;" id="billZipCode" name="billZipCode" value="{$ProfileInfo[1][0]->bill_zip_code}"  />
+																					<br>
+																					</strong> </td>
+																			</tr>
+																			<!--  Next Row -->
+																			<tr>
+																				<td valign="middle" align="left"  class="arial_12_3b393a" ><span class="arial_11_000"><strong>City:</strong></span><strong><br>
+																					<input type="text" style="width: 373px;" id="billCity" name="billCity" value="{$ProfileInfo[1][0]->bill_city}"  />
+																					<br>
+																					</strong> </td>
+																				<td  valign="middle" align="left"  class="arial_12_3b393a" width="100px">&nbsp;</td>
+																				<td valign="top" align="left"  class="arial_12_3b393a" width="400px"><span class="arial_11_000"><strong>Country:</strong></span><strong><br>
+																					<input type="text" style="width: 373px;" id="billCountry" name="billCountry" value="{$ProfileInfo[1][0]->bill_country}"  />
+																					<br>
+																					</strong></td>
+																			</tr>
+																		</table>
+																		
+																	</td>
+																</tr>
+																<!-- Form Billing Section Ends Here -->
+																</tbody>
+															</table></td>
+													</tr>
+													<tr>
+														<td valign="top"  align="left">&nbsp;</td>
+													</tr>
+													<tr>
+														<td valign="top" bgcolor="#b1b0ac" align="left"><img width="1" height="1" alt="" src="images/trans.gif"></td>
+													</tr>
+													</tbody>
+												</table></td>
+										</tr>
+										</tbody>
+									</table></td>
+							</tr>
+							<tr>
+								<td valign="top" align="left" style="padding: 34px 365px 5px;"><table width="100%" cellspacing="0" cellpadding="0" border="0">
+										<tbody>
+											<tr>
+												<td valign="middle" align="left"><input type="submit" name="submit" value="" style="background:url('images/img_submit_.gif') no-repeat; border:none;width:78px;height:27px;cursor:pointer;" /></td>
+												<td valign="middle" align="right"><a href="index.php?stage=subscriber&mode=MyProfile"><img width="78" border="0" height="27" alt="" src="images/img_cancel.gif"></a></td>
+											</tr>
+										</tbody>
+									</table></td>
+							</tr>
+							</tbody>
+						</table></td>
+				</tr>
+				</tbody>
+			</table></td>
+	</tr>
+</form>
+{literal}
+<script language='javascript' type='text/javascript'>
+
+	var frmvalidator	=	new Validator("profileEdit");
+	frmvalidator.addValidation("firstName","req","Please enter your First Name.");
+	frmvalidator.addValidation("firstName","alphabetic_space","Only alphabets are allowed in First Name.");
+	frmvalidator.addValidation("lastName","req","Please enter your Last Name.");
+	frmvalidator.addValidation("lastName","alphabetic_space","Only alphabets are allowed in Last Name.");
+	frmvalidator.addValidation("streetAddress","req","Please enter your street address.");
+	frmvalidator.addValidation("state","req","Please enter your state.");
+	frmvalidator.addValidation("state","alphabetic_space","Only alphabets are allowed in state.");
+	frmvalidator.addValidation("zipCode","req","Please enter your zip code.");
+	frmvalidator.addValidation("zipCode","alnum","Only alphabets are allowed in zip code.");
+	
+	frmvalidator.addValidation("City","req","Please enter your city.");
+	frmvalidator.addValidation("City","alphabetic_space","Only alphabets are allowed in city.");
+	
+	frmvalidator.addValidation("email","req","Please enter your email.");
+	frmvalidator.addValidation("email","email","Please enter a valid email.");
+	
+	frmvalidator.addValidation("country","req","Please enter your country.");
+	frmvalidator.addValidation("country","alphabetic_space","Only alphabets are allowed in country.");
+	
+	
+	frmvalidator.setAddnlValidationFunction(DoCustomValidation);
+	
+    function DoCustomValidation()
+	{
+		//Determine whether password field is empty or filled.
+		if(document.forms[0].password.value != "")
+		{
+			
+			if(document.forms[0].password.value.length <6)
+			{
+				alert("Password should be atleast of 6 characters.");
+				document.forms[0].password.focus();
+				return false;
+			}
+			else if(document.forms[0].re_password.value=="")
+			{
+				alert("Please enter Confirm Password.");
+				document.forms[0].re_password.focus();
+				return false;
+			}
+			else
+			{
+				 if(document.forms[0].password.value == document.forms[0].re_password.value){
+					 return true;
+				}
+				 else
+				 {
+					alert("Confirm password does not matched.");
+					 document.forms[0].re_password.value="";
+					 document.forms[0].re_password.focus();
+					 document.forms[0].re_password.select();
+					 return false;
+				}
+			}
+		}
+
+		if(document.forms[0].billingInfoStatus.checked){
+			
+			if(document.forms[0].billingAddress.value == ""){
+				alert("Please Enter Billing Address.");
+				document.forms[0].billingAddress.focus();
+				return false;
+			} 
+			if(document.forms[0].billState.value == ""){
+				alert("Please Enter Billing State.");
+				document.forms[0].billState.focus();
+				return false;
+			} 
+			else{
+				var charpos = document.forms[0].billState.value.search("[^A-Za-z]");
+				if (document.forms[0].billState.value.length > 0 && charpos >= 0)
+				{
+					alert("Billing State : Only alphabets are allowed.");
+					document.forms[0].billState.focus();
+					return false;
+				} 
+			}
+			
+			if(document.forms[0].billZipCode.value == ""){
+				alert("Please Enter Billing Zip Code.");
+				document.forms[0].billZipCode.focus();
+				return false;
+			}
+			else{
+				var charpos = document.forms[0].billZipCode.value.search("[^A-Za-z0-9]");
+				if (document.forms[0].billZipCode.value.length > 0 && charpos >= 0)
+				{
+					alert("Billing Zip Code : Only alphanumeric values are allowed.");
+					document.forms[0].billZipCode.focus();
+					return false;
+				} 
+			}
+			
+			if(document.forms[0].billCity.value == ""){
+				alert("Please Enter Billing City.");
+				document.forms[0].billCity.focus();
+				return false;
+			}
+			else{
+				var charpos = document.forms[0].billCity.value.search("[^A-Za-z]");
+				if (document.forms[0].billCity.value.length > 0 && charpos >= 0)
+				{
+					alert("Billing City : Only alphabets are allowed.");
+					document.forms[0].billCity.focus();
+					return false;
+				} 
+			}
+			
+			
+			if(document.forms[0].billCountry.value == ""){
+				alert("Please Enter Billing Country.");
+				document.forms[0].billCountry.focus();
+				return false;
+			}
+			else{
+				var charpos = document.forms[0].billCountry.value.search("[^A-Za-z]");
+				if (document.forms[0].billCountry.value.length > 0 && charpos >= 0)
+				{
+					alert("Billing Country : Only alphabets are allowed.");
+					document.forms[0].billCountry.focus();
+					return false;
+				} 
+			}			
+			
+		}		
+		return true
+	}
+</script>
+{/literal} 

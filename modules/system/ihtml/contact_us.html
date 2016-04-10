@@ -1,0 +1,290 @@
+{literal}
+	<script>
+		function validateJoinCategory(formName)
+		{
+			//return true;
+			action = "save";
+			//email address
+			if(action == "save")
+			{
+				if(StringTrim(formName.email.value) == ""){
+					alert("Please enter your Email Address.");
+					formName.email.focus();
+					formName.email.select();
+					return false;
+				}
+
+				if(!isEmail(StringTrim(formName.email.value)))
+				{
+					alert('Please enter valid Email Address.')
+					formName.email.focus();
+					formName.email.select();
+					return false;
+				}
+					if(StringTrim(formName.password.value) == ""){
+						alert("Please enter your Password.");
+						formName.password.focus();
+						formName.password.select();
+						return false;
+					}
+					if(StringTrim(formName.password.value).length < 6){
+							alert("Password must be at least 6 characters long.");
+							formName.password.focus();
+							formName.password.select();			
+							return false;
+					}
+
+					if(StringTrim(formName.confirm_password.value) == ""){
+						alert("Please retype your Password.");
+						formName.confirm_password.focus();
+						formName.confirm_password.select();			
+						return false;
+					}
+
+					if(StringTrim(formName.password.value) != StringTrim(formName.confirm_password.value)){
+						alert("Confirm Password must be equal to Password.");
+						formName.password.focus();
+						formName.password.select();
+						return false;
+					}
+			}
+			//first name
+			if(StringTrim(formName.fname.value) == ""){
+				alert("Please enter your First Name.");
+				formName.fname.focus();
+				formName.fname.select();
+				return false;
+			}
+			if(illegal(StringTrim(formName.fname.value))){
+				alert("Only A-Za-z0-9!@#$%^+=_ is allowed in First Name.");
+				formName.fname.focus();
+				formName.fname.select();
+				return false;
+			}
+			//last name
+			if(StringTrim(formName.lname.value) == ""){
+				alert("Please enter your Last Name.");
+				formName.lname.focus();
+				formName.lname.select();
+				return false;
+			}
+			if(illegal(StringTrim(formName.lname.value))){
+				alert("Only A-Za-z0-9!@#$%^+=_ is allowed in Last Name.");
+				formName.lname.focus();
+				formName.lname.select();
+				return false;
+			}
+			//phone number
+		
+			if(StringTrim(formName.phone.value) == ""){
+				alert("Please enter your Phone Number.");
+				formName.phone.focus();
+				formName.phone.select();
+				return false;
+			}
+				
+			if(!checkUSPhone(formName.phone)){
+				return false;
+			}
+			if(action == "save")
+			{
+				if(formName.termsAndPolicy.checked == false)
+				{
+					alert("Please accept the terms and conditions and privacy policy of Buyguidesonline.");
+					formName.termsAndPolicy.focus();
+					return false;
+				}
+			}
+			return true;
+		}
+	</script>
+{/literal}
+<tr>
+    <td width="755"><a name="top"></a>
+      <table width="755" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
+        <tr>
+          <td width="755" align="left" valign="top"><table width="754" border="0" cellspacing="0" cellpadding="0">
+            
+              <tr>
+                <td colspan="2" align="left" valign="top"><table width="755" border="0" bordercolor=red cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td width="465" align="left" valign="top"><table width="465" border="0" cellspacing="0" cellpadding="0">
+                          <tr>
+                            <td colspan="3">&nbsp;</td>
+                          </tr>
+                          <tr>
+                            <td width="15" align="left" valign="top"><img src="{$SiteUrl}/images/trans.gif" width="15" height="1" /></td>
+                            <td width="426" class="arial11R333333"><p>Sign up below.  Just fill out the form.</p></td>
+                            <td width="24" align="right" valign="top"><img src="{$SiteUrl}/images/trans.gif" width="24" height="1" /></td>
+                          </tr>
+                          <tr>
+                            <td align="left" valign="top">&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td align="right" valign="top">&nbsp;</td>
+                          </tr>
+                      </table></td>
+                      <td width="290" align="left" valign="top" bgcolor="#ECF1E7"><table width="290" border="0" cellspacing="0" cellpadding="0">
+                          <tr>
+                            <td height="31" colspan="3">&nbsp;</td>
+                          </tr>
+                          <tr>
+                            <td width="25" height="40" align="left" valign="top"><img src="{$SiteUrl}/images/trans.gif" width="25" height="1" /></td>
+                            <td width="261" align="left" valign="top"><p><img src="{$SiteUrl}/images/img_textbanner.gif" width="237" height="105" /></p></td>
+                            <td width="4" align="right" valign="top"><img src="{$SiteUrl}/images/trans.gif" width="25" height="1" /></td>
+                          </tr>
+                      </table></td>
+                    </tr>
+                </table></td>
+              </tr>
+              <tr>
+                <td colspan="2" align="left" valign="top" bgcolor="#999999"><img src="{$SiteUrl}/images/trans.gif" width="1" height="1" /></td>
+              </tr>
+			  	<form id="form1" name="form1" method="post" action="index.php?" onSubmit= 'return validateJoinCategory(this);'>
+              <tr>
+                <td colspan="2" align="left" valign="top">
+				<table width="755" border="0" cellspacing="0" cellpadding="0">
+                     <tr>
+                        <td width="185" height="18" align="left" valign="middle" class="arial11B666666"></td>
+                        <td width="553" align="left" valign="middle" class="arial11B859A21">*Denotes a mandatory field</td>
+                      </tr>
+                </table></td>
+              </tr>
+ 
+              <tr>
+                <td align="left" valign="top">&nbsp;</td>
+                <td align="left" valign="top">
+                    <table width="738" border="0" cellspacing="0" cellpadding="0">
+                     
+                      <tr>
+                        <td height="18" colspan="2" align="left" valign="middle" class="arial11B666666"><img src="{$SiteUrl}/images/trans.gif" width="1" height="16" /></td>
+                      </tr>
+					  <tr>
+                        <td height="26" align="left" valign="middle" class="arial11R48602E">Your Email Address*</td>
+                        <td align="left" valign="middle" class="arial11B859A21"><input name="email" type="text" class="solidbrdrnoneECF1E7" id="email"  size="50" value="{$oMember->user_email}"/></td>
+                      </tr>
+                      <tr>
+                        <td height="26" align="left" valign="middle" class="arial11R48602E">Your Password*</td>
+                        <td align="left" valign="middle" class="arial11B859A21"><input name="password" type="password" class="solidbrdrnoneECF1E7" id="password" value="" size="50" /></td>
+                      </tr>
+                      <tr>
+                        <td height="26" align="left" valign="middle" class="arial11R48602E">Confirm Password*</td>
+                        <td align="left" valign="middle" class="arial11B859A21"><input name="confirm_password" type="password" class="solidbrdrnoneECF1E7" size="50" /></td>
+                      </tr>
+                      <tr>
+                        <td height="26" align="left" valign="middle" class="arial11R48602E">Your First Name*</td>
+                        <td align="left" valign="middle" class="arial11B859A21"><input name="fname" type="text" class="solidbrdrnoneECF1E7" id="fname" value="{$oMember->user_firstname}" size="50" /></td>
+                      </tr>
+                      <tr>
+                        <td height="26" align="left" valign="middle" class="arial11R48602E">Your Last Name*</td>
+                        <td align="left" valign="middle" class="arial11B859A21"><input name="lname" type="text" class="solidbrdrnoneECF1E7" id="lname" value="{$oMember->user_lastname}" size="50" /></td>
+                      </tr>
+                      <tr>
+                        <td height="26" align="left" valign="middle" class="arial11R48602E">Your Phone Number*</td>
+                        <td align="left" valign="middle" class="arial11B859A21"><input name="phone" type="text" class="solidbrdrnoneECF1E7" id="phone" value="{$oMember->buyer_phone}" size="50" /></td>
+                      </tr>
+                      
+                    </table>
+               </td>
+              </tr>
+
+              <tr>
+                <td colspan="2" align="left" valign="top" bgcolor="#999999"><img src="{$SiteUrl}/images/trans.gif" width="1" height="1" /></td>
+              </tr>
+              <tr>
+                <td align="left" valign="top">&nbsp;</td>
+                <td align="left" valign="top">&nbsp;</td>
+              </tr>
+              <tr>
+                <td align="left" valign="top">&nbsp;</td>
+                <td align="left" valign="middle" class="arial11B666666">Terms and conditions</td>
+              </tr>
+              <tr>
+                <td align="left" valign="top">&nbsp;</td>
+                <td align="left" valign="middle" class="arial11B666666"><table width="739" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td width="185" align="left" valign="top"><img src="{$SiteUrl}/images/trans.gif" width="185" height="1" /></td>
+                      <td width="388" align="left" valign="top"><table width="388" border="0" cellspacing="0" cellpadding="0">
+                          <tr>
+                            <td width="388"><table width="388" border="0" cellpadding="0" cellspacing="0" class="solidbrdr148602E">
+                                <tr>
+                                  <td colspan="3" align="left" valign="top">&nbsp;</td>
+                                </tr>
+                                <tr>
+                                  <td width="12" align="left" valign="top"><img src="{$SiteUrl}/images/trans.gif" width="12" height="1" /></td>
+                                  <td width="362" align="left" valign="top" class="arial11R333333"><p>{$sTermsAndConditions}</p></td>
+                                  <td width="12" align="right" valign="top"><img src="{$SiteUrl}/images/trans.gif" width="12" height="1" /></td>
+                                </tr>
+                                <tr>
+                                  <td colspan="3" align="left" valign="top">&nbsp;</td>
+                                </tr>
+                            </table></td>
+                          </tr>
+                          <tr>
+                            <td>&nbsp;</td>
+                          </tr>
+                          <tr>
+                            <td align="left" valign="top"><table width="388" border="0" cellspacing="0" cellpadding="0">
+                                <tr>
+                                  <td width="23" height="32" align="left"  valign="top"><input name="termsAndPolicy" type="checkbox" class="arial11R666666" value="checkbox" /></td>
+                                  <td width="365" align="left" valign="middle" class="arial11R333333">* I have read and agree to all the terms and conditions above, which include the following:</td>
+                                </tr>
+                                <tr>
+                                  <td height="14" align="left" valign="top">&nbsp;</td>
+                                  <td align="left" valign="top" class="arial11R333333">&nbsp;</td>
+                                </tr>
+								
+								<tr>
+                                  <td width="23" height="32" align="left"  valign="middle">
+								  {if $oMember->member_id eq ""}
+									<input type=checkbox name='subscribeme' checked>
+								  {else}
+									<input type=checkbox name='subscribeme' {$oMember->subscribeme}>
+								  {/if}
+								  
+								  </td>
+                                  <td width="365" align="left" valign="middle" class="arial11R333333"> Subscribe for Newsletter</td>
+                                </tr>
+                                <tr>
+                                  <td height="14" align="left" valign="top">&nbsp;</td>
+                                  <td align="left" valign="top" class="arial11R333333">&nbsp;</td>
+                                </tr>
+                                <tr>
+                                  <td height="32" align="left" valign="top">&nbsp;</td>
+                                  <td align="left" valign="top" class="arial11R333333">
+								  <table width="364" border="0" cellspacing="0" cellpadding="0">
+		
+                                      <tr>
+                                        <td height="20" colspan="2">
+										<input name="stage" type="hidden"  id="stage" value="members" />
+										<input name="mode" type="hidden"  id="mode" value="saveMember" />
+										<input name="action" type="hidden"  id="action" value="{$action}" />
+										<input name="user_type" type="hidden" id="user_type" value="2" />
+										<input name="randomid" type="hidden" id="randomid" value="{$randomid}" />
+										<input type="image" src="{$SiteUrl}/images/btn_submitreg.gif" width="176" height="20" ></form></td>
+                                      </tr>
+                                  </table></td>
+                                </tr>
+                            </table></td>
+                          </tr>
+                      </table></td>
+                      <td width="166" align="left" valign="top"><img src="{$SiteUrl}/images/trans.gif" width="100" height="1" /></td>
+                    </tr>
+                    <tr>
+                      <td align="left" valign="top">&nbsp;</td>
+                      <td align="left" valign="top">&nbsp;</td>
+                      <td align="left" valign="top">&nbsp;</td>
+                    </tr>
+                </table></td>
+              </tr>
+              <tr>
+                <td align="left" valign="top">&nbsp;</td>
+                <td align="left" valign="middle" class="arial11B666666">&nbsp;</td>
+              </tr>
+              <tr>
+                <td align="left" valign="top">&nbsp;</td>
+                <td align="left" valign="middle" class="arial11B666666">&nbsp;</td>
+              </tr>
+          </table></td>
+        </tr>
+      </table></td>
+  </tr>

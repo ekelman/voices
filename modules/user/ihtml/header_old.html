@@ -1,0 +1,60 @@
+<body onLoad="MM_preloadimages('images/btn_our_company1_r.gif','images/btn_business_ethics1_r.gif','images/btn_services1_r.gif','images/btn_take_tour1_r.gif','images/btn_hot_posts1_r.gif','images/btn_contactus1_r.gif')">
+<table width="763" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td align="left" valign="top"><table width="763" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td width="763" align="left" valign="top"><table width="763" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td width="185" align="left" valign="top">{if $smarty.session.member_type eq 'e'}<a href="index.php?stage=employer&mode=EmployerHome"><img src="images/logo.gif" alt="Bohire" width="185" height="72" border="0" /></a>{elseif $smarty.session.member_type eq 'r'}<a href="index.php?stage=referrer&mode=MyBohire"><img src="images/logo.gif" alt="Bohire" width="185" height="72" border="0" /></a>{else}<a href="index.php"><img src="images/logo.gif" alt="Bohire" width="185" height="72" border="0" /></a>{/if}</td>
+            <td width="352" align="left" valign="top"><img src="images/trans.gif" alt="" width="352" height="1" /></td>
+            <td width="226" align="left" valign="bottom"><table width="226" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td width="226" align="left" valign="top"><img src="images/trans.gif" alt="" width="1" height="29" /></td>
+              </tr>
+			 <!-- <form><input type="text" value="{$smarty.session.member_id}"></form>-->
+			  {if $smarty.session.member_id neq ''}
+              <tr>
+                <td align="right" valign="top"><a href="#"><img src="images/img_my_bohire.gif" alt="My Bohire" width="89" height="20" border="0" /></a></td>
+              </tr>
+			 
+              <tr>
+                <td align="left" valign="middle"><img src="images/img_grey_dots.gif" alt="" width="226" height="7" /></td>
+              </tr>
+			   {/if}
+              <tr>
+                <td><img src="Templates/images/trans.gif" alt="" width="1" height="8" /></td>
+              </tr>
+            </table></td>
+          </tr>
+        </table></td>
+      </tr>
+      <tr>
+	          <td align="left" valign="top"><table width="763" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td width="62" align="left" valign="top"><img src="images/btn_home1_a.gif" alt="Home" width="62" height="26" /></td>
+            <td width="1" align="left" valign="top"><img src="images/img_nav_td_bg.gif" alt="" width="1" height="26" /></td>
+            <td width="105" align="left" valign="top"><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image16','','images/btn_our_company1_r.gif',1)"><img src="images/btn_our_company1.gif" alt="Our Company" name="Image16" width="105" height="26" border="0" id="Image16" /></a></td>
+          <td width="1" align="left" valign="top"><img src="images/img_nav_td_bg.gif" alt="" width="1" height="26" /></td>
+            <td width="116" align="left" valign="top"><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image17','','images/btn_business_ethics1_r.gif',1)"><img src="images/btn_business_ethics1.gif" alt=" Business Ethics" name="Image17" width="116" height="26" border="0" id="Image17" /></a></td>
+            <td width="1" align="left" valign="top"><img src="images/img_nav_td_bg.gif" alt="" width="1" height="26" /></td>
+            <!--<td width="77" align="left" valign="top"><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image18','','images/btn_services1_r.gif',1)"><img src="images/btn_services1.gif" alt="Services" name="Image18" width="77" height="26" border="0" id="Image18" /></a></td>
+            <td width="1" align="left" valign="top"><img src="images/img_nav_td_bg.gif" alt="" width="1" height="26" /></td>-->
+            <td width="92" align="left" valign="top"><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image19','','images/btn_take_tour1_r.gif',1)"><img src="images/btn_take_tour1.gif" alt="Take a Tour" name="Image19" width="92" height="26" border="0" id="Image19" /></a></td>
+            <td width="1" align="left" valign="top"><img src="images/img_nav_td_bg.gif" alt="" width="1" height="26" /></td>
+            <td width="82" align="left" valign="top"><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image20','','images/btn_hot_posts1_r.gif',1)"><img src="images/btn_hot_posts1.gif" alt="Hot Posts" name="Image20" width="82" height="26" border="0" id="Image20" /></a></td>
+            <td width="1" align="left" valign="top"><img src="images/img_nav_td_bg.gif" alt="" width="1" height="26" /></td>
+            <td width="87" align="left" valign="top"><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image21','','images/btn_contactus1_r.gif',1)"><img src="images/btn_contactus1.gif" alt="Contact Us" name="Image21" width="87" height="26" border="0" id="Image21" /></a></td>
+            <td width="114" align="left" valign="top" bgcolor="#005388"><table width="114" border="0" cellspacing="0" cellpadding="0">
+                 {if $smarty.session.member_id neq ''}
+			   <tr>
+                <td width="79" align="right" valign="top"><img src="images/img_logout_icon.gif" alt="Logout" width="17" height="26" /></td>
+                <td width="35" align="left" valign="middle"><a href="#" class="arial11NRC0DDEF" title="Logout">Logout</a></td>
+              </tr>
+			 {/if} 
+            </table></td>
+            <td width="22" align="left" valign="top"><img src="images/img_right_s.gif" alt="" width="22" height="26" /></td>
+          </tr>
+        </table></td>
+      </tr>
+    </table></td>
+  </tr>

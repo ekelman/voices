@@ -1,0 +1,423 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+	margin:0px;
+	background-color:#474141;
+}
+
+
+/*colour_repeat*/
+.bg_474141{
+	background-color:#474141;
+}
+
+.bg_feffff{
+	background-color:#feffff;
+}
+
+.bg_f7f6f2{
+	background-color:#f7f6f2;
+}
+
+.bg_c40306{
+	background-color:#c40306;
+}
+
+.e6e6e6{
+	background-color:#e6e6e6;
+}
+
+.img_banner_bg{
+	background-image:url(../images/img_banner_bg.jpg);
+	background-repeat:no-repeat;
+	height:138px;
+}
+
+.img_nav_rp{
+	background-image:url(../images/img_nav_rp.gif);
+	background-repeat:repeat-x;
+	height:28px;
+}
+
+.img_top_banner{
+	background-image:url(../images/img_top_banner.jpg);
+	background-repeat:no-repeat;
+	height:286px;
+}
+
+
+/*nav_link*/
+.Verdana_11_fff_bold{
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:11px;
+	font-weight:bold;
+	color:#fff;
+	text-decoration:none;
+	}
+a.Verdana_11_fff_bold:hover{
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:11px;
+	font-weight:bold;
+	color:#d5cb91;
+	text-decoration:none;
+}
+
+/*forgot_password*/
+.arial_11_967947{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	font-weight:normal;
+	color:#967947;;
+}
+a.arial_11_967947:hover{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	font-weight:normal;
+	color:#967947;
+	text-decoration:none;
+}
+
+
+/*be_heard_text*/
+
+.arial_17_3b393a{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:17px;
+	font-weight:bold;
+	color:#3b393a;
+	text-decoration:none;
+}
+
+/*title*/
+.Trebuchet_20_c40306{
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size:20px;
+	font-weight:bold;
+	color:#c40306;
+	text-decoration:none;
+}
+
+
+/*body text*/
+.arial_12_000{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	font-weight:normal;
+	color:#000;
+	text-decoration:none;
+}
+
+.arial_11_000{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:11px;
+	font-weight:bold;
+	color:#000;
+	text-decoration:none;
+}
+.arial_11_676767{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:11px;
+	font-weight:normal;
+	color:#676767;
+	text-decoration:none;
+}
+.arial_14_c30100{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:14px;
+	font-weight:bold;
+	color:#c30100;
+	text-decoration:none;
+}
+
+.Trebuchet_18_c50115{
+	font-family:;
+	font-size:18px;
+	font-weight:bold;
+	color:#c50115;
+	text-decoration:none;
+}
+
+.Trebuchet_23_c40306{
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size:23px;
+	font-weight:bold;
+	color:#c40306;
+	text-decoration:none;
+}
+
+.Trebuchet_27_c60000{
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size:27px;
+	font-weight:bold;
+	color:#c60000;
+	text-decoration:none;
+}
+
+.arial_12_b02f33{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	font-weight:normal;
+	color:#b02f33;
+	text-decoration:none;
+}
+.arial_15_000_bold{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:15px;
+	font-weight:bold;
+	color:#000;
+	text-decoration:none;
+}
+
+/*footer_copyright*/
+.arial_12_655e4e{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	font-weight:normal;
+	color:#655e4e;
+	text-decoration:none;
+}
+a.arial_12_655e4e:hover{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	font-weight:normal;
+	color:#655e4e;
+	text-decoration:underline;
+}
+/*border*/
+.border{
+	border-bottom:dotted #333;
+}
+
+
+/*body_links*/
+.arial_12_a60000_bold{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	font-weight:bold;
+	color:#a60000;
+	text-decoration:underline;
+	}
+a.arial_12_a60000_bold:hover{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	font-weight:bold;
+	color:#a60000;
+	text-decoration:none;
+}
+
+.arial_12_000_link{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	font-weight:normal;
+	color:#000;
+}
+a.arial_12_000_link:hover{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	font-weight:normal;
+	color:#000;
+	text-decoration:none;
+}
+
+
+/*search box*/
+.img_search_bck{
+	background-repeat:no-repeat;
+	background-image:url(../images/img_search_bck.jpg);
+	height:44px;
+}
+
+
+input.search-box{ /*outer background*/
+   background:url(../images/img_search_bg.gif) no-repeat ;
+   width:151px;
+   height:22px;
+   border:none;
+   margin-top:-1px;
+   padding:0px;
+}
+input.search-go { /*search icon */
+	float:left;
+    border:0;
+	margin:0;
+    padding:0;
+	height: 22px;
+    width: 26px;
+	background:url(../images/img_search_go.gif) no-repeat ;
+    cursor: pointer;
+}
+/*---26-05-2011---*/
+.topsublink_bg{
+	background-color:#e2dcbb;
+	border-top:1px solid #b1b0ac;
+}
+/*----button----*/
+.button {
+ padding-left: 8px;
+ display: inline-block;
+ margin-right: 1px;
+ background: url('../images/img_btnl.png') top left no-repeat;
+ text-decoration: none;
+ color:#474141;
+}
+.button span {
+ color: #474141;
+ display: block;
+ font-size:15px;
+ font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+ font-weight:bold;
+ padding: 5px 12px 7px 7px;
+ background: url('../images/img_btnr.png') top right no-repeat;
+ cursor:pointer;
+}
+.votealert_bg{
+	background-color:#efede3;
+	border:1px solid #cdccc5;
+	border-top:none;
+}
+.tophead_grad{
+	font-family:Arial, Helvetica, sans-serif;
+	background:url(../images/img_header_grad_bg.gif) repeat-x;
+	color:#ac0001;
+	font-size:16px;
+	font-weight:bold;
+	padding-left:15px;
+	border:1px solid #cdccc5;
+}
+.bg_f7f6ee{
+	background-color:#f7f6ee;
+	padding:18px 18px 24px 12px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+}
+.arialB13000000{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:13px;
+	font-weight:bold;
+	color:#000000;
+	text-decoration:underline;
+	}
+	a.arialB13000000:hover{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:13px;
+	font-weight:bold;
+	color:#000000;
+	text-decoration:none;
+	}
+	.arial12Ba60000{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	font-weight:bold;
+	color:#a60000;
+	text-decoration:none;
+	}
+	a.arial12Ba60000:hover{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	font-weight:bold;
+	color:#000;
+	text-decoration:none;
+	}
+	.arial11Na60000{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:11px;
+	font-weight:normal;
+	color:#a60000;
+	text-decoration:none;
+	}
+	.border_dashed{
+		height:1px;
+		margin:0 2px;
+		background:url(../images/img_dot.png) repeat-x;
+		/*border-bottom:1px dashed #656565;*/
+	}
+	.arial12BUa60000{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	font-weight:bold;
+	color:#a60000;
+	text-decoration:underline;
+	font-style:italic;
+	}
+	a.arial12BUa60000:hover{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	font-weight:bold;
+	color:#a60000;
+	text-decoration:none;
+	font-style:italic;
+	}
+	.arialB13a60000{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:13px;
+	font-weight:bold;
+	color:#a60000;
+	text-decoration:underline;
+	}
+	a.arialB13a60000:hover{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:13px;
+	font-weight:bold;
+	color:#a60000;
+	text-decoration:none;
+	}
+	.pic_border{
+		border:1px solid #b9b498;
+		padding:5px;
+		background-color:#fff;
+	}
+	.lineheight{
+		line-height:20px;
+	}
+	.bg_f7f6f2_2{
+		font-family:Arial, Helvetica, sans-serif;
+		background-color:#f7f6f2;
+		border:1px solid #d9d6c5;
+		padding:5px 6px;
+		font-size:10px;
+		color:#4f4f4f;
+		line-height:11px;
+	}
+	.textbox{
+		overflow:scroll;
+		height:105px;
+		border:1px solid #7f9db9;
+		padding:8px;
+		background-color:#fff;
+		overflow-x:hidden;
+	}
+	.bg_f7f6ee_new{
+	background-color:#f7f6ee;
+	padding:11px 18px 12px 10px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+}
+/*----button----*/
+.Activebutton {
+ padding-left: 8px;
+ display: inline-block;
+ margin-right: 1px;
+ background: url('../images/img_btn_Activel.png') top left no-repeat;
+ text-decoration: none;
+ color:#fff;
+}
+.Activebutton span {
+ color: #fff;
+ display: block;
+ font-size:15px;
+ font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+ font-weight:bold;
+ padding: 5px 12px 7px 7px;
+ background: url('../images/img_btn_Activer.png') top right no-repeat;
+ cursor:pointer;
+}
+.votealert_bg_new{
+	background-color:#efede3;
+	border-top:1px solid #cdccc5;
+}
+.searchblock{
+	background:url(../images/img_search_bck.jpg) no-repeat;
+	width:266px;
+	padding:15px 10px 7px 16px;
+}
