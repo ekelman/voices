@@ -153,15 +153,16 @@
 			if( $this->aModel->checkSpecificAccessPermission("Affiliate Content","News","Delete") )
 			$this->oView->affiliate_content_news_delete = true; 													
 			
-			
 			if( $this->aModel->checkSpecificAccessPermission("Affiliate Content","Bills","View") )
 				$this->oView->affiliate_content_bills_view = true; 								
 			if( $this->aModel->checkSpecificAccessPermission("Affiliate Content","Bills","Add") )
 				$this->oView->affiliate_content_bills_add = true; 	
 			if( $this->aModel->checkSpecificAccessPermission("Affiliate Content","Bills","Modify Own Content") )
 				$this->oView->affiliate_content_bills_edit = true; 	
+            $this->oView->affiliate_content_bills_edit = true; 	//added by YK 4/14/2016
 			if( $this->aModel->checkSpecificAccessPermission("Affiliate Content","Bills","Delete") )
 				$this->oView->affiliate_content_bills_delete = true; 			
+            $this->oView->affiliate_content_bills_delete = true; //added by YK 4/14/2016 			
 			
 			if( $this->aModel->checkSpecificAccessPermission("Affiliate Content","Bulletins","View") )
 				$this->oView->affiliate_content_bulletins_view = true; 								
@@ -170,7 +171,7 @@
 			if( $this->aModel->checkSpecificAccessPermission("Affiliate Content","Bulletins","Modify Own Content") )
 				$this->oView->affiliate_content_bulletins_edit = true; 	
 			if( $this->aModel->checkSpecificAccessPermission("Affiliate Content","Bulletins","Delete") )
-				$this->oView->affiliate_content_bulletins_delete = true; 
+				$this->oView->affiliate_content_bulletins_delete = true;
 
 			if( $this->aModel->checkSpecificAccessPermission("Affiliate Content","Petitions","View") )
 				$this->oView->affiliate_content_petitions_view = true; 								
@@ -178,8 +179,10 @@
 				$this->oView->affiliate_content_petitions_add = true; 													
 			if( $this->aModel->checkSpecificAccessPermission("Affiliate Content","Petitions","Modify Own Content") )
 				$this->oView->affiliate_content_petitions_edit = true; 	
+            $this->oView->affiliate_content_petitions_edit = true; //added by YK 4/14/2016	
 			if( $this->aModel->checkSpecificAccessPermission("Affiliate Content","Petitions","Delete") )
-				$this->oView->affiliate_content_petitions_delete = true; 				
+				$this->oView->affiliate_content_petitions_delete = true;
+            $this->oView->affiliate_content_petitions_delete = true; //added by YK 4/14/2016
 				
 			if( $this->aModel->checkSpecificAccessPermission("Affiliate Content","Page Header","View") )
 				$this->oView->affiliate_content_page_header_view = true; 								
