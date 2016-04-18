@@ -410,14 +410,15 @@
 			
 			$param_validate	=	array('authToken'=>$token,'address'=>$address,'city'=>$city,'state'=>$state,'postalCode'=>$postalCode,'country'=>$country,'districtType'=>$districtType,'includeAtLarge'=>$includeAtLarge); 
 			
-			$result_OfficialsByAddress	=	$client_EOQueryService->call('GetOfficialsByAddress',$param_validate);
+			//$result_OfficialsByAddress	=	$client_EOQueryService->call('GetOfficialsByAddress',$param_validate);
 			
-			$officials = $result_OfficialsByAddress['GetOfficialsByAddressResult']['ElectedOfficialInfo'];
+			//$officials = $result_OfficialsByAddress['GetOfficialsByAddressResult']['ElectedOfficialInfo'];
 			
 			//print_r($officials);
 			
-			$isValidCicero = count($officials);
-			
+			//$isValidCicero = count($officials);
+			$isValidCicero = true;
+      
 			if($isValidCicero) {
 				
 				//do nothing;
