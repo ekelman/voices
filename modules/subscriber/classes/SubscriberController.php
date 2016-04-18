@@ -41,7 +41,7 @@
 		*Function Type  : Constructor	
 		*Functionality  : Initializes objects of different classes 
 		*Input			: nothing
-		*Output			: Class objects
+		*Output			: Class objectsP
 		*Return Value   : nothing
 		*Note			: nothing
 		***************************************************************************************
@@ -423,10 +423,9 @@
 				//do nothing;
 				$i_test_but_do_nothing = "i_test_but_do_nothing";				
 			} else {
-				
 				$sErrorMsg	= "Please enter a valid address.";
-				$this->SubscriberJoin($oSubscriber, $sErrorMsg);
-				die();								
+                $this->SubscriberJoin($oSubscriber, $sErrorMsg);
+                die();
 			}			
 			/*
 			if(!empty($secondary_afflliates)) {			
