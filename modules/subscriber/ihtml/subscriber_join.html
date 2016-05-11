@@ -138,7 +138,7 @@
 							<tr>	
 								<td width="397" height="50" align="left" valign="middle" class="arial_12_3b393a"><span class="arial_11_000">
 								<strong><span class="error-message">*</span>Password:</strong></span><br />
-								  <input type="password" name="password" id="password" style="width:373px;"  tabIndex="5" />
+                                    <input type="password" name="password" id="password" style="width:373px;" value="{$oSubscriber->password|default:''}" tabindex="5" />
 								  <br /><br /></td>
 							</tr>
 							
@@ -166,7 +166,7 @@
 							
 							<tr>
 								<td width="397" height="50" align="left" valign="middle" class="arial_12_3b393a"><span class="arial_11_000"><strong><span class="error-message">*</span>Confirm Password:</strong></span><br />
-								<input type="password" name="re_password" id="re_password" style="width:373px;"  tabIndex="6" />
+                                    <input type="password" name="re_password" id="re_password" style="width:373px;" value="{$oSubscriber->password|default:''}" tabindex="6" />
 								<br /><br /></td>
 							</tr>
 							{php}							
