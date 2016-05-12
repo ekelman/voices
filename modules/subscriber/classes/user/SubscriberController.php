@@ -102,7 +102,13 @@
 			$this->oView->sErrorMsg = $sErrorMsg;
 			$this->oView->oSubscriber = $oSubscriber;
 			$this->oView->states=$this->oModel->getStates();
-			$this->oView->oAffiliates = $this->oModel->getAffiliatesSubscriberJoin();			
+			$this->oView->oAffiliates = $this->oModel->getAffiliatesSubscriberJoin();
+            $subscriber_membership_fee = 0; 	
+			$subscriber_membership_fee_promocode = 0; 	
+			$subscriber_membership_fee 			 = $this->sModel->getSettingDetailFromName("Subscriber Membership Fee");			
+			$subscriber_membership_fee_promocode = $this->sModel->getSettingDetailFromName("Subscriber Membership Fee Promocode");			
+			$this->oView->subscriberMembershipFee  =$subscriber_membership_fee  ;										
+			$this->oView->subscriberMembershipFeePromocode  =$subscriber_membership_fee_promocode;
 			$this->oView->SubscriberJoin();
 		}//ef
 		

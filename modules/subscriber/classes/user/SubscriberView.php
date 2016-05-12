@@ -62,7 +62,9 @@
 			$this->obTemplate->assign('sErrorMsg', $this->sErrorMsg);	
 			$this->obTemplate->assign('oAffiliates', $this->oAffiliates);
 			$this->obTemplate->assign('States', $this->states);			
-			$this->obTemplate->assign('oSubscriber', $this->oSubscriber);	
+			$this->obTemplate->assign('oSubscriber', $this->oSubscriber);
+            $this->obTemplate->assign('subscriberMembershipFee', $this->subscriberMembershipFee);
+			$this->obTemplate->assign('subscriberMembershipFeePromocode', $this->subscriberMembershipFeePromocode);
 			$this->obTemplate->assign('Content',$this->obTemplate->fetch('subscriber/ihtml/subscriber_join.html'));
 			$this->parse();
 		}//ef
