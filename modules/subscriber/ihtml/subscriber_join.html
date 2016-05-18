@@ -82,6 +82,37 @@
 			});
 
 		*/
+
+        $('#agree').click(function () {
+            $('#agree').is(':checked') ? $('#is_agree').attr('value', '1') : $('#is_agree').attr('value', '0');
+        });
+
+        $('#agree').change(function () {
+            $('#agree').is(':checked') ? $('#is_agree').attr('value', '1') : $('#is_agree').attr('value', '0');
+        });
+
+
+        $('#primary_affiliate_code').change(function () {
+            $.ajax({
+                //this is the php file that processes the data and send mail
+                url: "index.php?stage=subscriber&mode=CheckAffiliateCode",
+                type: "GET",
+                data: 'primary_affiliate_code=' + $(this).val(),
+                cache: false,
+                success: function (html) {
+                    if (html == 0) {
+                        $("#codeinfo").html("<span style='color:red'>Affiliate code <strong>" + $("#primary_affiliate_code").val() + "</strong> does not exist.</span>");
+                        codeexist = false;
+                        $("#primary_affiliate_code").val('');
+                    }
+                    else {
+                        $("#codeinfo").html("<span style='color:green'>Affiliate code <strong>" + $("#primary_affiliate_code").val() + "</strong> Exist.</span>");
+                        codeexist = true;
+                    }
+                }
+            });
+        });
+
     });
 </script>
 {/literal}
@@ -363,7 +394,7 @@
                                                                     <td width="397" height="55" align="left" valign="middle" class="arial_12_3b393a">
 
                                                                         <span class="arial_11_000"><strong><span class="error-message">*</span>Primary Affiliates:</strong></span><br />
-                                                                        <select name="primary_affiliates" id="primary_affiliates" style="width:373px;" tabindex="1">
+                                                                        <select name="primary_affiliates" id="primary_affiliates" style="width:373px;">
                                                                             <option value=''>---Select Primary Affiliate--</option>
                                                                             {html_options options=$oAffiliates selected=$oSubscriber->primary_affiliates}
                                                                         </select>
@@ -398,7 +429,7 @@
                                                                                 <td width="379" height="130" align="left" valign="top" class="arial_12_3b393a">
                                                                                     <span class="arial_11_000"><strong>Additional Affiliates:</strong></span><br />
                                                                                     <div class='textbox' style="float:left;">
-                                                                                        {html_checkboxes class="test" name="secondary_affiliates" id="secondary_affiliates" options=$oAffiliates selected=$oSubscriber->secondary_affiliates separator="<br />" tabIndex="2"}
+                                                                                        {html_checkboxes class="test" name="secondary_affiliates" id="secondary_affiliates" options=$oAffiliates selected=$oSubscriber->secondary_affiliates separator="<br />" }
                                                                                     </div>
                                                                                     <div style="float:left;margin-left:5px;">
                                                                                         <img id='south_2' style="cursor:pointer;" title='An affiliate is an organization of which you might be a member or an organization whose opinions you are interested in following. By selecting them as an affiliate, you will be able to view content they produce and weigh in on their ideas and opinions.' src="images/img_icon.gif" />
@@ -475,7 +506,7 @@
                                                             <table width="100%" border="0" cellspacing="0" cellpadding="0">
                                                                 <tr>
                                                                     <td width="3%" align="left" valign="middle">
-                                                                        <input type="checkbox" name="i_agree_chk" id="i_agree_chk" tabindex="16" />
+                                                                        <input type="checkbox" name="i_agree_chk" id="i_agree_chk" />
                                                                     </td>
                                                                     <td width="97%" align="left" valign="middle" class="arial_11_000">
                                                                         <span class="error-message">*</span>
@@ -496,7 +527,7 @@
 
                                                     <tr>
                                                         <td align="left" valign="top" style="padding:34px 365px 5px 365px;">
-                                                            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                                            <table width="100%" border="0" cellspacing="1" cellpadding="0">
                                                                 <tr>
                                                                     <td align="left" valign="middle">
                                                                         <input type="hidden" name="stage" value="subscriber" />
@@ -636,6 +667,30 @@
 
             alert("You need to agree to end user agreement.");
             form.i_agree_chk.focus();
+            return false;
+        }
+
+        if (document.forms[0].primary_affiliates.selectedIndex == '0') {
+
+            if ((document.getElementById("primary_affiliate_code").value == "") || (document.getElementById("primary_affiliate_code").value == undefined)) {
+                alert("Please select a primary affiliate or enter primary affiliate code.");
+                // document.forms[0].primary_affiliate_code.focus();
+                return false;
+            }
+            else if (isNaN(document.forms[0].primary_affiliates.value) && (codeexist == false)) {
+                alert("Please enter correct affiliate code.");
+                document.forms[0].primary_affiliate_code.focus();
+                return false;
+            }
+
+        }
+
+
+        if (!form.agree.checked) {
+
+            var subscriptionfee = form.subscriptionfee.value;
+            alert("You need to agree to pay $" + subscriptionfee + " per month to create a subscriber account.");
+            form.agree.focus();
             return false;
         }
 

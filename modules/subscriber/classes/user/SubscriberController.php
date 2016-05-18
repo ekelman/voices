@@ -308,14 +308,16 @@
 				$text			=	CreateMailMessage($newbody);
 				$subject		=	stripslashes(html_entity_decode($oEmail[0]->subject));
 				$result			=	SendMail(stripslashes(html_entity_decode($text['body'])), $subject, array($email), $_CONF['adminEmail']);
-				echo "<script>location='index.php?stage=subscriber&mode=EmailMessage&message=registration'</script>";
-				die();								
+				//echo "<script>location='index.php?stage=subscriber&mode=EmailMessage&message=registration'</script>";
+				//die();
+                $this-> MembershipUpgradeSave($oSubscriber,$sErrorMsg,$id);
 			} else {
 				
 				$sErrorMsg		=	"Server error.<br>Please try again later.";
 				$this->SubscriberJoin($oSubscriber,$sErrorMsg);
 				die();
 			}
+            
 		}//ef
 		
 		
@@ -969,7 +971,7 @@
 		*note			: nothing
 		***************************************************************************************
 		*/
-		function MembershipUpgradeSave()		
+		function MembershipUpgradeSave($oSubscriber="", $sErrorMsg="", $id="")		
 		{
 		    global $_CONF;
 			
@@ -981,7 +983,13 @@
 			
 			/** system settings **/		
 			
-			$oSubscriber->member_id					=	htmlentities($_POST['member_id'],ENT_QUOTES);
+            if ($id != "")
+            {
+                $oSubscriber->member_id = $id;
+            }else{
+                $oSubscriber->member_id	=	htmlentities($_POST['member_id'],ENT_QUOTES);
+            }
+			//$oSubscriber->member_id					=	htmlentities($_POST['member_id'],ENT_QUOTES);
 			$oSubscriber->primary_affiliates		=	htmlentities($_POST['primary_affiliates'],ENT_QUOTES);
 			$oSubscriber->primary_affiliate_code	=	htmlentities($_POST['primary_affiliate_code'],ENT_QUOTES);
 			$oSubscriber->promo_code 				= 	htmlentities($_POST['promo_code'],ENT_QUOTES);
@@ -1025,14 +1033,20 @@
 
 			if($id)	{
 				
-				// upgrade subscriber
-				$affID  = $this->oModel->checkPromocodeAffiliateID($oSubscriber->promo_code);  
-				
-				if($affID) {					
-					$amount = $subscriber_membership_fee_promocode;					
-				} else {					
-					$amount = $subscriber_membership_fee;
-				}  
+                if ($oSubscriber->promo_code != "")
+                {
+                    // upgrade subscriber
+                    $affID  = $this->oModel->checkPromocodeAffiliateID($oSubscriber->promo_code);
+                    
+                    if($affID) {					
+                        $amount = $subscriber_membership_fee_promocode;					
+                    } else {					
+                        $amount = $subscriber_membership_fee;
+                    }
+                }else{
+                    $amount = $subscriber_membership_fee;
+                    $affID = false;
+                }				
 				
 				$oSubscriber->subscriptionfee = $amount;					
 				$oSubscriber->referralAffiliateID = $affID;
