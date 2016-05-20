@@ -591,10 +591,16 @@
 						## update session 
 						$_SESSION['member_type'] = 'subscriber';					
 						## Update database 			
-						$user_name = $this->oModel->setUserType($_SESSION['username'],'subscriber');
-						$message = "Membership has been upgraded to subscriber";												
-						header("location:index.php?stage=subscriber&mode=MyProfile&sErrorMessage=".$message);
-						exit();
+						$user_name = $this->oModel->setUserType($_SESSION['username'],'subscriber',$transactionID);
+						$message = "Membership has been upgraded to subscriber";
+                        if (isset($_SESSION['username']))
+                        {
+                            header("location:index.php?stage=subscriber&mode=MyProfile&sErrorMessage=".$message);
+                        }												
+						else{
+                            header("location:index.php?stage=subscriber&mode=EmailMessage&message=registration");
+                        }
+   						exit();
 					}								
 					
 					// ?? 	
@@ -1077,12 +1083,11 @@
 			global $_CONF;
 			
 			$oPaypal = new Paypal();
-			/*			
-				echo "<pre>";
-				print_r($oSubscriber);			
-				die();
-			*/
-
+            			
+            //echo "<pre>";
+            //print_r($oSubscriber);			
+            //die();
+            
 			$oPaypal->url 			= $_CONF['payment_url'];
 			$oPaypal->business 		= $_CONF['business_subscribe'];			
 			$oPaypal->return 		= 	$_CONF['SiteUrl']."/index.php?stage=subscriber&mode=paymentSuccess&member_id=" . base64_encode($oSubscriber->member_id)."&referrerID=".base64_encode($oSubscriber->referralAffiliateID);			

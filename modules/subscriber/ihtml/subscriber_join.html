@@ -25,20 +25,17 @@
         $('#south').tipsy({ gravity: 's' });
         $('#south_2').tipsy({ gravity: 's1' });
     });
-
-    /*
-    $('#primary_afflliates').livequery('change', function(event) {
-        if($('#primary_afflliates').val() !='') {
-            $('#primary_afflliate_code').hide();
-            $('#primary_afflliate_code_detail').html('Not required');
-        }
-        else	{
-            $('#primary_afflliate_code').show();
-            $('#primary_afflliate_code_detail').html('');
-        }
-    });
-
-    */
+        
+    //$('#primary_afflliates').livequery('change', function(event) {
+    //    if($('#primary_afflliates').val() !='') {
+    //        $('#primary_afflliate_code').hide();
+    //        //$('#primary_afflliate_code_detail').html('Not required');
+    //    }
+    //    else	{
+    //        $('#primary_afflliate_code').show();
+    //        //$('#primary_afflliate_code_detail').html('');
+    //    }
+    //});
 
     $(document).ready(function () {
 
@@ -59,6 +56,8 @@
             $('#billingInfoStatus').is(':checked') ? $("#billingSection").show() : $("#billingSection").hide();
             $('#billingInfoStatus').is(':checked') ? $('#isBillingInfo').attr('value', '1') : $('#isBillingInfo').attr('value', '0');
         });
+
+       
         /*
 			$('#primary_afflliate_code').change(function(){
 				$.ajax({

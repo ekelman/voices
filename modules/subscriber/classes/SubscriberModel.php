@@ -133,10 +133,20 @@
 		*Note			: nothing
 		***************************************************************************************
 		*/
-		function setUserType($username = NULL,$userType = NULL)
+		function setUserType($username = NULL,$userType = NULL,$transactionID = NULL)
 		{
-			$sSQL	=	"UPDATE tbl_member set member_type = '" . $userType . "' 
-			WHERE user_name = '" . $username . "'";
+            $sSQL	= "";
+            if ($username != NULL or $username != "")
+            {
+                $sSQL	=	"UPDATE tbl_member set member_type = '" . $userType . "' 
+			    WHERE user_name = '" . $username . "'";
+            }
+            else
+            {
+                $sSQL	=	"UPDATE tbl_member set member_type = '" . $userType . "' 
+			    WHERE member_id = " . $transactionID;
+            }
+			
 			$response =  $this->Execute($sSQL);
 			return $response;		
 		}
