@@ -533,6 +533,25 @@
 		*/
 		function paymentSuccess()
 		{
+            //$_REQUEST["item_name"] = "test";
+            //$_REQUEST["amount3"] = 0.00;
+            //$_REQUEST["subscr_id"] = "0";
+            //$_REQUEST["item_name"] = "membersubscription";
+            //echo $_SESSION["username"];		
+            //echo $_SESSION["member_type"];	
+            //echo "<pre>";
+            //print_r(base64_decode($_REQUEST["member_id"]));
+            //echo "<br>";
+            //print_r(base64_decode($_REQUEST["referrerID"]));
+            //echo "<br>";
+            //print_r($_REQUEST["mode"]);
+            //echo "<br>";
+            //print_r($_REQUEST["item_name"]);
+            //echo "<br>";
+            //print_r($_REQUEST["amount3"]);
+            //echo "<br>";
+            //print_r($_REQUEST["subscr_id"]);	
+            //die();
 		
 			if( isset($_REQUEST["member_id"]) && isset($_REQUEST["referrerID"]) && ($_REQUEST["mode"]== "paymentSuccess"))
 			{
@@ -578,15 +597,18 @@
 					$referrerID		= base64_decode($_REQUEST["referrerID"]);				
 				}
 				
-				
+				$oSubscriber = $this->oModel->getProfileUserName($memberID);
+                $oSubscriber = $oSubscriber[0];					
+				$_SESSION['username']		=	$oSubscriber->user_name;					
+				$_SESSION['member_type']	=	"observer";
+
 				$transactionID	= $_REQUEST["subscr_id"];	// subscription id			
 				$payment_date 	= date("Y-m-d");//	[subscr_date] => 21:30:24 Jan 22, 2012 PST
-				
-				
+				          
 				if($this->oModel->savePaymentStatus( $paymentType, $amount , $transactionID,$payment_date,$referrerID))
 				{
-					
-					if($_REQUEST["item_name"] = "membersubscription")
+
+            		if($_REQUEST["item_name"] = "membersubscription")
 					{	
 						## update session 
 						$_SESSION['member_type'] = 'subscriber';					
@@ -624,7 +646,8 @@
 		{
 			/*  Array ( [stage] => subscriber [mode] => paymentCancel [username] => observer [remember] => 1 [PHPSESSID] => r90hof02d1ko1mkeg4i5av65a7 ) */					
 			$message = "Payment not done.";
-			header("location:index.php?stage=subscriber&mode=MyProfile&sErrorMessage=".$message);
+			//header("location:index.php?stage=subscriber&mode=MyProfile&sErrorMessage=".$message);
+            header("location:index.php?stage=subscriber&mode=SubscriberJoin");
 		}
 		
 		/*
@@ -1003,12 +1026,20 @@
 
 			$oSubscriber->secondary_affiliates		= $secondary_affiliates;
 			
+            //echo 'promo code:'.$_POST['primary_affiliates'].'affiliate:'.$oSubscriber->primary_affiliate.'affiliate ID:'.$affID;
+            //exit;
+
+            $affID  = $oSubscriber->primary_affiliates;
+            //echo 'affid: '.$affID;
+            //exit;
+				
 			##get primary affiliate id from affiliate code 			
 			if(!empty($oSubscriber->primary_affiliate_code))
 			{	
 				
-				$affID  = $this->oModel->getPrimaryAffIDfromCode($oSubscriber->primary_affiliate_code);  
-				
+				$affID  = $this->oModel->getPrimaryAffIDfromCode($oSubscriber->primary_affiliate_code);
+                $affCodeID = $affID;  
+               
 				if($affID) {
 					
 					$oSubscriber->primary_affiliates = $affID;
@@ -1051,14 +1082,13 @@
                     }
                 }else{
                     $amount = $subscriber_membership_fee;
-                    $affID = false;
                 }				
 				
 				$oSubscriber->subscriptionfee = $amount;					
 				$oSubscriber->referralAffiliateID = $affID;
 				
 				$this->memberUpgradationPayment($oSubscriber,$amount,$affID );
-				// die("payment done");					
+                // die("payment done");					
 			} 
 			else {				
 				$sErrorMsg		=	"Server error.<br>Please try again later.";
@@ -1085,8 +1115,8 @@
 			$oPaypal = new Paypal();
             			
             //echo "<pre>";
-            //print_r($oSubscriber);			
-            //die();
+            //print_r($oSubscriber);
+            //header("location: index.php?stage=subscriber&mode=paymentSuccess&member_id=".base64_encode($oSubscriber->member_id)."&referrerID=".base64_encode($oSubscriber->referralAffiliateID));
             
 			$oPaypal->url 			= $_CONF['payment_url'];
 			$oPaypal->business 		= $_CONF['business_subscribe'];			

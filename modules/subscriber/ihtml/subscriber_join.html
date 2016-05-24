@@ -26,19 +26,22 @@
         $('#south_2').tipsy({ gravity: 's1' });
     });
         
-    //$('#primary_afflliates').livequery('change', function(event) {
-    //    if($('#primary_afflliates').val() !='') {
-    //        $('#primary_afflliate_code').hide();
-    //        //$('#primary_afflliate_code_detail').html('Not required');
-    //    }
-    //    else	{
-    //        $('#primary_afflliate_code').show();
-    //        //$('#primary_afflliate_code_detail').html('');
-    //    }
-    //});
+    
 
     $(document).ready(function () {
+        $('#primary_affiliates').livequery('change', function (event) {
+            if ($('#primary_affiliates').val() != '') {
+                $('#primary_affiliate_code').hide();
+                //$('#primary_affiliate_code_detail').html('Not required');
+            }
+            else {
+               $('#primary_affiliate_code').show();
+                //$('#primary_affiliate_code_detail').html('');
+            }
+        });
+       
 
+        
         if ($('#billingInfoStatus').attr('checked')) {
             $("#billingSection").show();
             $('#isBillingInfo').attr('value', '1');
@@ -58,7 +61,7 @@
         });
 
        
-        /*
+        
 			$('#primary_afflliate_code').change(function(){
 				$.ajax({
 				//this is the php file that processes the data and send mail
@@ -80,7 +83,7 @@
 				});
 			});
 
-		*/
+		
 
         $('#agree').click(function () {
             $('#agree').is(':checked') ? $('#is_agree').attr('value', '1') : $('#is_agree').attr('value', '0');
